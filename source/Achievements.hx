@@ -102,49 +102,29 @@ class AttachedAchievement extends FlxSprite {
 	}
 
 	public function reloadAchievementImage() {
-		if(ClientPrefs.HDIcons != 'Older Version') {
-			if(ClientPrefs.HDIcons != 'Old Version') {
-				if(ClientPrefs.HDIcons != 'New Version') {
-					if(Achievements.isAchievementUnlocked(tag)) {
-						loadGraphic(Paths.image('achievements/' + tag));
-					} else {
-						loadGraphic(Paths.image('achievements/lockedachievement'));
-					}
-				} else {
-					if(Achievements.isAchievementUnlocked(tag)) {
-						loadGraphic(Paths.image('achievements HD/' + tag));
-					} else {
-						loadGraphic(Paths.image('achievements HD/lockedachievement'));
-					}
-				}
+		if(ClientPrefs.HDIcons == 'New Version') {
+			if(Achievements.isAchievementUnlocked(tag)) {
+				loadGraphic(Paths.image('achievements HD/' + tag));
 			} else {
-				if(ClientPrefs.HDIcons != 'Old Version') {
-					if(Achievements.isAchievementUnlocked(tag)) {
-						loadGraphic(Paths.image('achievements/' + tag));
-					} else {
-						loadGraphic(Paths.image('achievements/lockedachievement'));
-					}
-				} else {
-					if(Achievements.isAchievementUnlocked(tag)) {
-						loadGraphic(Paths.image('achievements HD old/' + tag));
-					} else {
-						loadGraphic(Paths.image('achievements HD old/lockedachievement'));
-					}
-				}
+				loadGraphic(Paths.image('achievements HD/lockedachievement'));
 			}
-		} else {
-			if(ClientPrefs.HDIcons != 'Older Version') {
-				if(Achievements.isAchievementUnlocked(tag)) {
-					loadGraphic(Paths.image('achievements/' + tag));
-				} else {
-					loadGraphic(Paths.image('achievements/lockedachievement'));
-				}
+		} else if(ClientPrefs.HDIcons == 'Old Version') {
+			if(Achievements.isAchievementUnlocked(tag)) {
+				loadGraphic(Paths.image('achievements HD old/' + tag));
 			} else {
-				if(Achievements.isAchievementUnlocked(tag)) {
-					loadGraphic(Paths.image('achievements HD older/' + tag));
-				} else {
-					loadGraphic(Paths.image('achievements HD older/lockedachievement'));
-				}
+				loadGraphic(Paths.image('achievements HD old/lockedachievement'));
+			}
+		} else if(ClientPrefs.HDIcons == 'Older Version') {
+			if(Achievements.isAchievementUnlocked(tag)) {
+				loadGraphic(Paths.image('achievements HD older/' + tag));
+			} else {
+				loadGraphic(Paths.image('achievements HD older/lockedachievement'));
+			}
+		} else if(ClientPrefs.HDIcons != 'Disabled') {
+			if(Achievements.isAchievementUnlocked(tag)) {
+				loadGraphic(Paths.image('achievements/' + tag));
+			} else {
+				loadGraphic(Paths.image('achievements/lockedachievement'));
 			}
 		}
 		scale.set(0.7, 0.7);
@@ -172,51 +152,17 @@ class AchievementObject extends FlxSpriteGroup {
 		var achievementIcon:FlxSprite;
 		achievementBG.scrollFactor.set();
 
-		if(ClientPrefs.HDIcons != 'Older Version') {
-			if(ClientPrefs.HDIcons != 'Old Version') {
-				if(ClientPrefs.HDIcons != 'New Version') {
-					achievementIcon = new FlxSprite(achievementBG.x + 10, achievementBG.y + 10).loadGraphic(Paths.image('achievements/' + name));
-					achievementIcon.scrollFactor.set();
-					achievementIcon.setGraphicSize(Std.int(achievementIcon.width * (2 / 3)));
-					achievementIcon.updateHitbox();
-					achievementIcon.antialiasing = ClientPrefs.globalAntialiasing;
-				} else {
-					achievementIcon = new FlxSprite(achievementBG.x + 10, achievementBG.y + 10).loadGraphic(Paths.image('achievements HD/' + name));
-					achievementIcon.scrollFactor.set();
-					achievementIcon.setGraphicSize(Std.int(achievementIcon.width * (2 / 3)));
-					achievementIcon.updateHitbox();
-					achievementIcon.antialiasing = ClientPrefs.globalAntialiasing;
-				}
-			} else {
-				if(ClientPrefs.HDIcons != 'Old Version') {
-					achievementIcon = new FlxSprite(achievementBG.x + 10, achievementBG.y + 10).loadGraphic(Paths.image('achievements/' + name));
-					achievementIcon.scrollFactor.set();
-					achievementIcon.setGraphicSize(Std.int(achievementIcon.width * (2 / 3)));
-					achievementIcon.updateHitbox();
-					achievementIcon.antialiasing = ClientPrefs.globalAntialiasing;
-				} else {
-					achievementIcon = new FlxSprite(achievementBG.x + 10, achievementBG.y + 10).loadGraphic(Paths.image('achievements HD old/' + name));
-					achievementIcon.scrollFactor.set();
-					achievementIcon.setGraphicSize(Std.int(achievementIcon.width * (2 / 3)));
-					achievementIcon.updateHitbox();
-					achievementIcon.antialiasing = ClientPrefs.globalAntialiasing;
-				}
-			}
-		} else {
-			if(ClientPrefs.HDIcons != 'Older Version') {
-				achievementIcon = new FlxSprite(achievementBG.x + 10, achievementBG.y + 10).loadGraphic(Paths.image('achievements/' + name));
-				achievementIcon.scrollFactor.set();
-				achievementIcon.setGraphicSize(Std.int(achievementIcon.width * (2 / 3)));
-				achievementIcon.updateHitbox();
-				achievementIcon.antialiasing = ClientPrefs.globalAntialiasing;
-			} else {
-				achievementIcon = new FlxSprite(achievementBG.x + 10, achievementBG.y + 10).loadGraphic(Paths.image('achievements HD older/' + name));
-				achievementIcon.scrollFactor.set();
-				achievementIcon.setGraphicSize(Std.int(achievementIcon.width * (2 / 3)));
-				achievementIcon.updateHitbox();
-				achievementIcon.antialiasing = ClientPrefs.globalAntialiasing;
-			}
+		if(ClientPrefs.HDIcons == 'New Version') {
+			achievementIcon = new FlxSprite(achievementBG.x + 10, achievementBG.y + 10).loadGraphic(Paths.image('achievements HD/' + name));
+		} else if(ClientPrefs.HDIcons == 'Old Version') {
+			achievementIcon = new FlxSprite(achievementBG.x + 10, achievementBG.y + 10).loadGraphic(Paths.image('achievements HD old/' + name));
+		} else if(ClientPrefs.HDIcons == 'Older Version') {
+			achievementIcon = new FlxSprite(achievementBG.x + 10, achievementBG.y + 10).loadGraphic(Paths.image('achievements HD older/' + name));
 		}
+		achievementIcon.scrollFactor.set();
+		achievementIcon.setGraphicSize(Std.int(achievementIcon.width * (2 / 3)));
+		achievementIcon.updateHitbox();
+		achievementIcon.antialiasing = ClientPrefs.globalAntialiasing;
 
 		var achievementName:FlxText = new FlxText(achievementIcon.x + achievementIcon.width + 20, achievementIcon.y + 16, 280, Achievements.achievementsStuff[id][0], 16);
 		achievementName.setFormat(Paths.font("vcr.ttf"), 16, FlxColor.WHITE, LEFT);
