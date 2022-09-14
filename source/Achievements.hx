@@ -152,24 +152,50 @@ class AchievementObject extends FlxSpriteGroup {
 		var achievementIcon:FlxSprite;
 		achievementBG.scrollFactor.set();
 
-		if(ClientPrefs.HDIcons == 'New Version') {
-			achievementIcon = new FlxSprite(achievementBG.x + 10, achievementBG.y + 10).loadGraphic(Paths.image('achievements HD/' + name));
-			achievementIcon.scrollFactor.set();
-			achievementIcon.setGraphicSize(Std.int(achievementIcon.width * (2 / 3)));
-			achievementIcon.updateHitbox();
-			achievementIcon.antialiasing = ClientPrefs.globalAntialiasing;
-		} else if(ClientPrefs.HDIcons == 'Old Version') {
-			achievementIcon = new FlxSprite(achievementBG.x + 10, achievementBG.y + 10).loadGraphic(Paths.image('achievements HD old/' + name));
-			achievementIcon.scrollFactor.set();
-			achievementIcon.setGraphicSize(Std.int(achievementIcon.width * (2 / 3)));
-			achievementIcon.updateHitbox();
-			achievementIcon.antialiasing = ClientPrefs.globalAntialiasing;
-		} else if(ClientPrefs.HDIcons == 'Older Version') {
-			achievementIcon = new FlxSprite(achievementBG.x + 10, achievementBG.y + 10).loadGraphic(Paths.image('achievements HD older/' + name));
-			achievementIcon.scrollFactor.set();
-			achievementIcon.setGraphicSize(Std.int(achievementIcon.width * (2 / 3)));
-			achievementIcon.updateHitbox();
-			achievementIcon.antialiasing = ClientPrefs.globalAntialiasing;
+		if(ClientPrefs.HDIcons != 'Older Version') {
+			if(ClientPrefs.HDIcons != 'Old Version') {
+				if(ClientPrefs.HDIcons != 'New Version') {
+					achievementIcon = new FlxSprite(achievementBG.x + 10, achievementBG.y + 10).loadGraphic(Paths.image('achievements/' + name));
+					achievementIcon.scrollFactor.set();
+					achievementIcon.setGraphicSize(Std.int(achievementIcon.width * (2 / 3)));
+					achievementIcon.updateHitbox();
+					achievementIcon.antialiasing = ClientPrefs.globalAntialiasing;
+				} else {
+					achievementIcon = new FlxSprite(achievementBG.x + 10, achievementBG.y + 10).loadGraphic(Paths.image('achievements HD/' + name));
+					achievementIcon.scrollFactor.set();
+					achievementIcon.setGraphicSize(Std.int(achievementIcon.width * (2 / 3)));
+					achievementIcon.updateHitbox();
+					achievementIcon.antialiasing = ClientPrefs.globalAntialiasing;
+				}
+			} else {
+				if(ClientPrefs.HDIcons != 'Old Version') {
+					achievementIcon = new FlxSprite(achievementBG.x + 10, achievementBG.y + 10).loadGraphic(Paths.image('achievements/' + name));
+					achievementIcon.scrollFactor.set();
+					achievementIcon.setGraphicSize(Std.int(achievementIcon.width * (2 / 3)));
+					achievementIcon.updateHitbox();
+					achievementIcon.antialiasing = ClientPrefs.globalAntialiasing;
+				} else {
+					achievementIcon = new FlxSprite(achievementBG.x + 10, achievementBG.y + 10).loadGraphic(Paths.image('achievements HD old/' + name));
+					achievementIcon.scrollFactor.set();
+					achievementIcon.setGraphicSize(Std.int(achievementIcon.width * (2 / 3)));
+					achievementIcon.updateHitbox();
+					achievementIcon.antialiasing = ClientPrefs.globalAntialiasing;
+				}
+			}
+		} else {
+			if(ClientPrefs.HDIcons != 'Older Version') {
+				achievementIcon = new FlxSprite(achievementBG.x + 10, achievementBG.y + 10).loadGraphic(Paths.image('achievements/' + name));
+				achievementIcon.scrollFactor.set();
+				achievementIcon.setGraphicSize(Std.int(achievementIcon.width * (2 / 3)));
+				achievementIcon.updateHitbox();
+				achievementIcon.antialiasing = ClientPrefs.globalAntialiasing;
+			} else {
+				achievementIcon = new FlxSprite(achievementBG.x + 10, achievementBG.y + 10).loadGraphic(Paths.image('achievements HD older/' + name));
+				achievementIcon.scrollFactor.set();
+				achievementIcon.setGraphicSize(Std.int(achievementIcon.width * (2 / 3)));
+				achievementIcon.updateHitbox();
+				achievementIcon.antialiasing = ClientPrefs.globalAntialiasing;
+			}
 		}
 
 		var achievementName:FlxText = new FlxText(achievementIcon.x + achievementIcon.width + 20, achievementIcon.y + 16, 280, Achievements.achievementsStuff[id][0], 16);
