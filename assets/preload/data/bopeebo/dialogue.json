@@ -1,0 +1,196 @@
+{
+	"dialogue": [
+		{
+			"expression": "default",
+			"text": "GF, it's time to come home, your 2nd dinner's gonna get cold--",
+			"boxState": "normal",
+			"sound": "dadText",
+			"speed": 0.05,
+			"portrait": "dad"
+		},
+		{
+			"expression": "default",
+			"text": "...",
+			"boxState": "normal",
+			"sound": "",
+			"speed": 0.075,
+			"portrait": "dad"
+		},
+		{
+			"expression": "oof",
+			"text": "...",
+			"boxState": "normal",
+			"sound": "",
+			"speed": 0.07,
+			"portrait": "bf"
+		},
+		{
+			"expression": "owl",
+			"text": "...",
+			"boxState": "normal",
+			"sound": "",
+			"speed": 0.07,
+			"portrait": "gf"
+		},
+		{
+			"expression": "default",
+			"text": "Who is this?",
+			"boxState": "normal",
+			"sound": "dadText",
+			"speed": 0.05,
+			"portrait": "dad"
+		},
+		{
+			"expression": "nervous",
+			"text": "Well, he's--",
+			"boxState": "normal",
+			"sound": "gfText",
+			"speed": 0.05,
+			"portrait": "gf"
+		},
+		{
+			"expression": "reassure",
+			"text": "The name's .XML...BF, .XML!",
+			"boxState": "normal",
+			"sound": "boyfriendText",
+			"speed": 0.05,
+			"portrait": "bf"
+		},
+		{
+			"expression": "reassure",
+			"text": "I'm an up-and-coming rapper who wants to touch on every music genre!!",
+			"boxState": "normal",
+			"sound": "boyfriendText",
+			"speed": 0.05,
+			"portrait": "bf"
+		},
+		{
+			"expression": "reassure",
+			"text": "And to an extent, your daughter.",
+			"boxState": "normal",
+			"sound": "boyfriendText",
+			"speed": 0.05,
+			"portrait": "bf"
+		},
+		{
+			"expression": "surprised",
+			"text": "BF WHAT??",
+			"boxState": "normal",
+			"sound": "gfText",
+			"speed": 0.05,
+			"portrait": "gf"
+		},
+		{
+			"expression": "default",
+			"text": "I'll tell ya right now, boy.",
+			"boxState": "normal",
+			"sound": "dadText",
+			"speed": 0.05,
+			"portrait": "dad"
+		},
+		{
+			"expression": "default",
+			"text": "If you wanna get with my daughter, you gotta beat my ass first.",
+			"boxState": "normal",
+			"sound": "dadText",
+			"speed": 0.05,
+			"portrait": "dad"
+		},
+		{
+			"expression": "surprised",
+			"text": "Wait dad--",
+			"boxState": "normal",
+			"sound": "gfText",
+			"speed": 0.05,
+			"portrait": "gf"
+		},
+		{
+			"expression": "default",
+			"text": "Thassa BET!! I'll suplex ya, old man! You ain't ready for this problem!!",
+			"boxState": "angry",
+			"sound": "boyfriendText",
+			"speed": 0.05,
+			"portrait": "bf"
+		},
+		{
+			"expression": "default",
+			"text": "And after I fuck you up, i'm gonna fuck up your daughter's--",
+			"boxState": "angry",
+			"sound": "boyfriendText",
+			"speed": 0.05,
+			"portrait": "bf"
+		},
+		{
+			"expression": "mic",
+			"text": "...In a singin' battle!",
+			"boxState": "normal",
+			"sound": "dadText",
+			"speed": 0.05,
+			"portrait": "dad"
+		},
+		{
+			"expression": "defaultBlush",
+			"text": "...Oh.",
+			"boxState": "normal",
+			"sound": "boyfriendText",
+			"speed": 0.05,
+			"portrait": "bf"
+		},
+		{
+			"expression": "default",
+			"text": "Well in that case, I'm one of the hottest rappers out right now.",
+			"boxState": "normal",
+			"sound": "boyfriendText",
+			"speed": 0.05,
+			"portrait": "bf"
+		},
+		{
+			"expression": "fist",
+			"text": "I'll help you get with the times, then I'm gonna smooch this dime, heheh...",
+			"boxState": "normal",
+			"sound": "boyfriendText",
+			"speed": 0.05,
+			"portrait": "bf"
+		},
+		{
+			"expression": "flirt",
+			"text": "Ain't that right, baby?",
+			"boxState": "normal",
+			"sound": "boyfriendText",
+			"speed": 0.05,
+			"portrait": "bf"
+		},
+		{
+			"expression": "wehhh",
+			"text": "Why won't you guys just calm doooown?!",
+			"boxState": "normal",
+			"sound": "gfText",
+			"speed": 0.05,
+			"portrait": "gf"
+		},
+		{
+			"expression": "mic",
+			"text": "You've got some nerve tryin' to swoon my little girl while I'm right here.",
+			"boxState": "normal",
+			"sound": "dadText",
+			"speed": 0.05,
+			"portrait": "dad"
+		},
+		{
+			"expression": "mic",
+			"text": "Put yer mic where yer yapper is, boh!",
+			"boxState": "normal",
+			"sound": "dadText",
+			"speed": 0.05,
+			"portrait": "dad"
+		},
+		{
+			"expression": "fist",
+			"text": "Aight! Don't go to hard, you might get an aneurysm.",
+			"boxState": "normal",
+			"sound": "boyfriendText",
+			"speed": 0.05,
+			"portrait": "bf"
+		}
+	]
+}

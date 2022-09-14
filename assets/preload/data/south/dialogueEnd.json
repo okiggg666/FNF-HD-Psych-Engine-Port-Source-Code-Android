@@ -1,0 +1,40 @@
+{
+	"dialogue": [
+		{
+			"sound": "boyfriendText",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"bg": "",
+			"expression": "oof",
+			"text": "Wait huh...?"
+		},
+		{
+			"sound": "boyfriendText",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"bg": "",
+			"expression": "oof",
+			"text": "Where's the little monster kids?"
+		},
+		{
+			"sound": "boyfriendText",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"bg": "",
+			"expression": "oof",
+			"text": "GF???"
+		},
+		{
+			"sound": "boyfriendText",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"bg": "",
+			"expression": "nervous2",
+			"text": "Why's it so dark now...and what's this presence I feel?"
+		}
+	]
+}

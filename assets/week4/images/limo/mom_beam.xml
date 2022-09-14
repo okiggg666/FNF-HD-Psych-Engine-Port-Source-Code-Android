@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="mom_beam.png">
+	<!-- Created with Adobe Animate version 22.0.0.93 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="MOM BEAM 20000" x="0" y="0" width="992" height="164" pivotX="-260.65" pivotY="243.55" frameX="-15" frameY="-20" frameWidth="1147" frameHeight="210"/>
+	<SubTexture name="MOM BEAM 20001" x="992" y="0" width="999" height="174" frameX="0" frameY="-22" frameWidth="1147" frameHeight="210"/>
+	<SubTexture name="MOM BEAM 20002" x="0" y="174" width="998" height="174" frameX="-9" frameY="-22" frameWidth="1147" frameHeight="210"/>
+	<SubTexture name="MOM BEAM 20003" x="998" y="174" width="998" height="173" frameX="-9" frameY="-23" frameWidth="1147" frameHeight="210"/>
+	<SubTexture name="MOM BEAM 20004" x="0" y="348" width="937" height="165" frameX="-15" frameY="-23" frameWidth="1147" frameHeight="210"/>
+	<SubTexture name="MOM BEAM 20005" x="937" y="348" width="937" height="119" frameX="-15" frameY="-56" frameWidth="1147" frameHeight="210"/>
+	<SubTexture name="MOM BEAM 20006" x="0" y="513" width="937" height="119" frameX="-15" frameY="-56" frameWidth="1147" frameHeight="210"/>
+	<SubTexture name="MOM BEAM 20007" x="937" y="513" width="937" height="119" frameX="-15" frameY="-56" frameWidth="1147" frameHeight="210"/>
+	<SubTexture name="MOM BEAM 20008" x="0" y="632" width="1074" height="137" frameX="-10" frameY="-50" frameWidth="1147" frameHeight="210"/>
+	<SubTexture name="MOM BEAM 20009" x="0" y="769" width="1074" height="137" frameX="-10" frameY="-50" frameWidth="1147" frameHeight="210"/>
+	<SubTexture name="MOM BEAM 20010" x="0" y="906" width="1144" height="210" frameX="-3" frameY="0" frameWidth="1147" frameHeight="210"/>
+	<SubTexture name="MOM BEAM 20011" x="0" y="1116" width="1144" height="210" frameX="-3" frameY="0" frameWidth="1147" frameHeight="210"/>
+	<SubTexture name="MOM BEAM 20012" x="0" y="1326" width="1144" height="210" frameX="-3" frameY="0" frameWidth="1147" frameHeight="210"/>
+	<SubTexture name="MOM BEAM 20013" x="1144" y="1326" width="0" height="0" frameX="260" frameY="-243" frameWidth="1147" frameHeight="210"/>
+</TextureAtlas>

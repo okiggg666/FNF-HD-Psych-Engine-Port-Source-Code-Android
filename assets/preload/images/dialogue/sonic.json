@@ -1,0 +1,102 @@
+{
+	"position": [
+		-290,
+		-320
+	],
+	"dialogue_pos": "left",
+	"scale": 0.599999999999999,
+	"image": "sonic",
+	"animations": [
+		{
+			"idle_offsets": [
+				0,
+				0
+			],
+			"anim": "default",
+			"loop_offsets": [
+				0,
+				0
+			],
+			"idle_name": "sonic default.png",
+			"loop_name": "sonic default.png"
+		},
+		{
+			"loop_offsets": [
+				0,
+				0
+			],
+			"anim": "blush",
+			"idle_offsets": [
+				1,
+				4
+			],
+			"loop_name": "sonic blush.png",
+			"idle_name": "sonic blush.png"
+		},
+		{
+			"loop_offsets": [
+				0,
+				0
+			],
+			"anim": "fist",
+			"idle_offsets": [
+				0,
+				0
+			],
+			"loop_name": "sonic fist.png",
+			"idle_name": "sonic fist.png"
+		},
+		{
+			"loop_offsets": [
+				0,
+				0
+			],
+			"anim": "happy",
+			"idle_offsets": [
+				0,
+				0
+			],
+			"loop_name": "sonic happy.png",
+			"idle_name": "sonic happy.png"
+		},
+		{
+			"loop_offsets": [
+				3,
+				10
+			],
+			"anim": "laugh",
+			"idle_offsets": [
+				3,
+				10
+			],
+			"loop_name": "sonic laugh.png",
+			"idle_name": "sonic laugh.png"
+		},
+		{
+			"loop_offsets": [
+				0,
+				50
+			],
+			"anim": "run",
+			"idle_offsets": [
+				0,
+				50
+			],
+			"loop_name": "sonic run.png",
+			"idle_name": "sonic run.png"
+		},
+		{
+			"loop_name": "sonic confused.png",
+			"idle_offsets": [
+				30,
+				30
+			],
+			"idle_name": "sonic confused.png",
+			"anim": "confused",
+			"loop_offsets": [
+				30,
+				30
+			]
+		}
+	]
+}

@@ -1,0 +1,62 @@
+{
+	"animations": [
+		{
+			"loop": true,
+			"offsets": [
+				0,
+				30
+			],
+			"anim": "deathLoop",
+			"fps": 24,
+			"name": "BF dead 3",
+			"indices": [
+				29,
+				30
+			]
+		},
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				30
+			],
+			"anim": "deathConfirm",
+			"fps": 24,
+			"name": "BF dead 3",
+			"indices": [
+				29,
+				30
+			]
+		},
+		{
+			"offsets": [
+				0,
+				30
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "firstDeath",
+			"loop": false,
+			"name": "BF dead 3"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/STREETLIGHT_DEATH",
+	"position": [
+		-50,
+		-100
+	],
+	"healthicon": "bf",
+	"flip_x": true,
+	"healthbar_colors": [
+		49,
+		176,
+		229
+	],
+	"camera_position": [
+		360,
+		380
+	],
+	"sing_duration": 4,
+	"scale": 1
+}

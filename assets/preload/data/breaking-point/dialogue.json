@@ -1,0 +1,156 @@
+{
+	"dialogue": [
+		{
+			"sound": "boyfriendText",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "smile",
+			"text": "You enjoyin' the view? I paid a fat stack of money for this."
+		},
+		{
+			"sound": "gfText",
+			"speed": 0.05,
+			"portrait": "gf",
+			"boxState": "normal",
+			"expression": "default",
+			"text": "It's from the mixtape money I'm guessing? Why are you spending so much on me, hon'?"
+		},
+		{
+			"sound": "boyfriendText",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "reassure",
+			"text": "I gotta show some love for my girl!"
+		},
+		{
+			"sound": "boyfriendText",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "reassure",
+			"text": "Plus, the whole drama with your mama blew my name up like hella!"
+		},
+		{
+			"sound": "boyfriendText",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "fist",
+			"text": "People watchin' my dodge lamps 'n' lasers made 'em think I was hot shit!"
+		},
+		{
+			"sound": "boyfriendText",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "fist",
+			"text": "WHICH I am, but y'know..."
+		},
+		{
+			"sound": "gfText",
+			"speed": 0.05,
+			"portrait": "gf",
+			"boxState": "normal",
+			"expression": "smile",
+			"text": "I'm proud of you, but you need to save your money!"
+		},
+		{
+			"sound": "gfText",
+			"speed": 0.05,
+			"portrait": "gf",
+			"boxState": "normal",
+			"expression": "smile",
+			"text": "I don't need material things like this."
+		},
+		{
+			"sound": "boyfriendText",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "reassure",
+			"text": "I needa spoil you every now and then. It's the least I can do as a mortal."
+		},
+		{
+			"sound": "boyfriendText",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "smile",
+			"text": "Besides, whenever I get cool with your folks, I'ma steal money from 'em often, hehe..."
+		},
+		{
+			"sound": "gfText",
+			"speed": 0.05,
+			"portrait": "gf",
+			"boxState": "normal",
+			"expression": "giggle",
+			"text": "You're really confident in getting on my parents' good side, huh?"
+		},
+		{
+			"sound": "gfText",
+			"speed": 0.05,
+			"portrait": "gf",
+			"boxState": "normal",
+			"expression": "default",
+			"text": "Well you needa' get them vocal chords in shape! My parents be goin' ham--"
+		},
+		{
+			"sound": "boyfriendText",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "smile",
+			"text": "Hol' up, you talkin' like me now?"
+		},
+		{
+			"sound": "boyfriendText",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "scoff",
+			"text": "Stealin' my flow, bar for bar!"
+		},
+		{
+			"sound": "gfText",
+			"speed": 0.05,
+			"portrait": "gf",
+			"boxState": "normal",
+			"expression": "blush 2",
+			"text": "Oop, hehe..."
+		},
+		{
+			"sound": "boyfriendText",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "confused",
+			"text": "Hm...What should I sing?"
+		},
+		{
+			"sound": "gfText",
+			"speed": 0.05,
+			"portrait": "gf",
+			"boxState": "normal",
+			"expression": "default",
+			"text": "Oh I don't know, surprise me! Somethin' spacey might fight this scenery..."
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "confused",
+			"text": "..."
+		},
+		{
+			"sound": "boyfriendText",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "angry",
+			"expression": "default",
+			"text": "I got one!! You gon' remember this babe!"
+		}
+	]
+}

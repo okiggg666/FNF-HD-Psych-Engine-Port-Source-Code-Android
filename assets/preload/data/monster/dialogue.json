@@ -1,0 +1,76 @@
+{
+	"dialogue": [
+		{
+			"sound": "monsterText",
+			"speed": 0.05,
+			"portrait": "monster",
+			"boxState": "normal",
+			"bg": "",
+			"expression": "default",
+			"text": "You ask too many questions, big fella! just chill and hang out with a new pal okay?"
+		},
+		{
+			"sound": "boyfriendText",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"bg": "",
+			"expression": "defaultSweat",
+			"text": "W-who the hell are you?! Tell me what you did to them!"
+		},
+		{
+			"sound": "monsterText",
+			"speed": 0.05,
+			"portrait": "monster",
+			"boxState": "normal",
+			"bg": "",
+			"expression": "smile",
+			"text": "I just wanted some alone time with you, is that so wrong?"
+		},
+		{
+			"sound": "monsterText",
+			"speed": 0.05,
+			"portrait": "monster",
+			"boxState": "normal",
+			"bg": "",
+			"expression": "smile",
+			"text": "I'm dying to have a little singing battle with you."
+		},
+		{
+			"sound": "boyfriendText",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"bg": "",
+			"expression": "nervous2",
+			"text": "For what reason...what will you gain from this if I lose?"
+		},
+		{
+			"sound": "",
+			"speed": 0.09,
+			"portrait": "monster",
+			"boxState": "normal",
+			"bg": "",
+			"expression": "default",
+			"text": ". . ."
+		},
+		{
+			"sound": "monsterText",
+			"speed": 0.05,
+			"portrait": "monster",
+			"boxState": "normal",
+			"bg": "",
+			"expression": "laugh",
+			"text": "don't know, but it's gonna be fu-u-un! let's get to singin', shall we?"
+		},
+		{
+			"sound": "boyfriendText",
+			"speed": 0.115,
+			"portrait": "bf",
+			"boxState": "normal",
+			"bg": "",
+			"expression": "nervous",
+			"text": "..."
+		}
+	]
+}

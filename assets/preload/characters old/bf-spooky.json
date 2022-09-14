@@ -1,0 +1,279 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				-37,
+				-57
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "Sing Down"
+		},
+		{
+			"offsets": [
+				-49,
+				40
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP",
+			"indices": [],
+			"name": "Sing Up"
+		},
+		{
+			"offsets": [
+				-53,
+				4
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "Sing Right"
+		},
+		{
+			"offsets": [
+				-26,
+				-7
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "Sing Left"
+		},
+		{
+			"offsets": [
+				-38,
+				-57
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWNmiss",
+			"indices": [],
+			"name": "Miss Down"
+		},
+		{
+			"offsets": [
+				-41,
+				14
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUPmiss",
+			"indices": [],
+			"name": "Miss Up"
+		},
+		{
+			"offsets": [
+				-31,
+				3
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFTmiss",
+			"indices": [],
+			"name": "Miss Left"
+		},
+		{
+			"offsets": [
+				-52,
+				-6
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHTmiss",
+			"indices": [],
+			"name": "Miss Right"
+		},
+		{
+			"offsets": [
+				-34,
+				21
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP-stressed",
+			"indices": [],
+			"name": "Stressed Up0"
+		},
+		{
+			"offsets": [
+				-53,
+				4
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT-stressed",
+			"indices": [],
+			"name": "Stressed Right0"
+		},
+		{
+			"offsets": [
+				-26,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT-stressed",
+			"indices": [],
+			"name": "Stressed Left0"
+		},
+		{
+			"offsets": [
+				-37,
+				-53
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN-stressed",
+			"indices": [],
+			"name": "Stressed Down0"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-38,
+				-65
+			],
+			"anim": "singDOWNmiss-stressed",
+			"fps": 24,
+			"name": "Miss Stress Down0",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-21,
+				4
+			],
+			"anim": "singLEFTmiss-stressed",
+			"fps": 24,
+			"name": "Miss Stress Left0",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-50,
+				10
+			],
+			"anim": "singRIGHTmiss-stressed",
+			"fps": 24,
+			"name": "Miss Stress Right",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-40,
+				11
+			],
+			"anim": "singUPmiss-stressed",
+			"fps": 24,
+			"name": "Miss Stress Up",
+			"indices": []
+		},
+		{
+			"offsets": [
+				-20,
+				2
+			],
+			"indices": [
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15
+			],
+			"fps": 24,
+			"anim": "danceRight",
+			"loop": false,
+			"name": "BF-spooky"
+		},
+		{
+			"offsets": [
+				-20,
+				2
+			],
+			"indices": [
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6
+			],
+			"fps": 24,
+			"anim": "danceLeft",
+			"loop": false,
+			"name": "BF-spooky"
+		},
+		{
+			"offsets": [
+				-20,
+				2
+			],
+			"indices": [
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15
+			],
+			"fps": 24,
+			"anim": "danceRight-stressed",
+			"loop": false,
+			"name": "BF-spooky"
+		},
+		{
+			"offsets": [
+				-20,
+				2
+			],
+			"indices": [
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6
+			],
+			"fps": 24,
+			"anim": "danceLeft-stressed",
+			"loop": false,
+			"name": "BF-spooky"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/bfHD-old",
+	"position": [
+		10,
+		380
+	],
+	"healthicon": "bf",
+	"flip_x": true,
+	"healthbar_colors": [
+		49,
+		176,
+		209
+	],
+	"camera_position": [
+		30,
+		-30
+	],
+	"sing_duration": 4,
+	"scale": 1
+}

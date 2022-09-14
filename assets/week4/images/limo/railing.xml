@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="railing.png">
+	<!-- Created with Adobe Animate version 22.0.0.93 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="railing0000" x="0" y="0" width="6730" height="287" frameX="0" frameY="0" frameWidth="8350" frameHeight="287"/>
+	<SubTexture name="railing0001" x="0" y="0" width="6730" height="287" frameX="-162" frameY="0" frameWidth="8350" frameHeight="287"/>
+	<SubTexture name="railing0002" x="0" y="0" width="6730" height="287" frameX="-324" frameY="0" frameWidth="8350" frameHeight="287"/>
+	<SubTexture name="railing0003" x="0" y="0" width="6730" height="287" frameX="-486" frameY="0" frameWidth="8350" frameHeight="287"/>
+	<SubTexture name="railing0004" x="0" y="0" width="6730" height="287" frameX="-648" frameY="0" frameWidth="8350" frameHeight="287"/>
+	<SubTexture name="railing0005" x="0" y="0" width="6730" height="287" frameX="-810" frameY="0" frameWidth="8350" frameHeight="287"/>
+	<SubTexture name="railing0006" x="0" y="0" width="6730" height="287" frameX="-972" frameY="0" frameWidth="8350" frameHeight="287"/>
+	<SubTexture name="railing0007" x="0" y="0" width="6730" height="287" frameX="-1134" frameY="0" frameWidth="8350" frameHeight="287"/>
+	<SubTexture name="railing0008" x="0" y="0" width="6730" height="287" frameX="-1296" frameY="0" frameWidth="8350" frameHeight="287"/>
+	<SubTexture name="railing0009" x="0" y="0" width="6730" height="287" frameX="-1458" frameY="0" frameWidth="8350" frameHeight="287"/>
+	<SubTexture name="railing0010" x="0" y="287" width="6730" height="287" frameX="-1620" frameY="0" frameWidth="8350" frameHeight="287"/>
+</TextureAtlas>

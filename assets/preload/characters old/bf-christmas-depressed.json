@@ -1,0 +1,122 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				-25,
+				-10
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWNmiss",
+			"indices": [],
+			"name": "BF NOTE DOWN MISS"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-25,
+				-50
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "DEPRESSED BF NOTE DOWN0",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-5,
+				0
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "DEPRESSED BF idle dance",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-49,
+				43
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "DEPRESSED BF NOTE UP0",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-41,
+				-6
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "DEPRESSED BF NOTE RIGHT0",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-13,
+				-9
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "DEPRESSED BF NOTE LEFT0",
+			"indices": []
+		},
+		{
+			"offsets": [
+				-41,
+				14
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singUPmiss",
+			"loop": false,
+			"name": "DEPRESSED BF NOTE UP MISS"
+		},
+		{
+			"offsets": [
+				-11,
+				26
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singLEFTmiss",
+			"loop": false,
+			"name": "DEPRESSED BF NOTE LEFT0"
+		},
+		{
+			"offsets": [
+				-41,
+				29
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singRIGHTmiss",
+			"loop": false,
+			"name": "DEPRESSED BF NOTE RIGHT MISS"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/bfDepressedOld",
+	"position": [
+		10,
+		380
+	],
+	"healthicon": "bf",
+	"flip_x": true,
+	"healthbar_colors": [
+		49,
+		176,
+		209
+	],
+	"camera_position": [
+		30,
+		-30
+	],
+	"sing_duration": 4,
+	"scale": 1
+}

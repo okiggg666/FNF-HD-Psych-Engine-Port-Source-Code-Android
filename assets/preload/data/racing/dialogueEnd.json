@@ -1,0 +1,212 @@
+{
+	"dialogue": [
+		{
+			"sound": "sonicText",
+			"speed": 0.05,
+			"portrait": "super-sonic",
+			"boxState": "normal",
+			"expression": "default",
+			"text": "I'm really impressed. You were able to keep up the whole time without much fail--"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "nochar",
+			"boxState": "normal",
+			"expression": "default",
+			"text": "*crash*"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "nochar2",
+			"boxState": "normal",
+			"expression": "default",
+			"text": ""
+		},
+		{
+			"sound": "sonicText",
+			"speed": 0.05,
+			"portrait": "super-sonic",
+			"boxState": "normal",
+			"expression": "yikes",
+			"text": "Nevermind"
+		},
+		{
+			"sound": "sonicText",
+			"speed": 0.05,
+			"portrait": "super-sonic",
+			"boxState": "normal",
+			"expression": "reassure",
+			"text": "Hey kid, I don't know if you can hear me...but I think you should stick to rapping."
+		},
+		{
+			"sound": "sonicText",
+			"speed": 0.05,
+			"portrait": "super-sonic",
+			"boxState": "normal",
+			"expression": "default",
+			"text": "Being me isn't easy. Being ANYONE who isn't you is difficult."
+		},
+		{
+			"sound": "sonicText",
+			"speed": 0.05,
+			"portrait": "super-sonic",
+			"boxState": "normal",
+			"expression": "default",
+			"text": "There's nothing wrong with wanting to do more for others."
+		},
+		{
+			"sound": "sonicText",
+			"speed": 0.05,
+			"portrait": "super-sonic",
+			"boxState": "normal",
+			"expression": "default",
+			"text": "However, it's okay to accept that you won't always be able to do more for others, too."
+		},
+		{
+			"sound": "sonicText",
+			"speed": 0.05,
+			"portrait": "super-sonic",
+			"boxState": "normal",
+			"expression": "reassure",
+			"text": "You can still be strong and help others without being super fast or physically built."
+		},
+		{
+			"sound": "sonicText",
+			"speed": 0.05,
+			"portrait": "super-sonic",
+			"boxState": "normal",
+			"expression": "reassure",
+			"text": "I don't know anything about you, but I bet the people in your life already see you as strong enough."
+		},
+		{
+			"sound": "sonicText",
+			"speed": 0.05,
+			"portrait": "super-sonic",
+			"boxState": "normal",
+			"expression": "reassure",
+			"text": "Someday in the near future, you'll be able to up your limits. This is too early though!"
+		},
+		{
+			"sound": "sonicText",
+			"speed": 0.05,
+			"portrait": "super-sonic",
+			"boxState": "normal",
+			"expression": "default",
+			"text": "I gotta head out now, but I'm proud of you for coming this far. Let me grab some rings to patch you right..."
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "nochar",
+			"boxState": "normal",
+			"expression": "default",
+			"text": "*GASP*"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "nochar",
+			"boxState": "normal",
+			"expression": "default",
+			"text": "..."
+		},
+		{
+			"sound": "boyfriendText",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "scratch",
+			"text": "No way...you mean, I was dreaming that whole time? I'm not actually that strong, am I?"
+		},
+		{
+			"sound": "boyfriendText",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "sulk",
+			"text": "It's never gonna be enough, is it?"
+		},
+		{
+			"sound": "gfText",
+			"speed": 0.05,
+			"portrait": "gf",
+			"boxState": "normal",
+			"expression": "tired",
+			"text": "Baby, can you lay back down with me? I had a niiightmare..."
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "blush2",
+			"text": "..."
+		},
+		{
+			"sound": "boyfriendText",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "blush2",
+			"text": "(Thinking: I might not be strong enough for myself yet, but if I'm strong enough for her...I guess that's enough.)"
+		},
+		{
+			"sound": "boyfriendText",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "clear",
+			"text": "(Thinking: Thanks Sonic...I had that dream for a reason, but it was really taxing on my brain.)"
+		},
+		{
+			"sound": "boyfriendText",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "happy",
+			"text": "(Thinking: I guess I'll just lay back down.)"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "nervous",
+			"text": "..."
+		},
+		{
+			"sound": "boyfriendText",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "nervous2",
+			"text": "(Thinking: I feel really uncomfortable...am I--am I laying on something?)"
+		},
+		{
+			"sound": "boyfriendText",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "angry",
+			"expression": "giddy",
+			"text": "WHAT'S THIS? A RING?!"
+		},
+		{
+			"sound": "boyfriendText",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "sulk",
+			"text": "Oh...wait...that's just my cock ring. Whatever man."
+		},
+		{
+			"sound": "boyfriendText",
+			"speed": 0.05,
+			"portrait": "nochar",
+			"boxState": "normal",
+			"expression": "default",
+			"text": "I'll probably wake up later and hop into the Chao Garden."
+		}
+	]
+}

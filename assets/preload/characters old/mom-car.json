@@ -1,0 +1,172 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				216,
+				36
+			],
+			"loop": false,
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "Mom Left Pose",
+			"indices": []
+		},
+		{
+			"offsets": [
+				24,
+				-30
+			],
+			"loop": false,
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "Mom Pose Left",
+			"indices": []
+		},
+		{
+			"offsets": [
+				0,
+				-210
+			],
+			"loop": false,
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "MOM DOWN POSE",
+			"indices": []
+		},
+		{
+			"offsets": [
+				25,
+				91
+			],
+			"loop": false,
+			"anim": "singUP",
+			"fps": 24,
+			"name": "Mom Up Pose",
+			"indices": []
+		},
+		{
+			"loop": true,
+			"offsets": [
+				0,
+				-210
+			],
+			"anim": "singDOWN-loop",
+			"fps": 24,
+			"name": "MOM DOWN POSE",
+			"indices": [
+				11,
+				12,
+				13,
+				14
+			]
+		},
+		{
+			"loop": true,
+			"offsets": [
+				216,
+				36
+			],
+			"anim": "singLEFT-loop",
+			"fps": 24,
+			"name": "Mom Left Pose",
+			"indices": [
+				7,
+				8,
+				9,
+				10
+			]
+		},
+		{
+			"loop": true,
+			"offsets": [
+				24,
+				-30
+			],
+			"anim": "singRIGHT-loop",
+			"fps": 24,
+			"name": "Mom Pose Left",
+			"indices": [
+				8,
+				9,
+				10,
+				11
+			]
+		},
+		{
+			"loop": true,
+			"offsets": [
+				25,
+				91
+			],
+			"anim": "singUP-loop",
+			"fps": 24,
+			"name": "Mom Up Pose",
+			"indices": [
+				11,
+				12,
+				13,
+				14
+			]
+		},
+		{
+			"loop": false,
+			"offsets": [
+				1,
+				0
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "Mom Idle",
+			"indices": [
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12
+			]
+		},
+		{
+			"offsets": [
+				1,
+				0
+			],
+			"indices": [
+				11,
+				10,
+				9,
+				8
+			],
+			"fps": 24,
+			"anim": "idle-loop",
+			"loop": true,
+			"name": "Mom Idle"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/momCar",
+	"position": [
+		0,
+		0
+	],
+	"healthicon": "mom",
+	"flip_x": false,
+	"healthbar_colors": [
+		216,
+		85,
+		142
+	],
+	"camera_position": [
+		-95,
+		95
+	],
+	"sing_duration": 4,
+	"scale": 1
+}

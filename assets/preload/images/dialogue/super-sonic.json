@@ -1,0 +1,50 @@
+{
+	"dialogue_pos": "left",
+	"position": [
+		-370,
+		-450
+	],
+	"scale": 0.449999999999999,
+	"animations": [
+		{
+			"loop_offsets": [
+				0,
+				0
+			],
+			"anim": "default",
+			"idle_offsets": [
+				0,
+				0
+			],
+			"loop_name": "super sonic default.png",
+			"idle_name": "super sonic default.png"
+		},
+		{
+			"loop_name": "super sonic reassure.png",
+			"idle_offsets": [
+				-20,
+				20
+			],
+			"idle_name": "super sonic reassure.png",
+			"anim": "reassure",
+			"loop_offsets": [
+				-20,
+				20
+			]
+		},
+		{
+			"loop_name": "super sonic yikes.png",
+			"idle_offsets": [
+				0,
+				0
+			],
+			"idle_name": "super sonic yikes.png",
+			"anim": "yikes",
+			"loop_offsets": [
+				0,
+				0
+			]
+		}
+	],
+	"image": "sonic"
+}

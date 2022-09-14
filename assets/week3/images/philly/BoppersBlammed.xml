@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="BoppersBlammed.png">
+	<!-- Created with Adobe Animate version 22.0.0.93 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="Boppers Dancing Beat 20000" x="0" y="0" width="357" height="550" frameX="0" frameY="-15" frameWidth="361" frameHeight="565"/>
+	<SubTexture name="Boppers Dancing Beat 20001" x="357" y="0" width="357" height="546" frameX="0" frameY="-19" frameWidth="361" frameHeight="565"/>
+	<SubTexture name="Boppers Dancing Beat 20002" x="714" y="0" width="356" height="555" frameX="-2" frameY="-10" frameWidth="361" frameHeight="565"/>
+	<SubTexture name="Boppers Dancing Beat 20003" x="1070" y="0" width="359" height="558" frameX="-2" frameY="-7" frameWidth="361" frameHeight="565"/>
+	<SubTexture name="Boppers Dancing Beat 20004" x="1429" y="0" width="347" height="565" frameX="-8" frameY="0" frameWidth="361" frameHeight="565"/>
+	<SubTexture name="Boppers Dancing Beat 20005" x="1776" y="0" width="333" height="524" frameX="-8" frameY="-41" frameWidth="361" frameHeight="565"/>
+	<SubTexture name="Boppers Dancing Beat 20006" x="2109" y="0" width="344" height="555" frameX="-8" frameY="-10" frameWidth="361" frameHeight="565"/>
+	<SubTexture name="Boppers Dancing Beat 20007" x="2453" y="0" width="344" height="551" frameX="-8" frameY="-14" frameWidth="361" frameHeight="565"/>
+	<SubTexture name="Boppers Dancing Beat 20008" x="2797" y="0" width="345" height="558" frameX="-8" frameY="-7" frameWidth="361" frameHeight="565"/>
+	<SubTexture name="Boppers Dancing Beat 20009" x="3142" y="0" width="348" height="561" frameX="-8" frameY="-4" frameWidth="361" frameHeight="565"/>
+	<SubTexture name="Boppers Dancing Beat 20010" x="3490" y="0" width="347" height="565" frameX="-8" frameY="0" frameWidth="361" frameHeight="565"/>
+	<SubTexture name="Boppers Dancing Beat 20011" x="0" y="565" width="333" height="524" frameX="-8" frameY="-41" frameWidth="361" frameHeight="565"/>
+	<SubTexture name="Boppers Dancing Beat 20012" x="333" y="565" width="344" height="555" frameX="-8" frameY="-10" frameWidth="361" frameHeight="565"/>
+	<SubTexture name="Boppers Dancing Beat 20013" x="677" y="565" width="344" height="551" frameX="-8" frameY="-14" frameWidth="361" frameHeight="565"/>
+	<SubTexture name="Boppers Dancing Beat 20014" x="2797" y="0" width="345" height="558" frameX="-8" frameY="-7" frameWidth="361" frameHeight="565"/>
+	<SubTexture name="Boppers Dancing Beat Landing 20000" x="2660" y="565" width="327" height="477" frameX="0" frameY="-45" frameWidth="327" frameHeight="511"/>
+	<SubTexture name="Boppers Dancing Beat Landing 20001" x="2660" y="565" width="327" height="477" frameX="0" frameY="-45" frameWidth="327" frameHeight="511"/>
+	<SubTexture name="Boppers Dancing Beat Landing 20002" x="2660" y="565" width="327" height="477" frameX="0" frameY="-45" frameWidth="327" frameHeight="511"/>
+	<SubTexture name="Boppers Dancing Beat Landing 20003" x="2660" y="565" width="327" height="477" frameX="0" frameY="-45" frameWidth="327" frameHeight="511"/>
+	<SubTexture name="Boppers Dancing Beat Landing 20004" x="2660" y="565" width="327" height="477" frameX="0" frameY="-45" frameWidth="327" frameHeight="511"/>
+	<SubTexture name="Boppers Dancing Beat Landing 20005" x="2660" y="565" width="327" height="477" frameX="0" frameY="-45" frameWidth="327" frameHeight="511"/>
+	<SubTexture name="Boppers Dancing Beat Landing 20006" x="2660" y="565" width="327" height="477" frameX="0" frameY="-45" frameWidth="327" frameHeight="511"/>
+	<SubTexture name="Boppers Dancing Beat Landing 20007" x="1021" y="565" width="327" height="486" frameX="0" frameY="-36" frameWidth="331" frameHeight="522"/>
+	<SubTexture name="Boppers Dancing Beat Landing 20008" x="1021" y="565" width="327" height="486" frameX="0" frameY="-36" frameWidth="331" frameHeight="522"/>
+	<SubTexture name="Boppers Dancing Beat Landing 20009" x="1348" y="565" width="331" height="522"/>
+	<SubTexture name="Boppers Dancing Beat blowing 20000" x="1679" y="565" width="327" height="511"/>
+	<SubTexture name="Boppers Dancing Beat blowing 20001" x="2006" y="565" width="327" height="508" frameX="0" frameY="-3" frameWidth="327" frameHeight="511"/>
+	<SubTexture name="Boppers Dancing Beat blowing 20002" x="2333" y="565" width="327" height="505" frameX="0" frameY="-6" frameWidth="327" frameHeight="511"/>
+	<SubTexture name="Boppers Dancing Beat blowing 20003" x="2660" y="565" width="327" height="477" frameX="0" frameY="-34" frameWidth="327" frameHeight="511"/>
+</TextureAtlas>

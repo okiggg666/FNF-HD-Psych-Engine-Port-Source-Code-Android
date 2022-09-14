@@ -1,0 +1,193 @@
+{
+	"dialogue": [
+		{
+			"sound": "",
+			"speed": 0.105,
+			"portrait": "bf",
+			"boxState": "normal",
+			"bg": "",
+			"expression": "nervous",
+			"text": "..."
+		},
+		{
+			"sound": "gfText",
+			"speed": 0.05,
+			"portrait": "gf",
+			"boxState": "normal",
+			"bg": "",
+			"expression": "nervous2",
+			"text": "...erm--"
+		},
+		{
+			"sound": "boyfriendText",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"bg": "",
+			"expression": "nervous2",
+			"text": "Babe, I know that haunted houses are intended to be eery 'n' shit..."
+		},
+		{
+			"sound": "boyfriendText",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"bg": "",
+			"expression": "nervous2",
+			"text": "But nah, this place is whack! I hate it here!!"
+		},
+		{
+			"sound": "gfText",
+			"speed": 0.05,
+			"portrait": "gf",
+			"boxState": "normal",
+			"bg": "",
+			"expression": "worry",
+			"text": "What are you so afraid of?"
+		},
+		{
+			"sound": "gfText",
+			"speed": 0.05,
+			"portrait": "gf",
+			"boxState": "normal",
+			"bg": "",
+			"expression": "worry",
+			"text": "I'm here by your side, no one's gonna hurt you."
+		},
+		{
+			"sound": "boyfriendText",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"bg": "",
+			"expression": "nervous2",
+			"text": "But I've BEEN hurt! I got jumpscared so much my scrote's losing control of itself..."
+		},
+		{
+			"sound": "gfText",
+			"speed": 0.05,
+			"portrait": "gf",
+			"boxState": "normal",
+			"bg": "",
+			"expression": "nervous2",
+			"text": "I'm sure there's a bathroom around here so you can fix yourself up."
+		},
+		{
+			"sound": "gfText",
+			"speed": 0.05,
+			"portrait": "gf",
+			"boxState": "normal",
+			"bg": "",
+			"expression": "worry",
+			"text": "Do you 2 dolls have any idea where a bathroom may be?"
+		},
+		{
+			"sound": "skumpText",
+			"speed": 0.05,
+			"portrait": "spooky",
+			"boxState": "normal",
+			"bg": "",
+			"expression": "default",
+			"text": "Up stairs, first door on the right!"
+		},
+		{
+			"sound": "gfText",
+			"speed": 0.05,
+			"portrait": "gf",
+			"boxState": "normal",
+			"bg": "",
+			"expression": "default",
+			"text": "Ah okay, thank you!"
+		},
+		{
+			"sound": "",
+			"speed": 0.11,
+			"portrait": "gf",
+			"boxState": "normal",
+			"bg": "",
+			"expression": "default",
+			"text": "... "
+		},
+		{
+			"sound": "gfText",
+			"speed": 0.05,
+			"portrait": "gf",
+			"boxState": "angry",
+			"bg": "",
+			"expression": "surprised",
+			"text": "WAIT WHAT THE FUCK?!"
+		},
+		{
+			"sound": "skidText",
+			"speed": 0.05,
+			"portrait": "spooky",
+			"boxState": "normal",
+			"bg": "",
+			"expression": "default",
+			"text": "(S) We were informed that you were our precious candy, senora GF!"
+		},
+		{
+			"sound": "pumpText",
+			"speed": 0.05,
+			"portrait": "spooky",
+			"boxState": "normal",
+			"bg": "",
+			"expression": "default",
+			"text": "(P) So we'll be taking you now, as a treat!"
+		},
+		{
+			"sound": "boyfriendText",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "angry",
+			"bg": "",
+			"expression": "default",
+			"text": "Not so fast! You guys ain't earn her like I did, she's all mine!"
+		},
+		{
+			"sound": "gfText",
+			"speed": 0.05,
+			"portrait": "gf",
+			"boxState": "normal",
+			"bg": "",
+			"expression": "blush",
+			"text": "Baby..."
+		},
+		{
+			"sound": "boyfriendText",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"bg": "",
+			"expression": "fist",
+			"text": "UNLESS you guys can beat me in a sing-off! Then you can have her."
+		},
+		{
+			"sound": "gfText",
+			"speed": 0.05,
+			"portrait": "gf",
+			"boxState": "normal",
+			"bg": "",
+			"expression": "grimace",
+			"text": "Bitch..."
+		},
+		{
+			"sound": "boyfriendText",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"bg": "",
+			"expression": "fist",
+			"text": "Issa good deal ain't it?"
+		},
+		{
+			"sound": "skumpText",
+			"speed": 0.05,
+			"portrait": "spooky",
+			"boxState": "normal",
+			"bg": "",
+			"expression": "happy",
+			"text": "It sounds so fun! Let's go for it, fren!!"
+		}
+	]
+}

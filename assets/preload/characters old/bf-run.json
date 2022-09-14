@@ -1,0 +1,122 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				-3,
+				-25
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "BF TOP NOTE LEFT"
+		},
+		{
+			"offsets": [
+				-4,
+				-25
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "BF TOP NOTE DOWN"
+		},
+		{
+			"offsets": [
+				-7,
+				-23
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP",
+			"indices": [],
+			"name": "BF TOP NOTE UP"
+		},
+		{
+			"offsets": [
+				-3,
+				-25
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "BF TOP NOTE RIGHT"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-62,
+				-9
+			],
+			"anim": "singRIGHTmiss",
+			"fps": 24,
+			"name": "BF TOP INVISIBLE",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-25,
+				-6
+			],
+			"anim": "singLEFTmiss",
+			"fps": 24,
+			"name": "BF TOP INVISIBLE",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-55,
+				51
+			],
+			"anim": "singUPmiss",
+			"fps": 24,
+			"name": "BF TOP INVISIBLE",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-63,
+				-64
+			],
+			"anim": "singDOWNmiss",
+			"fps": 24,
+			"name": "BF TOP INVISIBLE",
+			"indices": []
+		},
+		{
+			"offsets": [
+				11,
+				-2
+			],
+			"loop": true,
+			"fps": 24,
+			"anim": "idle",
+			"indices": [],
+			"name": "BF TOP0"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/bfRunningTop",
+	"position": [
+		-90,
+		135
+	],
+	"healthicon": "bf",
+	"flip_x": true,
+	"healthbar_colors": [
+		49,
+		176,
+		209
+	],
+	"camera_position": [
+		210,
+		120
+	],
+	"sing_duration": 4,
+	"scale": 1
+}

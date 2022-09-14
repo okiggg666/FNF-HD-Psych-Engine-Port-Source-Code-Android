@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="OMOCHAO.png">
+	<!-- Created with Adobe Animate version 22.0.0.93 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="Omochao Idle0000" x="0" y="0" width="294" height="351" pivotX="120.45" pivotY="119.4" frameX="0" frameY="-5" frameWidth="309" frameHeight="356"/>
+	<SubTexture name="Omochao Idle0001" x="0" y="0" width="294" height="351" frameX="0" frameY="-5" frameWidth="309" frameHeight="356"/>
+	<SubTexture name="Omochao Idle0002" x="294" y="0" width="295" height="351" frameX="-2" frameY="-5" frameWidth="309" frameHeight="356"/>
+	<SubTexture name="Omochao Idle0003" x="294" y="0" width="295" height="351" frameX="-2" frameY="-5" frameWidth="309" frameHeight="356"/>
+	<SubTexture name="Omochao Idle0004" x="589" y="0" width="296" height="351" frameX="-4" frameY="-5" frameWidth="309" frameHeight="356"/>
+	<SubTexture name="Omochao Idle0005" x="589" y="0" width="296" height="351" frameX="-4" frameY="-5" frameWidth="309" frameHeight="356"/>
+	<SubTexture name="Omochao Idle0006" x="885" y="0" width="297" height="355" frameX="-9" frameY="-1" frameWidth="309" frameHeight="356"/>
+	<SubTexture name="Omochao Idle0007" x="885" y="0" width="297" height="355" frameX="-9" frameY="-1" frameWidth="309" frameHeight="356"/>
+	<SubTexture name="Omochao Idle0008" x="1182" y="0" width="298" height="356" frameX="-11" frameY="0" frameWidth="309" frameHeight="356"/>
+	<SubTexture name="Omochao Idle0009" x="1182" y="0" width="298" height="356" frameX="-11" frameY="0" frameWidth="309" frameHeight="356"/>
+	<SubTexture name="Omochao Idle0010" x="1182" y="0" width="298" height="356" frameX="-11" frameY="0" frameWidth="309" frameHeight="356"/>
+	<SubTexture name="Omochao Idle0011" x="1182" y="0" width="298" height="356" frameX="-11" frameY="0" frameWidth="309" frameHeight="356"/>
+	<SubTexture name="Omochao Idle0012" x="1182" y="0" width="298" height="356" frameX="-11" frameY="0" frameWidth="309" frameHeight="356"/>
+	<SubTexture name="Omochao Idle0013" x="1182" y="0" width="298" height="356" frameX="-11" frameY="0" frameWidth="309" frameHeight="356"/>
+	<SubTexture name="Omochao NOTE DOWN0000" x="1480" y="0" width="305" height="333" pivotX="125.1" pivotY="110.8" frameX="-1" frameY="-14" frameWidth="309" frameHeight="347"/>
+	<SubTexture name="Omochao NOTE DOWN0001" x="0" y="356" width="305" height="341" frameX="-1" frameY="-6" frameWidth="309" frameHeight="347"/>
+	<SubTexture name="Omochao NOTE DOWN0002" x="305" y="356" width="309" height="347"/>
+	<SubTexture name="Omochao NOTE DOWN0003" x="305" y="356" width="309" height="347"/>
+	<SubTexture name="Omochao NOTE DOWN0004" x="305" y="356" width="309" height="347"/>
+	<SubTexture name="Omochao NOTE DOWN0005" x="305" y="356" width="309" height="347"/>
+	<SubTexture name="Omochao NOTE DOWN0006" x="305" y="356" width="309" height="347"/>
+	<SubTexture name="Omochao NOTE DOWN0007" x="305" y="356" width="309" height="347"/>
+	<SubTexture name="Omochao NOTE DOWN0008" x="305" y="356" width="309" height="347"/>
+	<SubTexture name="Omochao NOTE DOWN0009" x="305" y="356" width="309" height="347"/>
+	<SubTexture name="Omochao NOTE DOWN0010" x="305" y="356" width="309" height="347"/>
+	<SubTexture name="Omochao NOTE DOWN0011" x="305" y="356" width="309" height="347"/>
+	<SubTexture name="Omochao NOTE DOWN0012" x="305" y="356" width="309" height="347"/>
+	<SubTexture name="Omochao NOTE DOWN0013" x="305" y="356" width="309" height="347"/>
+	<SubTexture name="Omochao NOTE LEFT0000" x="614" y="356" width="269" height="357" pivotX="148.75" pivotY="114.45" frameX="0" frameY="-8" frameWidth="280" frameHeight="365"/>
+	<SubTexture name="Omochao NOTE LEFT0001" x="883" y="356" width="264" height="357" frameX="-7" frameY="-8" frameWidth="280" frameHeight="365"/>
+	<SubTexture name="Omochao NOTE LEFT0002" x="1147" y="356" width="242" height="362" frameX="-38" frameY="0" frameWidth="280" frameHeight="365"/>
+	<SubTexture name="Omochao NOTE LEFT0003" x="1147" y="356" width="242" height="362" frameX="-38" frameY="0" frameWidth="280" frameHeight="365"/>
+	<SubTexture name="Omochao NOTE LEFT0004" x="1147" y="356" width="242" height="362" frameX="-38" frameY="0" frameWidth="280" frameHeight="365"/>
+	<SubTexture name="Omochao NOTE LEFT0005" x="1147" y="356" width="242" height="362" frameX="-38" frameY="0" frameWidth="280" frameHeight="365"/>
+	<SubTexture name="Omochao NOTE LEFT0006" x="1147" y="356" width="242" height="362" frameX="-38" frameY="0" frameWidth="280" frameHeight="365"/>
+	<SubTexture name="Omochao NOTE LEFT0007" x="1147" y="356" width="242" height="362" frameX="-38" frameY="0" frameWidth="280" frameHeight="365"/>
+	<SubTexture name="Omochao NOTE LEFT0008" x="1147" y="356" width="242" height="362" frameX="-38" frameY="0" frameWidth="280" frameHeight="365"/>
+	<SubTexture name="Omochao NOTE LEFT0009" x="1147" y="356" width="242" height="362" frameX="-38" frameY="0" frameWidth="280" frameHeight="365"/>
+	<SubTexture name="Omochao NOTE LEFT0010" x="1147" y="356" width="242" height="362" frameX="-38" frameY="0" frameWidth="280" frameHeight="365"/>
+	<SubTexture name="Omochao NOTE LEFT0011" x="1147" y="356" width="242" height="362" frameX="-38" frameY="0" frameWidth="280" frameHeight="365"/>
+	<SubTexture name="Omochao NOTE LEFT0012" x="1147" y="356" width="242" height="362" frameX="-38" frameY="0" frameWidth="280" frameHeight="365"/>
+	<SubTexture name="Omochao NOTE LEFT0013" x="1147" y="356" width="242" height="362" frameX="-38" frameY="0" frameWidth="280" frameHeight="365"/>
+	<SubTexture name="Omochao NOTE RIGHT0000" x="1389" y="356" width="281" height="361" pivotX="116.65" pivotY="127.1" frameX="-14" frameY="0" frameWidth="295" frameHeight="361"/>
+	<SubTexture name="Omochao NOTE RIGHT0001" x="1670" y="356" width="284" height="361" frameX="-9" frameY="0" frameWidth="295" frameHeight="361"/>
+	<SubTexture name="Omochao NOTE RIGHT0002" x="0" y="718" width="281" height="355" frameX="0" frameY="-5" frameWidth="295" frameHeight="361"/>
+	<SubTexture name="Omochao NOTE RIGHT0003" x="0" y="718" width="281" height="355" frameX="0" frameY="-5" frameWidth="295" frameHeight="361"/>
+	<SubTexture name="Omochao NOTE RIGHT0004" x="0" y="718" width="281" height="355" frameX="0" frameY="-5" frameWidth="295" frameHeight="361"/>
+	<SubTexture name="Omochao NOTE RIGHT0005" x="0" y="718" width="281" height="355" frameX="0" frameY="-5" frameWidth="295" frameHeight="361"/>
+	<SubTexture name="Omochao NOTE RIGHT0006" x="0" y="718" width="281" height="355" frameX="0" frameY="-5" frameWidth="295" frameHeight="361"/>
+	<SubTexture name="Omochao NOTE RIGHT0007" x="0" y="718" width="281" height="355" frameX="0" frameY="-5" frameWidth="295" frameHeight="361"/>
+	<SubTexture name="Omochao NOTE RIGHT0008" x="0" y="718" width="281" height="355" frameX="0" frameY="-5" frameWidth="295" frameHeight="361"/>
+	<SubTexture name="Omochao NOTE RIGHT0009" x="0" y="718" width="281" height="355" frameX="0" frameY="-5" frameWidth="295" frameHeight="361"/>
+	<SubTexture name="Omochao NOTE RIGHT0010" x="0" y="718" width="281" height="355" frameX="0" frameY="-5" frameWidth="295" frameHeight="361"/>
+	<SubTexture name="Omochao NOTE RIGHT0011" x="0" y="718" width="281" height="355" frameX="0" frameY="-5" frameWidth="295" frameHeight="361"/>
+	<SubTexture name="Omochao NOTE RIGHT0012" x="0" y="718" width="281" height="355" frameX="0" frameY="-5" frameWidth="295" frameHeight="361"/>
+	<SubTexture name="Omochao NOTE RIGHT0013" x="0" y="718" width="281" height="355" frameX="0" frameY="-5" frameWidth="295" frameHeight="361"/>
+	<SubTexture name="Omochao NOTE UP0000" x="281" y="718" width="291" height="368" pivotX="125.15" pivotY="128.95" frameX="0" frameY="0" frameWidth="302" frameHeight="368"/>
+	<SubTexture name="Omochao NOTE UP0001" x="572" y="718" width="291" height="362" frameX="0" frameY="-6" frameWidth="302" frameHeight="368"/>
+	<SubTexture name="Omochao NOTE UP0002" x="863" y="718" width="297" height="355" frameX="-5" frameY="-13" frameWidth="302" frameHeight="368"/>
+	<SubTexture name="Omochao NOTE UP0003" x="863" y="718" width="297" height="355" frameX="-5" frameY="-13" frameWidth="302" frameHeight="368"/>
+	<SubTexture name="Omochao NOTE UP0004" x="863" y="718" width="297" height="355" frameX="-5" frameY="-13" frameWidth="302" frameHeight="368"/>
+	<SubTexture name="Omochao NOTE UP0005" x="863" y="718" width="297" height="355" frameX="-5" frameY="-13" frameWidth="302" frameHeight="368"/>
+	<SubTexture name="Omochao NOTE UP0006" x="863" y="718" width="297" height="355" frameX="-5" frameY="-13" frameWidth="302" frameHeight="368"/>
+	<SubTexture name="Omochao NOTE UP0007" x="863" y="718" width="297" height="355" frameX="-5" frameY="-13" frameWidth="302" frameHeight="368"/>
+	<SubTexture name="Omochao NOTE UP0008" x="863" y="718" width="297" height="355" frameX="-5" frameY="-13" frameWidth="302" frameHeight="368"/>
+	<SubTexture name="Omochao NOTE UP0009" x="863" y="718" width="297" height="355" frameX="-5" frameY="-13" frameWidth="302" frameHeight="368"/>
+	<SubTexture name="Omochao NOTE UP0010" x="863" y="718" width="297" height="355" frameX="-5" frameY="-13" frameWidth="302" frameHeight="368"/>
+	<SubTexture name="Omochao NOTE UP0011" x="863" y="718" width="297" height="355" frameX="-5" frameY="-13" frameWidth="302" frameHeight="368"/>
+	<SubTexture name="Omochao NOTE UP0012" x="863" y="718" width="297" height="355" frameX="-5" frameY="-13" frameWidth="302" frameHeight="368"/>
+	<SubTexture name="Omochao NOTE UP0013" x="863" y="718" width="297" height="355" frameX="-5" frameY="-13" frameWidth="302" frameHeight="368"/>
+</TextureAtlas>

@@ -1,0 +1,60 @@
+{
+	"dialogue": [
+		{
+			"sound": "gfText",
+			"speed": 0.05,
+			"portrait": "gf",
+			"boxState": "normal",
+			"expression": "smile",
+			"text": "You don't have any special powers or anything BF..."
+		},
+		{
+			"sound": "gfText",
+			"speed": 0.05,
+			"portrait": "gf",
+			"boxState": "normal",
+			"expression": "smile",
+			"text": "But I swear every moment I spend with you feels like magic."
+		},
+		{
+			"sound": "boyfriendText",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "default",
+			"text": "GF, promise me you'll always be here for me."
+		},
+		{
+			"sound": "boyfriendText",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "clear",
+			"text": "No matter how crazy shit starts getting, that you'll be by my side."
+		},
+		{
+			"sound": "gfText",
+			"speed": 0.05,
+			"portrait": "gf",
+			"boxState": "normal",
+			"expression": "default",
+			"text": "You know I'm not goin' anywhere. You're my favorite, I value you too much."
+		},
+		{
+			"sound": "boyfriendText",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "confused",
+			"text": "...favorite what?"
+		},
+		{
+			"sound": "gfText",
+			"speed": 0.05,
+			"portrait": "gf",
+			"boxState": "normal",
+			"expression": "giggle",
+			"text": "Don't worry about it hon."
+		}
+	]
+}

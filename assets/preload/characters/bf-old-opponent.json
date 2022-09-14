@@ -1,0 +1,100 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				-5,
+				0
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "Idle0",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				33,
+				4
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "Sing Right0",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				3,
+				-58
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "Sing Down0",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-14,
+				41
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "Sing Up0",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-25,
+				-6
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "Sing Left0",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-17,
+				3
+			],
+			"anim": "hey",
+			"fps": 24,
+			"name": "BF HEY!!0",
+			"indices": []
+		},
+		{
+			"loop": true,
+			"offsets": [
+				3,
+				13
+			],
+			"anim": "scared",
+			"fps": 24,
+			"name": "BF idle shaking0",
+			"indices": []
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/bfHD-old",
+	"position": [
+		0,
+		490
+	],
+	"healthicon": "bf-old-hd",
+	"flip_x": true,
+	"healthbar_colors": [
+		49,
+		176,
+		209
+	],
+	"camera_position": [
+		-10,
+		-150
+	],
+	"sing_duration": 4,
+	"scale": 1
+}

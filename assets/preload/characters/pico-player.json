@@ -1,0 +1,122 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				0
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "Pico Idle0",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				67,
+				-27
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "Pico Up0",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				142,
+				-172
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "Pico Down0",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				102,
+				-28
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "Pico Right0",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-77,
+				-45
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "Pico Left0",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				151,
+				-171
+			],
+			"anim": "singDOWNmiss",
+			"fps": 24,
+			"name": "Pico Cracked Down0",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				8,
+				21
+			],
+			"anim": "singUPmiss",
+			"fps": 24,
+			"name": "Pico Cracked Up0",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				112,
+				-28
+			],
+			"anim": "singRIGHTmiss",
+			"fps": 24,
+			"name": "Pico Cracked Right0",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-86,
+				-46
+			],
+			"anim": "singLEFTmiss",
+			"fps": 24,
+			"name": "Pico Cracked Left0",
+			"indices": []
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/Pico",
+	"position": [
+		-50,
+		240
+	],
+	"healthicon": "pico",
+	"flip_x": false,
+	"healthbar_colors": [
+		183,
+		216,
+		85
+	],
+	"camera_position": [
+		60,
+		110
+	],
+	"sing_duration": 4,
+	"scale": 1
+}

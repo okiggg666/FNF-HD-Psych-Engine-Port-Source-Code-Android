@@ -1,0 +1,31 @@
+{
+	"storyName": "",
+	"difficulties": "hard",
+	"hideFreeplay": false,
+	"weekBackground": "",
+	"freeplayColor": [
+		146,
+		113,
+		253
+	],
+	"weekBefore": "tutorial",
+	"startUnlocked": true,
+	"weekCharacters": [
+		"",
+		"",
+		""
+	],
+	"songs": [
+		[
+			"happy time",
+			"omochao",
+			[
+				95,
+				180,
+				255
+			]
+		]
+	],
+	"hideStoryMode": true,
+	"weekName": "Sonic week"
+}

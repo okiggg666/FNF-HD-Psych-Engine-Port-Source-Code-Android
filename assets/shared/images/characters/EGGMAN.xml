@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="EGGMAN.png">
+	<!-- Created with Adobe Animate version 22.0.0.93 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="EGGMAN0000" x="0" y="0" width="1007" height="649" pivotX="492.35" pivotY="328.25" frameX="0" frameY="-7" frameWidth="1010" frameHeight="656"/>
+	<SubTexture name="EGGMAN0001" x="0" y="0" width="1007" height="649" frameX="0" frameY="-7" frameWidth="1010" frameHeight="656"/>
+	<SubTexture name="EGGMAN0002" x="1007" y="0" width="1006" height="649" frameX="-1" frameY="-7" frameWidth="1010" frameHeight="656"/>
+	<SubTexture name="EGGMAN0003" x="1007" y="0" width="1006" height="649" frameX="-1" frameY="-7" frameWidth="1010" frameHeight="656"/>
+	<SubTexture name="EGGMAN0004" x="2013" y="0" width="1006" height="653" frameX="-2" frameY="-3" frameWidth="1010" frameHeight="656"/>
+	<SubTexture name="EGGMAN0005" x="2013" y="0" width="1006" height="653" frameX="-2" frameY="-3" frameWidth="1010" frameHeight="656"/>
+	<SubTexture name="EGGMAN0006" x="3019" y="0" width="1006" height="653" frameX="-2" frameY="-3" frameWidth="1010" frameHeight="656"/>
+	<SubTexture name="EGGMAN0007" x="3019" y="0" width="1006" height="653" frameX="-2" frameY="-3" frameWidth="1010" frameHeight="656"/>
+	<SubTexture name="EGGMAN0008" x="0" y="653" width="1006" height="656" frameX="-2" frameY="0" frameWidth="1010" frameHeight="656"/>
+	<SubTexture name="EGGMAN0009" x="0" y="653" width="1006" height="656" frameX="-2" frameY="0" frameWidth="1010" frameHeight="656"/>
+	<SubTexture name="EGGMAN0010" x="1006" y="653" width="1006" height="656" frameX="-2" frameY="0" frameWidth="1010" frameHeight="656"/>
+	<SubTexture name="EGGMAN0011" x="1006" y="653" width="1006" height="656" frameX="-2" frameY="0" frameWidth="1010" frameHeight="656"/>
+	<SubTexture name="EGGMAN0012" x="2012" y="653" width="1006" height="656" frameX="-2" frameY="0" frameWidth="1010" frameHeight="656"/>
+	<SubTexture name="EGGMAN0013" x="3018" y="653" width="1006" height="656" frameX="-2" frameY="0" frameWidth="1010" frameHeight="656"/>
+	<SubTexture name="EGGMAN0014" x="0" y="1309" width="1006" height="648" frameX="-4" frameY="-8" frameWidth="1010" frameHeight="656"/>
+	<SubTexture name="EGGMAN0015" x="0" y="1309" width="1006" height="648" frameX="-4" frameY="-8" frameWidth="1010" frameHeight="656"/>
+	<SubTexture name="EGGMAN0016" x="1006" y="1309" width="1006" height="651" frameX="-3" frameY="-5" frameWidth="1010" frameHeight="656"/>
+	<SubTexture name="EGGMAN0017" x="1006" y="1309" width="1006" height="651" frameX="-3" frameY="-5" frameWidth="1010" frameHeight="656"/>
+	<SubTexture name="EGGMAN0018" x="2012" y="1309" width="1006" height="655" frameX="-2" frameY="-1" frameWidth="1010" frameHeight="656"/>
+	<SubTexture name="EGGMAN0019" x="2012" y="1309" width="1006" height="655" frameX="-2" frameY="-1" frameWidth="1010" frameHeight="656"/>
+	<SubTexture name="EGGMAN0020" x="3018" y="1309" width="1006" height="656" frameX="-2" frameY="0" frameWidth="1010" frameHeight="656"/>
+	<SubTexture name="EGGMAN0021" x="3018" y="1309" width="1006" height="656" frameX="-2" frameY="0" frameWidth="1010" frameHeight="656"/>
+	<SubTexture name="EGGMAN0022" x="0" y="1965" width="1006" height="656" frameX="-2" frameY="0" frameWidth="1010" frameHeight="656"/>
+	<SubTexture name="EGGMAN0023" x="0" y="1965" width="1006" height="656" frameX="-2" frameY="0" frameWidth="1010" frameHeight="656"/>
+	<SubTexture name="EGGMAN0024" x="1006" y="1965" width="1006" height="656" frameX="-2" frameY="0" frameWidth="1010" frameHeight="656"/>
+	<SubTexture name="EGGMAN0025" x="1006" y="1965" width="1006" height="656" frameX="-2" frameY="0" frameWidth="1010" frameHeight="656"/>
+	<SubTexture name="EGGMAN0026" x="2012" y="1965" width="1006" height="656" frameX="-3" frameY="0" frameWidth="1010" frameHeight="656"/>
+	<SubTexture name="EGGMAN0027" x="2012" y="1965" width="1006" height="656" frameX="-3" frameY="0" frameWidth="1010" frameHeight="656"/>
+	<SubTexture name="EGGMAN0028" x="3018" y="1965" width="1006" height="656" frameX="-2" frameY="0" frameWidth="1010" frameHeight="656"/>
+	<SubTexture name="EGGMAN0029" x="3018" y="1965" width="1006" height="656" frameX="-2" frameY="0" frameWidth="1010" frameHeight="656"/>
+</TextureAtlas>

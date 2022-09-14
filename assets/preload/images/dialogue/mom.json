@@ -1,0 +1,206 @@
+{
+	"position": [
+		-421,
+		-440
+	],
+	"dialogue_pos": "left",
+	"scale": 0.5,
+	"image": "mom",
+	"animations": [
+		{
+			"loop_offsets": [
+				0,
+				0
+			],
+			"anim": "default",
+			"idle_offsets": [
+				0,
+				0
+			],
+			"loop_name": "mom default.png",
+			"idle_name": "mom default.png"
+		},
+		{
+			"loop_offsets": [
+				0,
+				0
+			],
+			"anim": "defaultSweat",
+			"idle_offsets": [
+				0,
+				0
+			],
+			"loop_name": "mom default sweat.png",
+			"idle_name": "mom default sweat.png"
+		},
+		{
+			"loop_offsets": [
+				0,
+				0
+			],
+			"anim": "defaultHorny",
+			"idle_offsets": [
+				0,
+				0
+			],
+			"loop_name": "mom default horny.png",
+			"idle_name": "mom default horny.png"
+		},
+		{
+			"loop_offsets": [
+				0,
+				20
+			],
+			"anim": "happy",
+			"idle_offsets": [
+				0,
+				20
+			],
+			"loop_name": "mom happy.png",
+			"idle_name": "mom happy.png"
+		},
+		{
+			"loop_offsets": [
+				31,
+				4
+			],
+			"anim": "crazy",
+			"idle_offsets": [
+				31,
+				4
+			],
+			"loop_name": "mom crazy.png",
+			"idle_name": "mom crazy.png"
+		},
+		{
+			"loop_offsets": [
+				0,
+				10
+			],
+			"anim": "laugh",
+			"idle_offsets": [
+				0,
+				10
+			],
+			"loop_name": "mom laugh.png",
+			"idle_name": "mom laugh.png"
+		},
+		{
+			"loop_offsets": [
+				0,
+				-20
+			],
+			"anim": "point",
+			"idle_offsets": [
+				0,
+				-20
+			],
+			"loop_name": "mom point.png",
+			"idle_name": "mom point.png"
+		},
+		{
+			"loop_offsets": [
+				0,
+				0
+			],
+			"anim": "seduce",
+			"idle_offsets": [
+				0,
+				0
+			],
+			"loop_name": "mom seduce.png",
+			"idle_name": "mom seduce.png"
+		},
+		{
+			"loop_offsets": [
+				0,
+				20
+			],
+			"anim": "smirk",
+			"idle_offsets": [
+				0,
+				20
+			],
+			"loop_name": "mom smirk.png",
+			"idle_name": "mom smirk.png"
+		},
+		{
+			"loop_offsets": [
+				0,
+				0
+			],
+			"anim": "angry",
+			"idle_offsets": [
+				0,
+				0
+			],
+			"loop_name": "mom angry.png",
+			"idle_name": "mom angry.png"
+		},
+		{
+			"loop_offsets": [
+				0,
+				0
+			],
+			"anim": "grab",
+			"idle_offsets": [
+				0,
+				0
+			],
+			"loop_name": "mom grab.png",
+			"idle_name": "mom grab.png"
+		},
+		{
+			"loop_offsets": [
+				-11,
+				0
+			],
+			"anim": "horny1",
+			"idle_offsets": [
+				-11,
+				0
+			],
+			"loop_name": "mom horny 1.png",
+			"idle_name": "mom horny 1.png"
+		},
+		{
+			"loop_offsets": [
+				-11,
+				0
+			],
+			"anim": "horny2",
+			"idle_offsets": [
+				-11,
+				0
+			],
+			"loop_name": "mom horny 2.png",
+			"idle_name": "mom horny 2.png"
+		},
+		{
+			"loop_offsets": [
+				0,
+				0
+			],
+			"anim": "horny3",
+			"idle_offsets": [
+				0,
+				0
+			],
+			"loop_name": "mom horny 3.png",
+			"idle_name": "mom horny 3.png"
+		},
+		{
+			"loop_offsets": [
+				0,
+				90
+			],
+			"anim": "bore",
+			"idle_offsets": [
+				0,
+				90
+			],
+			"loop_name": "mom bore.png",
+			"idle_name": "mom bore.png"
+		}
+	]
+}

@@ -1,0 +1,14 @@
+stage
+stage-tutorial
+spooky
+philly
+limo
+mall
+mallEvil
+school
+schoolEvil
+date
+green-hills
+sonic-stage
+omochao-stage
+studio

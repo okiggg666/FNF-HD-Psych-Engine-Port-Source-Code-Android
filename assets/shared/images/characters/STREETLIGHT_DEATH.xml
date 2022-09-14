@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="STREETLIGHT_DEATH.png">
+	<!-- Created with Adobe Animate version 22.0.0.93 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="BF dead 30000" x="0" y="0" width="488" height="419" frameX="0" frameY="-478" frameWidth="1147" frameHeight="1008"/>
+	<SubTexture name="BF dead 30001" x="488" y="0" width="488" height="649" frameX="-74" frameY="-359" frameWidth="1147" frameHeight="1008"/>
+	<SubTexture name="BF dead 30002" x="976" y="0" width="488" height="758" frameX="-128" frameY="-240" frameWidth="1147" frameHeight="1008"/>
+	<SubTexture name="BF dead 30003" x="1464" y="0" width="698" height="873" frameX="-184" frameY="-121" frameWidth="1147" frameHeight="1008"/>
+	<SubTexture name="BF dead 30004" x="2162" y="0" width="963" height="987" frameX="-184" frameY="-2" frameWidth="1147" frameHeight="1008"/>
+	<SubTexture name="BF dead 30005" x="3125" y="0" width="291" height="191" frameX="-177" frameY="0" frameWidth="1147" frameHeight="1008"/>
+	<SubTexture name="BF dead 30006" x="3416" y="0" width="290" height="191" frameX="-158" frameY="-26" frameWidth="1147" frameHeight="1008"/>
+	<SubTexture name="BF dead 30007" x="3416" y="0" width="290" height="191" frameX="-138" frameY="-52" frameWidth="1147" frameHeight="1008"/>
+	<SubTexture name="BF dead 30008" x="3706" y="0" width="252" height="226" frameX="-138" frameY="-61" frameWidth="1147" frameHeight="1008"/>
+	<SubTexture name="BF dead 30009" x="3706" y="0" width="252" height="226" frameX="-148" frameY="-85" frameWidth="1147" frameHeight="1008"/>
+	<SubTexture name="BF dead 30010" x="3706" y="0" width="252" height="226" frameX="-159" frameY="-109" frameWidth="1147" frameHeight="1008"/>
+	<SubTexture name="BF dead 30011" x="0" y="987" width="303" height="180" frameX="-145" frameY="-156" frameWidth="1147" frameHeight="1008"/>
+	<SubTexture name="BF dead 30012" x="0" y="987" width="303" height="180" frameX="-177" frameY="-207" frameWidth="1147" frameHeight="1008"/>
+	<SubTexture name="BF dead 30013" x="303" y="987" width="296" height="200" frameX="-211" frameY="-247" frameWidth="1147" frameHeight="1008"/>
+	<SubTexture name="BF dead 30014" x="303" y="987" width="296" height="200" frameX="-199" frameY="-280" frameWidth="1147" frameHeight="1008"/>
+	<SubTexture name="BF dead 30015" x="303" y="987" width="296" height="200" frameX="-187" frameY="-313" frameWidth="1147" frameHeight="1008"/>
+	<SubTexture name="BF dead 30016" x="599" y="987" width="288" height="194" frameX="-177" frameY="-348" frameWidth="1147" frameHeight="1008"/>
+	<SubTexture name="BF dead 30017" x="599" y="987" width="288" height="194" frameX="-123" frameY="-376" frameWidth="1147" frameHeight="1008"/>
+	<SubTexture name="BF dead 30018" x="599" y="987" width="288" height="194" frameX="-70" frameY="-403" frameWidth="1147" frameHeight="1008"/>
+	<SubTexture name="BF dead 30019" x="887" y="987" width="228" height="259" frameX="-46" frameY="-398" frameWidth="1147" frameHeight="1008"/>
+	<SubTexture name="BF dead 30020" x="887" y="987" width="228" height="259" frameX="-106" frameY="-466" frameWidth="1147" frameHeight="1008"/>
+	<SubTexture name="BF dead 30021" x="1115" y="987" width="302" height="184" frameX="-128" frameY="-572" frameWidth="1147" frameHeight="1008"/>
+	<SubTexture name="BF dead 30022" x="1115" y="987" width="302" height="184" frameX="-104" frameY="-613" frameWidth="1147" frameHeight="1008"/>
+	<SubTexture name="BF dead 30023" x="1115" y="987" width="302" height="184" frameX="-81" frameY="-655" frameWidth="1147" frameHeight="1008"/>
+	<SubTexture name="BF dead 30024" x="1417" y="987" width="277" height="204" frameX="-69" frameY="-688" frameWidth="1147" frameHeight="1008"/>
+	<SubTexture name="BF dead 30025" x="1417" y="987" width="277" height="204" frameX="-89" frameY="-715" frameWidth="1147" frameHeight="1008"/>
+	<SubTexture name="BF dead 30026" x="1694" y="987" width="298" height="185" frameX="-100" frameY="-751" frameWidth="1147" frameHeight="1008"/>
+	<SubTexture name="BF dead 30027" x="1694" y="987" width="298" height="185" frameX="-120" frameY="-751" frameWidth="1147" frameHeight="1008"/>
+	<SubTexture name="BF dead 30028" x="1992" y="987" width="298" height="185" frameX="-140" frameY="-751" frameWidth="1147" frameHeight="1008"/>
+	<SubTexture name="BF dead 30029" x="1992" y="987" width="298" height="185" frameX="-140" frameY="-751" frameWidth="1147" frameHeight="1008"/>
+	<SubTexture name="BF dead 30030" x="1992" y="987" width="298" height="185" frameX="-140" frameY="-751" frameWidth="1147" frameHeight="1008"/>
+</TextureAtlas>

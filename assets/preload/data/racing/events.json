@@ -1,0 +1,18 @@
+{
+	"song": {
+		"speed": 2.8,
+		"stage": "philly",
+		"player1": "bf-run",
+		"player2": "sonic-run",
+		"player3": null,
+		"events": [],
+		"notes": [],
+		"splashSkin": null,
+		"validScore": false,
+		"gfVersion": "gf",
+		"bpm": 165,
+		"arrowSkin": null,
+		"needsVoices": true,
+		"song": "Racing"
+	}
+}

@@ -1,0 +1,36 @@
+{
+	"dialogue": [
+		{
+			"sound": "boyfriendText",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "oof",
+			"text": "HUH?? The lights went out?"
+		},
+		{
+			"sound": "boyfriendText",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "fist",
+			"text": "Ayo GF, I think your lights used up some of the mall's electricity, haha..."
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "fist",
+			"text": "..."
+		},
+		{
+			"sound": "boyfriendText",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "nervous2",
+			"text": "GF...?"
+		}
+	]
+}

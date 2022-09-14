@@ -1,0 +1,69 @@
+{
+	"song": {
+		"speed": 2,
+		"stage": "mall",
+		"player1": "bf-christmas",
+		"player2": "parents-christmas",
+		"player3": null,
+		"events": [
+			[
+				13818.75,
+				[
+					[
+						"Hey!",
+						"1",
+						""
+					]
+				]
+			],
+			[
+				23400,
+				[
+					[
+						"Hey!",
+						"1",
+						""
+					]
+				]
+			],
+			[
+				33000,
+				[
+					[
+						"Hey!",
+						"1",
+						""
+					]
+				]
+			],
+			[
+				42600,
+				[
+					[
+						"Hey!",
+						"1",
+						""
+					]
+				]
+			],
+			[
+				90600,
+				[
+					[
+						"Hey!",
+						"1",
+						""
+					]
+				]
+			]
+		],
+		"notes": [],
+		"splashSkin": null,
+		"validScore": false,
+		"gfVersion": "gf-christmas",
+		"bpm": 100,
+		"arrowSkin": null,
+		"needsVoices": true,
+		"song": ""
+	}
+}

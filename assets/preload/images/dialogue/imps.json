@@ -1,0 +1,76 @@
+{
+	"dialogue_pos": "center",
+	"position": [
+		-520,
+		-220
+	],
+	"scale": 0.599999999999999,
+	"animations": [
+		{
+			"loop_offsets": [
+				130,
+				0
+			],
+			"anim": "alvin",
+			"idle_offsets": [
+				130,
+				0
+			],
+			"loop_name": "alvin.png",
+			"idle_name": "alvin.png"
+		},
+		{
+			"loop_offsets": [
+				-20,
+				4
+			],
+			"anim": "bojangles",
+			"idle_offsets": [
+				-20,
+				4
+			],
+			"loop_name": "bojangles.png",
+			"idle_name": "bojangles.png"
+		},
+		{
+			"loop_offsets": [
+				-190,
+				44
+			],
+			"anim": "bubbles",
+			"idle_offsets": [
+				-190,
+				44
+			],
+			"loop_name": "bubbles.png",
+			"idle_name": "bubbles.png"
+		},
+		{
+			"loop_offsets": [
+				191,
+				-90
+			],
+			"anim": "imps",
+			"idle_offsets": [
+				191,
+				-90
+			],
+			"loop_name": "imps.png",
+			"idle_name": "imps.png"
+		},
+		{
+			"loop_offsets": [
+				260,
+				44
+			],
+			"anim": "michael",
+			"idle_offsets": [
+				260,
+				44
+			],
+			"loop_name": "michael.png",
+			"idle_name": "michael.png"
+		}
+	],
+	"image": "imps"
+}

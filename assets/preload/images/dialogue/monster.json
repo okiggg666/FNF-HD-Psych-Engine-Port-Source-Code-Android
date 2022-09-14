@@ -1,0 +1,63 @@
+{
+	"dialogue_pos": "left",
+	"position": [
+		-180,
+		-240
+	],
+	"scale": 0.5,
+	"animations": [
+		{
+			"loop_name": "monster default.png",
+			"idle_offsets": [
+				0,
+				0
+			],
+			"idle_name": "monster default.png",
+			"anim": "default",
+			"loop_offsets": [
+				0,
+				0
+			]
+		},
+		{
+			"loop_name": "monster laugh.png",
+			"idle_offsets": [
+				0,
+				30
+			],
+			"idle_name": "monster laugh.png",
+			"anim": "laugh",
+			"loop_offsets": [
+				0,
+				30
+			]
+		},
+		{
+			"loop_name": "monster smile.png",
+			"idle_offsets": [
+				66,
+				-10
+			],
+			"idle_name": "monster smile.png",
+			"anim": "smile",
+			"loop_offsets": [
+				66,
+				-10
+			]
+		},
+		{
+			"loop_name": "monster glare.png",
+			"idle_offsets": [
+				46,
+				83
+			],
+			"idle_name": "monster glare.png",
+			"anim": "glare",
+			"loop_offsets": [
+				46,
+				83
+			]
+		}
+	],
+	"image": "monster"
+}

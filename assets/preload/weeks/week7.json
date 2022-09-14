@@ -1,0 +1,49 @@
+{
+	"storyName": "sonic week",
+	"difficulties": "hard",
+	"hideFreeplay": false,
+	"weekBackground": "weekSonic",
+	"weekBefore": "tutorial",
+	"freeplayColor": [
+		146,
+		113,
+		253
+	],
+	"startUnlocked": true,
+	"hideStoryMode": false,
+	"songs": [
+		[
+			"Green hill",
+			"sonic",
+			[
+				95,
+				60,
+				255
+			]
+		],
+		[
+			"Boom",
+			"sonic",
+			[
+				95,
+				60,
+				255
+			]
+		],
+		[
+			"Racing",
+			"sonic",
+			[
+				95,
+				60,
+				255
+			]
+		]
+	],
+	"weekCharacters": [
+		"",
+		"",
+		""
+	],
+	"weekName": "Sonic week"
+}

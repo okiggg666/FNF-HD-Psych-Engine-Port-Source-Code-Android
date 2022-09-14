@@ -1,0 +1,116 @@
+{
+	"dialogue": [
+		{
+			"expression": "limit",
+			"text": "How...",
+			"boxState": "normal",
+			"sound": "dadText",
+			"speed": 0.1,
+			"portrait": "dad"
+		},
+		{
+			"expression": "limit",
+			"text": "How are you so damn good?!",
+			"boxState": "angry",
+			"sound": "dadText",
+			"speed": 0.075,
+			"portrait": "dad"
+		},
+		{
+			"expression": "default",
+			"text": "I'd do anything for your girl man. Don't you understand?",
+			"boxState": "normal",
+			"sound": "boyfriendText",
+			"speed": 0.05,
+			"portrait": "bf"
+		},
+		{
+			"expression": "default",
+			"text": "I really want her, I've proven myself worthy.",
+			"boxState": "normal",
+			"sound": "boyfriendText",
+			"speed": 0.05,
+			"portrait": "bf"
+		},
+		{
+			"expression": "angry",
+			"text": "I deserve this...I deserve, HER!",
+			"boxState": "angry",
+			"sound": "boyfriendText",
+			"speed": 0.05,
+			"portrait": "bf"
+		},
+		{
+			"expression": "blush",
+			"text": "BF...",
+			"boxState": "normal",
+			"sound": "gfText",
+			"speed": 0.05,
+			"portrait": "gf"
+		},
+		{
+			"expression": "bleed",
+			"text": "You don't deserve shit...",
+			"boxState": "normal",
+			"sound": "dadText",
+			"speed": 0.08,
+			"portrait": "dad"
+		},
+		{
+			"expression": "bleed",
+			"text": "She's been with other men, y'know.",
+			"boxState": "normal",
+			"sound": "dadText",
+			"speed": 0.08,
+			"portrait": "dad"
+		},
+		{
+			"expression": "bleed",
+			"text": "BETTER men at that, better than you'll EVER be.",
+			"boxState": "angry",
+			"sound": "dadText",
+			"speed": 0.08,
+			"portrait": "dad"
+		},
+		{
+			"expression": "default",
+			"text": "Even if they are better than me...well...",
+			"boxState": "normal",
+			"sound": "boyfriendText",
+			"speed": 0.05,
+			"portrait": "bf"
+		},
+		{
+			"expression": "default",
+			"text": "I don't care! No flaws make you a lame!",
+			"boxState": "angry",
+			"sound": "boyfriendText",
+			"speed": 0.05,
+			"portrait": "bf"
+		},
+		{
+			"expression": "default",
+			"text": "Your daughter knows what she's doing. She picked my bum-ass for a reason.",
+			"boxState": "normal",
+			"sound": "boyfriendText",
+			"speed": 0.05,
+			"portrait": "bf"
+		},
+		{
+			"expression": "clear",
+			"text": "Now stay out her business, and attend to the tightness of them jeans.",
+			"boxState": "normal",
+			"sound": "boyfriendText",
+			"speed": 0.05,
+			"portrait": "bf"
+		},
+		{
+			"expression": "bleed2",
+			"text": "...",
+			"boxState": "normal",
+			"sound": "",
+			"speed": 0.1,
+			"portrait": "dad"
+		}
+	]
+}

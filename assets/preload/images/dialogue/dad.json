@@ -1,0 +1,128 @@
+{
+	"position": [
+		-591,
+		-580
+	],
+	"dialogue_pos": "left",
+	"scale": 0.4,
+	"image": "dad",
+	"animations": [
+		{
+			"loop_offsets": [
+				1,
+				-10
+			],
+			"anim": "default",
+			"idle_offsets": [
+				1,
+				-10
+			],
+			"loop_name": "dad default.png",
+			"idle_name": "dad default.png"
+		},
+		{
+			"loop_offsets": [
+				1,
+				-11
+			],
+			"anim": "bleed",
+			"idle_offsets": [
+				1,
+				-11
+			],
+			"loop_name": "dad bleed 1.png",
+			"idle_name": "dad bleed 1.png"
+		},
+		{
+			"loop_offsets": [
+				1,
+				-11
+			],
+			"anim": "bleed2",
+			"idle_offsets": [
+				1,
+				-11
+			],
+			"loop_name": "dad bleed 2.png",
+			"idle_name": "dad bleed 2.png"
+		},
+		{
+			"loop_offsets": [
+				1,
+				-10
+			],
+			"anim": "limit",
+			"idle_offsets": [
+				1,
+				-10
+			],
+			"loop_name": "dad limit.png",
+			"idle_name": "dad limit.png"
+		},
+		{
+			"loop_offsets": [
+				1,
+				-1
+			],
+			"anim": "mic",
+			"idle_offsets": [
+				1,
+				-1
+			],
+			"loop_name": "dad mic.png",
+			"idle_name": "dad mic.png"
+		},
+		{
+			"loop_offsets": [
+				11,
+				11
+			],
+			"anim": "angry",
+			"idle_offsets": [
+				11,
+				11
+			],
+			"loop_name": "dad angry.png",
+			"idle_name": "dad angry.png"
+		},
+		{
+			"loop_offsets": [
+				50,
+				-10
+			],
+			"anim": "default2",
+			"idle_offsets": [
+				50,
+				-10
+			],
+			"loop_name": "dad default 2.png",
+			"idle_name": "dad default 2.png"
+		},
+		{
+			"loop_offsets": [
+				50,
+				-10
+			],
+			"anim": "shock",
+			"idle_offsets": [
+				50,
+				-10
+			],
+			"loop_name": "dad shock.png",
+			"idle_name": "dad shock.png"
+		},
+		{
+			"loop_offsets": [
+				50,
+				-10
+			],
+			"anim": "smile",
+			"idle_offsets": [
+				50,
+				-10
+			],
+			"loop_name": "dad smile.png",
+			"idle_name": "dad smile.png"
+		}
+	]
+}

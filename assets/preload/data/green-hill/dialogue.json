@@ -1,0 +1,236 @@
+{
+	"dialogue": [
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "nochar",
+			"boxState": "normal",
+			"expression": "default",
+			"text": "???: Hey...'ay man!"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "nochar",
+			"boxState": "normal",
+			"expression": "default",
+			"text": "???: You conscious dude?"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "nochar2",
+			"boxState": "normal",
+			"expression": "default",
+			"text": ""
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "snap",
+			"text": "!!"
+		},
+		{
+			"sound": "boyfriendText",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "scratch",
+			"text": "The hell? How'd I get outside? What's goin' on?"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "nochar",
+			"boxState": "normal",
+			"expression": "default",
+			"text": "???: You're in MY court now, lil dude!"
+		},
+		{
+			"sound": "boyfriendText",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "angry",
+			"expression": "scared",
+			"text": "HUH!?"
+		},
+		{
+			"sound": "sonicText",
+			"speed": 0.05,
+			"portrait": "sonic",
+			"boxState": "normal",
+			"expression": "default",
+			"text": "Sorry about that!"
+		},
+		{
+			"sound": "sonicText",
+			"speed": 0.05,
+			"portrait": "sonic",
+			"boxState": "normal",
+			"expression": "default",
+			"text": "You were in the way of my daily lap around Green Hill."
+		},
+		{
+			"sound": "sonicText",
+			"speed": 0.05,
+			"portrait": "sonic",
+			"boxState": "normal",
+			"expression": "default",
+			"text": "I tried stopping before I ran into you, but I guess my momentum still carried for a bit."
+		},
+		{
+			"sound": "sonicText",
+			"speed": 0.05,
+			"portrait": "sonic",
+			"boxState": "normal",
+			"expression": "laugh",
+			"text": "You good though? You looked pretty out of it."
+		},
+		{
+			"sound": "boyfriendText",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "angry",
+			"expression": "scared",
+			"text": "NAHNAHNAHNAHNAH NAH."
+		},
+		{
+			"sound": "boyfriendText",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "scared",
+			"text": "You can't just come around and start acting like this is a common occurance..."
+		},
+		{
+			"sound": "boyfriendText",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "angry",
+			"expression": "giddy",
+			"text": "YOU'RE SONIC THE FUCKIN' HEDGEHOG!!"
+		},
+		{
+			"sound": "sonicText",
+			"speed": 0.05,
+			"portrait": "sonic",
+			"boxState": "normal",
+			"expression": "default",
+			"text": "Yep, I'm no one special, just a dude who loves to chill and do good."
+		},
+		{
+			"sound": "boyfriendText",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "angry",
+			"expression": "giddy",
+			"text": "NO ONE SPECIAL??"
+		},
+		{
+			"sound": "boyfriendText",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "happy",
+			"text": "You've saved the world on a multitude of occasions, you run faster than the speed of sound,"
+		},
+		{
+			"sound": "boyfriendText",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "angry",
+			"expression": "happy",
+			"text": "And don't even get me started on you grabbin' the Chaos Emeralds. SUPER SAIYAN SHIT BRUH!"
+		},
+		{
+			"sound": "boyfriendText",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "angry",
+			"expression": "happy",
+			"text": "Not to mention you do all this NAKED! IT'S SO COOL!"
+		},
+		{
+			"sound": "sonicText",
+			"speed": 0.05,
+			"portrait": "sonic",
+			"boxState": "normal",
+			"expression": "blush",
+			"text": "Well when you put it like that...I guess I AM someone special, heh."
+		},
+		{
+			"sound": "boyfriendText",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "happy",
+			"text": "I've always wanted to be like you, ever since I was younger. My whole fit's based on your image in some ways!"
+		},
+		{
+			"sound": "sonicText",
+			"speed": 0.05,
+			"portrait": "sonic",
+			"boxState": "normal",
+			"expression": "laugh",
+			"text": "Never thought I'd meet someone as dedicated as you...a bit strange in all honesty."
+		},
+		{
+			"sound": "sonicText",
+			"speed": 0.05,
+			"portrait": "sonic",
+			"boxState": "normal",
+			"expression": "default",
+			"text": "Say, what's your favorite past time?"
+		},
+		{
+			"sound": "boyfriendText",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "confused",
+			"text": "Honestly? Rapping."
+		},
+		{
+			"sound": "boyfriendText",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "happy",
+			"text": "It's all I've been doing for the past few months. Just bein' on the grind y'know?"
+		},
+		{
+			"sound": "sonicText",
+			"speed": 0.05,
+			"portrait": "sonic",
+			"boxState": "normal",
+			"expression": "default",
+			"text": "Aw yeah! I love rap, I jam out to it constantly! I also do a little bit of free styling when I'm bored."
+		},
+		{
+			"sound": "boyfriendText",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "fist",
+			"text": "Yee yee, I've seen you emcee in some commercials before! I wanna see if it was all bluff."
+		},
+		{
+			"sound": "sonicText",
+			"speed": 0.05,
+			"portrait": "sonic",
+			"boxState": "normal",
+			"expression": "confused",
+			"text": "Commercials? That probably wasn't me, I hate public speaking and all that stuff!"
+		},
+		{
+			"sound": "sonicText",
+			"speed": 0.05,
+			"portrait": "sonic",
+			"boxState": "normal",
+			"expression": "default",
+			"text": "If you're tryna rap though, then let's chill and jam out! I've got nothin' but time."
+		}
+	]
+}

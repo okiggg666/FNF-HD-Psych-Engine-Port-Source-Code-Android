@@ -1,0 +1,184 @@
+{
+	"dialogue": [
+		{
+			"sound": "boyfriendText",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"bg": "",
+			"expression": "fist",
+			"text": "Raw as fuck! I totally aced that!"
+		},
+		{
+			"sound": "boyfriendText",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"bg": "",
+			"expression": "fist",
+			"text": "It was hard as shit, but I aced it!"
+		},
+		{
+			"sound": "boyfriendText",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"bg": "",
+			"expression": "fist",
+			"text": "I...almost died many times during it, but I'm still kickin'!"
+		},
+		{
+			"sound": "boyfriendText",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"bg": "",
+			"expression": "fist",
+			"text": "How you feelin' towards these little duders hon?"
+		},
+		{
+			"sound": "gfText",
+			"speed": 0.05,
+			"portrait": "gf",
+			"boxState": "normal",
+			"bg": "",
+			"expression": "worry",
+			"text": "They're cute and all, but I really think it's too scary here. We should leave."
+		},
+		{
+			"sound": "boyfriendText",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"bg": "",
+			"expression": "fist",
+			"text": "What, can't handle a little dark atmosphere?"
+		},
+		{
+			"sound": "gfText",
+			"speed": 0.05,
+			"portrait": "gf",
+			"boxState": "normal",
+			"bg": "",
+			"expression": "pout",
+			"text": "No, I can handle that and these two freaks of nature..."
+		},
+		{
+			"sound": "gfText",
+			"speed": 0.05,
+			"portrait": "gf",
+			"boxState": "normal",
+			"bg": "",
+			"expression": "nervous2",
+			"text": "If anything, it's the thunder for me."
+		},
+		{
+			"sound": "boyfriendText",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"bg": "",
+			"expression": "nervous2",
+			"text": "...I get it."
+		},
+		{
+			"sound": "skidText",
+			"speed": 0.05,
+			"portrait": "spooky",
+			"boxState": "normal",
+			"bg": "",
+			"expression": "sad",
+			"text": "(S) Aw come on! Don't leave so soon, fren!"
+		},
+		{
+			"sound": "pumpText",
+			"speed": 0.05,
+			"portrait": "spooky",
+			"boxState": "normal",
+			"bg": "",
+			"expression": "sad",
+			"text": "(P) Espooky month barely even started!!"
+		},
+		{
+			"sound": "boyfriendText",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"bg": "",
+			"expression": "confused",
+			"text": "Spooky month?"
+		},
+		{
+			"sound": "skidText",
+			"speed": 0.05,
+			"portrait": "spooky",
+			"boxState": "normal",
+			"bg": "",
+			"expression": "default",
+			"text": "(S) You don't know 'bout espooky month!?"
+		},
+		{
+			"sound": "gfText",
+			"speed": 0.05,
+			"portrait": "gf",
+			"boxState": "normal",
+			"bg": "",
+			"expression": "default",
+			"text": "No, please enlighten us!"
+		},
+		{
+			"sound": "pumpText",
+			"speed": 0.05,
+			"portrait": "spooky",
+			"boxState": "normal",
+			"bg": "",
+			"expression": "default",
+			"text": "(P) Well it's...it's when you enjoy, ya know, spooky things!"
+		},
+		{
+			"sound": "pumpText",
+			"speed": 0.05,
+			"portrait": "spooky",
+			"boxState": "normal",
+			"bg": "",
+			"expression": "default",
+			"text": "(P) Eating spooky candies, discovering spooky monsters..."
+		},
+		{
+			"sound": "skidText",
+			"speed": 0.05,
+			"portrait": "spooky",
+			"boxState": "normal",
+			"bg": "",
+			"expression": "default",
+			"text": "(S) And doing the spooky dance!!"
+		},
+		{
+			"sound": "boyfriendText",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"bg": "",
+			"expression": "confused",
+			"text": "Is that what you guys were doing while you were singing?"
+		},
+		{
+			"sound": "boyfriendText",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"bg": "",
+			"expression": "smile",
+			"text": "I kinda wanna try it out too, honestly!"
+		},
+		{
+			"sound": "pumpText",
+			"speed": 0.05,
+			"portrait": "spooky",
+			"boxState": "normal",
+			"bg": "",
+			"expression": "happy",
+			"text": "(P) We can teach you gringo! Please queue the next song, senora GF!"
+		}
+	]
+}

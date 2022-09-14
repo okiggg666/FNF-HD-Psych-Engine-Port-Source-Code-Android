@@ -1,0 +1,300 @@
+{
+	"dialogue": [
+		{
+			"sound": "boyfriendText",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "smile",
+			"text": "Awww look at us, ain't we just one big, happy, discombobulated family?"
+		},
+		{
+			"sound": "boyfriendText",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "smile",
+			"text": "All adorbs and shit!"
+		},
+		{
+			"sound": "boyfriendText",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "angry",
+			"text": "Now let me talk to Santa!"
+		},
+		{
+			"sound": "dadText",
+			"speed": 0.05,
+			"portrait": "dad",
+			"boxState": "normal",
+			"expression": "default2",
+			"text": "You're not tryna spend some more time with us?"
+		},
+		{
+			"sound": "dadText",
+			"speed": 0.05,
+			"portrait": "dad",
+			"boxState": "normal",
+			"expression": "smile",
+			"text": "I think this is a wonderful bonding experience."
+		},
+		{
+			"sound": "gfText",
+			"speed": 0.05,
+			"portrait": "gf",
+			"boxState": "normal",
+			"expression": "angry",
+			"text": "At the expense of others!"
+		},
+		{
+			"sound": "gfText",
+			"speed": 0.05,
+			"portrait": "gf",
+			"boxState": "normal",
+			"expression": "angry",
+			"text": "Just look what you're doing to poor Santa."
+		},
+		{
+			"sound": "gfText",
+			"speed": 0.05,
+			"portrait": "gf",
+			"boxState": "normal",
+			"expression": "point",
+			"text": "By the way, what makes you guys think I'm all jolly with you two now?"
+		},
+		{
+			"sound": "gfText",
+			"speed": 0.05,
+			"portrait": "gf",
+			"boxState": "normal",
+			"expression": "point",
+			"text": "At this point, I think you have some underlying reason for attacking my boyfriend."
+		},
+		{
+			"sound": "gfText",
+			"speed": 0.05,
+			"portrait": "gf",
+			"boxState": "angry",
+			"expression": "angry",
+			"text": "You either want him dead or want him working for you, huh?!"
+		},
+		{
+			"sound": "momText",
+			"speed": 0.05,
+			"portrait": "mom",
+			"boxState": "normal",
+			"expression": "default",
+			"text": "You're too young to understand, hon'."
+		},
+		{
+			"sound": "dadText",
+			"speed": 0.05,
+			"portrait": "dad",
+			"boxState": "normal",
+			"expression": "angry",
+			"text": "He's got a power that no man on Earth could ever hope to possess."
+		},
+		{
+			"sound": "boyfriendText",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "angry",
+			"expression": "defaultSweat",
+			"text": "THE FUCK YOU MEAN? I JUST BE RAPPIN' N' SINGIN' N' SHIT!"
+		},
+		{
+			"sound": "dadText",
+			"speed": 0.05,
+			"portrait": "dad",
+			"boxState": "normal",
+			"expression": "angry",
+			"text": "That's the problem, Boyfriend."
+		},
+		{
+			"sound": "dadText",
+			"speed": 0.05,
+			"portrait": "dad",
+			"boxState": "normal",
+			"expression": "angry",
+			"text": "ALL you do is rap and sing. Yet, for some reason, it's so entrancing."
+		},
+		{
+			"sound": "dadText",
+			"speed": 0.05,
+			"portrait": "dad",
+			"boxState": "normal",
+			"expression": "angry",
+			"text": "You don't even know the weight of your powers."
+		},
+		{
+			"sound": "boyfriendText",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "nervous2",
+			"text": "...I don't know if it's that deep."
+		},
+		{
+			"sound": "momText",
+			"speed": 0.05,
+			"portrait": "mom",
+			"boxState": "normal",
+			"expression": "point",
+			"text": "Whether you wanna believe it or not, you have, and will continue to, harm innocents."
+		},
+		{
+			"sound": "momText",
+			"speed": 0.05,
+			"portrait": "mom",
+			"boxState": "normal",
+			"expression": "seduce",
+			"text": "What's worse is that you'll never understand 'til it's too late."
+		},
+		{
+			"sound": "momText",
+			"speed": 0.05,
+			"portrait": "mom",
+			"boxState": "normal",
+			"expression": "happy",
+			"text": "But hey, that's fine suga."
+		},
+		{
+			"sound": "momText",
+			"speed": 0.05,
+			"portrait": "mom",
+			"boxState": "normal",
+			"expression": "happy",
+			"text": "Keep that blissful ignorance."
+		},
+		{
+			"sound": "momText",
+			"speed": 0.05,
+			"portrait": "mom",
+			"boxState": "normal",
+			"expression": "horny1",
+			"text": "I adore it."
+		},
+		{
+			"sound": "gfText",
+			"speed": 0.05,
+			"portrait": "gf",
+			"boxState": "normal",
+			"expression": "confused",
+			"text": "Wait wait, until it's too late for what?"
+		},
+		{
+			"sound": "dadText",
+			"speed": 0.05,
+			"portrait": "dad",
+			"boxState": "normal",
+			"expression": "smile",
+			"text": "Speaking of blissful, why don't we go back to our family bonding, eh Gilrfriend?"
+		},
+		{
+			"sound": "gfText",
+			"speed": 0.05,
+			"portrait": "gf",
+			"boxState": "normal",
+			"expression": "grimace",
+			"text": "eugh..."
+		},
+		{
+			"sound": "darnellText",
+			"speed": 0.05,
+			"portrait": "darnell",
+			"boxState": "normal",
+			"expression": "happy",
+			"text": "AYO PICO, NENE COME SEE THIS! Santa's finna get shot!"
+		},
+		{
+			"sound": "boyfriendText",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "confused",
+			"text": "Pico?! Aren't you s'posed to be in a pocket dimension or somethin'?"
+		},
+		{
+			"sound": "picoText",
+			"speed": 0.05,
+			"portrait": "pico",
+			"boxState": "normal",
+			"expression": "grimace",
+			"text": "I'm not a pet, dumbass. I can still enjoy a Christmas evenin' at the mall."
+		},
+		{
+			"sound": "picoText",
+			"speed": 0.05,
+			"portrait": "pico",
+			"boxState": "normal",
+			"expression": "happy",
+			"text": "Now let's go peep this function, Nene!"
+		},
+		{
+			"sound": "neneText",
+			"speed": 0.05,
+			"portrait": "nene",
+			"boxState": "normal",
+			"expression": "happy",
+			"text": "Fuck an escalator! I could just fall faster."
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "nochar",
+			"boxState": "normal",
+			"expression": "default",
+			"text": "*splatter*"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "pico",
+			"boxState": "normal",
+			"expression": "gloom",
+			"text": "..."
+		},
+		{
+			"sound": "darnellText",
+			"speed": 0.05,
+			"portrait": "darnell",
+			"boxState": "normal",
+			"expression": "default",
+			"text": "11. Shit can neva go right with you white bitches around."
+		},
+		{
+			"sound": "boyfriendText",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "fist",
+			"text": "Alright pops, gimme somethin' more fast-paced this time! Last one was a sleeper."
+		},
+		{
+			"sound": "dadText",
+			"speed": 0.05,
+			"portrait": "dad",
+			"boxState": "normal",
+			"expression": "default2",
+			"text": "No problem, after this, I will crush your god damn balls, boh..."
+		},
+		{
+			"sound": "boyfriendText",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "clear",
+			"text": "You not touching ma balls..."
+		},
+		{
+			"sound": "boyfriendText",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "angry",
+			"expression": "default",
+			"text": "I'll murk you on everything!"
+		}
+	]
+}

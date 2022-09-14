@@ -1,0 +1,172 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "idle",
+			"indices": [],
+			"name": "Sonic Idle"
+		},
+		{
+			"offsets": [
+				31,
+				31
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "Sonic NOTE Down0"
+		},
+		{
+			"offsets": [
+				-20,
+				12
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP",
+			"indices": [],
+			"name": "Sonic NOTE Up0"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				20,
+				63
+			],
+			"anim": "WOO!",
+			"fps": 24,
+			"name": "WOO!",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				9,
+				30
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "Sonic NOTE Right0",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				20,
+				10
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "Sonic NOTE Left0",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				76,
+				40
+			],
+			"anim": "firstDeath",
+			"fps": 24,
+			"name": "SONIC DEAD",
+			"indices": []
+		},
+		{
+			"offsets": [
+				78,
+				-309
+			],
+			"loop": true,
+			"fps": 24,
+			"anim": "deathLoop",
+			"indices": [
+				12,
+				13
+			],
+			"name": "SONIC DEAD"
+		},
+		{
+			"offsets": [
+				78,
+				-309
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "deathConfirm",
+			"indices": [
+				12,
+				13
+			],
+			"name": "SONIC DEAD"
+		},
+		{
+			"offsets": [
+				11,
+				28
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singDOWNmiss",
+			"loop": false,
+			"name": "Sonic NOTE Down MISS"
+		},
+		{
+			"offsets": [
+				-14,
+				9
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singUPmiss",
+			"loop": false,
+			"name": "Sonic NOTE Up MISS"
+		},
+		{
+			"offsets": [
+				19,
+				10
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singRIGHTmiss",
+			"loop": false,
+			"name": "Sonic NOTE Left MISS"
+		},
+		{
+			"offsets": [
+				18,
+				27
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singLEFTmiss",
+			"loop": false,
+			"name": "Sonic NOTE Right MISS"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/SONIC",
+	"position": [
+		0,
+		160
+	],
+	"healthicon": "sonic",
+	"flip_x": false,
+	"healthbar_colors": [
+		100,
+		120,
+		255
+	],
+	"camera_position": [
+		100,
+		-490
+	],
+	"sing_duration": 6.1,
+	"scale": 1
+}

@@ -1,0 +1,175 @@
+{
+	"dialogue": [
+		{
+			"sound": "gfText",
+			"speed": 0.05,
+			"portrait": "gf",
+			"boxState": "angry",
+			"bg": "",
+			"expression": "surprised",
+			"text": "Are you okay?!"
+		},
+		{
+			"sound": "",
+			"speed": 0.12,
+			"portrait": "bf",
+			"boxState": "normal",
+			"bg": "",
+			"expression": "dazed",
+			"text": "..."
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"bg": "",
+			"expression": "snap",
+			"text": "...!!"
+		},
+		{
+			"sound": "boyfriendText",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"bg": "",
+			"expression": "nervous2",
+			"text": "What...what even??"
+		},
+		{
+			"sound": "skidText",
+			"speed": 0.05,
+			"portrait": "spooky",
+			"boxState": "normal",
+			"bg": "",
+			"expression": "default",
+			"text": "(S) Are you okay fren? You blacked out, probably from too much spooky dancing!"
+		},
+		{
+			"sound": "boyfriendText",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"bg": "",
+			"expression": "nervous2",
+			"text": "No, I...what?"
+		},
+		{
+			"sound": "boyfriendText",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "angry",
+			"bg": "",
+			"expression": "nervous2",
+			"text": "You guys didn't see that thing?!"
+		},
+		{
+			"sound": "gfText",
+			"speed": 0.05,
+			"portrait": "gf",
+			"boxState": "normal",
+			"bg": "",
+			"expression": "surprised",
+			"text": "What are you on about?"
+		},
+		{
+			"sound": "boyfriendText",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"bg": "",
+			"expression": "nervous2",
+			"text": "I must be going mad...either way, we done here! No more."
+		},
+		{
+			"sound": "boyfriendText",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"bg": "",
+			"expression": "clear",
+			"text": "It was fun, I guess, but my bowels are gettin' irritable."
+		},
+		{
+			"sound": "boyfriendText",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"bg": "",
+			"expression": "confused",
+			"text": "By the way, what were you two's names?"
+		},
+		{
+			"sound": "skidText",
+			"speed": 0.05,
+			"portrait": "spooky",
+			"boxState": "normal",
+			"bg": "",
+			"expression": "happy",
+			"text": "(S) I'm Skid!"
+		},
+		{
+			"sound": "pumpText",
+			"speed": 0.05,
+			"portrait": "spooky",
+			"boxState": "normal",
+			"bg": "",
+			"expression": "happy",
+			"text": "(P) I'm pump!"
+		},
+		{
+			"sound": "skumpText",
+			"speed": 0.05,
+			"portrait": "spooky",
+			"boxState": "angry",
+			"bg": "",
+			"expression": "happy",
+			"text": "And we're the Spooky Kids!!"
+		},
+		{
+			"sound": "gfText",
+			"speed": 0.05,
+			"portrait": "gf",
+			"boxState": "normal",
+			"bg": "",
+			"expression": "default",
+			"text": "Awe, I change my mind, they're so cute!"
+		},
+		{
+			"sound": "gfText",
+			"speed": 0.05,
+			"portrait": "gf",
+			"boxState": "normal",
+			"bg": "",
+			"expression": "smile",
+			"text": "Hope we have kids as ambitious as them one day."
+		},
+		{
+			"sound": "boyfriendText",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"bg": "",
+			"expression": "nervous2",
+			"text": "The more I gotta do shit like this, the less fertile I become."
+		},
+		{
+			"sound": "boyfriendText",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"bg": "",
+			"expression": "clear",
+			"text": "But it's coo! We do it for the culture! And the sex."
+		},
+		{
+			"sound": "boyfriendText",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"bg": "",
+			"expression": "fist",
+			"text": "Let's get going lady!"
+		}
+	]
+}

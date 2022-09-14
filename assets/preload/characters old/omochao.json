@@ -1,0 +1,78 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				0
+			],
+			"fps": 24,
+			"anim": "idle",
+			"indices": [],
+			"name": "Omochao Idle"
+		},
+		{
+			"offsets": [
+				11,
+				4
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "Omochao NOTE LEFT"
+		},
+		{
+			"offsets": [
+				4,
+				-9
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "Omochao NOTE DOWN"
+		},
+		{
+			"offsets": [
+				0,
+				11
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP",
+			"indices": [],
+			"name": "Omochao NOTE UP"
+		},
+		{
+			"offsets": [
+				-4,
+				3
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "Omochao NOTE RIGHT"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/OMOCHAO",
+	"position": [
+		0,
+		315
+	],
+	"healthicon": "omochao",
+	"flip_x": false,
+	"healthbar_colors": [
+		60,
+		195,
+		255
+	],
+	"camera_position": [
+		0,
+		0
+	],
+	"sing_duration": 6.1,
+	"scale": 1
+}

@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="bojangles.png">
+	<!-- Created with Adobe Animate version 22.0.0.93 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="bojanglesDANCE0000" x="0" y="0" width="380" height="408" frameX="-1" frameY="0" frameWidth="495" frameHeight="409"/>
+	<SubTexture name="bojanglesDANCE0001" x="380" y="0" width="380" height="390" frameX="-1" frameY="-18" frameWidth="495" frameHeight="409"/>
+	<SubTexture name="bojanglesDANCE0002" x="760" y="0" width="378" height="386" frameX="-2" frameY="-22" frameWidth="495" frameHeight="409"/>
+	<SubTexture name="bojanglesDANCE0003" x="760" y="0" width="378" height="386" frameX="-2" frameY="-22" frameWidth="495" frameHeight="409"/>
+	<SubTexture name="bojanglesDANCE0004" x="760" y="0" width="378" height="386" frameX="-2" frameY="-22" frameWidth="495" frameHeight="409"/>
+	<SubTexture name="bojanglesDANCE0005" x="1138" y="0" width="380" height="384" frameX="0" frameY="-24" frameWidth="495" frameHeight="409"/>
+	<SubTexture name="bojanglesDANCE0006" x="1138" y="0" width="380" height="384" frameX="0" frameY="-24" frameWidth="495" frameHeight="409"/>
+	<SubTexture name="bojanglesDANCE0007" x="1518" y="0" width="375" height="379" frameX="-5" frameY="-29" frameWidth="495" frameHeight="409"/>
+	<SubTexture name="bojanglesDANCE0008" x="1518" y="0" width="375" height="379" frameX="-5" frameY="-29" frameWidth="495" frameHeight="409"/>
+	<SubTexture name="bojanglesDANCE0009" x="0" y="408" width="235" height="327" frameX="-113" frameY="-81" frameWidth="495" frameHeight="409"/>
+	<SubTexture name="bojanglesDANCE0010" x="235" y="408" width="235" height="343" frameX="-113" frameY="-65" frameWidth="495" frameHeight="409"/>
+	<SubTexture name="bojanglesDANCE0011" x="470" y="408" width="236" height="346" frameX="-111" frameY="-63" frameWidth="495" frameHeight="409"/>
+	<SubTexture name="bojanglesDANCE0012" x="470" y="408" width="236" height="346" frameX="-111" frameY="-63" frameWidth="495" frameHeight="409"/>
+	<SubTexture name="bojanglesDANCE0013" x="470" y="408" width="236" height="346" frameX="-111" frameY="-63" frameWidth="495" frameHeight="409"/>
+	<SubTexture name="bojanglesDANCE0014" x="470" y="408" width="236" height="346" frameX="-111" frameY="-63" frameWidth="495" frameHeight="409"/>
+	<SubTexture name="bojanglesDANCE0015" x="706" y="408" width="377" height="376" frameX="-118" frameY="-32" frameWidth="495" frameHeight="409"/>
+	<SubTexture name="bojanglesDANCE0016" x="1083" y="408" width="377" height="363" frameX="-118" frameY="-45" frameWidth="495" frameHeight="409"/>
+	<SubTexture name="bojanglesDANCE0017" x="1460" y="408" width="366" height="364" frameX="-127" frameY="-44" frameWidth="495" frameHeight="409"/>
+	<SubTexture name="bojanglesDANCE0018" x="1460" y="408" width="366" height="364" frameX="-127" frameY="-44" frameWidth="495" frameHeight="409"/>
+	<SubTexture name="bojanglesDANCE0019" x="1460" y="408" width="366" height="364" frameX="-127" frameY="-44" frameWidth="495" frameHeight="409"/>
+	<SubTexture name="bojanglesDANCE0020" x="0" y="784" width="366" height="362" frameX="-127" frameY="-46" frameWidth="495" frameHeight="409"/>
+	<SubTexture name="bojanglesDANCE0021" x="0" y="784" width="366" height="362" frameX="-127" frameY="-46" frameWidth="495" frameHeight="409"/>
+	<SubTexture name="bojanglesDANCE0022" x="366" y="784" width="366" height="357" frameX="-127" frameY="-51" frameWidth="495" frameHeight="409"/>
+	<SubTexture name="bojanglesDANCE0023" x="366" y="784" width="366" height="357" frameX="-127" frameY="-51" frameWidth="495" frameHeight="409"/>
+	<SubTexture name="bojanglesDANCE0024" x="732" y="784" width="238" height="330" frameX="-159" frameY="-76" frameWidth="495" frameHeight="409"/>
+	<SubTexture name="bojanglesDANCE0025" x="970" y="784" width="238" height="341" frameX="-159" frameY="-65" frameWidth="495" frameHeight="409"/>
+	<SubTexture name="bojanglesDANCE0026" x="1208" y="784" width="234" height="344" frameX="-160" frameY="-63" frameWidth="495" frameHeight="409"/>
+	<SubTexture name="bojanglesDANCE0027" x="1208" y="784" width="234" height="344" frameX="-160" frameY="-63" frameWidth="495" frameHeight="409"/>
+	<SubTexture name="bojanglesDANCE0028" x="1208" y="784" width="234" height="344" frameX="-160" frameY="-63" frameWidth="495" frameHeight="409"/>
+	<SubTexture name="bojanglesDANCE0029" x="1208" y="784" width="234" height="344" frameX="-160" frameY="-63" frameWidth="495" frameHeight="409"/>
+</TextureAtlas>

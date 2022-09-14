@@ -1,0 +1,78 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				-5,
+				0
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "SUPER SONIC IDLE",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				34,
+				8
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "SUPER SONIC NOTE DOWN",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-16,
+				12
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "SUPER SONIC NOTE LEFT",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-59,
+				16
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "SUPER SONIC NOTE UP",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-68,
+				24
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "SUPER SONIC NOTE RIGHT",
+			"indices": []
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/SONIC_RUN_SUPER",
+	"position": [
+		70,
+		510
+	],
+	"healthicon": "sonic",
+	"flip_x": false,
+	"healthbar_colors": [
+		100,
+		120,
+		255
+	],
+	"camera_position": [
+		20,
+		-30
+	],
+	"sing_duration": 4,
+	"scale": 1
+}

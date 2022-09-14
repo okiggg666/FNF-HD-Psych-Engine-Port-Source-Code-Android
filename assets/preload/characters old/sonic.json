@@ -1,0 +1,89 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				0
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "Sonic Idle",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				28,
+				18
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "Sonic NOTE Down0",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				10,
+				24
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "Sonic NOTE Right0",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				110,
+				0
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "Sonic NOTE Left0",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				60,
+				0
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "Sonic NOTE Up0",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				140,
+				24
+			],
+			"anim": "hey",
+			"fps": 24,
+			"name": "WOO!",
+			"indices": []
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/SONIC",
+	"position": [
+		0,
+		390
+	],
+	"healthicon": "sonic",
+	"flip_x": false,
+	"healthbar_colors": [
+		100,
+		120,
+		255
+	],
+	"camera_position": [
+		0,
+		-400
+	],
+	"sing_duration": 6.1,
+	"scale": 1
+}

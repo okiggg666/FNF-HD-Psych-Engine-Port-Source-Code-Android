@@ -1,0 +1,148 @@
+{
+	"dialogue": [
+		{
+			"sound": "",
+			"speed": 0.17,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "shocked",
+			"text": "..."
+		},
+		{
+			"sound": "monsterText",
+			"speed": 0.05,
+			"portrait": "monster",
+			"boxState": "normal",
+			"expression": "default",
+			"text": "you enjoying the decorations, bud?"
+		},
+		{
+			"sound": "",
+			"speed": 0.17,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "shocked",
+			"text": "..."
+		},
+		{
+			"sound": "monsterText",
+			"speed": 0.05,
+			"portrait": "monster",
+			"boxState": "normal",
+			"expression": "default",
+			"text": "come on, talk to me guy!"
+		},
+		{
+			"sound": "monsterText",
+			"speed": 0.05,
+			"portrait": "monster",
+			"boxState": "normal",
+			"expression": "default",
+			"text": "you don't know how hard it was to kill that girl. she put up quite a fight."
+		},
+		{
+			"sound": "monsterText",
+			"speed": 0.05,
+			"portrait": "monster",
+			"boxState": "normal",
+			"expression": "default",
+			"text": "too bad she wasn't able to stick around!"
+		},
+		{
+			"sound": "",
+			"speed": 0.17,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "shocked",
+			"text": "..."
+		},
+		{
+			"sound": "boyfriendText",
+			"speed": 0.11,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "shocked",
+			"text": "Why man?"
+		},
+		{
+			"sound": "boyfriendText",
+			"speed": 0.11,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "shocked",
+			"text": "What did I ever do to you?"
+		},
+		{
+			"sound": "monsterText",
+			"speed": 0.05,
+			"portrait": "monster",
+			"boxState": "normal",
+			"expression": "default",
+			"text": "nothin' to me."
+		},
+		{
+			"sound": "monsterText",
+			"speed": 0.05,
+			"portrait": "monster",
+			"boxState": "normal",
+			"expression": "default",
+			"text": "you were just in the wrong relationship at the wrong time."
+		},
+		{
+			"sound": "boyfriendText",
+			"speed": 0.11,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "crying",
+			"text": "you..."
+		},
+		{
+			"sound": "monsterText",
+			"speed": 0.05,
+			"portrait": "monster",
+			"boxState": "normal",
+			"expression": "default",
+			"text": "no tears."
+		},
+		{
+			"sound": "monsterText",
+			"speed": 0.05,
+			"portrait": "monster",
+			"boxState": "normal",
+			"expression": "default",
+			"text": "head up, face me. time to carol."
+		},
+		{
+			"sound": "monsterText",
+			"speed": 0.05,
+			"portrait": "monster",
+			"boxState": "normal",
+			"expression": "default",
+			"text": "oh...one more thing..."
+		},
+		{
+			"sound": "monsterText",
+			"speed": 0.05,
+			"portrait": "monster",
+			"boxState": "normal",
+			"expression": "glare",
+			"text": "watch out for gas."
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "wipe",
+			"text": ""
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "shocked",
+			"text": ""
+		}
+	]
+}

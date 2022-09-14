@@ -1,0 +1,25 @@
+{
+	"storyName": "",
+	"hideFreeplay": false,
+	"weekBackground": "week0",
+	"weekBefore": "tutorial",
+	"startUnlocked": true,
+	"weekCharacters": [
+		"",
+		"",
+		""
+	],
+	"songs": [
+		[
+			"Tutorial",
+			"gf",
+			[
+				165,
+				0,
+				77
+			]
+		]
+	],
+	"hideStoryMode": false,
+	"weekName": "Tutorial"
+}

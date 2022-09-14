@@ -1,0 +1,126 @@
+{
+	"dialogue": [
+		{
+			"expression": "furious",
+			"text": "OKAY I'M TIRED OF PLAYING FAIR, I'M ACTUALLY JUST FINNA KILL YOU!",
+			"boxState": "angry",
+			"sound": "picoText",
+			"speed": 0.05,
+			"portrait": "pico"
+		},
+		{
+			"expression": "furious2",
+			"text": "FUCK THE MONEY, I JUST WANT YOU GONE!",
+			"boxState": "angry",
+			"speed": 0.05,
+			"sound": "picoText",
+			"portrait": "pico"
+		},
+		{
+			"expression": "furious2",
+			"text": "*click click*",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "pico"
+		},
+		{
+			"expression": "furious2",
+			"text": "You gotta be pullin' my nuts here.",
+			"boxState": "normal",
+			"speed": 0.05,
+			"sound": "picoText",
+			"portrait": "pico"
+		},
+		{
+			"expression": "scoff",
+			"text": "Whatever, let's throw hands--",
+			"boxState": "normal",
+			"speed": 0.05,
+			"sound": "picoText",
+			"portrait": "pico"
+		},
+		{
+			"expression": "default",
+			"text": "Not so fast!",
+			"boxState": "normal",
+			"speed": 0.05,
+			"sound": "gfText",
+			"portrait": "gf"
+		},
+		{
+			"expression": "choke",
+			"text": "...!!",
+			"boxState": "angry",
+			"speed": 0.05,
+			"portrait": "pico"
+		},
+		{
+			"expression": "smile",
+			"text": "You belong to the Dearest family now.",
+			"boxState": "normal",
+			"speed": 0.05,
+			"sound": "gfText",
+			"portrait": "gf"
+		},
+		{
+			"expression": "disappearing",
+			"text": "",
+			"boxState": "angry",
+			"speed": 0.05,
+			"portrait": "pico"
+		},
+		{
+			"expression": "shit",
+			"text": "...",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "darnell"
+		},
+		{
+			"expression": "shit",
+			"text": "*shimmies away*",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "darnell"
+		},
+		{
+			"expression": "questionMark",
+			"text": "???",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "bf"
+		},
+		{
+			"expression": "blush",
+			"text": "Uhm...erhm...",
+			"boxState": "normal",
+			"speed": 0.05,
+			"sound": "gfText",
+			"portrait": "gf"
+		},
+		{
+			"expression": "nervous",
+			"text": "Yeah so turns out I'm not adopted haha!",
+			"boxState": "normal",
+			"speed": 0.05,
+			"sound": "gfText",
+			"portrait": "gf"
+		},
+		{
+			"expression": "blush",
+			"text": "Just promise you won't tell anyone okay?",
+			"boxState": "normal",
+			"speed": 0.05,
+			"sound": "gfText",
+			"portrait": "gf"
+		},
+		{
+			"expression": "questionMark",
+			"text": "...Bet.",
+			"boxState": "normal",
+			"speed": 0.05,
+			"sound": "boyfriendText",
+			"portrait": "bf"
+		}
+	]
+}

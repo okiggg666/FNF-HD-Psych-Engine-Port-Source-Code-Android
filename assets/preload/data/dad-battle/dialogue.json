@@ -1,0 +1,76 @@
+{
+	"dialogue": [
+		{
+			"expression": "default",
+			"text": "...Huh.",
+			"boxState": "normal",
+			"sound": "gfText",
+			"speed": 0.05,
+			"portrait": "gf"
+		},
+		{
+			"expression": "default",
+			"text": "That also wasn't as intense as I thought it'd be!",
+			"boxState": "normal",
+			"sound": "gfText",
+			"speed": 0.05,
+			"portrait": "gf"
+		},
+		{
+			"expression": "limit",
+			"text": "Mother FUCKER. You persistent little SHIT.",
+			"boxState": "normal",
+			"sound": "dadText",
+			"speed": 0.05,
+			"portrait": "dad"
+		},
+		{
+			"expression": "confused",
+			"text": "???",
+			"boxState": "normal",
+			"sound": "gfText",
+			"speed": 0.05,
+			"portrait": "gf"
+		},
+		{
+			"expression": "fistSweat",
+			"text": "Whatcha gonna do now, pops? The crowd's getting bigger.",
+			"boxState": "normal",
+			"sound": "boyfriendText",
+			"speed": 0.05,
+			"portrait": "bf"
+		},
+		{
+			"expression": "fistSweat",
+			"text": "They want a show. I say we give em one...",
+			"boxState": "normal",
+			"sound": "boyfriendText",
+			"speed": 0.05,
+			"portrait": "bf"
+		},
+		{
+			"expression": "fistSweat",
+			"text": "However, you ARE lookin' mighty tired.",
+			"boxState": "normal",
+			"sound": "boyfriendText",
+			"speed": 0.05,
+			"portrait": "bf"
+		},
+		{
+			"expression": "limit",
+			"text": "Same could be said for you, boh. But I'm 'bouta make mincemeat outta you.",
+			"boxState": "normal",
+			"sound": "dadText",
+			"speed": 0.05,
+			"portrait": "dad"
+		},
+		{
+			"expression": "limit",
+			"text": "Let's give the crowd somethin' to scream about.",
+			"boxState": "normal",
+			"sound": "dadText",
+			"speed": 0.05,
+			"portrait": "dad"
+		}
+	]
+}

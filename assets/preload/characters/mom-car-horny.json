@@ -1,0 +1,169 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				-1
+			],
+			"fps": 24,
+			"anim": "idle",
+			"indices": [],
+			"name": "Mom Idle"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				216,
+				37
+			],
+			"fps": 24,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "Mom Left Pose"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				24,
+				-30
+			],
+			"fps": 24,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "Mom Pose Left"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				20,
+				-220
+			],
+			"fps": 24,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "MOM DOWN POSE"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				24,
+				91
+			],
+			"fps": 24,
+			"anim": "singUP",
+			"indices": [],
+			"name": "Mom Up Pose"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "shootThatMF",
+			"indices": [],
+			"name": "MOM BEAM"
+		},
+		{
+			"loop": true,
+			"offsets": [
+				216,
+				37
+			],
+			"anim": "singLEFT-loop",
+			"fps": 24,
+			"name": "Mom Left Pose",
+			"indices": [
+				7,
+				8,
+				9,
+				10
+			]
+		},
+		{
+			"loop": true,
+			"offsets": [
+				24,
+				-30
+			],
+			"anim": "singRIGHT-loop",
+			"fps": 24,
+			"name": "Mom Pose Left",
+			"indices": [
+				9,
+				10,
+				11,
+				12
+			]
+		},
+		{
+			"loop": true,
+			"offsets": [
+				20,
+				-220
+			],
+			"anim": "singDOWN-loop",
+			"fps": 24,
+			"name": "MOM DOWN POSE",
+			"indices": [
+				7,
+				8,
+				9,
+				10
+			]
+		},
+		{
+			"loop": true,
+			"offsets": [
+				24,
+				91
+			],
+			"anim": "singUP-loop",
+			"fps": 24,
+			"name": "Mom Up Pose",
+			"indices": [
+				13,
+				14,
+				15,
+				16
+			]
+		},
+		{
+			"offsets": [
+				0,
+				-1
+			],
+			"loop": true,
+			"fps": 24,
+			"anim": "idle-loop",
+			"indices": [
+				10,
+				11,
+				12,
+				13
+			],
+			"name": "Mom Idle"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/momCar_Horny",
+	"position": [
+		0,
+		0
+	],
+	"healthicon": "mom-horny",
+	"flip_x": false,
+	"healthbar_colors": [
+		216,
+		85,
+		142
+	],
+	"camera_position": [
+		-142,
+		-29
+	],
+	"sing_duration": 4,
+	"scale": 1
+}

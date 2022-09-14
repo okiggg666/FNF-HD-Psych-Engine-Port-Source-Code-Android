@@ -1,0 +1,79 @@
+{
+	"song": {
+		"speed": 2.4,
+		"stage": "mallEvil",
+		"player1": "bf-christmas-depressed",
+		"player2": "monster-christmas",
+		"player3": null,
+		"events": [
+			[
+				0,
+				[
+					[
+						"Set GF Speed",
+						"2",
+						""
+					]
+				]
+			],
+			[
+				27547.1698113207,
+				[
+					[
+						"Start Draining Health",
+						"",
+						""
+					]
+				]
+			],
+			[
+				57358.4905660377,
+				[
+					[
+						"Set GF Speed",
+						"1",
+						""
+					]
+				]
+			],
+			[
+				69528.3018867924,
+				[
+					[
+						"Set GF Speed",
+						"2",
+						""
+					]
+				]
+			],
+			[
+				85283.0188679245,
+				[
+					[
+						"Camera Follow Pos",
+						"850",
+						"590"
+					]
+				]
+			],
+			[
+				86415.0943396227,
+				[
+					[
+						"Camera Follow Pos",
+						"",
+						""
+					]
+				]
+			]
+		],
+		"notes": [],
+		"splashSkin": null,
+		"validScore": false,
+		"gfVersion": "gf-christmas-dead",
+		"bpm": 159,
+		"arrowSkin": null,
+		"needsVoices": true,
+		"song": "Winter Horrorland"
+	}
+}

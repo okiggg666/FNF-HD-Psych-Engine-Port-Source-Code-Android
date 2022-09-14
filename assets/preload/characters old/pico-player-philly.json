@@ -1,0 +1,100 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "idle",
+			"indices": [],
+			"name": "Pico Idle Dance0"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "idle-cracked",
+			"indices": [],
+			"name": "Pico Idle Dance0"
+		},
+		{
+			"offsets": [
+				-27,
+				-75
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "Pico Down Note0"
+		},
+		{
+			"offsets": [
+				-17,
+				32
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP",
+			"indices": [],
+			"name": "pico Up note0"
+		},
+		{
+			"offsets": [
+				59,
+				-3
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "Pico Note Right0"
+		},
+		{
+			"offsets": [
+				-28,
+				-27
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "shoot",
+			"indices": [],
+			"name": "Pico-shoot0"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-67,
+				-12
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "Pico NOTE LEFT0",
+			"indices": []
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/OldPico",
+	"position": [
+		-10,
+		385
+	],
+	"healthicon": "pico",
+	"flip_x": false,
+	"healthbar_colors": [
+		183,
+		216,
+		85
+	],
+	"camera_position": [
+		60,
+		20
+	],
+	"sing_duration": 4,
+	"scale": 1
+}

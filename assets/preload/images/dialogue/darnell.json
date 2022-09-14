@@ -1,0 +1,63 @@
+{
+	"dialogue_pos": "left",
+	"position": [
+		-140,
+		-370
+	],
+	"scale": 0.5,
+	"animations": [
+		{
+			"loop_name": "darnell default.png",
+			"idle_offsets": [
+				0,
+				0
+			],
+			"idle_name": "darnell default.png",
+			"anim": "default",
+			"loop_offsets": [
+				0,
+				0
+			]
+		},
+		{
+			"loop_name": "darnell shit.png",
+			"idle_offsets": [
+				0,
+				0
+			],
+			"idle_name": "darnell shit.png",
+			"anim": "shit",
+			"loop_offsets": [
+				0,
+				0
+			]
+		},
+		{
+			"loop_name": "darnell shocked.png",
+			"idle_offsets": [
+				-1,
+				23
+			],
+			"idle_name": "darnell shocked.png",
+			"anim": "shocked",
+			"loop_offsets": [
+				-1,
+				23
+			]
+		},
+		{
+			"loop_name": "darnell happy.png",
+			"idle_offsets": [
+				0,
+				0
+			],
+			"idle_name": "darnell happy.png",
+			"anim": "happy",
+			"loop_offsets": [
+				0,
+				0
+			]
+		}
+	],
+	"image": "darnell"
+}

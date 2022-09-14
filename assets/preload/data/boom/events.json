@@ -1,0 +1,59 @@
+{
+	"song": {
+		"speed": 3.2,
+		"stage": "sonic-stage",
+		"player1": "bf-run",
+		"player2": "sonic-run",
+		"player3": null,
+		"events": [
+			[
+				74438.5026737967,
+				[
+					[
+						"Set Property",
+						"defaultCamZoom",
+						"1.88"
+					]
+				]
+			],
+			[
+				79331.5508021389,
+				[
+					[
+						"Set Property",
+						"defaultCamZoom",
+						"1.40"
+					]
+				]
+			],
+			[
+				128502.673796791,
+				[
+					[
+						"Set Property",
+						"defaultCamZoom",
+						"1.88"
+					]
+				]
+			],
+			[
+				130106.951871658,
+				[
+					[
+						"Set Property",
+						"defaultCamZoom",
+						"1.40"
+					]
+				]
+			]
+		],
+		"notes": [],
+		"splashSkin": null,
+		"validScore": false,
+		"gfVersion": "gf",
+		"bpm": 187,
+		"arrowSkin": null,
+		"needsVoices": true,
+		"song": "Boom"
+	}
+}

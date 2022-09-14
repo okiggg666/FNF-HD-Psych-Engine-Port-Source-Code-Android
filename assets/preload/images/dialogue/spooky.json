@@ -1,0 +1,50 @@
+{
+	"dialogue_pos": "left",
+	"position": [
+		-310,
+		-140
+	],
+	"scale": 0.5,
+	"animations": [
+		{
+			"loop_name": "skump default.png",
+			"idle_offsets": [
+				0,
+				0
+			],
+			"idle_name": "skump default.png",
+			"anim": "default",
+			"loop_offsets": [
+				0,
+				0
+			]
+		},
+		{
+			"loop_name": "skump happy.png",
+			"idle_offsets": [
+				8,
+				18
+			],
+			"idle_name": "skump happy.png",
+			"anim": "happy",
+			"loop_offsets": [
+				8,
+				18
+			]
+		},
+		{
+			"loop_name": "skump sad.png",
+			"idle_offsets": [
+				15,
+				13
+			],
+			"idle_name": "skump sad.png",
+			"anim": "sad",
+			"loop_offsets": [
+				15,
+				13
+			]
+		}
+	],
+	"image": "spooky"
+}

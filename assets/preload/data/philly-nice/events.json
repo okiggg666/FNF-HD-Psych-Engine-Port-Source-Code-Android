@@ -1,0 +1,18 @@
+{
+	"song": {
+		"speed": 2.7,
+		"stage": "philly",
+		"player1": "bfPico",
+		"player2": "pico",
+		"player3": null,
+		"events": [],
+		"notes": [],
+		"splashSkin": null,
+		"validScore": false,
+		"gfVersion": "gfPico1",
+		"bpm": 175,
+		"arrowSkin": null,
+		"needsVoices": true,
+		"song": "Philly Nice"
+	}
+}
