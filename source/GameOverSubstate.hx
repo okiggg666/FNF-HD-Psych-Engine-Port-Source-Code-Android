@@ -52,12 +52,18 @@ class GameOverSubstate extends MusicBeatSubstate
 
 		Conductor.songPosition = 0;
 
+		var dodgeKeys = ClientPrefs.keyBinds.get('dodge');
+
+		var keysText = getKey(dodgeKeys[0]).toUpperCase() //yeah i used this code from wednesdays infidelity, yeah so credits to their awesome work
+			+ (!checkKey(getKey(dodgeKeys[0])) && !checkKey(getKey(dodgeKeys[1])) ? " " : "")
+			+ getKey(dodgeKeys[1]).toUpperCase();
+
 		boyfriend = new Boyfriend(x, y, characterName);
 		boyfriend.x += boyfriend.positionArray[0];
 		boyfriend.y += boyfriend.positionArray[1];
 		add(boyfriend);
 
-		lmao = new FlxText(0, 600, 0, "Try pressing SPACE next time", 32);
+		lmao = new FlxText(0, 600, 0, "Try pressing " + keysText + "next time", 32);
 		lmao.setBorderStyle(FlxTextBorderStyle.OUTLINE, 0, 2, 1);
 		lmao.alpha = 0;
 		lmao.scrollFactor.set();
@@ -175,5 +181,17 @@ class GameOverSubstate extends MusicBeatSubstate
 			});
 			PlayState.instance.callOnLuas('onGameOverConfirm', [true]);
 		}
+	}
+
+	function getKey(t)
+	{
+		var s = InputFormatter.getKeyName(t);
+
+		return checkKey(s) ? '' : s;
+	}
+
+	function checkKey(s)
+	{
+		return !(s != null && s != '---');
 	}
 }
