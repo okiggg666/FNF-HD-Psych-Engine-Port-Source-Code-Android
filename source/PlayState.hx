@@ -3622,10 +3622,10 @@ class PlayState extends MusicBeatState
 			}
 		}
 
-		/*if (FlxG.keys.anyJustPressed(debugKeysChart) && !endingSong && !inCutscene)
+		if (FlxG.keys.anyJustPressed(debugKeysChart) && !endingSong && !inCutscene)
 		{
 			openChartEditor();
-		}*/
+		}
 
 		// FlxG.watch.addQuick('VOL', vocals.amplitudeLeft);
 		// FlxG.watch.addQuick('VOLRight', vocals.amplitudeRight);
@@ -3677,12 +3677,12 @@ class PlayState extends MusicBeatState
 		else
 			fuckCval = false;
 
-		/*if (FlxG.keys.anyJustPressed(debugKeysCharacter) && !endingSong && !inCutscene) {
+		if (FlxG.keys.anyJustPressed(debugKeysCharacter) && !endingSong && !inCutscene) {
 			persistentUpdate = false;
 			paused = true;
 			cancelMusicFadeTween();
 			MusicBeatState.switchState(new CharacterEditorState(SONG.player2));
-		}*/
+		}
 
 		if (startingSong)
 		{
