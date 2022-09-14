@@ -119,7 +119,7 @@ class CreditsState extends MusicBeatState
 			['beansreal1',			'beans',			'being beans',												'https://twitter.com/BeansReal1',		'444444'],
 			[''],
 			['Coder Special Thanks'],
-			["Wednesday's Infidelity Team",			'mouse',			'Used dodge keybinds text code',			'https://twitter.com/BeansReal1',		'444444'],
+			["Wednesday's Infidelity Team",			'mouse',			'Used dodge keybinds text code',			'https://github.com/lunarcleint/Wednesdays-Infidelity',		'444444'],
 			[''],
 			['Psych Engine Team'],
 			['Shadow Mario',		'shadowmario',		'Main Programmer of Psych Engine',							'https://twitter.com/Shadow_Mario_',	'444444'],
