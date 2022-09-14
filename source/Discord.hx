@@ -82,7 +82,7 @@ class DiscordClient
 			details: details,
 			state: state,
 			largeImageKey: 'icon',
-			largeImageText: "Psych Engine Version: " + MainMenuState.psychEngineVersion,
+			largeImageText: "FNF' HD Psych Engine Port Version: " + MainMenuState.HDportVersion,
 			smallImageKey : smallImageKey,
 			// Obtained times are in milliseconds so they are divided so Discord can use it
 			startTimestamp : Std.int(startTimestamp / 1000),
