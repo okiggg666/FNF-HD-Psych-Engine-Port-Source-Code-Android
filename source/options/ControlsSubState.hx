@@ -124,6 +124,10 @@ class ControlsSubState extends MusicBeatSubstate {
 			if (controls.UI_DOWN_P) {
 				changeSelection(1);
 			}
+			if(FlxG.mouse.wheel != 0)
+			{
+				changeSelection(-FlxG.mouse.wheel);
+			}
 			if (controls.UI_LEFT_P || controls.UI_RIGHT_P) {
 				changeAlt();
 			}

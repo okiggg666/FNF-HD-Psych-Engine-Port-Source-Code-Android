@@ -24,8 +24,10 @@ import flixel.FlxObject;
 import flixel.FlxSprite;
 import openfl.Lib;
 import openfl.display.BlendMode;
+import openfl.display.BitmapData;
 import openfl.filters.BitmapFilter;
 import openfl.utils.Assets;
+import openfl.media.Sound;
 import flixel.math.FlxMath;
 import flixel.util.FlxSave;
 import flixel.addons.transition.FlxTransitionableState;
@@ -1447,6 +1449,18 @@ class FunkinLua {
 			PlayState.instance.modchartSprites.set(tag, leSprite);
 			leSprite.active = true;
 		});
+		/*Lua_helper.add_callback(lua, "makeDialogueSprite", function(tag:String, image:String, x:Float, y:Float) {
+			tag = tag.replace('.', '');
+			resetSpriteTag(tag);
+			var leSprite:ModchartSprite = new ModchartSprite(x, y);
+			if(image != null && image.length > 0)
+			{
+				leSprite.loadGraphic(BitmapData.fromFile("assets/dialogue/images/bg/" + image));
+			}
+			leSprite.antialiasing = ClientPrefs.globalAntialiasing;
+			PlayState.instance.modchartSprites.set(tag, leSprite);
+			leSprite.active = true;
+		});*/
 		Lua_helper.add_callback(lua, "makeAnimatedLuaSprite", function(tag:String, image:String, x:Float, y:Float, ?spriteType:String = "sparrow") {
 			tag = tag.replace('.', '');
 			resetSpriteTag(tag);
@@ -1960,6 +1974,23 @@ class FunkinLua {
 			}
 			FlxG.sound.play(Paths.sound(sound), volume);
 		});
+		/*Lua_helper.add_callback(lua, "playDialogueMusic", function(sound:String, volume:Float = 1, loop:Bool = false) {
+			FlxG.sound.playMusic(Sound.fromFile("assets/dialogue/music/" + sound), volume, loop);
+		});
+		Lua_helper.add_callback(lua, "playDialogueSound", function(sound:String, volume:Float = 1, ?tag:String = null) {
+			if(tag != null && tag.length > 0) {
+				tag = tag.replace('.', '');
+				if(PlayState.instance.modchartSounds.exists(tag)) {
+					PlayState.instance.modchartSounds.get(tag).stop();
+				}
+				PlayState.instance.modchartSounds.set(tag, FlxG.sound.play(Sound.fromFile("assets/dialogue/sounds/" + sound), volume, false, function() {
+					PlayState.instance.modchartSounds.remove(tag);
+					PlayState.instance.callOnLuas('onSoundFinished', [tag]);
+				}));
+				return;
+			}
+			FlxG.sound.play(Paths.sound(sound), volume);
+		});*/
 		Lua_helper.add_callback(lua, "stopSound", function(tag:String) {
 			if(tag != null && tag.length > 1 && PlayState.instance.modchartSounds.exists(tag)) {
 				PlayState.instance.modchartSounds.get(tag).stop();
