@@ -82,11 +82,11 @@ class CreditsState extends MusicBeatState
 
 		var pisspoop:Array<Array<String>> = [ //Name - Icon name - Description - Link - BG Color
 			["FNF' HD PE Port Team"],
-			['Nuno Filipe Studios',	'nuno',				'Porter, Programmer, Animator',								'https://www.youtube.com/channel/UCq7G3p4msVN5SX2CpJ86tTw',	'878787'],
-			['Remy And Ava',		'ava',				'Mobile Porter',											'https://www.youtube.com/channel/UCxBKG1LFQM2Kte_BQ0isDww',	'F7F7F7'],
+			['Nuno Filipe Studios',	'nuno',				'Main porter, coder',										'https://www.youtube.com/channel/UCq7G3p4msVN5SX2CpJ86tTw',	'878787'],
+			['Remy And Ava',		'ava',				'Mobile optimizer, gamejolt link',							'https://www.youtube.com/channel/UCxBKG1LFQM2Kte_BQ0isDww',	'F7F7F7'],
 			['mariodevintoons',		'devin',			'New HD Mall Darnell Artist',								'https://twitter.com/mariodevintoon2',	'C1121F'],
-			['Galax',				'galax',			'Beta Tester',												'https://twitter.com/Galax40841813',	'3F37C9'],
-			['JorgeX_YT',			'jorge',			'Beta Tester',												'https://www.youtube.com/channel/UCl-GHl189q4erRjnnVmqNUA',	'70E000'],
+			['Galax',				'galax',			'Dev Build Tester',											'https://twitter.com/Galax40841813',	'3F37C9'],
+			['JorgeX_YT',			'jorge',			'Dev Build Tester',											'https://www.youtube.com/channel/UCl-GHl189q4erRjnnVmqNUA',	'70E000'],
 			[''],
 			['FNF HD Team'],
 			['Kolsan',				'kolsan',			'Artist, dialogue, Main writer, Billboard artist',			'https://gamebanana.com/members/1859052','444444'],

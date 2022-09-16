@@ -120,7 +120,7 @@ class AttachedAchievement extends FlxSprite {
 			} else {
 				loadGraphic(Paths.image('achievements HD older/lockedachievement'));
 			}
-		} else if(ClientPrefs.HDIcons != 'Disabled') {
+		} else if(ClientPrefs.HDIcons == 'Disabled') {
 			if(Achievements.isAchievementUnlocked(tag)) {
 				loadGraphic(Paths.image('achievements/' + tag));
 			} else {
@@ -142,6 +142,7 @@ class AttachedAchievement extends FlxSprite {
 class AchievementObject extends FlxSpriteGroup {
 	public var onFinish:Void->Void = null;
 	var alphaTween:FlxTween;
+	var achievementIcon:FlxSprite;
 	public function new(name:String, ?camera:FlxCamera = null)
 	{
 		super(x, y);
@@ -149,54 +150,22 @@ class AchievementObject extends FlxSpriteGroup {
 
 		var id:Int = Achievements.getAchievementIndex(name);
 		var achievementBG:FlxSprite = new FlxSprite(60, 50).makeGraphic(420, 120, FlxColor.BLACK);
-		var achievementIcon:FlxSprite;
 		achievementBG.scrollFactor.set();
 
-		if(ClientPrefs.HDIcons != 'Older Version') {
-			if(ClientPrefs.HDIcons != 'Old Version') {
-				if(ClientPrefs.HDIcons != 'New Version') {
-					achievementIcon = new FlxSprite(achievementBG.x + 10, achievementBG.y + 10).loadGraphic(Paths.image('achievements/' + name));
-					achievementIcon.scrollFactor.set();
-					achievementIcon.setGraphicSize(Std.int(achievementIcon.width * (2 / 3)));
-					achievementIcon.updateHitbox();
-					achievementIcon.antialiasing = ClientPrefs.globalAntialiasing;
-				} else {
-					achievementIcon = new FlxSprite(achievementBG.x + 10, achievementBG.y + 10).loadGraphic(Paths.image('achievements HD/' + name));
-					achievementIcon.scrollFactor.set();
-					achievementIcon.setGraphicSize(Std.int(achievementIcon.width * (2 / 3)));
-					achievementIcon.updateHitbox();
-					achievementIcon.antialiasing = ClientPrefs.globalAntialiasing;
-				}
-			} else {
-				if(ClientPrefs.HDIcons != 'Old Version') {
-					achievementIcon = new FlxSprite(achievementBG.x + 10, achievementBG.y + 10).loadGraphic(Paths.image('achievements/' + name));
-					achievementIcon.scrollFactor.set();
-					achievementIcon.setGraphicSize(Std.int(achievementIcon.width * (2 / 3)));
-					achievementIcon.updateHitbox();
-					achievementIcon.antialiasing = ClientPrefs.globalAntialiasing;
-				} else {
-					achievementIcon = new FlxSprite(achievementBG.x + 10, achievementBG.y + 10).loadGraphic(Paths.image('achievements HD old/' + name));
-					achievementIcon.scrollFactor.set();
-					achievementIcon.setGraphicSize(Std.int(achievementIcon.width * (2 / 3)));
-					achievementIcon.updateHitbox();
-					achievementIcon.antialiasing = ClientPrefs.globalAntialiasing;
-				}
-			}
-		} else {
-			if(ClientPrefs.HDIcons != 'Older Version') {
-				achievementIcon = new FlxSprite(achievementBG.x + 10, achievementBG.y + 10).loadGraphic(Paths.image('achievements/' + name));
-				achievementIcon.scrollFactor.set();
-				achievementIcon.setGraphicSize(Std.int(achievementIcon.width * (2 / 3)));
-				achievementIcon.updateHitbox();
-				achievementIcon.antialiasing = ClientPrefs.globalAntialiasing;
-			} else {
-				achievementIcon = new FlxSprite(achievementBG.x + 10, achievementBG.y + 10).loadGraphic(Paths.image('achievements HD older/' + name));
-				achievementIcon.scrollFactor.set();
-				achievementIcon.setGraphicSize(Std.int(achievementIcon.width * (2 / 3)));
-				achievementIcon.updateHitbox();
-				achievementIcon.antialiasing = ClientPrefs.globalAntialiasing;
-			}
+		if(ClientPrefs.HDIcons == 'New Version') {
+			achievementIcon = new FlxSprite(achievementBG.x + 10, achievementBG.y + 10).loadGraphic(Paths.image('achievements HD/' + name));
+		} else if(ClientPrefs.HDIcons == 'Old Version') {
+			achievementIcon = new FlxSprite(achievementBG.x + 10, achievementBG.y + 10).loadGraphic(Paths.image('achievements HD old/' + name));
+		} else if(ClientPrefs.HDIcons == 'Older Version') {
+			achievementIcon = new FlxSprite(achievementBG.x + 10, achievementBG.y + 10).loadGraphic(Paths.image('achievements HD older/' + name));
+		} else if (ClientPrefs.HDIcons == 'Disabled') {
+			achievementIcon = new FlxSprite(achievementBG.x + 10, achievementBG.y + 10).loadGraphic(Paths.image('achievements/' + name));
 		}
+
+		achievementIcon.scrollFactor.set();
+		achievementIcon.setGraphicSize(Std.int(achievementIcon.width * (2 / 3)));
+		achievementIcon.updateHitbox();
+		achievementIcon.antialiasing = ClientPrefs.globalAntialiasing;
 
 		var achievementName:FlxText = new FlxText(achievementIcon.x + achievementIcon.width + 20, achievementIcon.y + 16, 280, Achievements.achievementsStuff[id][0], 16);
 		achievementName.setFormat(Paths.font("vcr.ttf"), 16, FlxColor.WHITE, LEFT);

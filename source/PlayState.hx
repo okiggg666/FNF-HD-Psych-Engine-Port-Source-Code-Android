@@ -720,11 +720,6 @@ class PlayState extends MusicBeatState
 						halloweenBG = new BGSprite('halloween_bg_low', -200, -100);
 					}
 					add(halloweenBG);
-
-					halloweenWhite = new BGSprite(null, -FlxG.width, -FlxG.height, 0, 0);
-					halloweenWhite.makeGraphic(Std.int(FlxG.width * 3), Std.int(FlxG.height * 3), FlxColor.WHITE);
-					halloweenWhite.alpha = 0;
-					halloweenWhite.blend = ADD;
 				} else {
 					if(!ClientPrefs.lowQuality) {
 						overlaySpook = new BGSprite('overlay', -40, 50);
@@ -735,12 +730,11 @@ class PlayState extends MusicBeatState
 						halloweenBG = new BGSprite('halloween_bg_low-old', -200, -100);
 					}
 					add(halloweenBG);
-
-					halloweenWhite = new BGSprite(null, -FlxG.width, -FlxG.height, 0, 0);
-					halloweenWhite.makeGraphic(Std.int(FlxG.width * 3), Std.int(FlxG.height * 3), FlxColor.WHITE);
-					halloweenWhite.alpha = 0;
-					halloweenWhite.blend = ADD;
 				}
+				halloweenWhite = new BGSprite(null, -FlxG.width, -FlxG.height, 0, 0);
+				halloweenWhite.makeGraphic(Std.int(FlxG.width * 3), Std.int(FlxG.height * 3), FlxColor.WHITE);
+				halloweenWhite.alpha = 0;
+				halloweenWhite.blend = ADD;
 				//PRECACHE SOUNDS
 				CoolUtil.precacheSound('thunder_1');
 				CoolUtil.precacheSound('thunder_2');
@@ -783,12 +777,12 @@ class PlayState extends MusicBeatState
 
 					add(phillyTrain);
 
+					phillyStreet = new BGSprite('philly/street', -40, 50);
+					add(phillyStreet);
+
 					trainSound = new FlxSound().loadEmbedded(Paths.sound('train_passes'));
 					CoolUtil.precacheSound('train_passes');
 					FlxG.sound.list.add(trainSound);
-
-					phillyStreet = new BGSprite('philly/street', -40, 50);
-					add(phillyStreet);
 
 					boppers = new Week3Boppers(0, 0);
 					add(boppers);
@@ -830,16 +824,17 @@ class PlayState extends MusicBeatState
 
 					add(phillyTrain);
 
+					phillyStreet = new BGSprite('phillyOld/street', -40, 0);
+					add(phillyStreet);
+
 					trainSound = new FlxSound().loadEmbedded(Paths.sound('train_passes'));
 					CoolUtil.precacheSound('train_passes');
 					FlxG.sound.list.add(trainSound);
 
-					phillyStreet = new BGSprite('phillyOld/street', -40, 0);
-					add(phillyStreet);
-
 					boppers = new Week3Boppers(0, 0);
 					add(boppers);
 				}
+
 			case 'philly-picoPlayer': //Week 3 Pico Player
 				if(!ClientPrefs.OldHDbg) {
 					if(!ClientPrefs.lowQuality) {
@@ -878,12 +873,12 @@ class PlayState extends MusicBeatState
 
 					add(phillyTrain);
 
+					phillyStreet = new BGSprite('phillyOld/street', -40, 0);
+					add(phillyStreet);
+
 					trainSound = new FlxSound().loadEmbedded(Paths.sound('train_passes'));
 					CoolUtil.precacheSound('train_passes');
 					FlxG.sound.list.add(trainSound);
-
-					phillyStreet = new BGSprite('philly/street', -40, 50);
-					add(phillyStreet);
 
 					boppers = new Week3Boppers(0, 0);
 					add(boppers);
@@ -925,12 +920,12 @@ class PlayState extends MusicBeatState
 
 					add(phillyTrain);
 
+					phillyStreet = new BGSprite('phillyOld/street', -40, 0);
+					add(phillyStreet);
+
 					trainSound = new FlxSound().loadEmbedded(Paths.sound('train_passes'));
 					CoolUtil.precacheSound('train_passes');
 					FlxG.sound.list.add(trainSound);
-
-					phillyStreet = new BGSprite('phillyOld/street', -40, 0);
-					add(phillyStreet);
 
 					boppers = new Week3Boppers(0, 0);
 					add(boppers);
@@ -1076,15 +1071,15 @@ class PlayState extends MusicBeatState
 					michael.scrollFactor.set(0.4,0.4);
 					add(michael);
 
-					alvin = new Alvin(461, bgLimo.y -385); //Dancer 2
+					alvin = new Alvin(michael.x + 270, bgLimo.y -362); //Dancer 2
 					alvin.scrollFactor.set(0.4,0.4);
 					add(alvin);
 
-					bojangles = new Bojangles(741, bgLimo.y -390); //Dancer 3
+					bojangles = new Bojangles(alvin.x + 270, bgLimo.y -385); //Dancer 3
 					bojangles.scrollFactor.set(0.4,0.4);
 					add(bojangles);
 
-					bubbles = new Bubbles(1042, bgLimo.y -383); //Dancer 4
+					bubbles = new Bubbles(bojangles.x + 270, bgLimo.y -368); //Dancer 4
 					bubbles.scrollFactor.set(0.4,0.4);
 					add(bubbles);
 
@@ -1094,15 +1089,15 @@ class PlayState extends MusicBeatState
 					michaelDead.scrollFactor.set(0.4,0.4);
 					add(michaelDead);
 
-					alvinDead = new AlvinDead(530, bgLimo.y -535);
+					alvinDead = new AlvinDead(520, bgLimo.y -535);
 					alvinDead.scrollFactor.set(0.4,0.4);
 					add(alvinDead);
 
-					bojanglesDead = new BojanglesDead(800, bgLimo.y -525);
+					bojanglesDead = new BojanglesDead(790, bgLimo.y -525);
 					bojanglesDead.scrollFactor.set(0.4,0.4);
 					add(bojanglesDead);
 
-					bubblesDead = new BubblesDead(1090, bgLimo.y -525);
+					bubblesDead = new BubblesDead(1070, bgLimo.y -525);
 					bubblesDead.scrollFactor.set(0.4,0.4);
 					add(bubblesDead);
 				}
@@ -2588,6 +2583,27 @@ class PlayState extends MusicBeatState
 					santa.dance(true);
 				}
 
+				if(curStage == 'stage') {
+					if(curSong.toLowerCase() == 'fresh' || curSong.toLowerCase() == 'dad battle' && !ClientPrefs.lowQuality)
+						freshCrowd.dance(true);
+				}
+
+				if(curStage == 'green-hills') {
+					if(!ClientPrefs.lowQuality) {
+						leftBoppers.animation.play('bop');
+						rightBoppers.animation.play('bop');
+					}
+				}
+
+				if(curStage == 'studio') {
+					if(!ClientPrefs.lowQuality) {
+						mom.dance(true);
+						imp.dance(true);
+					}
+	
+					bgStudio.dance(true);
+				}
+
 				if(curStage == 'philly') {
 					if(!boppers.stopDancing) {
 						boppers.dance(true);
@@ -3361,12 +3377,12 @@ class PlayState extends MusicBeatState
 				michaelDead.animation.play("youseewhathemissin");
 				michaelDead.animation.finishCallback = removeMichael;
 			}
-			if (limoLight.x > 449){
+			if (limoLight.x > 439){
 				alvin.visible = false;
 				alvinDead.animation.play("youseewhathemissin");
 				alvinDead.animation.finishCallback = removeAlvin;
 			}
-			if (limoLight.x > 719){
+			if (limoLight.x > 709){
 				bojangles.visible = false;
 				bojanglesDead.animation.play("youseewhathemissin");
 				bojanglesDead.animation.finishCallback = removeBojangles;
