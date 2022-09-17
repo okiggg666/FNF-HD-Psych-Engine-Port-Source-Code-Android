@@ -8,58 +8,25 @@
 			],
 			"anim": "idle",
 			"fps": 24,
-			"name": "Idle0",
+			"name": "BF idle dance0",
 			"indices": []
 		},
 		{
-			"loop": false,
+			"loop": true,
 			"offsets": [
-				33,
-				4
+				-5,
+				1
 			],
-			"anim": "singLEFT",
+			"anim": "scared",
 			"fps": 24,
-			"name": "Sing Right0",
+			"name": "BF idle shaking",
 			"indices": []
 		},
 		{
 			"loop": false,
 			"offsets": [
-				3,
-				-58
-			],
-			"anim": "singDOWN",
-			"fps": 24,
-			"name": "Sing Down0",
-			"indices": []
-		},
-		{
-			"loop": false,
-			"offsets": [
-				-14,
-				41
-			],
-			"anim": "singUP",
-			"fps": 24,
-			"name": "Sing Up0",
-			"indices": []
-		},
-		{
-			"loop": false,
-			"offsets": [
-				-25,
-				-6
-			],
-			"anim": "singRIGHT",
-			"fps": 24,
-			"name": "Sing Left0",
-			"indices": []
-		},
-		{
-			"loop": false,
-			"offsets": [
-				-17,
-				3
+				57,
+				-1
 			],
 			"anim": "hey",
 			"fps": 24,
@@ -67,24 +34,57 @@
 			"indices": []
 		},
 		{
-			"loop": true,
+			"loop": false,
 			"offsets": [
-				3,
-				13
+				45,
+				-6
 			],
-			"anim": "scared",
+			"anim": "singLEFT",
 			"fps": 24,
-			"name": "BF idle shaking0",
+			"name": "BF NOTE RIGHT0",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-40,
+				-7
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "BF NOTE LEFT0",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				8,
+				64
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "BF NOTE UP0",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				13,
+				-48
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "BF NOTE DOWN0",
 			"indices": []
 		}
 	],
 	"no_antialiasing": false,
-	"image": "characters/bfHD-old",
+	"image": "characters/BOYFRIEND",
 	"position": [
-		0,
-		490
+		-20,
+		460
 	],
-	"healthicon": "bf-old-hd",
+	"healthicon": "bf-opponent",
 	"flip_x": true,
 	"healthbar_colors": [
 		49,
@@ -92,8 +92,8 @@
 		209
 	],
 	"camera_position": [
-		-10,
-		-150
+		-33,
+		-90
 	],
 	"sing_duration": 4,
 	"scale": 1
