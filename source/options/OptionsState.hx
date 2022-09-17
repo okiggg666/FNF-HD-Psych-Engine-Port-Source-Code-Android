@@ -33,7 +33,6 @@ class OptionsState extends MusicBeatState
 	private var grpOptions:FlxTypedGroup<Alphabet>;
 	private static var curSelected:Int = 0;
 	public static var menuBG:FlxSprite;
-	public static var ingame:Bool = false;
 
 	function openSelectedSubstate(label:String) {
 		switch(label) {
@@ -58,7 +57,6 @@ class OptionsState extends MusicBeatState
 	var selectorRight:Alphabet;
 
 	override function create() {
-		//trace('INGAME MODE : ' + ingame);
 		#if desktop
 		DiscordClient.changePresence("Options Menu", null);
 		#end
@@ -114,9 +112,6 @@ class OptionsState extends MusicBeatState
 
 		if (controls.BACK) {
 			FlxG.sound.play(Paths.sound('cancelMenu'));
-			//if (ingame)
-			//MusicBeatState.switchState(new PlayState());
-			//else
 			MusicBeatState.switchState(new MainMenuState());
 		}
 

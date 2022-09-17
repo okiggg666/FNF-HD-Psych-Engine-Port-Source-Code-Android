@@ -224,7 +224,6 @@ class PauseSubState extends MusicBeatSubstate
 					regenMenu();
 				case 'Options':
 					MusicBeatState.switchState(new options.OptionsStateInGame());
-					options.OptionsState.ingame = true;
 				case 'Toggle Practice Mode':
 					PlayState.instance.practiceMode = !PlayState.instance.practiceMode;
 					PlayState.changedDifficulty = true;
