@@ -407,7 +407,8 @@ class PlayState extends MusicBeatState
 			ClientPrefs.copyKey(ClientPrefs.keyBinds.get('note_left')),
 			ClientPrefs.copyKey(ClientPrefs.keyBinds.get('note_down')),
 			ClientPrefs.copyKey(ClientPrefs.keyBinds.get('note_up')),
-			ClientPrefs.copyKey(ClientPrefs.keyBinds.get('note_right'))
+			ClientPrefs.copyKey(ClientPrefs.keyBinds.get('note_right')),
+			ClientPrefs.copyKey(ClientPrefs.keyBinds.get('dodge'))
 		];
 
 		// For the "Just the Two of Us" achievement
@@ -1100,22 +1101,17 @@ class PlayState extends MusicBeatState
 					bubblesDead = new BubblesDead(1070, bgLimo.y -525);
 					bubblesDead.scrollFactor.set(0.4,0.4);
 					add(bubblesDead);
+
+					CoolUtil.precacheSound('dancerdeath');
 				}
 
-				CoolUtil.precacheSound('dancerdeath');
 				CoolUtil.precacheSound('warning');
 				CoolUtil.precacheSound('thud');
 
 				if(!ClientPrefs.OldHDbg) {
-					limo = new BGSprite('limo/limoDrive', -120, 550, 1, 1, ['Limo stage'], true);
-					limo.animation.addByPrefix('drive', 'Limo stage', 24, false);
-					limo.animation.addByIndices('loop', 'Limo stage', [18,19,20,21,22,23,24,25], '', 24, true);
-					limo.animation.play('loop');
+					limo = new BGSprite('limo/limoDrive', -120, 550, 1, 1, ['Limo stage']);
 				} else {
-					limo = new BGSprite('limo/limoDrive', -125, 550, 1, 1, ['Limo stage'], true);
-					limo.animation.addByPrefix('drive', 'Limo stage', 24, false);
-					limo.animation.addByIndices('loop', 'Limo stage', [18,19,20,21,22,23,24,25], '', 24, true);
-					limo.animation.play('loop');
+					limo = new BGSprite('limo/limoDrive', -125, 550, 1, 1, ['Limo stage']);
 				}
 
 				fastCar = new BGSprite('limo/fastCarLol', -300, 100);
@@ -2593,6 +2589,10 @@ class PlayState extends MusicBeatState
 						leftBoppers.animation.play('bop');
 						rightBoppers.animation.play('bop');
 					}
+				}
+
+				if(curStage == 'limo') {
+					limo.dance(true);
 				}
 
 				if(curStage == 'studio') {
@@ -5779,7 +5779,7 @@ class PlayState extends MusicBeatState
 
 					if(ClientPrefs.impEvent == 'In Every Song') {
 						bgLimoTimer2 = new FlxTimer().start(2.7, function(e:FlxTimer) {
-							resetKillingPole();
+							resetHDlimoKill();
 							michael.visible = true;
 							alvin.visible = true;
 							bojangles.visible = true;
@@ -5796,15 +5796,18 @@ class PlayState extends MusicBeatState
 		}
 	}
 
-	function resetKillingPole() {
+	function resetHDlimoKill() {
 		limoLight.x = -830;
 		limoMetalPole.x = -830;
+
 		limoLight.velocity.x = 0;
 		limoMetalPole.velocity.x = 0;
+
 		michaelDead.animation.play("eh", true);
 		alvinDead.animation.play("eh", true);
 		bojanglesDead.animation.play("eh", true);
 		bubblesDead.animation.play("eh", true);
+
 		killdancers = false;
 		michaelDead.visible = true;
 		alvinDead.visible = true;
@@ -6177,7 +6180,7 @@ class PlayState extends MusicBeatState
 		}
 
 		if (curStage == 'limo' && curBeat % 2 == 1)
-			limo.animation.play('drive', true);
+			limo.dance(true);
 			pubCurBeat = curBeat;
 
 		if(lastBeatHit >= curBeat) {

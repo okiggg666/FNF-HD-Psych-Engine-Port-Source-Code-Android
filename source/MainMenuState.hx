@@ -237,7 +237,7 @@ class MainMenuState extends MusicBeatState
 			{
 				if (optionShit[curSelected] == 'donate')
 				{
-					CoolUtil.browserLoad('http://paypal.me/kolsan8');
+					CoolUtil.browserLoad('https://gamebanana.com/mods/166446');
 				}
 				else
 				{
