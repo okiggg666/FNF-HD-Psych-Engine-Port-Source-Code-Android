@@ -2592,7 +2592,7 @@ class PlayState extends MusicBeatState
 				}
 
 				if(curStage == 'limo') {
-					limo.dance(true);
+					limo.dance();
 				}
 
 				if(curStage == 'studio') {

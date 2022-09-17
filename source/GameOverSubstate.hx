@@ -70,7 +70,7 @@ class GameOverSubstate extends MusicBeatSubstate
 		lmao.screenCenter(FlxAxes.X);
 		add(lmao);
 
-		if(characterName == 'bf-pole-dead'){
+		if(characterName == 'bf-pole-dead' && !isEnding) {
 			new FlxTimer().start(1, function(e:FlxTimer){
 				FlxTween.tween(lmao, {alpha: 1}, 1, {ease: FlxEase.circOut});
 			});
@@ -172,6 +172,9 @@ class GameOverSubstate extends MusicBeatSubstate
 			boyfriend.playAnim('deathConfirm', true);
 			FlxG.sound.music.stop();
 			FlxG.sound.play(Paths.music(endSoundName));
+			if(characterName == 'bf-pole-dead') {
+				lmao.alpha = 1;
+			}
 			new FlxTimer().start(0.7, function(tmr:FlxTimer)
 			{
 				FlxG.camera.fade(FlxColor.BLACK, 2, false, function()
