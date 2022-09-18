@@ -2043,7 +2043,7 @@ class PlayState extends MusicBeatState
 					whiteScreen.scrollFactor.set();
 					whiteScreen.blend = ADD;
 					camHUD.visible = false;
-					snapCamFollowToPos(dad.getMidpoint().x + 400, dad.getMidpoint().y - 100);
+					snapCamFollowToPos(dad.getMidpoint().x + 340, dad.getMidpoint().y - 100);
 					inCutscene = true;
 
 					FlxTween.tween(whiteScreen, {alpha: 0}, 1, {
