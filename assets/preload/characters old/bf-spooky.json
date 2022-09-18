@@ -2,6 +2,46 @@
 	"animations": [
 		{
 			"offsets": [
+				-20,
+				2
+			],
+			"indices": [
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15
+			],
+			"fps": 24,
+			"anim": "danceRight",
+			"loop": false,
+			"name": "BF-spooky"
+		},
+		{
+			"offsets": [
+				-20,
+				2
+			],
+			"indices": [
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6
+			],
+			"fps": 24,
+			"anim": "danceLeft",
+			"loop": false,
+			"name": "BF-spooky"
+		},
+		{
+			"offsets": [
 				-37,
 				-57
 			],
@@ -46,52 +86,19 @@
 		},
 		{
 			"offsets": [
-				-38,
-				-57
-			],
-			"loop": false,
-			"fps": 24,
-			"anim": "singDOWNmiss",
-			"indices": [],
-			"name": "Miss Down"
-		},
-		{
-			"offsets": [
-				-41,
-				14
-			],
-			"loop": false,
-			"fps": 24,
-			"anim": "singUPmiss",
-			"indices": [],
-			"name": "Miss Up"
-		},
-		{
-			"offsets": [
-				-31,
+				-8,
 				3
 			],
 			"loop": false,
 			"fps": 24,
-			"anim": "singLEFTmiss",
+			"anim": "hey-stressed",
 			"indices": [],
-			"name": "Miss Left"
+			"name": "BF HEY!! stressed"
 		},
 		{
 			"offsets": [
-				-52,
-				-6
-			],
-			"loop": false,
-			"fps": 24,
-			"anim": "singRIGHTmiss",
-			"indices": [],
-			"name": "Miss Right"
-		},
-		{
-			"offsets": [
-				-34,
-				21
+				-49,
+				40
 			],
 			"loop": false,
 			"fps": 24,
@@ -113,7 +120,7 @@
 		{
 			"offsets": [
 				-26,
-				0
+				-7
 			],
 			"loop": false,
 			"fps": 24,
@@ -124,7 +131,7 @@
 		{
 			"offsets": [
 				-37,
-				-53
+				-57
 			],
 			"loop": false,
 			"fps": 24,
@@ -133,128 +140,92 @@
 			"name": "Stressed Down0"
 		},
 		{
+			"offsets": [
+				-39,
+				39
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singUPmiss",
 			"loop": false,
+			"name": "Miss Up"
+		},
+		{
+			"offsets": [
+				-52,
+				3
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singRIGHTmiss",
+			"loop": false,
+			"name": "Miss Right"
+		},
+		{
+			"offsets": [
+				-16,
+				-7
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singLEFTmiss",
+			"loop": false,
+			"name": "Miss Left"
+		},
+		{
 			"offsets": [
 				-38,
+				-64
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singDOWNmiss",
+			"loop": false,
+			"name": "Miss Down"
+		},
+		{
+			"offsets": [
+				-37,
 				-65
 			],
-			"anim": "singDOWNmiss-stressed",
+			"indices": [],
 			"fps": 24,
-			"name": "Miss Stress Down0",
-			"indices": []
+			"anim": "singDOWNmiss-stressed",
+			"loop": false,
+			"name": "Miss Stress Down0"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				-21,
-				4
+				-7
 			],
-			"anim": "singLEFTmiss-stressed",
+			"indices": [],
 			"fps": 24,
-			"name": "Miss Stress Left0",
-			"indices": []
+			"anim": "singLEFTmiss-stressed",
+			"loop": false,
+			"name": "Miss Stress Left0"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				-50,
-				10
+				3
 			],
+			"indices": [],
+			"fps": 24,
 			"anim": "singRIGHTmiss-stressed",
-			"fps": 24,
-			"name": "Miss Stress Right",
-			"indices": []
+			"loop": false,
+			"name": "Miss Stress Right"
 		},
 		{
-			"loop": false,
 			"offsets": [
-				-40,
-				11
+				-39,
+				40
 			],
+			"indices": [],
+			"fps": 24,
 			"anim": "singUPmiss-stressed",
-			"fps": 24,
-			"name": "Miss Stress Up",
-			"indices": []
-		},
-		{
-			"offsets": [
-				-20,
-				2
-			],
-			"indices": [
-				7,
-				8,
-				9,
-				10,
-				11,
-				12,
-				13,
-				14,
-				15
-			],
-			"fps": 24,
-			"anim": "danceRight",
 			"loop": false,
-			"name": "BF-spooky"
-		},
-		{
-			"offsets": [
-				-20,
-				2
-			],
-			"indices": [
-				0,
-				1,
-				2,
-				3,
-				4,
-				5,
-				6
-			],
-			"fps": 24,
-			"anim": "danceLeft",
-			"loop": false,
-			"name": "BF-spooky"
-		},
-		{
-			"offsets": [
-				-20,
-				2
-			],
-			"indices": [
-				7,
-				8,
-				9,
-				10,
-				11,
-				12,
-				13,
-				14,
-				15
-			],
-			"fps": 24,
-			"anim": "danceRight-stressed",
-			"loop": false,
-			"name": "BF-spooky"
-		},
-		{
-			"offsets": [
-				-20,
-				2
-			],
-			"indices": [
-				0,
-				1,
-				2,
-				3,
-				4,
-				5,
-				6
-			],
-			"fps": 24,
-			"anim": "danceLeft-stressed",
-			"loop": false,
-			"name": "BF-spooky"
+			"name": "Miss Stress Up"
 		}
 	],
 	"no_antialiasing": false,

@@ -3,154 +3,12 @@
 		{
 			"loop": false,
 			"offsets": [
-				-42,
-				-65
-			],
-			"anim": "singDOWN",
-			"fps": 24,
-			"name": "Sing Down",
-			"indices": []
-		},
-		{
-			"loop": false,
-			"offsets": [
-				-49,
-				32
-			],
-			"anim": "singUP",
-			"fps": 24,
-			"name": "Sing Up",
-			"indices": []
-		},
-		{
-			"loop": false,
-			"offsets": [
-				-51,
-				-5
-			],
-			"anim": "singRIGHT",
-			"fps": 24,
-			"name": "Sing Right",
-			"indices": []
-		},
-		{
-			"loop": false,
-			"offsets": [
-				-27,
-				-15
-			],
-			"anim": "singLEFT",
-			"fps": 24,
-			"name": "Sing Left",
-			"indices": []
-		},
-		{
-			"offsets": [
-				-42,
-				-62
-			],
-			"loop": false,
-			"fps": 24,
-			"anim": "singDOWN-stressed",
-			"indices": [],
-			"name": "Stressed Down0"
-		},
-		{
-			"offsets": [
-				-35,
-				11
-			],
-			"loop": false,
-			"fps": 24,
-			"anim": "singUP-stressed",
-			"indices": [],
-			"name": "Stressed Up0"
-		},
-		{
-			"offsets": [
-				-53,
-				-5
-			],
-			"loop": false,
-			"fps": 24,
-			"anim": "singRIGHT-stressed",
-			"indices": [],
-			"name": "Stressed Right0"
-		},
-		{
-			"loop": false,
-			"offsets": [
-				-31,
-				-10
-			],
-			"anim": "singLEFT-stressed",
-			"fps": 24,
-			"name": "Stressed Left0",
-			"indices": []
-		},
-		{
-			"loop": false,
-			"offsets": [
-				-32,
-				5
-			],
-			"anim": "singLEFTmiss",
-			"fps": 24,
-			"name": "Miss Left",
-			"indices": []
-		},
-		{
-			"loop": false,
-			"offsets": [
-				-52,
-				-5
-			],
-			"anim": "singRIGHTmiss",
-			"fps": 24,
-			"name": "Miss Right",
-			"indices": []
-		},
-		{
-			"loop": false,
-			"offsets": [
-				-40,
-				-66
-			],
-			"anim": "singDOWNmiss",
-			"fps": 24,
-			"name": "Miss Down",
-			"indices": []
-		},
-		{
-			"loop": false,
-			"offsets": [
-				-39,
-				6
-			],
-			"anim": "singUPmiss",
-			"fps": 24,
-			"name": "Miss Up",
-			"indices": []
-		},
-		{
-			"loop": false,
-			"offsets": [
-				15,
-				-1
-			],
-			"anim": "dodge",
-			"fps": 24,
-			"name": "boyfriend dodge",
-			"indices": []
-		},
-		{
-			"offsets": [
 				9,
-				64
+				72
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "danceRight",
+			"fps": 24,
+			"name": "bf limo dance0",
 			"indices": [
 				0,
 				1,
@@ -161,17 +19,17 @@
 				6,
 				7,
 				8
-			],
-			"name": "bf limo dance0"
+			]
 		},
 		{
+			"loop": false,
 			"offsets": [
 				109,
-				64
+				72
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "danceLeft",
+			"fps": 24,
+			"name": "bf limo dance0",
 			"indices": [
 				9,
 				10,
@@ -182,94 +40,72 @@
 				15,
 				16,
 				17
-			],
-			"name": "bf limo dance0"
+			]
 		},
 		{
-			"loop": false,
 			"offsets": [
-				-21,
-				-6
+				15,
+				9
 			],
-			"anim": "singLEFTmiss-stressed",
+			"loop": false,
 			"fps": 24,
-			"name": "Miss Stress Left0",
-			"indices": []
+			"anim": "dodge",
+			"indices": [],
+			"name": "boyfriend dodge"
 		},
 		{
+			"offsets": [
+				-37,
+				-57
+			],
 			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "Sing Down"
+		},
+		{
 			"offsets": [
 				-49,
-				0
-			],
-			"anim": "singRIGHTmiss-stressed",
-			"fps": 24,
-			"name": "Miss Stress Right0",
-			"indices": []
-		},
-		{
-			"loop": false,
-			"offsets": [
-				-43,
-				-75
-			],
-			"anim": "singDOWNmiss-stressed",
-			"fps": 24,
-			"name": "Miss Stress Down0",
-			"indices": []
-		},
-		{
-			"loop": false,
-			"offsets": [
-				-40,
-				2
-			],
-			"anim": "singUPmiss-stressed",
-			"fps": 24,
-			"name": "Miss Stress Up0",
-			"indices": []
-		},
-		{
-			"offsets": [
-				-15,
-				6
+				40
 			],
 			"loop": false,
 			"fps": 24,
-			"anim": "singLEFTmiss-stressed",
+			"anim": "singUP",
 			"indices": [],
-			"name": "Miss Stress Left0"
+			"name": "Sing Up"
 		},
 		{
 			"offsets": [
-				-28,
-				-67
+				-53,
+				4
 			],
 			"loop": false,
 			"fps": 24,
-			"anim": "singDOWNmiss-stressed",
+			"anim": "singRIGHT",
 			"indices": [],
-			"name": "Miss Stress Down0"
+			"name": "Sing Right"
 		},
 		{
 			"offsets": [
-				-36,
-				14
+				-26,
+				-7
 			],
 			"loop": false,
 			"fps": 24,
-			"anim": "singRIGHTmiss-stressed",
+			"anim": "singLEFT",
 			"indices": [],
-			"name": "Miss Stress Right0"
+			"name": "Sing Left"
 		},
 		{
+			"loop": false,
 			"offsets": [
 				136,
 				45
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "danceLeft-stressed",
+			"fps": 24,
+			"name": "bf limo dance sweaty0",
 			"indices": [
 				12,
 				13,
@@ -283,17 +119,17 @@
 				21,
 				22,
 				23
-			],
-			"name": "bf limo dance sweaty0"
+			]
 		},
 		{
+			"loop": false,
 			"offsets": [
 				32,
 				45
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "danceRight-stressed",
+			"fps": 24,
+			"name": "bf limo dance sweaty0",
 			"indices": [
 				0,
 				1,
@@ -307,142 +143,160 @@
 				9,
 				10,
 				11
-			],
-			"name": "bf limo dance sweaty0"
-		},
-		{
-			"offsets": [
-				-42,
-				-65
-			],
-			"loop": true,
-			"fps": 24,
-			"anim": "singDOWN-loop",
-			"indices": [
-				4,
-				5,
-				6,
-				7
-			],
-			"name": "Sing Down"
+			]
 		},
 		{
 			"offsets": [
 				-49,
-				32
+				40
 			],
-			"loop": true,
+			"loop": false,
 			"fps": 24,
-			"anim": "singUP-loop",
-			"indices": [
-				4,
-				5,
-				6,
-				7
-			],
-			"name": "Sing Up"
-		},
-		{
-			"offsets": [
-				-51,
-				-5
-			],
-			"loop": true,
-			"fps": 24,
-			"anim": "singRIGHT-loop",
-			"indices": [
-				4,
-				5,
-				6,
-				7
-			],
-			"name": "Sing Right"
-		},
-		{
-			"offsets": [
-				-27,
-				-15
-			],
-			"loop": true,
-			"fps": 24,
-			"anim": "singLEFT-loop",
-			"indices": [
-				4,
-				5,
-				6,
-				7
-			],
-			"name": "Sing Left"
-		},
-		{
-			"offsets": [
-				-42,
-				-62
-			],
-			"loop": true,
-			"fps": 24,
-			"anim": "singDOWN-stressed-loop",
-			"indices": [
-				11,
-				12,
-				13,
-				14
-			],
-			"name": "Stressed Down0"
-		},
-		{
-			"offsets": [
-				-35,
-				11
-			],
-			"loop": true,
-			"fps": 24,
-			"anim": "singUP-stressed-loop",
-			"indices": [
-				10,
-				11,
-				12,
-				13,
-				14
-			],
+			"anim": "singUP-stressed",
+			"indices": [],
 			"name": "Stressed Up0"
 		},
 		{
 			"offsets": [
 				-53,
-				-5
+				4
 			],
-			"loop": true,
+			"loop": false,
 			"fps": 24,
-			"anim": "singRIGHT-stressed-loop",
-			"indices": [
-				11,
-				12,
-				13,
-				14
-			],
+			"anim": "singRIGHT-stressed",
+			"indices": [],
 			"name": "Stressed Right0"
 		},
 		{
 			"offsets": [
-				-31,
-				-10
+				-26,
+				-7
 			],
-			"loop": true,
+			"loop": false,
 			"fps": 24,
-			"anim": "singLEFT-stressed-loop",
-			"indices": [
-				11,
-				12,
-				13,
-				14
-			],
+			"anim": "singLEFT-stressed",
+			"indices": [],
 			"name": "Stressed Left0"
 		},
 		{
 			"offsets": [
+				-37,
+				-57
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN-stressed",
+			"indices": [],
+			"name": "Stressed Down0"
+		},
+		{
+			"offsets": [
+				-39,
+				39
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUPmiss",
+			"indices": [],
+			"name": "Miss Up"
+		},
+		{
+			"offsets": [
+				-52,
+				3
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHTmiss",
+			"indices": [],
+			"name": "Miss Right"
+		},
+		{
+			"offsets": [
+				-16,
+				-7
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFTmiss",
+			"indices": [],
+			"name": "Miss Left"
+		},
+		{
+			"offsets": [
+				-38,
+				-64
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWNmiss",
+			"indices": [],
+			"name": "Miss Down"
+		},
+		{
+			"offsets": [
+				-37,
+				-65
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWNmiss-stressed",
+			"indices": [],
+			"name": "Miss Stress Down0"
+		},
+		{
+			"offsets": [
+				-21,
+				-7
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFTmiss-stressed",
+			"indices": [],
+			"name": "Miss Stress Left0"
+		},
+		{
+			"offsets": [
+				-50,
+				3
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHTmiss-stressed",
+			"indices": [],
+			"name": "Miss Stress Right"
+		},
+		{
+			"offsets": [
+				-39,
+				40
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUPmiss-stressed",
+			"indices": [],
+			"name": "Miss Stress Up"
+		},
+		{
+			"offsets": [
+				-5,
+				0
+			],
+			"loop": true,
+			"fps": 24,
+			"anim": "idle-loop",
+			"indices": [
+				10,
+				11,
+				12,
+				13
+			],
+			"name": "Idle0"
+		},
+		{
+			"offsets": [
 				15,
-				-1
+				9
 			],
 			"loop": true,
 			"fps": 24,
@@ -452,13 +306,161 @@
 				12
 			],
 			"name": "boyfriend dodge"
+		},
+		{
+			"offsets": [
+				-37,
+				-57
+			],
+			"loop": true,
+			"fps": 24,
+			"anim": "singDOWN-loop",
+			"indices": [
+				12,
+				13,
+				14,
+				15
+			],
+			"name": "Sing Down"
+		},
+		{
+			"offsets": [
+				-49,
+				40
+			],
+			"loop": true,
+			"fps": 24,
+			"anim": "singUP-loop",
+			"indices": [
+				12,
+				13,
+				14,
+				15
+			],
+			"name": "Sing Up"
+		},
+		{
+			"offsets": [
+				-53,
+				4
+			],
+			"loop": true,
+			"fps": 24,
+			"anim": "singRIGHT-loop",
+			"indices": [
+				12,
+				13,
+				14,
+				15
+			],
+			"name": "Sing Right"
+		},
+		{
+			"offsets": [
+				-26,
+				-7
+			],
+			"loop": true,
+			"fps": 24,
+			"anim": "singLEFT-loop",
+			"indices": [
+				12,
+				13,
+				14,
+				15
+			],
+			"name": "Sing Left"
+		},
+		{
+			"offsets": [
+				-5,
+				0
+			],
+			"loop": true,
+			"fps": 24,
+			"anim": "idle-stressed-loop",
+			"indices": [
+				12,
+				13,
+				14,
+				15,
+				16,
+				17,
+				18,
+				19
+			],
+			"name": "Stressed Idle0"
+		},
+		{
+			"offsets": [
+				-49,
+				40
+			],
+			"loop": true,
+			"fps": 24,
+			"anim": "singUP-stressed-loop",
+			"indices": [
+				10,
+				11,
+				12,
+				13
+			],
+			"name": "Stressed Up0"
+		},
+		{
+			"offsets": [
+				-53,
+				4
+			],
+			"loop": true,
+			"fps": 24,
+			"anim": "singRIGHT-stressed-loop",
+			"indices": [
+				14,
+				15,
+				16,
+				17
+			],
+			"name": "Stressed Right0"
+		},
+		{
+			"offsets": [
+				-26,
+				-7
+			],
+			"loop": true,
+			"fps": 24,
+			"anim": "singLEFT-stressed-loop",
+			"indices": [
+				14,
+				15,
+				16,
+				17
+			],
+			"name": "Stressed Left0"
+		},
+		{
+			"offsets": [
+				-37,
+				-57
+			],
+			"loop": true,
+			"fps": 24,
+			"anim": "singDOWN-stressed-loop",
+			"indices": [
+				13,
+				14,
+				15,
+				16
+			],
+			"name": "Stressed Down0"
 		}
 	],
 	"no_antialiasing": false,
 	"image": "characters/bfCar_MILF_Old",
 	"position": [
 		10,
-		370
+		380
 	],
 	"healthicon": "bf",
 	"flip_x": true,
@@ -468,8 +470,8 @@
 		209
 	],
 	"camera_position": [
-		16,
-		17
+		30,
+		-10
 	],
 	"sing_duration": 4,
 	"scale": 1
