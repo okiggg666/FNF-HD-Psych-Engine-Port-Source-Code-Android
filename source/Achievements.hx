@@ -158,7 +158,7 @@ class AchievementObject extends FlxSpriteGroup {
 			achievementIcon = new FlxSprite(achievementBG.x + 10, achievementBG.y + 10).loadGraphic(Paths.image('achievements HD old/' + name));
 		} else if(ClientPrefs.HDIcons == 'Older Version') {
 			achievementIcon = new FlxSprite(achievementBG.x + 10, achievementBG.y + 10).loadGraphic(Paths.image('achievements HD older/' + name));
-		} else if (ClientPrefs.HDIcons == 'Disabled') {
+		} else {
 			achievementIcon = new FlxSprite(achievementBG.x + 10, achievementBG.y + 10).loadGraphic(Paths.image('achievements/' + name));
 		}
 

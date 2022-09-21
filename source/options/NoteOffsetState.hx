@@ -431,7 +431,9 @@ class NoteOffsetState extends MusicBeatState
 		{
 			boyfriend.dance();
 			gf.dance();
-			freshCrowd.dance(true);
+			if(!ClientPrefs.lowQuality) {
+				freshCrowd.dance(true);
+			}
 		}
 		
 		if(curBeat % 4 == 2)

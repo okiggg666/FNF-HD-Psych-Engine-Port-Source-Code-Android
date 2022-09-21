@@ -736,9 +736,10 @@ class PlayState extends MusicBeatState
 				halloweenWhite.makeGraphic(Std.int(FlxG.width * 3), Std.int(FlxG.height * 3), FlxColor.WHITE);
 				halloweenWhite.alpha = 0;
 				halloweenWhite.blend = ADD;
+
 				//PRECACHE SOUNDS
-				CoolUtil.precacheSound('thunder_1');
-				CoolUtil.precacheSound('thunder_2');
+				precacheList.set('thunder_1', 'sound');
+				precacheList.set('thunder_2', 'sound');
 
 			case 'philly': //Week 3
 				if(!ClientPrefs.OldHDbg) {
@@ -782,7 +783,6 @@ class PlayState extends MusicBeatState
 					add(phillyStreet);
 
 					trainSound = new FlxSound().loadEmbedded(Paths.sound('train_passes'));
-					CoolUtil.precacheSound('train_passes');
 					FlxG.sound.list.add(trainSound);
 
 					boppers = new Week3Boppers(0, 0);
@@ -829,7 +829,6 @@ class PlayState extends MusicBeatState
 					add(phillyStreet);
 
 					trainSound = new FlxSound().loadEmbedded(Paths.sound('train_passes'));
-					CoolUtil.precacheSound('train_passes');
 					FlxG.sound.list.add(trainSound);
 
 					boppers = new Week3Boppers(0, 0);
@@ -878,7 +877,6 @@ class PlayState extends MusicBeatState
 					add(phillyStreet);
 
 					trainSound = new FlxSound().loadEmbedded(Paths.sound('train_passes'));
-					CoolUtil.precacheSound('train_passes');
 					FlxG.sound.list.add(trainSound);
 
 					boppers = new Week3Boppers(0, 0);
@@ -925,7 +923,6 @@ class PlayState extends MusicBeatState
 					add(phillyStreet);
 
 					trainSound = new FlxSound().loadEmbedded(Paths.sound('train_passes'));
-					CoolUtil.precacheSound('train_passes');
 					FlxG.sound.list.add(trainSound);
 
 					boppers = new Week3Boppers(0, 0);
@@ -972,7 +969,7 @@ class PlayState extends MusicBeatState
 					resetLimoKill();
 
 					//PRECACHE SOUND
-					CoolUtil.precacheSound('dancerdeath');
+					precacheList.set('dancerdeath', 'sound');
 				}
 
 				limo = new BGSprite('limoOG/limoDrive', -120, 550, 1, 1, ['Limo stage'], true);
@@ -1102,11 +1099,11 @@ class PlayState extends MusicBeatState
 					bubblesDead.scrollFactor.set(0.4,0.4);
 					add(bubblesDead);
 
-					CoolUtil.precacheSound('dancerdeath');
+					precacheList.set('dancerdeath', 'sound');
 				}
 
-				CoolUtil.precacheSound('warning');
-				CoolUtil.precacheSound('thud');
+				precacheList.set('warning', 'sound');
+				precacheList.set('thud', 'sound');
 
 				if(!ClientPrefs.OldHDbg) {
 					limo = new BGSprite('limo/limoDrive', -120, 550, 1, 1, ['Limo stage']);
@@ -1170,8 +1167,8 @@ class PlayState extends MusicBeatState
 
 					bgEscalator = new BGSprite('christmas/bgEscalator' + suffix, -700, -200, 0.3, 0.3, ['esc']);
 					bgEscalator.setGraphicSize(Std.int(bgEscalator.width * 0.9));
-					for (i in 0...3){
-					bgEscalator.animation.addByPrefix('' + i,'esc' + i, 1, false);
+					for (i in 0...3) {
+						bgEscalator.animation.addByPrefix('' + i,'esc' + i, 1, false);
 					}
 					bgEscalator.updateHitbox();
 					bgEscalator.animation.play('1');
@@ -1179,7 +1176,6 @@ class PlayState extends MusicBeatState
 				}
 
 				var tree:BGSprite = new BGSprite('christmas/christmasTree', 370, -250, 0.40, 0.40);
-				tree.antialiasing = true;
 				add(tree);
 
 				if(!ClientPrefs.OldHDbg) {
@@ -1212,7 +1208,7 @@ class PlayState extends MusicBeatState
 					overlayChristmas.cameras = [camOverlay];
 				}
 
-				CoolUtil.precacheSound('Lights_Shut_off');
+				precacheList.set('Lights_Shut_off', 'sound');
 
 			case 'mallEvil': //Week 5 - Winter Horrorland
 				var bg:BGSprite = new BGSprite('christmas/evilBG', -400, -500, 0.2, 0.2);
@@ -1404,8 +1400,8 @@ class PlayState extends MusicBeatState
 				GameOverSubstate.endSoundName = 'gameOverEnd';
 				GameOverSubstate.characterName = 'bf-sonic-dead';
 
-				CoolUtil.precacheSound('sonicSkid');
-				CoolUtil.precacheSound('ringDrop');
+				precacheList.set('sonicSkid', 'sound');
+				precacheList.set('ringDrop', 'sound');
 
 				var ringLoad = new FlxSprite();
 				ringLoad.frames = Paths.getSparrowAtlas("sonicshit/racing/ringSplash", "shared");
@@ -2106,15 +2102,15 @@ class PlayState extends MusicBeatState
 		RecalculateRating();
 
 		//PRECACHING MISS SOUNDS BECAUSE I THINK THEY CAN LAG PEOPLE AND FUCK THEM UP IDK HOW HAXE WORKS
-		if(ClientPrefs.hitsoundVolume > 0) CoolUtil.precacheSound('hitsound');
-		CoolUtil.precacheSound('missnote1');
-		CoolUtil.precacheSound('missnote2');
-		CoolUtil.precacheSound('missnote3');
+		if(ClientPrefs.hitsoundVolume > 0) precacheList.set('hitsound', 'sound');
+		precacheList.set('missnote1', 'sound');
+		precacheList.set('missnote2', 'sound');
+		precacheList.set('missnote3', 'sound');
 
 		if (PauseSubState.songName != null) {
-			CoolUtil.precacheMusic(PauseSubState.songName);
+			precacheList.set(PauseSubState.songName, 'music');
 		} else if(ClientPrefs.pauseMusic != 'None') {
-			CoolUtil.precacheMusic(Paths.formatToSongPath(ClientPrefs.pauseMusic));
+			precacheList.set(Paths.formatToSongPath(ClientPrefs.pauseMusic), 'music');
 		}
 
 		#if desktop
@@ -2366,8 +2362,8 @@ class PlayState extends MusicBeatState
 
 		if(dialogueFile.dialogue.length > 0) {
 			inCutscene = true;
-			CoolUtil.precacheSound('dialogue');
-			CoolUtil.precacheSound('dialogueClose');
+			precacheList.set('dialogue', 'sound');
+			precacheList.set('dialogueClose', 'sound');
 			psychDialogue = new DialogueBoxPsych(dialogueFile, song);
 			psychDialogue.scrollFactor.set();
 			if(endingSong) {
@@ -5149,10 +5145,12 @@ class PlayState extends MusicBeatState
 			if(healthBar.percent < 40 && boyfriend.animation.curAnim.name.endsWith('-stressed')) isStressed = '-stressed';
 
 			var animToPlay:String = singAnimations[Std.int(Math.abs(daNote.noteData))]+ 'miss' + isStressed + daAlt;
-			char.playAnim(animToPlay, true);
+			if(boyfriend.dodgetime == 0) {
+				char.playAnim(animToPlay, true);
+			}
 		}
 
-		if (curStage == "sonic-stage"){
+		if (curStage == "sonic-stage") {
 			bfBody.animation.play('bf miss', false);
 			bfBody.offset.y = 100;
 			FlxG.sound.play(Paths.sound("sonicSkid", "shared"), 0.35);
@@ -5312,8 +5310,10 @@ class PlayState extends MusicBeatState
 
 			if(char != null)
 			{
-				char.playAnim(animToPlay, true);
-				char.holdTimer = 0;
+				if(char.dodgetime == 0) {
+					char.playAnim(animToPlay, true);
+					char.holdTimer = 0;
+				}
 			}
 		}
 
@@ -5412,7 +5412,7 @@ class PlayState extends MusicBeatState
 
 				if(note.gfNote) 
 				{
-					if(gf != null)
+					if(gf != null && gf.dodgetime == 0)
 					{
 						gf.playAnim(animToPlay + daAlt, true);
 						gf.holdTimer = 0;
@@ -5420,8 +5420,10 @@ class PlayState extends MusicBeatState
 				}
 				else
 				{
-					boyfriend.playAnim(animToPlay + blammedAnimPicoPlayer + isStressed + daAlt, true);
-					boyfriend.holdTimer = 0;
+					if(boyfriend.dodgetime == 0) {
+						boyfriend.playAnim(animToPlay + blammedAnimPicoPlayer + isStressed + daAlt, true);
+						boyfriend.holdTimer = 0;
+					}
 				}
 
 				if(note.noteType == 'Warning Note') {
@@ -5772,10 +5774,10 @@ class PlayState extends MusicBeatState
 
 				bgLimoTimer = new FlxTimer().start(1, function(e:FlxTimer) {
 					bgLimoTween = FlxTween.tween(bgLimo, {x: 1800}, 2, {ease:FlxEase.sineIn});
-					michael.x += 1995;
-					alvin.x += 1995;
-					bojangles.x += 1995;
-					bubbles.x += 1995;
+					michael.x += 2000;
+					alvin.x += 2000;
+					bojangles.x += 2000;
+					bubbles.x += 2000;
 
 					if(ClientPrefs.impEvent == 'In Every Song') {
 						bgLimoTimer2 = new FlxTimer().start(2.7, function(e:FlxTimer) {
@@ -5786,9 +5788,9 @@ class PlayState extends MusicBeatState
 							bubbles.visible = true;
 							bgLimoTween = FlxTween.tween(bgLimo, {x: -200}, 2, {ease:FlxEase.sineOut});
 							dancersTween = FlxTween.tween(michael, {x: 175}, 2, {ease:FlxEase.sineOut});
-							dancersTween2 = FlxTween.tween(alvin, {x: 461}, 2, {ease:FlxEase.sineOut});
-							dancersTween3 = FlxTween.tween(bojangles, {x: 741}, 2, {ease:FlxEase.sineOut});
-							dancersTween4 = FlxTween.tween(bubbles, {x: 1042}, 2, {ease:FlxEase.sineOut});
+							dancersTween2 = FlxTween.tween(alvin, {x: 445}, 2, {ease:FlxEase.sineOut});
+							dancersTween3 = FlxTween.tween(bojangles, {x: 715}, 2, {ease:FlxEase.sineOut});
+							dancersTween4 = FlxTween.tween(bubbles, {x: 985}, 2, {ease:FlxEase.sineOut});
 						});
 					}
 				});
@@ -6070,20 +6072,20 @@ class PlayState extends MusicBeatState
 			}
 			if(curSong == "Milf") {
 				if(ClientPrefs.impEvent != 'In Every Song') {
-					if (curStep == 318 && !endingSong && !killdancers) {
+					if (curStep == 317 && !endingSong && !killdancers) {
 						killDancers();
 					}
 				} else {
-					if (curStep == 318 && !endingSong && !killdancers) {
+					if (curStep == 317 && !endingSong && !killdancers) {
 						killDancers();
 					}
-					if (curStep == 574 && !endingSong && !killdancers) {
+					if (curStep == 573 && !endingSong && !killdancers) {
 						killDancers();
 					}
-					if (curStep == 1214 && !endingSong && !killdancers) {
+					if (curStep == 1213 && !endingSong && !killdancers) {
 						killDancers();
 					}
-					if (curStep == 1470 && !endingSong && !killdancers) {
+					if (curStep == 1489 && !endingSong && !killdancers) {
 						killDancers();
 					}
 				}
@@ -6320,7 +6322,7 @@ class PlayState extends MusicBeatState
 			bfBody.animation.addByPrefix("bfRunningBottomFast", "BF BOTTOM", 48, true);
 			bfBody.animation.addByPrefix("bf miss", "BF MISS", 24, true);
 			bfBody.animation.play("bfRunningBottom");
-			bfBody.antialiasing = true;
+			bfBody.antialiasing = ClientPrefs.globalAntialiasing;
 
 			add(bfBody);
 			boyfriend.visible = true;

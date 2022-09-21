@@ -330,10 +330,10 @@
 			"fps": 24,
 			"anim": "singLEFT-loop",
 			"indices": [
-				4,
-				5,
-				6,
-				7
+				11,
+				12,
+				13,
+				14
 			],
 			"name": "BF NOTE LEFT0"
 		},
@@ -346,10 +346,10 @@
 			"fps": 24,
 			"anim": "singUP-loop",
 			"indices": [
-				4,
-				5,
-				6,
-				7
+				11,
+				12,
+				13,
+				14
 			],
 			"name": "BF NOTE UP0"
 		},
@@ -362,10 +362,10 @@
 			"fps": 24,
 			"anim": "singRIGHT-loop",
 			"indices": [
-				4,
-				5,
-				6,
-				7
+				11,
+				12,
+				13,
+				14
 			],
 			"name": "BF NOTE RIGHT0"
 		},
@@ -405,10 +405,10 @@
 			"fps": 24,
 			"anim": "singDOWN-loop",
 			"indices": [
-				4,
-				5,
-				6,
-				7
+				11,
+				12,
+				13,
+				14
 			],
 			"name": "BF NOTE DOWN0"
 		},
@@ -481,10 +481,10 @@
 			"fps": 24,
 			"name": "Stressed Right0",
 			"indices": [
-				8,
-				9,
-				10,
-				11
+				11,
+				12,
+				13,
+				14
 			]
 		},
 		{
@@ -497,10 +497,10 @@
 			"fps": 24,
 			"name": "Left Stressed0",
 			"indices": [
-				8,
-				9,
-				10,
-				11
+				11,
+				12,
+				13,
+				14
 			]
 		},
 		{
@@ -509,10 +509,10 @@
 				47
 			],
 			"indices": [
-				8,
-				9,
-				10,
-				11
+				11,
+				12,
+				13,
+				14
 			],
 			"fps": 24,
 			"anim": "singUP-stressed-loop",
@@ -525,10 +525,10 @@
 				-62
 			],
 			"indices": [
-				8,
-				9,
-				10,
-				11
+				11,
+				12,
+				13,
+				14
 			],
 			"fps": 24,
 			"anim": "singDOWN-stressed-loop",

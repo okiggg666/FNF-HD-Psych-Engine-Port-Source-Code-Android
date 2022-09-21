@@ -105,7 +105,7 @@ class HealthIcon extends FlxSprite
 					antialiasing = false;
 				}
 			}
-		} else if(ClientPrefs.HDIcons == 'Disabled') {
+		} else {
 			if(this.char != char) {
 				var name:String = 'icons/' + char;
 				if(!Paths.fileExists('images/' + name + '.png', IMAGE)) name = 'icons/icon-' + char; //Older versions of psych engine's support
