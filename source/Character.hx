@@ -55,6 +55,7 @@ class Character extends FlxSprite
 	public var colorTween:FlxTween;
 	public var holdTimer:Float = 0;
 	public var dodgetime:Float = 0;
+	public var shootTime:Float = 0;
 	public var trueX:Float;
 	public var trueY:Float;
 	var connectedParent:FlxSprite;
@@ -76,6 +77,7 @@ class Character extends FlxSprite
 	public var cameraPosition:Array<Float> = [0, 0];
 
 	public var hasMissAnimations:Bool = false;
+	public var hasStressedAnimations:Bool = false;
 
 	//Used on Character Editor
 	public var imageFile:String = '';
@@ -234,6 +236,7 @@ class Character extends FlxSprite
 		originalFlipX = flipX;
 
 		if(animOffsets.exists('singLEFTmiss') || animOffsets.exists('singDOWNmiss') || animOffsets.exists('singUPmiss') || animOffsets.exists('singRIGHTmiss')) hasMissAnimations = true;
+		if(animOffsets.exists('singLEFT-stressed') || animOffsets.exists('singDOWN-stressed') || animOffsets.exists('singUP-stressed') || animOffsets.exists('singRIGHT-stressed') || animOffsets.exists('hey-stressed')) hasStressedAnimations = true;
 		recalculateDanceIdle();
 		dance();
 
@@ -267,6 +270,15 @@ class Character extends FlxSprite
 	{
 		if (dodgetime > 0)
 			dodgetime--;
+
+		if (shootTime > 0)
+		{
+			shootTime -= elapsed;
+			if(shootTime <= 0)
+			{
+				shootTime = 0;
+			}
+		}
 		
 		if(connectedParent != null){
 
@@ -352,35 +364,35 @@ class Character extends FlxSprite
 						suffix = '-stressed';
 					else
 						suffix = '';
-					playAnim('idle' + suffix);
+					playAnim('idle' + suffix + idleSuffix);
 				case 'bf-pico':
 					var suffix:String = "";
 					if (PlayState.fuckCval)
 						suffix = '-stressed';
 					else
 						suffix = '';
-					playAnim('idle' + suffix);
+					playAnim('idle' + suffix + idleSuffix);
 				case 'bf-hellchart':
 					var suffix:String = "";
 					if (PlayState.fuckCval)
 						suffix = '-stressed';
 					else
 						suffix = '';
-					playAnim('idle' + suffix);
+					playAnim('idle' + suffix + idleSuffix);
 				case 'bf-car':
 					var suffix:String = "";
 					if (PlayState.fuckCval)
 						suffix = '-stressed';
 					else
 						suffix = '';
-					playAnim('idle' + suffix);
+					playAnim('idle' + suffix + idleSuffix);
 				case 'bf-christmas':
 					var suffix:String = "";
 					if (PlayState.fuckCval)
 						suffix = '-stressed';
 					else
 						suffix = '';
-					playAnim('idle' + suffix);
+					playAnim('idle' + suffix + idleSuffix);
 			}
 		}
 	}

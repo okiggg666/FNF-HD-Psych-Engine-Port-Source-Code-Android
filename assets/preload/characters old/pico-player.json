@@ -1,87 +1,87 @@
 {
 	"animations": [
 		{
+			"loop": false,
 			"offsets": [
 				0,
 				0
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "idle",
-			"indices": [],
-			"name": "Pico Idle Dance0"
+			"fps": 24,
+			"name": "Pico Idle Dance0",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				0,
 				0
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "idle-cracked",
-			"indices": [],
-			"name": "Pico Idle Dance0"
+			"fps": 24,
+			"name": "Pico Idle Dance0",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				183,
 				-75
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "singDOWN",
-			"indices": [],
-			"name": "Pico Down Note0"
+			"fps": 24,
+			"name": "Pico Down Note0",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				38,
 				33
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "singUP",
-			"indices": [],
-			"name": "pico Up note0"
+			"fps": 24,
+			"name": "pico Up note0",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				-35,
 				-3
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "Pico Note Right0",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				320,
+				-27
+			],
+			"anim": "shoot",
+			"fps": 24,
+			"name": "Pico-shoot0",
+			"indices": []
+		},
+		{
+			"offsets": [
+				105,
+				-11
 			],
 			"loop": false,
 			"fps": 24,
 			"anim": "singLEFT",
 			"indices": [],
-			"name": "Pico Note Right0"
-		},
-		{
-			"offsets": [
-				320,
-				-27
-			],
-			"loop": false,
-			"fps": 24,
-			"anim": "shoot",
-			"indices": [],
-			"name": "Pico-shoot0"
-		},
-		{
-			"loop": false,
-			"offsets": [
-				105,
-				-11
-			],
-			"anim": "singRIGHT",
-			"fps": 24,
-			"name": "Pico NOTE LEFT0",
-			"indices": []
+			"name": "Pico NOTE LEFT0"
 		}
 	],
 	"no_antialiasing": false,
 	"image": "characters/OldPico",
 	"position": [
-		20,
+		30,
 		315
 	],
 	"healthicon": "pico",
@@ -92,7 +92,7 @@
 		85
 	],
 	"camera_position": [
-		90,
+		150,
 		40
 	],
 	"sing_duration": 4,

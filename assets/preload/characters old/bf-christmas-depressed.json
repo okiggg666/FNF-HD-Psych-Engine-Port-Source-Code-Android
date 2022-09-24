@@ -3,73 +3,62 @@
 		{
 			"offsets": [
 				-25,
-				-10
-			],
-			"loop": false,
-			"fps": 24,
-			"anim": "singDOWNmiss",
-			"indices": [],
-			"name": "BF NOTE DOWN MISS"
-		},
-		{
-			"loop": false,
-			"offsets": [
-				-25,
 				-50
 			],
-			"anim": "singDOWN",
+			"loop": false,
 			"fps": 24,
-			"name": "DEPRESSED BF NOTE DOWN0",
-			"indices": []
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "DEPRESSED BF NOTE DOWN0"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				-5,
 				0
 			],
-			"anim": "idle",
+			"loop": false,
 			"fps": 24,
-			"name": "DEPRESSED BF idle dance",
-			"indices": []
+			"anim": "idle",
+			"indices": [],
+			"name": "DEPRESSED BF idle dance"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				-49,
 				43
 			],
-			"anim": "singUP",
+			"loop": false,
 			"fps": 24,
-			"name": "DEPRESSED BF NOTE UP0",
-			"indices": []
+			"anim": "singUP",
+			"indices": [],
+			"name": "DEPRESSED BF NOTE UP0"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				-41,
 				-6
 			],
-			"anim": "singRIGHT",
+			"loop": false,
 			"fps": 24,
-			"name": "DEPRESSED BF NOTE RIGHT0",
-			"indices": []
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "DEPRESSED BF NOTE RIGHT0"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				-13,
 				-9
 			],
-			"anim": "singLEFT",
+			"loop": false,
 			"fps": 24,
-			"name": "DEPRESSED BF NOTE LEFT0",
-			"indices": []
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "DEPRESSED BF NOTE LEFT0"
 		},
 		{
 			"offsets": [
-				-41,
-				14
+				-42,
+				42
 			],
 			"indices": [],
 			"fps": 24,
@@ -79,25 +68,36 @@
 		},
 		{
 			"offsets": [
-				-11,
-				26
-			],
-			"indices": [],
-			"fps": 24,
-			"anim": "singLEFTmiss",
-			"loop": false,
-			"name": "DEPRESSED BF NOTE LEFT0"
-		},
-		{
-			"offsets": [
 				-41,
-				29
+				-1
 			],
 			"indices": [],
 			"fps": 24,
 			"anim": "singRIGHTmiss",
 			"loop": false,
 			"name": "DEPRESSED BF NOTE RIGHT MISS"
+		},
+		{
+			"offsets": [
+				-24,
+				-44
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singDOWNmiss",
+			"loop": false,
+			"name": "BF NOTE DOWN MISS"
+		},
+		{
+			"offsets": [
+				-6,
+				-2
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singLEFTmiss",
+			"loop": false,
+			"name": "DEPRESSED BF NOTE LEFT MISS0"
 		}
 	],
 	"no_antialiasing": false,

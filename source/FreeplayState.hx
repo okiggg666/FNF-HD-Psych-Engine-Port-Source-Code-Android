@@ -66,8 +66,10 @@ class FreeplayState extends MusicBeatState
 		Paths.clearUnusedMemory();
 		
 		persistentUpdate = true;
+		Conductor.changeBPM(110);
 		PlayState.isStoryMode = false;
 		WeekData.reloadWeekFiles(false);
+		FlxG.camera.zoom = 1;
 
 		#if desktop
 		// Updating Discord Rich Presence
@@ -358,6 +360,7 @@ class FreeplayState extends MusicBeatState
 					vocals = new FlxSound();
 
 				FlxG.sound.list.add(vocals);
+				Conductor.changeBPM(beatArray[curSelected]);
 				FlxG.sound.playMusic(Paths.inst(PlayState.SONG.song), 0.7);
 				vocals.play();
 				vocals.persist = true;
@@ -440,6 +443,22 @@ class FreeplayState extends MusicBeatState
 		diffText.text = '< ' + CoolUtil.difficultyString() + ' >';
 		positionHighscore();
 	}
+
+	override function beatHit()
+	{
+		super.beatHit();
+		trace(curBeat);
+
+		if (FlxG.camera.zoom < 1.35 && songs[curSelected].songName.toLowerCase() == 'milf' && curBeat >= 8)
+		{
+			FlxG.camera.zoom += 0.030;
+		}
+		//Sum extra detail
+		if (FlxG.camera.zoom < 1.35 && songs[curSelected].songName.toLowerCase() == 'milf' && curBeat >= 168 && curBeat < 200)
+		{
+			FlxG.camera.zoom += 0.060;
+		}
+	}
 	
 	override function stepHit()
 	{
@@ -498,6 +517,7 @@ class FreeplayState extends MusicBeatState
 		} else {
 			iconArray[curSelected].animation.curAnim.curFrame = 2;
 		}
+		FlxG.camera.zoom = FlxMath.lerp(FlxG.camera.zoom, FlxG.camera.zoom, 0.95);
 		iconArray[curSelected].alpha = 1;
 
 		for (item in grpSongs.members)
