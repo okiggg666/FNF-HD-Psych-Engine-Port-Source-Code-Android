@@ -1,5 +1,4 @@
 stage
-stage-tutorial
 spooky
 philly
 limo

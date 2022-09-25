@@ -9,7 +9,7 @@ bf-date
 bf-run
 bf-run-super
 bf-remix
-bf-old-opponent
+bf-opponent
 bf-pixel
 bf-pixel-opponent
 dad
@@ -27,8 +27,6 @@ gf-pixel
 spooky
 pico
 pico-player
-pico-old
-pico-player-old
 mom
 mom-car
 mom-car-horny

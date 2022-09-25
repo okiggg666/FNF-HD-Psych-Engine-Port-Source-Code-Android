@@ -486,19 +486,19 @@ class ChartingState extends MusicBeatState
 		stepperSpeed.name = 'song_speed';
 		blockPressWhileTypingOnStepper.push(stepperSpeed);
 
+		#if MODS_ALLOWED
 		if(!ClientPrefs.OldHDbg) {
-			#if MODS_ALLOWED
 			directories = [Paths.mods('characters/'), Paths.mods(Paths.currentModDirectory + '/characters/'), Paths.getPreloadPath('characters/')];
-			#else
-			directories = [Paths.getPreloadPath('characters/')];
-			#end
 		} else {
-			#if MODS_ALLOWED
 			directories = [Paths.mods('characters old/'), Paths.mods(Paths.currentModDirectory + '/characters old/'), Paths.getPreloadPath('characters old/')];
-			#else
-			directories = [Paths.getPreloadPath('characters old/')];
-			#end
 		}
+		#else
+		if(!ClientPrefs.OldHDbg) {
+			directories = [Paths.getPreloadPath('characters/')];
+		} else {
+			directories = [Paths.getPreloadPath('characters old/')];
+		}
+		#end
 
 		var tempMap:Map<String, Bool> = new Map<String, Bool>();
 		var characters:Array<String> = CoolUtil.coolTextFile(Paths.txt('characterList'));
@@ -514,7 +514,7 @@ class ChartingState extends MusicBeatState
 					var path = haxe.io.Path.join([directory, file]);
 					if (!FileSystem.isDirectory(path) && file.endsWith('.json')) {
 						var charToCheck:String = file.substr(0, file.length - 5);
-						if(!charToCheck.endsWith('-dead') && !tempMap.exists(charToCheck)) {
+						if(!charToCheck.endsWith('-dead') && !charToCheck.endsWith('-philly') && !charToCheck.endsWith('-philly-pico') && !tempMap.exists(charToCheck)) {
 							tempMap.set(charToCheck, true);
 							characters.push(charToCheck);
 						}
@@ -549,9 +549,17 @@ class ChartingState extends MusicBeatState
 		blockPressWhileScrolling.push(player2DropDown);
 
 		#if MODS_ALLOWED
-		var directories:Array<String> = [Paths.mods('stages/'), Paths.mods(Paths.currentModDirectory + '/stages/'), Paths.getPreloadPath('stages/')];
+		if(!ClientPrefs.OldHDbg) {
+			directories = [Paths.mods('stages/'), Paths.mods(Paths.currentModDirectory + '/stages/'), Paths.getPreloadPath('stages/')];
+		} else {
+			directories = [Paths.mods('stages old/'), Paths.mods(Paths.currentModDirectory + '/stages old/'), Paths.getPreloadPath('stages old/')];
+		}
 		#else
-		var directories:Array<String> = [Paths.getPreloadPath('stages/')];
+		if(!ClientPrefs.OldHDbg) {
+			directories = [Paths.getPreloadPath('stages/')];
+		} else {
+			directories = [Paths.getPreloadPath('stages old/')];
+		}
 		#end
 
 		tempMap.clear();
@@ -559,7 +567,7 @@ class ChartingState extends MusicBeatState
 		var stages:Array<String> = [];
 		for (i in 0...stageFile.length) { //Prevent duplicates
 			var stageToCheck:String = stageFile[i];
-			if(!tempMap.exists(stageToCheck)) {
+			if(!stageToCheck.endsWith('-old') && !stageToCheck.endsWith('-picoPlayer') && !stageToCheck.endsWith('-tutorial') && !tempMap.exists(stageToCheck)) {
 				stages.push(stageToCheck);
 			}
 			tempMap.set(stageToCheck, true);
@@ -572,7 +580,7 @@ class ChartingState extends MusicBeatState
 					var path = haxe.io.Path.join([directory, file]);
 					if (!FileSystem.isDirectory(path) && file.endsWith('.json')) {
 						var stageToCheck:String = file.substr(0, file.length - 5);
-						if(!tempMap.exists(stageToCheck)) {
+						if(!stageToCheck.endsWith('-old') && !stageToCheck.endsWith('-picoPlayer') && !stageToCheck.endsWith('-tutorial') && !tempMap.exists(stageToCheck)) {
 							tempMap.set(stageToCheck, true);
 							stages.push(stageToCheck);
 						}

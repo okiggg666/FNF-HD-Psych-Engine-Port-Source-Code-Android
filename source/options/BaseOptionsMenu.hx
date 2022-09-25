@@ -341,21 +341,16 @@ class BaseOptionsMenu extends MusicBeatSubstate
 			boyfriend.destroy();
 		}
 
+		boyfriend = new Character(840, 170, 'bf', true);
 		if(!ClientPrefs.OldHDbg) {
-			boyfriend = new Character(840, 170, 'bf', true);
 			boyfriend.setGraphicSize(Std.int(boyfriend.width * 0.75));
-			boyfriend.updateHitbox();
-			boyfriend.dance();
-			insert(1, boyfriend);
-			boyfriend.visible = wasVisible;
 		} else {
-			boyfriend = new Character(840, 170, 'bf-old', true);
-			boyfriend.setGraphicSize(Std.int(boyfriend.width * 0.75));
-			boyfriend.updateHitbox();
-			boyfriend.dance();
-			insert(1, boyfriend);
-			boyfriend.visible = wasVisible;
+			boyfriend.setGraphicSize(Std.int(boyfriend.width * 0.90));
 		}
+		boyfriend.updateHitbox();
+		boyfriend.dance();
+		insert(1, boyfriend);
+		boyfriend.visible = wasVisible;
 	}
 
 	function reloadCheckboxes() {

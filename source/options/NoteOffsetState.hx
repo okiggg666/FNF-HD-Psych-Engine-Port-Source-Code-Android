@@ -107,12 +107,12 @@ class NoteOffsetState extends MusicBeatState
 			add(stageFront);
 
 			if(!ClientPrefs.lowQuality) {
-				var stageLight:BGSprite = new BGSprite('stage_light', 70, 20, 1, 1);
+				var stageLight:BGSprite = new BGSprite('stage_light', 90, -50, 1, 1);
 				stageLight.setGraphicSize(Std.int(stageLight.width * 0.6));
 				stageLight.updateHitbox();
 				add(stageLight);
 
-				var stageLight:BGSprite = new BGSprite('stage_light', 1400, 20, 1, 1);
+				var stageLight:BGSprite = new BGSprite('stage_light', 1400, -50, 1, 1);
 				stageLight.setGraphicSize(Std.int(stageLight.width * 0.6));
 				stageLight.updateHitbox();
 				stageLight.flipX = true;
@@ -132,21 +132,17 @@ class NoteOffsetState extends MusicBeatState
 		// Characters
 		if(!ClientPrefs.OldHDbg) {
 			gf = new Character(417, 149, 'gf');
-			gf.x += gf.positionArray[0];
-			gf.y += gf.positionArray[1];
-			gf.scrollFactor.set(1, 1);
 			boyfriend = new Character(990, 153, 'bf', true);
-			boyfriend.x += boyfriend.positionArray[0];
-			boyfriend.y += boyfriend.positionArray[1];
 		} else {
 			gf = new Character(190, 40, 'gf');
-			gf.x += gf.positionArray[0];
-			gf.y += gf.positionArray[1];
-			gf.scrollFactor.set(1, 1);
 			boyfriend = new Character(980, 90, 'bf', true);
-			boyfriend.x += boyfriend.positionArray[0];
-			boyfriend.y += boyfriend.positionArray[1];
 		}
+		gf.x += gf.positionArray[0];
+		gf.y += gf.positionArray[1];
+		gf.scrollFactor.set(1, 1);
+		boyfriend.x += boyfriend.positionArray[0];
+		boyfriend.y += boyfriend.positionArray[1];
+
 		add(gf);
 		add(boyfriend);
 		add(freshCrowd);

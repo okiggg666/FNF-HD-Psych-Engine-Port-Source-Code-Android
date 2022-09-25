@@ -1,103 +1,59 @@
 {
 	"animations": [
 		{
-			"loop": false,
 			"offsets": [
 				0,
 				0
 			],
-			"anim": "idle",
+			"loop": false,
 			"fps": 24,
-			"name": "Pico Idle0",
-			"indices": []
+			"anim": "idle",
+			"indices": [],
+			"name": "Pico Idle0"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				67,
 				-27
 			],
-			"anim": "singUP",
+			"loop": false,
 			"fps": 24,
-			"name": "Pico Up0",
-			"indices": []
+			"anim": "singUP",
+			"indices": [],
+			"name": "Pico Up0"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				142,
 				-172
 			],
-			"anim": "singDOWN",
+			"loop": false,
 			"fps": 24,
-			"name": "Pico Down0",
-			"indices": []
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "Pico Down0"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				102,
 				-28
 			],
-			"anim": "singRIGHT",
+			"loop": false,
 			"fps": 24,
-			"name": "Pico Right0",
-			"indices": []
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "Pico Right0"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				-77,
 				-45
 			],
-			"anim": "singLEFT",
-			"fps": 24,
-			"name": "Pico Left0",
-			"indices": []
-		},
-		{
 			"loop": false,
-			"offsets": [
-				151,
-				-171
-			],
-			"anim": "singDOWNmiss",
 			"fps": 24,
-			"name": "Pico Cracked Down0",
-			"indices": []
-		},
-		{
-			"loop": false,
-			"offsets": [
-				8,
-				21
-			],
-			"anim": "singUPmiss",
-			"fps": 24,
-			"name": "Pico Cracked Up0",
-			"indices": []
-		},
-		{
-			"loop": false,
-			"offsets": [
-				112,
-				-28
-			],
-			"anim": "singRIGHTmiss",
-			"fps": 24,
-			"name": "Pico Cracked Right0",
-			"indices": []
-		},
-		{
-			"loop": false,
-			"offsets": [
-				-86,
-				-46
-			],
-			"anim": "singLEFTmiss",
-			"fps": 24,
-			"name": "Pico Cracked Left0",
-			"indices": []
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "Pico Left0"
 		}
 	],
 	"no_antialiasing": false,
@@ -114,8 +70,8 @@
 		85
 	],
 	"camera_position": [
-		60,
-		110
+		100,
+		120
 	],
 	"sing_duration": 4,
 	"scale": 1

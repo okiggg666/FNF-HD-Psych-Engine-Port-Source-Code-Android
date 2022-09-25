@@ -58,8 +58,8 @@ class Character extends FlxSprite
 	public var shootTime:Float = 0;
 	public var trueX:Float;
 	public var trueY:Float;
-	var connectedParent:FlxSprite;
-	var connectedOffsets:Array<Array<Float>>;
+	public var connectedParent:FlxSprite;
+	public var connectedOffsets:Array<Array<Float>>;
 	public var heyTimer:Float = 0;
 	public var specialAnim:Bool = false;
 	public var animationNotes:Array<Dynamic> = [];
@@ -236,7 +236,7 @@ class Character extends FlxSprite
 		originalFlipX = flipX;
 
 		if(animOffsets.exists('singLEFTmiss') || animOffsets.exists('singDOWNmiss') || animOffsets.exists('singUPmiss') || animOffsets.exists('singRIGHTmiss')) hasMissAnimations = true;
-		if(animOffsets.exists('singLEFT-stressed') || animOffsets.exists('singDOWN-stressed') || animOffsets.exists('singUP-stressed') || animOffsets.exists('singRIGHT-stressed') || animOffsets.exists('hey-stressed')) hasStressedAnimations = true;
+		if(animOffsets.exists('danceLeft-stressed') || animOffsets.exists('danceRight-stressed') || animOffsets.exists('idle-stressed') || animOffsets.exists('singLEFT-stressed') || animOffsets.exists('singDOWN-stressed') || animOffsets.exists('singUP-stressed') || animOffsets.exists('singRIGHT-stressed')) hasStressedAnimations = true;
 		recalculateDanceIdle();
 		dance();
 
@@ -281,7 +281,6 @@ class Character extends FlxSprite
 		}
 		
 		if(connectedParent != null){
-
 			if(!animation.curAnim.name.contains("idle")){
 				x = trueX + connectedOffsets[connectedParent.animation.curAnim.curFrame % connectedOffsets.length][0];
 				y = trueY + connectedOffsets[connectedParent.animation.curAnim.curFrame % connectedOffsets.length][1];

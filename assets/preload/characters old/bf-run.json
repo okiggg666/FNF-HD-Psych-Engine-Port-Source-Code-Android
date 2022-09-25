@@ -89,15 +89,15 @@
 			"indices": []
 		},
 		{
+			"loop": true,
 			"offsets": [
 				11,
 				-2
 			],
-			"loop": true,
-			"fps": 24,
 			"anim": "idle",
-			"indices": [],
-			"name": "BF TOP0"
+			"fps": 0,
+			"name": "BF TOP0",
+			"indices": []
 		}
 	],
 	"no_antialiasing": false,

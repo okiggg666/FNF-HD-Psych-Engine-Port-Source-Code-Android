@@ -269,6 +269,7 @@ class PauseSubState extends MusicBeatSubstate
 					}
 					PlayState.changedDifficulty = false;
 					PlayState.chartingMode = false;
+					PlayState.fuckCval = false;
 			}
 		}
 	}

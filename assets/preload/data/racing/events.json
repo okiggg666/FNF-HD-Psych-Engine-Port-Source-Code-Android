@@ -1,11 +1,47 @@
 {
 	"song": {
-		"speed": 2.8,
-		"stage": "philly",
+		"speed": 3.5,
+		"stage": null,
 		"player1": "bf-run",
 		"player2": "sonic-run",
 		"player3": null,
-		"events": [],
+		"events": [
+			[
+				35636.3636363636,
+				[
+					[
+						"Camera Follow Pos",
+						"600",
+						"430"
+					]
+				]
+			],
+			[
+				36363.6363636364,
+				[
+					[
+						"Change Character",
+						"dad",
+						"super-sonic"
+					],
+					[
+						"Camera Follow Pos",
+						"",
+						""
+					]
+				]
+			],
+			[
+				112000,
+				[
+					[
+						"Change Character",
+						"bf",
+						"bf-run-super"
+					]
+				]
+			]
+		],
 		"notes": [],
 		"splashSkin": null,
 		"validScore": false,

@@ -1,59 +1,59 @@
 {
 	"animations": [
 		{
+			"loop": false,
 			"offsets": [
 				20,
 				0
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "singDOWN",
-			"indices": [],
-			"name": "SONIC RUNNING HEAD DOWN"
+			"fps": 24,
+			"name": "SONIC RUNNING HEAD DOWN",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				-22,
 				-12
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "singLEFT",
-			"indices": [],
-			"name": "SONIC RUNNING HEAD LEFT"
+			"fps": 24,
+			"name": "SONIC RUNNING HEAD LEFT",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				-27,
 				-34
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "singRIGHT",
-			"indices": [],
-			"name": "SONIC RUNNING HEAD RIGHT"
+			"fps": 24,
+			"name": "SONIC RUNNING HEAD RIGHT",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				-26,
 				-38
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "singUP",
-			"indices": [],
-			"name": "SONIC RUNNING HEAD UP"
+			"fps": 24,
+			"name": "SONIC RUNNING HEAD UP",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				-5,
 				0
 			],
-			"loop": true,
-			"fps": 24,
 			"anim": "idle",
-			"indices": [],
-			"name": "SONIC RUNNING HEAD0"
+			"fps": 0,
+			"name": "SONIC RUNNING HEAD0",
+			"indices": []
 		}
 	],
 	"no_antialiasing": false,
