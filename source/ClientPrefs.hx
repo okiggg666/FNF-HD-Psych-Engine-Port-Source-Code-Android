@@ -18,10 +18,9 @@ class ClientPrefs {
 	public static var OldHDbg:Bool = false;
 	public static var opponentStrums:Bool = true;
 	public static var disableDodgeSound:Bool = false;
-	public static var sweatShit:Bool = false;
 	public static var framerate:Int = 60;
 	public static var impEvent:String = 'Only In Milf';
-	public static var poleSpawn:Bool = true;
+	public static var poleSpawn:Bool = false;
 	public static var cursing:Bool = true;
 	public static var violence:Bool = true;
 	public static var camZooms:Bool = true;
@@ -40,6 +39,8 @@ class ClientPrefs {
 	public static var hitsoundVolume:Float = 0;
 	public static var pauseMusic:String = 'Tea Time';
 	public static var checkForUpdates:Bool = true;
+	//public static var showWarningScreen:Bool = true;
+	//public static var sweatShit:Bool = false;
 	public static var gameplaySettings:Map<String, Dynamic> = [
 		'scrollspeed' => 1.0,
 		'scrolltype' => 'multiplicative', 
@@ -116,8 +117,9 @@ class ClientPrefs {
 		FlxG.save.data.disableDodgeSound = disableDodgeSound;
 		FlxG.save.data.impEvent = impEvent;
 		FlxG.save.data.poleSpawn = poleSpawn;
-		FlxG.save.data.sweatShit = sweatShit;
 		FlxG.save.data.framerate = framerate;
+		//FlxG.save.data.showWarningScreen = showWarningScreen;
+		//FlxG.save.data.sweatShit = sweatShit;
 		//FlxG.save.data.cursing = cursing;
 		//FlxG.save.data.violence = violence;
 		FlxG.save.data.camZooms = camZooms;
@@ -199,9 +201,12 @@ class ClientPrefs {
 		if(FlxG.save.data.OldHDbg != null) {
 			OldHDbg = FlxG.save.data.OldHDbg;
 		}
+		/*if(FlxG.save.data.showWarningScreen != null) {
+			showWarningScreen = FlxG.save.data.showWarningScreen;
+		}
 		if(FlxG.save.data.sweatShit != null) {
 			sweatShit = FlxG.save.data.sweatShit;
-		}
+		}*/
 		if(FlxG.save.data.framerate != null) {
 			framerate = FlxG.save.data.framerate;
 			if(framerate > FlxG.drawFramerate) {

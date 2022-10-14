@@ -85,42 +85,42 @@ class SecretMenuState extends MusicBeatState
 
 		Text = new FlxText(200, 100, 640, "Choose Your", 40);
 		Text.scrollFactor.set(0, 0);
-		Text.setFormat(Paths.font("funkin.otf"), 40, FlxColor.WHITE, FlxTextAlign.LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
-		Text.antialiasing = true;
+		Text.setFormat(Paths.font("funkin.ttf"), 45, FlxColor.WHITE, FlxTextAlign.LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+		Text.antialiasing = ClientPrefs.globalAntialiasing;
 		Text.borderSize = 2;
-		Text.borderQuality = 1;
+		Text.borderQuality = 2;
 		add(Text);
 
-		Text1 = new FlxText(Text.x + 15, Text.y + 40, 640, "Character", 40);
+		Text1 = new FlxText(Text.x + 20, Text.y + 35, 640, "Character", 40);
 		Text1.scrollFactor.set(0, 0);
-		Text1.setFormat(Paths.font("funkin.otf"), 40, FlxColor.WHITE, FlxTextAlign.LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
-		Text1.antialiasing = true;
+		Text1.setFormat(Paths.font("funkin.ttf"), 45, FlxColor.WHITE, FlxTextAlign.LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+		Text1.antialiasing = ClientPrefs.globalAntialiasing;
 		Text1.borderSize = 2;
-		Text1.borderQuality = 1;
+		Text1.borderQuality = 2;
 		add(Text1);
 
 		Text2 = new FlxText(930, 100, 640, "WARNING :", 40);
 		Text2.scrollFactor.set(0, 0);
-		Text2.setFormat(Paths.font("funkin.otf"), 40, FlxColor.WHITE, FlxTextAlign.LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
-		Text2.antialiasing = true;
+		Text2.setFormat(Paths.font("funkin.ttf"), 45, FlxColor.WHITE, FlxTextAlign.LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+		Text2.antialiasing = ClientPrefs.globalAntialiasing;
 		Text2.borderSize = 2;
-		Text2.borderQuality = 1;
+		Text2.borderQuality = 2;
 		add(Text2);
 
 		Text3 = new FlxText(Text2.x - 110, Text2.y + 30, 640, "You can only play as pico", 40);
 		Text3.scrollFactor.set(0, 0);
-		Text3.setFormat(Paths.font("funkin.otf"), 40, FlxColor.WHITE, FlxTextAlign.LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
-		Text3.antialiasing = true;
+		Text3.setFormat(Paths.font("funkin.ttf"), 45, FlxColor.WHITE, FlxTextAlign.LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+		Text3.antialiasing = ClientPrefs.globalAntialiasing;
 		Text3.borderSize = 2;
-		Text3.borderQuality = 1;
+		Text3.borderQuality = 2;
 		add(Text3);
 
 		Text4 = new FlxText(Text3.x + 70, Text3.y + 40, 640, "in Story Mode!", 40);
 		Text4.scrollFactor.set(0, 0);
-		Text4.setFormat(Paths.font("funkin.otf"), 40, FlxColor.WHITE, FlxTextAlign.LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
-		Text4.antialiasing = true;
+		Text4.setFormat(Paths.font("funkin.ttf"), 45, FlxColor.WHITE, FlxTextAlign.LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+		Text4.antialiasing = ClientPrefs.globalAntialiasing;
 		Text4.borderSize = 2;
-		Text4.borderQuality = 1;
+		Text4.borderQuality = 2;
 		add(Text4);
 
 		blackBG = new BGSprite(null, -FlxG.width, -FlxG.height, 0, 0);

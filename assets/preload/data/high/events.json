@@ -5,7 +5,58 @@
 		"player1": "bf-car",
 		"player2": "mom-car",
 		"player3": null,
-		"events": [],
+		"events": [
+			[
+				4800,
+				[
+					[
+						"Start Pole",
+						"",
+						""
+					]
+				]
+			],
+			[
+				12000,
+				[
+					[
+						"Start Pole",
+						"",
+						""
+					]
+				]
+			],
+			[
+				19680,
+				[
+					[
+						"Start Pole",
+						"",
+						""
+					]
+				]
+			],
+			[
+				65760,
+				[
+					[
+						"Start Pole",
+						"",
+						""
+					]
+				]
+			],
+			[
+				69720,
+				[
+					[
+						"Start Pole",
+						"",
+						""
+					]
+				]
+			]
+		],
 		"notes": [],
 		"splashSkin": null,
 		"validScore": false,

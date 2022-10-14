@@ -83,32 +83,32 @@
 	<SubTexture name="GF Dancing Beat Dead0027" x="781" y="2986" width="781" height="553" frameX="0" frameY="-127" frameWidth="781" frameHeight="680"/>
 	<SubTexture name="GF Dancing Beat Dead0028" x="781" y="2986" width="781" height="553" frameX="0" frameY="-127" frameWidth="781" frameHeight="680"/>
 	<SubTexture name="GF Dancing Beat Dead0029" x="781" y="2986" width="781" height="553" frameX="0" frameY="-127" frameWidth="781" frameHeight="680"/>
-	<SubTexture name="GF Dancing Beat Fall0000" x="7029" y="2986" width="781" height="557" frameX="0" frameY="0" frameWidth="807" frameHeight="575"/>
-	<SubTexture name="GF Dancing Beat Fall0001" x="7029" y="2986" width="781" height="557" frameX="0" frameY="0" frameWidth="807" frameHeight="575"/>
-	<SubTexture name="GF Dancing Beat Fall0002" x="7029" y="2986" width="781" height="557" frameX="0" frameY="0" frameWidth="807" frameHeight="575"/>
-	<SubTexture name="GF Dancing Beat Fall0003" x="7029" y="2986" width="781" height="557" frameX="0" frameY="0" frameWidth="807" frameHeight="575"/>
-	<SubTexture name="GF Dancing Beat Fall0004" x="0" y="3666" width="781" height="483" frameX="0" frameY="-74" frameWidth="807" frameHeight="575"/>
-	<SubTexture name="GF Dancing Beat Fall0005" x="781" y="3666" width="807" height="430" frameX="0" frameY="-139" frameWidth="807" frameHeight="575"/>
-	<SubTexture name="GF Dancing Beat Fall0006" x="781" y="3666" width="807" height="430" frameX="0" frameY="-139" frameWidth="807" frameHeight="575"/>
-	<SubTexture name="GF Dancing Beat Fall0007" x="781" y="3666" width="807" height="430" frameX="0" frameY="-139" frameWidth="807" frameHeight="575"/>
-	<SubTexture name="GF Dancing Beat Fall0008" x="1588" y="3666" width="801" height="436" frameX="0" frameY="-139" frameWidth="807" frameHeight="575"/>
-	<SubTexture name="GF Dancing Beat Fall0009" x="1588" y="3666" width="801" height="436" frameX="0" frameY="-139" frameWidth="807" frameHeight="575"/>
-	<SubTexture name="GF Dancing Beat Fall0010" x="1588" y="3666" width="801" height="436" frameX="0" frameY="-139" frameWidth="807" frameHeight="575"/>
-	<SubTexture name="GF Dancing Beat Fall0011" x="1588" y="3666" width="801" height="436" frameX="0" frameY="-139" frameWidth="807" frameHeight="575"/>
-	<SubTexture name="GF Dancing Beat Fall0012" x="1588" y="3666" width="801" height="436" frameX="0" frameY="-139" frameWidth="807" frameHeight="575"/>
-	<SubTexture name="GF Dancing Beat Fall0013" x="1588" y="3666" width="801" height="436" frameX="0" frameY="-139" frameWidth="807" frameHeight="575"/>
-	<SubTexture name="GF Dancing Beat Fall0014" x="1588" y="3666" width="801" height="436" frameX="0" frameY="-139" frameWidth="807" frameHeight="575"/>
-	<SubTexture name="GF Dancing Beat Fall0015" x="1588" y="3666" width="801" height="436" frameX="0" frameY="-139" frameWidth="807" frameHeight="575"/>
-	<SubTexture name="GF Dancing Beat Fall0016" x="1588" y="3666" width="801" height="436" frameX="0" frameY="-139" frameWidth="807" frameHeight="575"/>
-	<SubTexture name="GF Dancing Beat Fall0017" x="1588" y="3666" width="801" height="436" frameX="0" frameY="-139" frameWidth="807" frameHeight="575"/>
-	<SubTexture name="GF Dancing Beat Fall0018" x="1588" y="3666" width="801" height="436" frameX="0" frameY="-139" frameWidth="807" frameHeight="575"/>
-	<SubTexture name="GF Dancing Beat Fall0019" x="1588" y="3666" width="801" height="436" frameX="0" frameY="-139" frameWidth="807" frameHeight="575"/>
-	<SubTexture name="GF Dancing Beat Fall0020" x="1588" y="3666" width="801" height="436" frameX="0" frameY="-139" frameWidth="807" frameHeight="575"/>
-	<SubTexture name="GF Dancing Beat Fall0021" x="1588" y="3666" width="801" height="436" frameX="0" frameY="-139" frameWidth="807" frameHeight="575"/>
-	<SubTexture name="GF Dancing Beat Fall0022" x="1588" y="3666" width="801" height="436" frameX="0" frameY="-139" frameWidth="807" frameHeight="575"/>
-	<SubTexture name="GF Dancing Beat Fall0023" x="1588" y="3666" width="801" height="436" frameX="0" frameY="-139" frameWidth="807" frameHeight="575"/>
-	<SubTexture name="GF Dancing Beat Fall0024" x="1588" y="3666" width="801" height="436" frameX="0" frameY="-139" frameWidth="807" frameHeight="575"/>
-	<SubTexture name="GF Dancing Beat Fall0025" x="1588" y="3666" width="801" height="436" frameX="0" frameY="-139" frameWidth="807" frameHeight="575"/>
+	<SubTexture name="GF Dancing Beat Fall0000" x="7029" y="2986" width="781" height="553" frameX="0" frameY="0" frameWidth="807" frameHeight="571"/>
+	<SubTexture name="GF Dancing Beat Fall0001" x="7029" y="2986" width="781" height="553" frameX="0" frameY="0" frameWidth="807" frameHeight="571"/>
+	<SubTexture name="GF Dancing Beat Fall0002" x="7029" y="2986" width="781" height="553" frameX="0" frameY="0" frameWidth="807" frameHeight="571"/>
+	<SubTexture name="GF Dancing Beat Fall0003" x="7029" y="2986" width="781" height="553" frameX="0" frameY="0" frameWidth="807" frameHeight="571"/>
+	<SubTexture name="GF Dancing Beat Fall0004" x="0" y="3666" width="781" height="483" frameX="0" frameY="-70" frameWidth="807" frameHeight="571"/>
+	<SubTexture name="GF Dancing Beat Fall0005" x="781" y="3666" width="807" height="430" frameX="0" frameY="-135" frameWidth="807" frameHeight="571"/>
+	<SubTexture name="GF Dancing Beat Fall0006" x="781" y="3666" width="807" height="430" frameX="0" frameY="-135" frameWidth="807" frameHeight="571"/>
+	<SubTexture name="GF Dancing Beat Fall0007" x="781" y="3666" width="807" height="430" frameX="0" frameY="-135" frameWidth="807" frameHeight="571"/>
+	<SubTexture name="GF Dancing Beat Fall0008" x="1588" y="3666" width="801" height="436" frameX="0" frameY="-135" frameWidth="807" frameHeight="571"/>
+	<SubTexture name="GF Dancing Beat Fall0009" x="1588" y="3666" width="801" height="436" frameX="0" frameY="-135" frameWidth="807" frameHeight="571"/>
+	<SubTexture name="GF Dancing Beat Fall0010" x="1588" y="3666" width="801" height="436" frameX="0" frameY="-135" frameWidth="807" frameHeight="571"/>
+	<SubTexture name="GF Dancing Beat Fall0011" x="1588" y="3666" width="801" height="436" frameX="0" frameY="-135" frameWidth="807" frameHeight="571"/>
+	<SubTexture name="GF Dancing Beat Fall0012" x="1588" y="3666" width="801" height="436" frameX="0" frameY="-135" frameWidth="807" frameHeight="571"/>
+	<SubTexture name="GF Dancing Beat Fall0013" x="1588" y="3666" width="801" height="436" frameX="0" frameY="-135" frameWidth="807" frameHeight="571"/>
+	<SubTexture name="GF Dancing Beat Fall0014" x="1588" y="3666" width="801" height="436" frameX="0" frameY="-135" frameWidth="807" frameHeight="571"/>
+	<SubTexture name="GF Dancing Beat Fall0015" x="1588" y="3666" width="801" height="436" frameX="0" frameY="-135" frameWidth="807" frameHeight="571"/>
+	<SubTexture name="GF Dancing Beat Fall0016" x="1588" y="3666" width="801" height="436" frameX="0" frameY="-135" frameWidth="807" frameHeight="571"/>
+	<SubTexture name="GF Dancing Beat Fall0017" x="1588" y="3666" width="801" height="436" frameX="0" frameY="-135" frameWidth="807" frameHeight="571"/>
+	<SubTexture name="GF Dancing Beat Fall0018" x="1588" y="3666" width="801" height="436" frameX="0" frameY="-135" frameWidth="807" frameHeight="571"/>
+	<SubTexture name="GF Dancing Beat Fall0019" x="1588" y="3666" width="801" height="436" frameX="0" frameY="-135" frameWidth="807" frameHeight="571"/>
+	<SubTexture name="GF Dancing Beat Fall0020" x="1588" y="3666" width="801" height="436" frameX="0" frameY="-135" frameWidth="807" frameHeight="571"/>
+	<SubTexture name="GF Dancing Beat Fall0021" x="1588" y="3666" width="801" height="436" frameX="0" frameY="-135" frameWidth="807" frameHeight="571"/>
+	<SubTexture name="GF Dancing Beat Fall0022" x="1588" y="3666" width="801" height="436" frameX="0" frameY="-135" frameWidth="807" frameHeight="571"/>
+	<SubTexture name="GF Dancing Beat Fall0023" x="1588" y="3666" width="801" height="436" frameX="0" frameY="-135" frameWidth="807" frameHeight="571"/>
+	<SubTexture name="GF Dancing Beat Fall0024" x="1588" y="3666" width="801" height="436" frameX="0" frameY="-135" frameWidth="807" frameHeight="571"/>
+	<SubTexture name="GF Dancing Beat Fall0025" x="1588" y="3666" width="801" height="436" frameX="0" frameY="-135" frameWidth="807" frameHeight="571"/>
 	<SubTexture name="gf sad0000" x="2389" y="3666" width="820" height="740" frameX="0" frameY="-2" frameWidth="820" frameHeight="742"/>
 	<SubTexture name="gf sad0001" x="2389" y="3666" width="820" height="740" frameX="0" frameY="-2" frameWidth="820" frameHeight="742"/>
 	<SubTexture name="gf sad0002" x="3209" y="3666" width="820" height="742"/>

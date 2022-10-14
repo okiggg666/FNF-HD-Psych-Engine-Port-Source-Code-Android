@@ -1,26 +1,12 @@
 {
 	"animations": [
 		{
-			"offsets": [
-				0,
-				-460
-			],
 			"loop": false,
-			"fps": 24,
-			"anim": "deathConfirm",
-			"indices": [
-				12,
-				13
-			],
-			"name": "BF SONIC DEAD"
-		},
-		{
-			"loop": true,
 			"offsets": [
 				0,
 				-460
 			],
-			"anim": "deathLoop",
+			"anim": "deathConfirm",
 			"fps": 24,
 			"name": "BF SONIC DEAD",
 			"indices": [
@@ -29,22 +15,36 @@
 			]
 		},
 		{
-			"loop": false,
+			"offsets": [
+				0,
+				-460
+			],
+			"loop": true,
+			"fps": 24,
+			"anim": "deathLoop",
+			"indices": [
+				12,
+				13
+			],
+			"name": "BF SONIC DEAD"
+		},
+		{
 			"offsets": [
 				0,
 				0
 			],
-			"anim": "firstDeath",
+			"loop": false,
 			"fps": 24,
-			"name": "BF SONIC DEAD",
-			"indices": []
+			"anim": "firstDeath",
+			"indices": [],
+			"name": "BF SONIC DEAD"
 		}
 	],
 	"no_antialiasing": false,
 	"image": "characters/bfSonicDead",
 	"position": [
-		-220,
-		135
+		-190,
+		55
 	],
 	"healthicon": "bf",
 	"flip_x": true,
@@ -58,5 +58,5 @@
 		-340
 	],
 	"sing_duration": 4,
-	"scale": 1
+	"scale": 0.9
 }

@@ -6,7 +6,6 @@ import flixel.graphics.frames.FlxAtlasFrames;
 class BGSprite extends FlxSprite
 {
 	private var idleAnim:String;
-	public var specialAnim:Bool = false;
 	public function new(image:String, x:Float = 0, y:Float = 0, ?scrollX:Float = 1, ?scrollY:Float = 1, ?animArray:Array<String> = null, ?loop:Bool = false) {
 		super(x, y);
 
@@ -31,15 +30,8 @@ class BGSprite extends FlxSprite
 	}
 
 	public function dance(?forceplay:Bool = false) {
-		if(!specialAnim)
-		{
-			if(idleAnim != null) {
-				animation.play(idleAnim, forceplay);
-			}
-		} else if(specialAnim && animation.curAnim.finished)
-		{
-			specialAnim = false;
-			dance();
+		if(idleAnim != null) {
+			animation.play(idleAnim, forceplay);
 		}
 	}
 }

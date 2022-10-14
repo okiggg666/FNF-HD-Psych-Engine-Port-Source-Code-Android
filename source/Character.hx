@@ -66,6 +66,7 @@ class Character extends FlxSprite
 	public var stunned:Bool = false;
 	public var singDuration:Float = 4; //Multiplier of how long a character holds the sing pose
 	public var idleSuffix:String = '';
+	public var isStressed:String = '';
 	public var danceIdle:Bool = false; //Character use "danceLeft" and "danceRight" instead of "idle"
 	public var boyfriend:Boyfriend = null;
 	
@@ -78,6 +79,7 @@ class Character extends FlxSprite
 
 	public var hasMissAnimations:Bool = false;
 	public var hasStressedAnimations:Bool = false;
+	public var hasStressedIdleAnimations:Bool = false;
 
 	//Used on Character Editor
 	public var imageFile:String = '';
@@ -236,7 +238,8 @@ class Character extends FlxSprite
 		originalFlipX = flipX;
 
 		if(animOffsets.exists('singLEFTmiss') || animOffsets.exists('singDOWNmiss') || animOffsets.exists('singUPmiss') || animOffsets.exists('singRIGHTmiss')) hasMissAnimations = true;
-		if(animOffsets.exists('danceLeft-stressed') || animOffsets.exists('danceRight-stressed') || animOffsets.exists('idle-stressed') || animOffsets.exists('singLEFT-stressed') || animOffsets.exists('singDOWN-stressed') || animOffsets.exists('singUP-stressed') || animOffsets.exists('singRIGHT-stressed')) hasStressedAnimations = true;
+		if(animOffsets.exists('singLEFT-stressed') || animOffsets.exists('singDOWN-stressed') || animOffsets.exists('singUP-stressed') || animOffsets.exists('singRIGHT-stressed')) hasStressedAnimations = true;
+		if(animOffsets.exists('danceLeft-stressed') || animOffsets.exists('danceRight-stressed') || animOffsets.exists('idle-stressed')) hasStressedIdleAnimations = true;
 		recalculateDanceIdle();
 		dance();
 
@@ -345,53 +348,29 @@ class Character extends FlxSprite
 		{
 			if(danceIdle)
 			{
+				if (hasStressedIdleAnimations) {
+					if (PlayState.fuckCval)
+						isStressed = '-stressed';
+					else
+						isStressed = '';
+				}
+
 				danced = !danced;
 
 				if (danced)
-					playAnim('danceRight' + idleSuffix);
+					playAnim('danceRight' + isStressed + idleSuffix);
 				else
-					playAnim('danceLeft' + idleSuffix);
-			}
-			else if(animation.getByName('idle' + idleSuffix) != null) {
-					playAnim('idle' + idleSuffix);
-			}
-			switch (curCharacter)
+					playAnim('danceLeft' + isStressed + idleSuffix);
+			} else if(animation.getByName('idle' + isStressed + idleSuffix) != null)
 			{
-				case 'bf':
-					var suffix:String = "";
+				if (hasStressedIdleAnimations) {
 					if (PlayState.fuckCval)
-						suffix = '-stressed';
+						isStressed = '-stressed';
 					else
-						suffix = '';
-					playAnim('idle' + suffix + idleSuffix);
-				case 'bf-pico':
-					var suffix:String = "";
-					if (PlayState.fuckCval)
-						suffix = '-stressed';
-					else
-						suffix = '';
-					playAnim('idle' + suffix + idleSuffix);
-				case 'bf-hellchart':
-					var suffix:String = "";
-					if (PlayState.fuckCval)
-						suffix = '-stressed';
-					else
-						suffix = '';
-					playAnim('idle' + suffix + idleSuffix);
-				case 'bf-car':
-					var suffix:String = "";
-					if (PlayState.fuckCval)
-						suffix = '-stressed';
-					else
-						suffix = '';
-					playAnim('idle' + suffix + idleSuffix);
-				case 'bf-christmas':
-					var suffix:String = "";
-					if (PlayState.fuckCval)
-						suffix = '-stressed';
-					else
-						suffix = '';
-					playAnim('idle' + suffix + idleSuffix);
+						isStressed = '';
+				}
+
+				playAnim('idle' + isStressed + idleSuffix);
 			}
 		}
 	}
@@ -431,7 +410,14 @@ class Character extends FlxSprite
 	private var settingCharacterUp:Bool = true;
 	public function recalculateDanceIdle() {
 		var lastDanceIdle:Bool = danceIdle;
-		danceIdle = (animation.getByName('danceLeft' + idleSuffix) != null && animation.getByName('danceRight' + idleSuffix) != null);
+		danceIdle = (animation.getByName('danceLeft' + isStressed + idleSuffix) != null && animation.getByName('danceRight' + isStressed + idleSuffix) != null);
+
+		if(hasStressedIdleAnimations) {
+			if (PlayState.fuckCval)
+				isStressed = '-stressed';
+			else
+				isStressed = '';
+		}
 
 		if(settingCharacterUp)
 		{

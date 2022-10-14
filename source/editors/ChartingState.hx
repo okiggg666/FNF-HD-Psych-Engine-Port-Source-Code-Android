@@ -80,6 +80,7 @@ class ChartingState extends MusicBeatState
 		['Set GF Speed', "Sets GF head bopping speed,\nValue 1: 1 = Normal speed,\n2 = 1/2 speed, 4 = 1/4 speed etc.\nUsed on Fresh during the beatbox parts.\n\nWarning: Value must be integer!"],
 		['Philly Glow', "Exclusive to Week 3\nValue 1: 0/1/2 = OFF/ON/Reset Gradient\n \nNo, i won't add it to other weeks."],
 		['Kill OG Henchmen', "For Mom's songs, don't use this please, i love them :("],
+		['Kill HD Henchmen', "For \"limo\" stage, you can only use this if the\n\"Kill Henchmen\" option is set to \"In Every Song\" "],
 		['Add Camera Zoom', "Used on MILF on that one \"hard\" part\nValue 1: Camera zoom add (Default: 0.015)\nValue 2: UI zoom add (Default: 0.03)\nLeave the values blank if you want to use Default."],
 		['BG Freaks Expression', "Should be used only in \"school\" Stage!"],
 		['Trigger BG Ghouls', "Should be used only in \"schoolEvil\" Stage!"],
@@ -89,7 +90,13 @@ class ChartingState extends MusicBeatState
 		['Screen Shake', "Value 1: Camera shake\nValue 2: HUD shake\n\nEvery value works as the following example: \"1, 0.05\".\nThe first number (1) is the duration.\nThe second number (0.05) is the intensity."],
 		['Change Character', "Value 1: Character to change (Dad, BF, GF)\nValue 2: New character's name"],
 		['Change Scroll Speed', "Value 1: Scroll Speed Multiplier (1 is default)\nValue 2: Time it takes to change fully in seconds."],
+		['Start Pole', "For \"limo\" stage, you can only use this if the\n\"Dodge Pole Spawns Randomly\" option is unchecked"],
 		['Start Draining Health', "Starts draining players health.\nValue 1: 0/1 = OFF/ON\nUsed in Winter Horrorland."],
+		['Make GF Fall', "Makes GF fall lol\nValue 1: 0/1 = reset/fall\nOnly works with \"gf-christmas-dead\" "],
+		['HUD Fade', "Value 1: 0/1 = Fade In/Fade Out\nValue 2: Fade duration"],
+		['Trigger Sonic Transformation', "Value 1: 0/1/2/3 = reset/start/transform/finish"],
+		['Spawn Aura', "Spawns super Sonic's aura\nValue 1: 0/1/2 = remove/dad/bf"],
+		['Switch BF Run Body', "Switches BF Run Body\nValue 1: 0/1 = normal/super"],
 		['Set Property', "Value 1: Variable name\nValue 2: New value"]
 	];
 

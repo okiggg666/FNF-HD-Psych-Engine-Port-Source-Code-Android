@@ -22,6 +22,7 @@ import sys.FileSystem;
 import sys.io.File;
 #end
 import openfl.utils.Assets;
+import Controls;
 
 using StringTools;
 
@@ -205,7 +206,7 @@ class DialogueBoxPsych extends FlxSpriteGroup
 			FlxG.sound.playMusic(Paths.music(song), 0);
 			FlxG.sound.music.fadeIn(2, 0, 1);
 		}
-		
+
 		blackBG = new FlxSprite(-256, -256).makeGraphic(FlxG.width * 2, FlxG.height * 2, FlxColor.BLACK);
 		blackBG.visible = false;
 		add(blackBG);
@@ -217,6 +218,7 @@ class DialogueBoxPsych extends FlxSpriteGroup
 		add(bgFade);
 
 		cutsceneImage = new FlxSprite(0, 0);
+		cutsceneImage.antialiasing = ClientPrefs.globalAntialiasing;
 		cutsceneImage.visible = false;
 		add(cutsceneImage);
 
@@ -243,8 +245,8 @@ class DialogueBoxPsych extends FlxSpriteGroup
 
 		skipText = new FlxText(5, 695, 640, "Press SPACE to skip the dialogue.\n", 40);
 		skipText.scrollFactor.set(0, 0);
-		skipText.setFormat(Paths.font("funkin.otf"), 20, FlxColor.WHITE, FlxTextAlign.LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
-		skipText.antialiasing = true;
+		skipText.setFormat(Paths.font("vcr.ttf"), 20, FlxColor.WHITE, FlxTextAlign.LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+		skipText.antialiasing = ClientPrefs.globalAntialiasing;
 		skipText.borderSize = 2;
 		skipText.borderQuality = 1;
 		add(skipText);

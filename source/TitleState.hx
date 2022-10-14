@@ -196,8 +196,6 @@ class TitleState extends MusicBeatState
 		FlxG.mouse.visible = false;
 		#if FREEPLAY
 		MusicBeatState.switchState(new FreeplayState());
-		#elseif STORYMODE
-		MusicBeatState.switchState(new StoryMenuState());
 		#elseif CHARTING
 		MusicBeatState.switchState(new ChartingState());
 		#else
@@ -512,8 +510,12 @@ class TitleState extends MusicBeatState
 			
 				new FlxTimer().start(1, function(tmr:FlxTimer)
 				{
-					if (mustUpdate) {
-						MusicBeatState.switchState(new OutdatedState());
+					if (ClientPrefs.checkForUpdates) {
+						if (mustUpdate) {
+							MusicBeatState.switchState(new OutdatedState());
+						} else {
+							MusicBeatState.switchState(new MainMenuState());
+						}
 					} else {
 						MusicBeatState.switchState(new MainMenuState());
 					}
@@ -777,6 +779,10 @@ class TitleState extends MusicBeatState
 				if(easteregg == 'SHADOW')
 				{
 					FlxG.sound.music.fadeOut();
+					if(FreeplayState.vocals != null)
+					{
+						FreeplayState.vocals.fadeOut();
+					}
 				}
 				#end
 			}

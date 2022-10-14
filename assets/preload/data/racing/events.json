@@ -1,18 +1,58 @@
 {
 	"song": {
-		"speed": 3.5,
+		"speed": 4,
 		"stage": null,
 		"player1": "bf-run",
 		"player2": "sonic-run",
 		"player3": null,
 		"events": [
 			[
+				33909.0909090909,
+				[
+					[
+						"Set Property",
+						"defaultCamZoom",
+						"1.88"
+					]
+				]
+			],
+			[
 				35636.3636363636,
 				[
 					[
+						"Trigger Sonic Transformation",
+						"start",
+						""
+					]
+				]
+			],
+			[
+				36000,
+				[
+					[
+						"Trigger Sonic Transformation",
+						"transform",
+						""
+					]
+				]
+			],
+			[
+				36363.6363636364,
+				[
+					[
 						"Camera Follow Pos",
-						"600",
-						"430"
+						"690",
+						"380"
+					],
+					[
+						"Set Property",
+						"defaultCamZoom",
+						"1.40"
+					],
+					[
+						"Trigger Sonic Transformation",
+						"finish",
+						""
 					]
 				]
 			],
@@ -25,6 +65,16 @@
 						"super-sonic"
 					],
 					[
+						"Spawn Aura",
+						"dad",
+						""
+					]
+				]
+			],
+			[
+				37454.5454545455,
+				[
+					[
 						"Camera Follow Pos",
 						"",
 						""
@@ -32,12 +82,22 @@
 				]
 			],
 			[
-				112000,
+				112011.363636364,
 				[
 					[
 						"Change Character",
 						"bf",
 						"bf-run-super"
+					],
+					[
+						"Spawn Aura",
+						"bf",
+						""
+					],
+					[
+						"Switch BF Run Body",
+						"super",
+						""
 					]
 				]
 			]
