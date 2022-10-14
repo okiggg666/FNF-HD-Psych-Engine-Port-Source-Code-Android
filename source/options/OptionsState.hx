@@ -42,7 +42,7 @@ class OptionsState extends MusicBeatState
 				#if !android
 				openSubState(new options.ControlsSubState());
 				#else
-				MusicBeatState.switchState(new android.AndroidControlsSubState());
+				openSubState(new android.AndroidControlsSubState());
 				#end
 			case 'Graphics':
 				openSubState(new options.GraphicsSettingsSubState());
