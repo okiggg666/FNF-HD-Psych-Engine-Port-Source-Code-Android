@@ -1,3 +1,4 @@
+local allowCountdown = false
 function onStartCountdown()
 	if notmiddlescroll then
 		if PicoPlayer then
@@ -11,7 +12,44 @@ function onStartCountdown()
 			runTimer('noteTween8', 0.1)
 		end
 	end
+
+	if not allowCountdown and isStoryMode and BSIDESMODE and dialogueIsStoryMode and dialogueIsDisabled then
+		makeLuaSprite('blackBG2', 'dialogue2/black',0,0);
+		setObjectCamera('blackBG2','hud')
+		addLuaSprite('blackBG2', true)
+
+		makeLuaSprite('blackBG', 'dialogue2/blank',0,0);
+		setObjectCamera('blackBG','hud')
+		addLuaSprite('blackBG', true)
+
+		setProperty('blackBG.alpha', 0)
+		setProperty('inCutscene', true)
+		runTimer('startTween', 0.1)
+		runTimer('removeSprites3', 1.2)
+		allowCountdown = true;
+		return Function_Stop;
+	elseif not allowCountdown and BSIDESMODE and dialogueIsEverywhere and dialogueIsDisabled then
+		makeLuaSprite('blackBG2', 'dialogue2/black',0,0);
+		setObjectCamera('blackBG2','hud')
+		addLuaSprite('blackBG2', true)
+
+		makeLuaSprite('blackBG', 'dialogue2/blank',0,0);
+		setObjectCamera('blackBG','hud')
+		addLuaSprite('blackBG', true)
+
+		setProperty('blackBG.alpha', 0)
+		setProperty('inCutscene', true)
+		runTimer('startTween', 0.1)
+		runTimer('removeSprites3', 1.2)
+		allowCountdown = true;
+		return Function_Stop;
+	end
+	doTweenAlpha('blackBGTween', 'blackBG', 0, 1.2, 'circout')
+	onTweenCompleted('blackBGTween')
+	runTimer('removeSprites', 1.2)
+	return Function_Continue;
 end
+
 
 local allowEndShit = false
 function onEndSong()
@@ -60,6 +98,12 @@ function onTimerCompleted(tag, loops, loopsLeft)
 	if tag == 'removeSprites2' then
 		removeLuaSprite('blackBG')
 	end
+	if tag == 'removeSprites3' then
+		removeLuaSprite('blackBG2')
+	end
+	if tag == 'removeSprites' then
+		removeLuaSprite('blackBG')
+	end
 	if tag == 'dialogueEnd' then
 		startDialogue('dialogueEnd')
 	end
@@ -103,13 +147,20 @@ function onTimerCompleted(tag, loops, loopsLeft)
 		noteTweenX('noteTween8', 3, 1068, 0.1, cubeout)
 		onTweenCompleted('noteTween8')
 	end
+	if tag == 'startTween' then
+		startDialogue('dialogueSecret', 'dialogue/picoMusic3', 0.9);
+		doTweenAlpha('blackBGTween2', 'blackBG', 1, 1, 'circout')
+		onTweenCompleted('blackBGTween2')
+	end
 end
 
 function onNextDialogue(count)
-	if count == 2 then
-		playSound('dialogue/gunClick')
-	elseif count == 8 then
-		playSound('dialogue/picoWithExtraReverb')
+	if allowEndShit then
+		if count == 2 then
+			playSound('dialogue/gunClick')
+		elseif count == 8 then
+			playSound('dialogue/picoWithExtraReverb')
+		end
 	end
 end
 

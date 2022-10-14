@@ -193,6 +193,7 @@ class FunkinLua {
 		set('noResetButton', ClientPrefs.noReset);
 		set('lowQuality', ClientPrefs.lowQuality);
 		set('PicoPlayer', ClientPrefs.PicoPlayer);
+		set('BSIDESMODE', FlxMath.roundDecimal(FlxG.sound.music.length / 1000, 2) == 92.09);
 		set('dialogueIsStoryMode', ClientPrefs.disablesDialogues == 'Story Mode');
 		set('dialogueIsEverywhere', ClientPrefs.disablesDialogues == 'Everywhere');
 		set('dialogueIsDisabled', ClientPrefs.disablesDialogues != 'Disabled');
