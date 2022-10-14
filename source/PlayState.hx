@@ -308,7 +308,7 @@ class PlayState extends MusicBeatState
 	var terrain:BGSprite;
 	var clouds:BGSprite;
 	var trees:BGSprite;
-	var sonicBody:BGSprite;
+	var sonicBody:BGSprite = null;
 	var bfBody:BGSprite;
 	var bgDarken:BGSprite;
 	var aura:BGSprite = null;
@@ -2716,11 +2716,11 @@ class PlayState extends MusicBeatState
 	}
 	public function addInFrontBF(obj:FlxObject)
 	{
-		insert(members.indexOf(boyfriendGroup), obj);
+		insert(members.indexOf(boyfriendGroup) + 1, obj);
 	}
 	public function addInFrontDad (obj:FlxObject)
 	{
-		insert(members.indexOf(dadGroup), obj);
+		insert(members.indexOf(dadGroup) + 1, obj);
 	}
 
 	public function clearNotesBefore(time:Float)
@@ -4561,12 +4561,16 @@ class PlayState extends MusicBeatState
 					switch(nuno)
 					{
 						case 0:
-							add(sonicBody);
+							if(sonicBody == null) {
+								add(sonicBody);
+							}
 							dad.visible = true;
 							superTransform.visible = false;
 							sonicBody.visible = true;
 						case 1:
-							remove(sonicBody);
+							if(sonicBody != null) {
+								remove(sonicBody);
+							}
 							dad.visible = false;
 
 							superTransform.setPosition(dad.x + 30, dad.y - 160);
@@ -5855,7 +5859,7 @@ class PlayState extends MusicBeatState
 	
 	var billboardTimer:FlxTimer;
 	function startBillBoard() {
-		if(!ClientPrefs.lowQuality) {
+		if(!ClientPrefs.lowQuality && curStage == 'limo') {
 			var dumbass:Int = FlxG.random.int(0,7);
 			billboard.animation.play('' + dumbass);
 			billboard.velocity.x = 10 * SONG.bpm;
@@ -5884,7 +5888,7 @@ class PlayState extends MusicBeatState
 
 	function resetBillBoard()
 	{
-		if(!ClientPrefs.lowQuality) {
+		if(!ClientPrefs.lowQuality && curStage == 'limo') {
 			billboard.x = -2000;
 			billboard.velocity.x = 0;
 			billboardShit = true;
