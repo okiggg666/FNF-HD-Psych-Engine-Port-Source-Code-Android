@@ -62,7 +62,6 @@ function onTimerCompleted(tag, loops, loopsLeft)
 		removeLuaSprite('cutsceneImage', true)
 		removeLuaSprite('cutsceneImage2', true)
 		removeLuaSprite('blackBG', true)
-		allowCountdown = false;
 	end
 	if tag == 'removeSounds' then
 		stopSound('news10')
@@ -78,10 +77,6 @@ function onTimerCompleted(tag, loops, loopsLeft)
 	if tag == 'spriteAppear' then
 		doTweenAlpha('blackBGTween3', 'blackBG2', 1, 0.5, 'circout')
 		onTweenCompleted('blackBGTween3')
-		setSoundVolume('news11', 0)
-		setSoundVolume('news12', 0)
-		setSoundVolume('news11', 0)
-		setSoundVolume(0)
 	end
 	if tag == 'spriteAppear2' then
 		doTweenAlpha('blackBGTween2', 'blackBG', 1, 1, 'circout')
@@ -90,7 +85,7 @@ function onTimerCompleted(tag, loops, loopsLeft)
 end
 
 function onNextDialogue(count)
-	if allowCountdown then
+	if not allowEndShit then
 		if count == 1 then
 			removeLuaSprite('cutsceneImage', true)
 			setProperty('cutsceneImage2.visible', true)
@@ -128,6 +123,10 @@ function onEndSong()
 		runTimer('spriteAppear', 0.1)
 		runTimer('spriteAppear2', 0.6)
 		runTimer('dialogueEnd', 0.6)
+		setSoundVolume('news11', 0)
+		setSoundVolume('news12', 0)
+		setSoundVolume('news11', 0)
+		setSoundVolume(0)
 		allowEndShit = true;
 		return Function_Stop;
 	elseif not allowEndShit and dialogueIsEverywhere and dialogueIsDisabled then
@@ -143,6 +142,10 @@ function onEndSong()
 		runTimer('spriteAppear', 0.1)
 		runTimer('spriteAppear2', 0.6)
 		runTimer('dialogueEnd', 0.6)
+		setSoundVolume('news11', 0)
+		setSoundVolume('news12', 0)
+		setSoundVolume('news11', 0)
+		setSoundVolume(0)
 		allowEndShit = true;
 		return Function_Stop;
 	end

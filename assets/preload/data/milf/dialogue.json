@@ -3,7 +3,7 @@
 		{
 			"sound": "e",
 			"speed": 0.05,
-			"portrait": "noChar",
+			"portrait": "noCharLeft",
 			"boxState": "normal",
 			"expression": "default",
 			"text": "Is it really that important? Nobody gives a shit about this kid! I'm eight days into a 2-week notice, I'm tired of this shit."
@@ -11,7 +11,7 @@
 		{
 			"sound": "e",
 			"speed": 0.05,
-			"portrait": "noChar",
+			"portrait": "noCharLeft",
 			"boxState": "normal",
 			"expression": "default",
 			"text": "An anonymous tip sent into the newsroom just moments ago has identified the short, blue-haired youth accompanying the Dearest family members and associates atop the speeding limos as Boyfriend.XML"
@@ -19,7 +19,7 @@
 		{
 			"sound": "e",
 			"speed": 0.05,
-			"portrait": "noChar",
+			"portrait": "noCharLeft",
 			"boxState": "normal",
 			"expression": "default",
 			"text": "the up-and-coming rapper who made headlines after defeating Mearest's husband, ex-rockstar Daddy Dearest, in a series of performance arts showdowns."

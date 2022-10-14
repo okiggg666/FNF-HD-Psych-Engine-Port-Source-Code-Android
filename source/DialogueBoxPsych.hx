@@ -243,13 +243,13 @@ class DialogueBoxPsych extends FlxSpriteGroup
 		box.updateHitbox();
 		add(box);
 
-		skipText = new FlxText(5, 695, 640, "Press SPACE to skip the dialogue.\n", 40);
+		/*skipText = new FlxText(5, 695, 640, "Press SPACE to skip the dialogue.\n", 40);
 		skipText.scrollFactor.set(0, 0);
 		skipText.setFormat(Paths.font("vcr.ttf"), 20, FlxColor.WHITE, FlxTextAlign.LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		skipText.antialiasing = ClientPrefs.globalAntialiasing;
 		skipText.borderSize = 2;
 		skipText.borderQuality = 1;
-		add(skipText);
+		add(skipText);*/
 
 		startNextDialog();
 	}
@@ -346,7 +346,7 @@ class DialogueBoxPsych extends FlxSpriteGroup
 					if(skipDialogueThing != null) {
 						skipDialogueThing();
 					}
-				} else if(currentText >= dialogueList.dialogue.length || FlxG.keys.justPressed.SPACE) {
+				} else if(currentText >= dialogueList.dialogue.length /*|| FlxG.keys.justPressed.SPACE*/) {
 					dialogueEnded = true;
 					for (i in 0...textBoxTypes.length) {
 						var checkArray:Array<String> = ['', 'center-'];

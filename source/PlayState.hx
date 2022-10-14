@@ -5427,6 +5427,7 @@ class PlayState extends MusicBeatState
 			if (combo > 5 && gf != null && gf.animOffsets.exists('sad'))
 			{
 				gf.playAnim('sad');
+				gf.specialAnim = true;
 			}
 			combo = 0;
 

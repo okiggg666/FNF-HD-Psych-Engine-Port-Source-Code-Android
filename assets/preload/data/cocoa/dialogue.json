@@ -11,7 +11,7 @@
 		{
 			"sound": "",
 			"speed": 0.05,
-			"portrait": "nochar",
+			"portrait": "nocharright",
 			"boxState": "normal",
 			"expression": "default",
 			"text": "We hope you're having a jolly evening here in the-"
@@ -19,7 +19,7 @@
 		{
 			"sound": "",
 			"speed": 0.05,
-			"portrait": "nochar",
+			"portrait": "nocharleft",
 			"boxState": "normal",
 			"expression": "default",
 			"text": "(1): Yeah, yeah. Welcome to The Mall, thank you for bring' your fuckin' kids."
@@ -27,7 +27,7 @@
 		{
 			"sound": "",
 			"speed": 0.05,
-			"portrait": "nochar",
+			"portrait": "nocharleft",
 			"boxState": "normal",
 			"expression": "default",
 			"text": "Can't wait to clean up after 'em."
@@ -35,7 +35,7 @@
 		{
 			"sound": "",
 			"speed": 0.05,
-			"portrait": "nochar",
+			"portrait": "nocharright",
 			"boxState": "normal",
 			"expression": "default",
 			"text": "(2): Be nice! It's not their fault you lost your other job."
@@ -43,7 +43,7 @@
 		{
 			"sound": "",
 			"speed": 0.05,
-			"portrait": "nochar",
+			"portrait": "nocharleft",
 			"boxState": "normal",
 			"expression": "default",
 			"text": "(1): Oh no, don't worry. I most definitely did not want that shit."
@@ -51,7 +51,7 @@
 		{
 			"sound": "",
 			"speed": 0.05,
-			"portrait": "nochar",
+			"portrait": "nocharright",
 			"boxState": "normal",
 			"expression": "default",
 			"text": "(2): I just feel like you needa remember this is a happy time for everybody."
@@ -59,7 +59,7 @@
 		{
 			"sound": "",
 			"speed": 0.05,
-			"portrait": "nochar",
+			"portrait": "nocharright",
 			"boxState": "normal",
 			"expression": "default",
 			"text": "Even if you gotta fake it, it'll be worth it when you make other people happy!"
@@ -67,7 +67,7 @@
 		{
 			"sound": "",
 			"speed": 0.05,
-			"portrait": "nochar",
+			"portrait": "nocharleft",
 			"boxState": "normal",
 			"expression": "default",
 			"text": "(1): Maaan, FUCK other people. I love being a hateful motherfucker!"
@@ -75,7 +75,7 @@
 		{
 			"sound": "",
 			"speed": 0.05,
-			"portrait": "nochar",
+			"portrait": "nocharleft",
 			"boxState": "normal",
 			"expression": "default",
 			"text": "*sigh* Whatever though. I guess it ain't too bad."
@@ -83,7 +83,7 @@
 		{
 			"sound": "",
 			"speed": 0.05,
-			"portrait": "nochar",
+			"portrait": "nocharleft",
 			"boxState": "normal",
 			"expression": "default",
 			"text": "Only thing that could make today worse is that blue haired kid showing up-"
@@ -91,7 +91,7 @@
 		{
 			"sound": "",
 			"speed": 0.05,
-			"portrait": "nochar",
+			"portrait": "nocharleft",
 			"boxState": "normal",
 			"expression": "default",
 			"text": "You have got to be shitting me."
@@ -99,7 +99,7 @@
 		{
 			"sound": "",
 			"speed": 0.05,
-			"portrait": "nochar",
+			"portrait": "nocharright",
 			"boxState": "angry",
 			"expression": "default",
 			"text": "BRO."
