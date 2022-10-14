@@ -270,6 +270,11 @@ class BaseOptionsMenu extends MusicBeatSubstate
 		if(nextAccept > 0) {
 			nextAccept -= 1;
 		}
+
+		#if android
+		addVirtualPad(UP_DOWN, A_B);
+		#end
+
 		super.update(elapsed);
 	}
 

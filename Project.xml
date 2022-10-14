@@ -86,6 +86,7 @@
 		<library name="week6"         preload="false" />
 	</section>
 	
+	<assets path="assets/android" if="android"/>
 	<assets path="plugins/"             rename=''               if="VIDEOS_ALLOWED windows" />
 	<assets path="dlls/"                rename=''               if="VIDEOS_ALLOWED windows" />
 	<assets path="assets/videos"        library="videos"        if="VIDEOS_ALLOWED"/>
