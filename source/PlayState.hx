@@ -4503,7 +4503,7 @@ class PlayState extends MusicBeatState
 					switch(fallShit)
 					{
 						case 0:
-							if(gf != null && gf.animOffsets.exists('fall')) {
+							if(gf != null && gf.stunned && gf.animOffsets.exists('fall')) {
 								gf.playAnim('fall', true, true);
 								FlxG.sound.play(Paths.sound('fellOverReverse'), 1);
 								gfFallTimer = new FlxTimer().start(0.5, function(tmr:FlxTimer)

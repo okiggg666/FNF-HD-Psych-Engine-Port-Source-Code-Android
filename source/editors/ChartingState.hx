@@ -94,7 +94,7 @@ class ChartingState extends MusicBeatState
 		['Start Draining Health', "Starts draining players health.\nValue 1: 0/1 = OFF/ON\nUsed in Winter Horrorland."],
 		['Make GF Fall', "Makes GF fall lol\nValue 1: 0/1 = reset/fall\nOnly works with \"gf-christmas-dead\" "],
 		['HUD Fade', "Value 1: 0/1 = Fade In/Fade Out\nValue 2: Fade duration"],
-		['Trigger Sonic Transformation', "Value 1: 0/1/2/3 = reset/start/transform/finish"],
+		['Trigger Sonic Transformation', "Triggers super sonic transformation anim\nValue 1: 0/1/2/3 = reset/start/transform/finish"],
 		['Spawn Aura', "Spawns super Sonic's aura\nValue 1: 0/1/2 = remove/dad/bf"],
 		['Switch BF Run Body', "Switches BF Run Body\nValue 1: 0/1 = normal/super"],
 		['Set Property', "Value 1: Variable name\nValue 2: New value"]
