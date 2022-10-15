@@ -1,19 +1,19 @@
 local allowCountdown = false
 function onStartCountdown()
 	if not allowCountdown and isStoryMode and not seenCutscene and dialogueIsStoryMode and dialogueIsDisabled then
-		makeLuaSprite('blackBG2', 'dialogue2/black',0,0);
+		makeLuaSprite('blackBG2', 'dialogue/bg/black',0,0);
 		setObjectCamera('blackBG2','hud')
 		addLuaSprite('blackBG2', true)
 
-		makeLuaSprite('cutsceneImage', 'dialogue2/green_hill_1',0,0);
+		makeLuaSprite('cutsceneImage', 'dialogue/bg/green_hill_1',0,0);
 		setObjectCamera('cutsceneImage','hud')
 		addLuaSprite('cutsceneImage', true)
 
-		makeLuaSprite('cutsceneImage2', 'dialogue2/green_hill_2',0,0);
+		makeLuaSprite('cutsceneImage2', 'dialogue/bg/green_hill_2',0,0);
 		setObjectCamera('cutsceneImage2','hud')
 		addLuaSprite('cutsceneImage2', true)
 
-		makeLuaSprite('blackBG', 'dialogue2/blank',0,0);
+		makeLuaSprite('blackBG', 'dialogue/bg/blank',0,0);
 		setObjectCamera('blackBG','hud')
 		addLuaSprite('blackBG', true)
 
@@ -27,19 +27,19 @@ function onStartCountdown()
 		allowCountdown = true;
 		return Function_Stop;
 	elseif not allowCountdown and not seenCutscene and dialogueIsEverywhere and dialogueIsDisabled then
-		makeLuaSprite('blackBG2', 'dialogue2/black',0,0);
+		makeLuaSprite('blackBG2', 'dialogue/bg/black',0,0);
 		setObjectCamera('blackBG2','hud')
 		addLuaSprite('blackBG2', true)
 
-		makeLuaSprite('cutsceneImage', 'dialogue2/green_hill_1',0,0);
+		makeLuaSprite('cutsceneImage', 'dialogue/bg/green_hill_1',0,0);
 		setObjectCamera('cutsceneImage','hud')
 		addLuaSprite('cutsceneImage', true)
 
-		makeLuaSprite('cutsceneImage2', 'dialogue2/green_hill_2',0,0);
+		makeLuaSprite('cutsceneImage2', 'dialogue/bg/green_hill_2',0,0);
 		setObjectCamera('cutsceneImage2','hud')
 		addLuaSprite('cutsceneImage2', true)
 
-		makeLuaSprite('blackBG', 'dialogue2/blank',0,0);
+		makeLuaSprite('blackBG', 'dialogue/bg/blank',0,0);
 		setObjectCamera('blackBG','hud')
 		addLuaSprite('blackBG', true)
 
