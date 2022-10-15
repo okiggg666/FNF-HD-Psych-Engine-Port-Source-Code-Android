@@ -521,7 +521,7 @@ class ChartingState extends MusicBeatState
 					var path = haxe.io.Path.join([directory, file]);
 					if (!FileSystem.isDirectory(path) && file.endsWith('.json')) {
 						var charToCheck:String = file.substr(0, file.length - 5);
-						if(!charToCheck.endsWith('-dead') && !charToCheck.endsWith('-philly') && !charToCheck.endsWith('-philly-pico') && !tempMap.exists(charToCheck)) {
+						if(!charToCheck.endsWith('-dead') && !charToCheck.endsWith('-low') && !charToCheck.endsWith('-philly') && !charToCheck.endsWith('-philly-pico') && !tempMap.exists(charToCheck)) {
 							tempMap.set(charToCheck, true);
 							characters.push(charToCheck);
 						}

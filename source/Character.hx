@@ -67,6 +67,7 @@ class Character extends FlxSprite
 	public var singDuration:Float = 4; //Multiplier of how long a character holds the sing pose
 	public var idleSuffix:String = '';
 	public var isStressed:String = '';
+	public var isLow:String = '';
 	public var danceIdle:Bool = false; //Character use "danceLeft" and "danceRight" instead of "idle"
 	public var boyfriend:Boyfriend = null;
 	
@@ -98,6 +99,11 @@ class Character extends FlxSprite
 		#else
 		animOffsets = new Map<String, Array<Dynamic>>();
 		#end
+		if(ClientPrefs.lowSprites) {
+			isLow = '-low';
+		} else {
+			isLow = '';
+		}
 		curCharacter = character;
 		this.isPlayer = isPlayer;
 		antialiasing = ClientPrefs.globalAntialiasing;
@@ -109,9 +115,9 @@ class Character extends FlxSprite
 			default:
 				var characterPath:String = null;
 				if(!ClientPrefs.OldHDbg) {
-					characterPath = 'characters/' + curCharacter + '.json';
+					characterPath = 'characters/' + curCharacter + isLow + '.json';
 				} else {
-					characterPath = 'characters old/' + curCharacter + '.json';
+					characterPath = 'characters old/' + curCharacter + isLow + '.json';
 				}
 
 				#if MODS_ALLOWED

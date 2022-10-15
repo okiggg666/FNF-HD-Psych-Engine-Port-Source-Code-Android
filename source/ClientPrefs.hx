@@ -17,6 +17,7 @@ class ClientPrefs {
 	public static var HDIcons:String = 'New Version';
 	public static var OldHDbg:Bool = false;
 	public static var opponentStrums:Bool = true;
+	public static var lowSprites:Bool = false;
 	public static var disableDodgeSound:Bool = false;
 	public static var framerate:Int = 60;
 	public static var impEvent:String = 'Only In Milf';
@@ -114,6 +115,7 @@ class ClientPrefs {
 		FlxG.save.data.opponentStrums = opponentStrums;
 		FlxG.save.data.HDIcons = HDIcons;
 		FlxG.save.data.OldHDbg = OldHDbg;
+		FlxG.save.data.lowSprites = lowSprites;
 		FlxG.save.data.disableDodgeSound = disableDodgeSound;
 		FlxG.save.data.impEvent = impEvent;
 		FlxG.save.data.poleSpawn = poleSpawn;
@@ -185,6 +187,9 @@ class ClientPrefs {
 		}
 		if(FlxG.save.data.lowQuality != null) {
 			lowQuality = FlxG.save.data.lowQuality;
+		}
+		if(FlxG.save.data.lowSprites != null) {
+			lowSprites = FlxG.save.data.lowSprites;
 		}
 		if(FlxG.save.data.disableDodgeSound != null) {
 			disableDodgeSound = FlxG.save.data.disableDodgeSound;
