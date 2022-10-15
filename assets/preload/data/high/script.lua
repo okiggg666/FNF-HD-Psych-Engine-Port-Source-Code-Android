@@ -18,7 +18,7 @@ function onStartCountdown()
 		setProperty('blackBG.visible', false)
 		setProperty('inCutscene', true);
 		startDialogue('dialogue');
-		playSound('news/1', 1, 'news1')
+		playSound('dialogue/news/1', 1, 'news1')
 		allowCountdown = true;
 		return Function_Stop;
 	elseif not allowCountdown and not seenCutscene and dialogueIsEverywhere and dialogueIsDisabled then
@@ -39,7 +39,7 @@ function onStartCountdown()
 		setProperty('blackBG.visible', false)
 		setProperty('inCutscene', true);
 		startDialogue('dialogue');
-		playSound('news/1', 1, 'news1')
+		playSound('dialogue/news/1', 1, 'news1')
 		allowCountdown = true;
 		return Function_Stop;
 	end
@@ -85,38 +85,38 @@ end
 function onNextDialogue(count)
 	if count == 1 then
 		stopSound('news1')
-		playSound('news/2', 1, 'news2')
+		playSound('dialogue/news/2', 1, 'news2')
 	elseif count == 2 then
 		stopSound('news2')
-		playSound('news/3', 1, 'news3')
+		playSound('dialogue/news/3', 1, 'news3')
 	elseif count == 3 then
 		setProperty('cutsceneImage.visible', false)
 		setProperty('cutsceneImage2.visible', true)
 		stopSound('news3')
-		playSound('news/4', 1, 'news4')
+		playSound('dialogue/news/4', 1, 'news4')
 	elseif count == 4 then
 		setProperty('cutsceneImage.visible', true)
 		setProperty('cutsceneImage2.visible', false)
 		stopSound('news4')
-		playSound('news/5', 1, 'news5')
+		playSound('dialogue/news/5', 1, 'news5')
 	elseif count == 5 then
 		stopSound('news5')
-		playSound('news/6', 1, 'news6')
+		playSound('dialogue/news/6', 1, 'news6')
 	elseif count == 6 then
 		setProperty('cutsceneImage.visible', false)
 		setProperty('cutsceneImage2.visible', true)
 		stopSound('news6')
-		playSound('news/7', 1, 'news7')
+		playSound('dialogue/news/7', 1, 'news7')
 	elseif count == 7 then
 		setProperty('cutsceneImage.visible', true)
 		setProperty('cutsceneImage2.visible', false)
 		stopSound('news7')
-		playSound('news/8', 1, 'news8')
+		playSound('dialogue/news/8', 1, 'news8')
 	elseif count == 8 then
 		removeLuaSprite('cutsceneImage', true)
 		setProperty('cutsceneImage2.visible', true)
 		stopSound('news8')
-		playSound('news/9', 1, 'news9')
+		playSound('dialogue/news/9', 1, 'news9')
 	elseif count == 9 then
 		removeLuaSprite('cutsceneImage2', true)
 		setProperty('blackBG.visible', true)

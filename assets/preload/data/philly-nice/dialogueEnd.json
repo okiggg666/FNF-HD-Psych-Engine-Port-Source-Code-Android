@@ -5,7 +5,7 @@
 			"text": "Okay!! The beats was hot, but now I'm losing.",
 			"boxState": "normal",
 			"portrait": "pico",
-			"sound": "picoText",
+			"sound": "dialogue/picoText",
 			"speed": 0.05
 		},
 		{
@@ -13,7 +13,7 @@
 			"text": "Sooo, now YOU'RE gonna be losing...",
 			"boxState": "normal",
 			"portrait": "pico",
-			"sound": "picoText",
+			"sound": "dialogue/picoText",
 			"speed": 0.05
 		},
 		{
@@ -21,7 +21,7 @@
 			"text": "your life...",
 			"boxState": "normal",
 			"portrait": "pico",
-			"sound": "picoText",
+			"sound": "dialogue/picoText",
 			"speed": 0.05
 		},
 		{
@@ -29,7 +29,7 @@
 			"text": "uhahaaaa!",
 			"boxState": "normal",
 			"portrait": "pico",
-			"sound": "picoText",
+			"sound": "dialogue/picoText",
 			"speed": 0.05
 		},
 		{
@@ -44,7 +44,7 @@
 			"text": "Fuck both of you.",
 			"boxState": "normal",
 			"portrait": "pico",
-			"sound": "picoText",
+			"sound": "dialogue/picoText",
 			"speed": 0.05
 		},
 		{
@@ -52,7 +52,7 @@
 			"text": "You said that you'd spare us if our songs were heat! You a bitch!",
 			"boxState": "angry",
 			"portrait": "bf",
-			"sound": "boyfriendText",
+			"sound": "dialogue/boyfriendText",
 			"speed": 0.05
 		},
 		{
@@ -60,7 +60,7 @@
 			"text": "Don't care, changed my mind, suck me.",
 			"boxState": "normal",
 			"portrait": "pico",
-			"sound": "picoText",
+			"sound": "dialogue/picoText",
 			"speed": 0.05
 		},
 		{
@@ -68,7 +68,7 @@
 			"text": "This is so annoying! Why are white people like this!?",
 			"boxState": "angry",
 			"portrait": "gf",
-			"sound": "gfText",
+			"sound": "dialogue/gfText",
 			"speed": 0.05
 		},
 		{
@@ -76,7 +76,7 @@
 			"text": "Tch, he hasn't changed a bit since we stopped dating.",
 			"boxState": "normal",
 			"portrait": "bf",
-			"sound": "boyfriendText",
+			"sound": "dialogue/boyfriendText",
 			"speed": 0.05
 		},
 		{
@@ -84,7 +84,7 @@
 			"text": "Since you what?",
 			"boxState": "normal",
 			"portrait": "gf",
-			"sound": "gfText",
+			"sound": "dialogue/gfText",
 			"speed": 0.05
 		},
 		{
@@ -92,7 +92,7 @@
 			"text": "What the--",
 			"boxState": "normal",
 			"portrait": "pico",
-			"sound": "picoText",
+			"sound": "dialogue/picoText",
 			"speed": 0.05
 		},
 		{
@@ -100,7 +100,7 @@
 			"text": "You can't just go around casually mentioning that you f-",
 			"boxState": "normal",
 			"portrait": "pico",
-			"sound": "picoText",
+			"sound": "dialogue/picoText",
 			"speed": 0.05
 		},
 		{
@@ -108,7 +108,7 @@
 			"text": "w-what...??",
 			"boxState": "normal",
 			"portrait": "nene",
-			"sound": "neneText",
+			"sound": "dialogue/neneText",
 			"speed": 0.05
 		},
 		{
@@ -116,7 +116,7 @@
 			"text": "GAYS?!",
 			"boxState": "angry",
 			"portrait": "nene",
-			"sound": "neneText",
+			"sound": "dialogue/neneText",
 			"speed": 0.05
 		},
 		{
@@ -124,7 +124,7 @@
 			"text": "what the FUCK?!",
 			"boxState": "angry",
 			"portrait": "nene",
-			"sound": "neneText",
+			"sound": "dialogue/neneText",
 			"speed": 0.05
 		},
 		{
@@ -132,7 +132,7 @@
 			"text": "I GOTTA GET OUTTA HERE!",
 			"boxState": "angry",
 			"portrait": "nene",
-			"sound": "neneText",
+			"sound": "dialogue/neneText",
 			"speed": 0.05
 		},
 		{
@@ -140,7 +140,7 @@
 			"text": "WAIT, NENE--",
 			"boxState": "angry",
 			"portrait": "darnell",
-			"sound": "darnellText",
+			"sound": "dialogue/darnellText",
 			"speed": 0.05
 		},
 		{
@@ -162,7 +162,7 @@
 			"text": "Aaand that's 10.",
 			"boxState": "normal",
 			"portrait": "darnell",
-			"sound": "darnellText",
+			"sound": "dialogue/darnellText",
 			"speed": 0.05
 		},
 		{
@@ -170,7 +170,7 @@
 			"text": "You. You fool. Nene was extremely homophobic...You knew that.",
 			"boxState": "normal",
 			"portrait": "pico",
-			"sound": "picoText",
+			"sound": "dialogue/picoText",
 			"speed": 0.05
 		},
 		{
@@ -178,7 +178,7 @@
 			"text": "So then...so then why would you do this?",
 			"boxState": "normal",
 			"portrait": "pico",
-			"sound": "picoText",
+			"sound": "dialogue/picoText",
 			"speed": 0.05
 		},
 		{
@@ -186,7 +186,7 @@
 			"text": "XML. THAT'S THE LAST STRAW.",
 			"boxState": "angry",
 			"portrait": "pico",
-			"sound": "picoText",
+			"sound": "dialogue/picoText",
 			"speed": 0.05
 		},
 		{
@@ -194,7 +194,7 @@
 			"text": "I'M DOWN A GOON, YET MY CLIP'S STILL FULL.",
 			"boxState": "angry",
 			"portrait": "pico",
-			"sound": "picoText",
+			"sound": "dialogue/picoText",
 			"speed": 0.05
 		},
 		{
@@ -202,7 +202,7 @@
 			"text": "Funny how that works: never shot no one and yet someone's dead...but it isn't my target.",
 			"boxState": "normal",
 			"portrait": "pico",
-			"sound": "picoText",
+			"sound": "dialogue/picoText",
 			"speed": 0.05
 		},
 		{
@@ -210,7 +210,7 @@
 			"text": "I think we should fix that.",
 			"boxState": "normal",
 			"portrait": "pico",
-			"sound": "picoText",
+			"sound": "dialogue/picoText",
 			"speed": 0.05
 		}
 	]

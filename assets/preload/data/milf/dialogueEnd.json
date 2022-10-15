@@ -4,12 +4,12 @@
 			"expression": "defaultSweat",
 			"text": "BF...that was amazing...I'm so...exhilarated.",
 			"boxState": "normal",
-			"sound": "momText",
+			"sound": "dialogue/dialogue/momText",
 			"speed": 0.05,
 			"portrait": "mom"
 		},
 		{
-			"sound": "momText",
+			"sound": "dialogue/dialogue/momText",
 			"speed": 0.05,
 			"portrait": "mom",
 			"boxState": "normal",
@@ -17,7 +17,7 @@
 			"text": "You sapped me of all of my juices. From my mic, that is, hehe..."
 		},
 		{
-			"sound": "momText",
+			"sound": "dialogue/dialogue/momText",
 			"speed": 0.05,
 			"portrait": "mom",
 			"boxState": "normal",
@@ -25,7 +25,7 @@
 			"text": "I know you won, but...can you please, just come be a part of my collection?"
 		},
 		{
-			"sound": "boyfriendText",
+			"sound": "dialogue/boyfriendText",
 			"speed": 0.05,
 			"portrait": "bf",
 			"boxState": "angry",
@@ -33,7 +33,7 @@
 			"text": "I don't want you!! DAMN!"
 		},
 		{
-			"sound": "boyfriendText",
+			"sound": "dialogue/boyfriendText",
 			"speed": 0.05,
 			"portrait": "bf",
 			"boxState": "normal",
@@ -41,7 +41,7 @@
 			"text": "I'm with your daughter because I love HER."
 		},
 		{
-			"sound": "boyfriendText",
+			"sound": "dialogue/boyfriendText",
 			"speed": 0.05,
 			"portrait": "bf",
 			"boxState": "normal",
@@ -49,7 +49,7 @@
 			"text": "I love the way SHE smells, how HER voice sounds, how HER hair flows in the wind..."
 		},
 		{
-			"sound": "momText",
+			"sound": "dialogue/dialogue/momText",
 			"speed": 0.05,
 			"portrait": "mom",
 			"boxState": "angry",
@@ -57,7 +57,7 @@
 			"text": "What are you saying?!"
 		},
 		{
-			"sound": "boyfriendText",
+			"sound": "dialogue/boyfriendText",
 			"speed": 0.05,
 			"portrait": "bf",
 			"boxState": "normal",
@@ -65,7 +65,7 @@
 			"text": "I'M SAYING I LOVE FAT BITCHES!! Mainly the one I'm with, but the others are cool too!!"
 		},
 		{
-			"sound": "gfText",
+			"sound": "dialogue/gfText",
 			"speed": 0.05,
 			"portrait": "gf",
 			"boxState": "angry",
@@ -73,7 +73,7 @@
 			"text": "Eghhjgfhhfh hooohooooo!?"
 		},
 		{
-			"sound": "boyfriendText",
+			"sound": "dialogue/boyfriendText",
 			"speed": 0.05,
 			"portrait": "bf",
 			"boxState": "angry",
@@ -81,7 +81,7 @@
 			"text": "ALSO, you just let those imps die. They had lives, too!"
 		},
 		{
-			"sound": "momText",
+			"sound": "dialogue/dialogue/momText",
 			"speed": 0.05,
 			"portrait": "mom",
 			"boxState": "normal",
@@ -89,7 +89,7 @@
 			"text": "Tch, those imps couldn't take the heat, so they got kicked outta the kitchen."
 		},
 		{
-			"sound": "momText",
+			"sound": "dialogue/dialogue/momText",
 			"speed": 0.05,
 			"portrait": "mom",
 			"boxState": "normal",
@@ -97,7 +97,7 @@
 			"text": "By that I mean their limbs are strewn along the road."
 		},
 		{
-			"sound": "momText",
+			"sound": "dialogue/dialogue/momText",
 			"speed": 0.05,
 			"portrait": "mom",
 			"boxState": "normal",
@@ -105,7 +105,7 @@
 			"text": "Agh, you two are perfect for eachother!! Whatever, you can have 'em girl."
 		},
 		{
-			"sound": "gfText",
+			"sound": "dialogue/gfText",
 			"speed": 0.05,
 			"portrait": "gf",
 			"boxState": "angry",
@@ -113,7 +113,7 @@
 			"text": "Momma!!"
 		},
 		{
-			"sound": "gfText",
+			"sound": "dialogue/gfText",
 			"speed": 0.05,
 			"portrait": "gf",
 			"boxState": "normal",
@@ -121,7 +121,7 @@
 			"text": "Even though you've permanently damaged my view of you and made my ego plummet, I love you for this!"
 		},
 		{
-			"sound": "boyfriendText",
+			"sound": "dialogue/boyfriendText",
 			"speed": 0.05,
 			"portrait": "bf",
 			"boxState": "normal",
@@ -129,7 +129,7 @@
 			"text": "You serious, ma?!"
 		},
 		{
-			"sound": "momText",
+			"sound": "dialogue/dialogue/momText",
 			"speed": 0.05,
 			"portrait": "mom",
 			"boxState": "normal",
@@ -137,7 +137,7 @@
 			"text": "Yeah, you're kinda boring, actually. Welcome to the Dearest family, hon."
 		},
 		{
-			"sound": "momText",
+			"sound": "dialogue/dialogue/momText",
 			"speed": 0.05,
 			"portrait": "mom",
 			"boxState": "normal",

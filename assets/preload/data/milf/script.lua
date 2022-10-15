@@ -18,7 +18,7 @@ function onStartCountdown()
 		setProperty('blackBG.visible', false)
 		setProperty('inCutscene', true);
 		startDialogue('dialogue');
-		playSound('news/10', 1, 'news10')
+		playSound('dialogue/news/10', 1, 'news10')
 		allowCountdown = true;
 		return Function_Stop;
 	elseif not allowCountdown and not seenCutscene and dialogueIsEverywhere and dialogueIsDisabled then
@@ -39,7 +39,7 @@ function onStartCountdown()
 		setProperty('blackBG.visible', false)
 		setProperty('inCutscene', true);
 		startDialogue('dialogue');
-		playSound('news/10', 1, 'news10')
+		playSound('dialogue/news/10', 1, 'news10')
 		allowCountdown = true;
 		return Function_Stop;
 	end
@@ -90,11 +90,11 @@ function onNextDialogue(count)
 			removeLuaSprite('cutsceneImage', true)
 			setProperty('cutsceneImage2.visible', true)
 			stopSound('news10')
-			playSound('news/11', 1, 'news11')
+			playSound('dialogue/news/11', 1, 'news11')
 		elseif count == 2 then
 			setProperty('cutsceneImage2.visible', true)
 			stopSound('news11')
-			playSound('news/12', 1, 'news12')
+			playSound('dialogue/news/12', 1, 'news12')
 		elseif count == 3 then
 			removeLuaSprite('cutsceneImage2', true)
 			setProperty('blackBG.visible', true)

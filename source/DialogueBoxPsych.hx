@@ -57,6 +57,9 @@ typedef DialogueLine = {
 	var boxState:Null<String>;
 	var speed:Null<Float>;
 	var sound:Null<String>;
+	/*var bg:Null<String>;
+	var music:Null<String>;
+	var playSound:Null<String>;*/
 }
 
 class DialogueCharacter extends FlxSprite
@@ -179,6 +182,7 @@ class DialogueBoxPsych extends FlxSpriteGroup
 	public var finishThing:Void->Void;
 	public var nextDialogueThing:Void->Void = null;
 	public var skipDialogueThing:Void->Void = null;
+	var dialogueShit:DialogueLine = null;
 	var bgFade:FlxSprite = null;
 	var blackBG:FlxSprite = null;
 	var skipText:FlxText;
@@ -207,6 +211,19 @@ class DialogueBoxPsych extends FlxSpriteGroup
 			FlxG.sound.music.fadeIn(2, 0, 1);
 		}
 
+		/*if(dialogueShit.music != 'stop' && dialogueShit.music != null && dialogueShit.music != '') {
+			FlxG.sound.playMusic(Sound.fromFile("assets/dialogue/music/" + dialogueShit.music + #if !html5 ".ogg" #else ".mp3" #end));
+			FlxG.sound.music.fadeIn(2, 0, 1);
+		}
+
+		if (dialogueShit.playSound != null && dialogueShit.playSound != '') this.sound.stop();
+
+		if (dialogueShit.playSound != null && dialogueShit.playSound != '') {
+			sound = new FlxSound().loadEmbedded(Sound.fromFile("assets/dialogue/sounds/" + dialogueShit.playSound + #if !html5 ".ogg" #else ".mp3" #end));
+			sound.fadeIn(2, 0, 1);
+			sound.play();
+		}*/
+
 		blackBG = new FlxSprite(-256, -256).makeGraphic(FlxG.width * 2, FlxG.height * 2, FlxColor.BLACK);
 		blackBG.visible = false;
 		add(blackBG);
@@ -214,10 +231,11 @@ class DialogueBoxPsych extends FlxSpriteGroup
 		bgFade = new FlxSprite(-500, -500).makeGraphic(FlxG.width * 2, FlxG.height * 2, 0xFFB3DFd8);
 		bgFade.scrollFactor.set();
 		bgFade.visible = false;
-		bgFade.alpha = 0.5;
+		bgFade.alpha = 0;
 		add(bgFade);
 
-		cutsceneImage = new FlxSprite(0, 0);
+		cutsceneImage = new FlxSprite(0, 0).makeGraphic(FlxG.width * 2, FlxG.height * 2, 0xFF9C0101);
+		//cutsceneImage.loadGraphic(Paths.image('dialogue/bg/' + dialogueShit.bg));
 		cutsceneImage.antialiasing = ClientPrefs.globalAntialiasing;
 		cutsceneImage.visible = false;
 		add(cutsceneImage);
@@ -329,8 +347,8 @@ class DialogueBoxPsych extends FlxSpriteGroup
 		}
 
 		if(!dialogueEnded) {
-			bgFade.alpha += 0.5 * elapsed;
-			if(bgFade.alpha > 0.5) bgFade.alpha = 0.5;
+			bgFade.alpha += 0.7 * elapsed;
+			if(bgFade.alpha > 0.7) bgFade.alpha = 0.7;
 
 			if(PlayerSettings.player1.controls.ACCEPT) {
 				if(!daText.finishedText) {
@@ -365,10 +383,8 @@ class DialogueBoxPsych extends FlxSpriteGroup
 					daText.destroy();
 					daText = null;
 					updateBoxOffsets(box);
-					FlxTween.tween(blackBG, {alpha: 0}, 1.2, {ease: FlxEase.circOut});
-					FlxTween.tween(cutsceneImage, {alpha: 0}, 1.2, {ease: FlxEase.circOut});
-					FlxTween.tween(skipText, {alpha: 0}, 1.2, {ease: FlxEase.circOut});
-					if (this.sound != null) this.sound.stop();
+					//if (dialogueShit.playSound != null) sound.fadeOut(1, 0);
+					//if (dialogueShit.music != null)
 					FlxG.sound.music.fadeOut(1, 0);
 				} else {
 					startNextDialog();
@@ -449,13 +465,33 @@ class DialogueBoxPsych extends FlxSpriteGroup
 				box = null;
 			}
 
+			if(blackBG != null) {
+				blackBG.alpha -= 1 * elapsed;
+				if(blackBG.alpha <= 0) {
+					blackBG.kill();
+					remove(blackBG);
+					blackBG.destroy();
+					blackBG = null;
+				}
+			}
+
 			if(bgFade != null) {
-				bgFade.alpha -= 0.5 * elapsed;
+				bgFade.alpha -= 0.7 * elapsed;
 				if(bgFade.alpha <= 0) {
 					bgFade.kill();
 					remove(bgFade);
 					bgFade.destroy();
 					bgFade = null;
+				}
+			}
+
+			if(cutsceneImage != null) {
+				cutsceneImage.alpha -= 1 * elapsed;
+				if(cutsceneImage.alpha <= 0) {
+					cutsceneImage.kill();
+					remove(cutsceneImage);
+					cutsceneImage.destroy();
+					cutsceneImage = null;
 				}
 			}
 
@@ -514,6 +550,23 @@ class DialogueBoxPsych extends FlxSpriteGroup
 				boxType = animName;
 			}
 		}
+
+		/*if(curDialogue.bg != null && curDialogue.bg != '') {
+			cutsceneImage.visible = true;
+		} else {
+			cutsceneImage.visible = false;
+		}
+		cutsceneImage.loadGraphic(Paths.image('dialogue/bg/' + dialogueShit.bg));*/
+
+		/*if (this.sound != null) this.sound.stop();
+			sound = new FlxSound().loadEmbedded(Sound.fromFile("assets/dialogue/sounds/" + curDialogue.playSound + #if !html5 ".ogg" #else ".mp3" #end));
+			sound.play();
+
+		if(curDialogue.music == 'stop') {
+			FlxG.sound.music.stop();
+		} else {
+			FlxG.sound.playMusic(Sound.fromFile("assets/dialogue/music/" + curDialogue.music + #if !html5 ".ogg" #else ".mp3" #end));
+		}*/
 
 		var character:Int = 0;
 		box.visible = true;

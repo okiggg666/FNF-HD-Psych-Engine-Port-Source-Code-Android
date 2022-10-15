@@ -5,7 +5,7 @@
 			"text": "Okay cool, I don't hate you.",
 			"boxState": "normal",
 			"speed": 0.05,
-			"sound": "picoText",
+			"sound": "dialogue/picoText",
 			"portrait": "pico"
 		},
 		{
@@ -13,7 +13,7 @@
 			"text": "Wait wait wait, hold on...",
 			"boxState": "normal",
 			"speed": 0.05,
-			"sound": "gfText",
+			"sound": "dialogue/gfText",
 			"portrait": "gf"
 		},
 		{
@@ -21,7 +21,7 @@
 			"text": "You mentioned \"pops\" a minute ago...who is that?",
 			"boxState": "normal",
 			"speed": 0.05,
-			"sound": "gfText",
+			"sound": "dialogue/gfText",
 			"portrait": "gf"
 		},
 		{
@@ -29,7 +29,7 @@
 			"text": "I was talm bout YOUR pops, shorty.",
 			"boxState": "normal",
 			"speed": 0.05,
-			"sound": "picoText",
+			"sound": "dialogue/picoText",
 			"portrait": "pico"
 		},
 		{
@@ -37,7 +37,7 @@
 			"text": "wuh HUH!?",
 			"boxState": "normal",
 			"speed": 0.05,
-			"sound": "gfText",
+			"sound": "dialogue/gfText",
 			"portrait": "gf"
 		},
 		{
@@ -45,7 +45,7 @@
 			"text": "Wait...so you guys are related?",
 			"boxState": "normal",
 			"speed": 0.05,
-			"sound": "boyfriendText",
+			"sound": "dialogue/boyfriendText",
 			"portrait": "bf"
 		},
 		{
@@ -53,7 +53,7 @@
 			"text": "Come on man...",
 			"boxState": "normal",
 			"speed": 0.05,
-			"sound": "picoText",
+			"sound": "dialogue/picoText",
 			"portrait": "pico"
 		},
 		{
@@ -61,7 +61,7 @@
 			"text": "Lemme spell it out for you, DUMBASS.",
 			"boxState": "normal",
 			"speed": 0.05,
-			"sound": "picoText",
+			"sound": "dialogue/picoText",
 			"portrait": "pico"
 		},
 		{
@@ -69,7 +69,7 @@
 			"text": "You are blood money to me. Your girl's dad hired me to take you out--",
 			"boxState": "normal",
 			"speed": 0.05,
-			"sound": "picoText",
+			"sound": "dialogue/picoText",
 			"portrait": "pico"
 		},
 		{
@@ -77,7 +77,7 @@
 			"text": "Wait to like dinner or--",
 			"boxState": "normal",
 			"speed": 0.05,
-			"sound": "boyfriendText",
+			"sound": "dialogue/boyfriendText",
 			"portrait": "bf"
 		},
 		{
@@ -85,7 +85,7 @@
 			"text": "LET ME FINISH!! DAMN.",
 			"boxState": "angry",
 			"speed": 0.05,
-			"sound": "picoText",
+			"sound": "dialogue/picoText",
 			"portrait": "pico"
 		},
 		{
@@ -93,7 +93,7 @@
 			"text": "He hired me to kill you. Said you embarrassed him but he won't tell me what for.",
 			"boxState": "normal",
 			"speed": 0.05,
-			"sound": "picoText",
+			"sound": "dialogue/picoText",
 			"portrait": "pico"
 		},
 		{
@@ -101,7 +101,7 @@
 			"text": "All I did was out-rap him like the sexy beast I am...",
 			"boxState": "normal",
 			"speed": 0.05,
-			"sound": "boyfriendText",
+			"sound": "dialogue/boyfriendText",
 			"portrait": "bf"
 		},
 		{
@@ -109,7 +109,7 @@
 			"text": "That's petty as hell in hindsight. But money is money, and murder fuckin' rocks!",
 			"boxState": "normal",
 			"speed": 0.05,
-			"sound": "picoText",
+			"sound": "dialogue/picoText",
 			"portrait": "pico"
 		},
 		{
@@ -117,7 +117,7 @@
 			"text": "Aight, next song.",
 			"boxState": "normal",
 			"speed": 0.05,
-			"sound": "picoText",
+			"sound": "dialogue/picoText",
 			"portrait": "pico"
 		}
 	]
