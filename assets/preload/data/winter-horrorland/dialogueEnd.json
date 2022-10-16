@@ -137,7 +137,7 @@
 			"text": "okay!"
 		},
 		{
-			"sound": "dialogue/dialogue/momText",
+			"sound": "dialogue/momText",
 			"speed": 0.05,
 			"portrait": "mom",
 			"boxState": "normal",
@@ -153,7 +153,7 @@
 			"text": "No, he should've died so that we don't have to worry about him tryna KILL us."
 		},
 		{
-			"sound": "dialogue/dialogue/momText",
+			"sound": "dialogue/momText",
 			"speed": 0.05,
 			"portrait": "mom",
 			"boxState": "normal",

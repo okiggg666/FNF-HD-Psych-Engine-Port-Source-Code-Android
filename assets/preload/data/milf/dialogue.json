@@ -33,7 +33,7 @@
 			"text": "OKAY! That's enough Mrs. Mearest! I've had enough."
 		},
 		{
-			"sound": "dialogue/dialogue/momText",
+			"sound": "dialogue/momText",
 			"speed": 0.05,
 			"portrait": "mom",
 			"boxState": "normal",
@@ -41,7 +41,7 @@
 			"text": "What's the matter boo?"
 		},
 		{
-			"sound": "dialogue/dialogue/momText",
+			"sound": "dialogue/momText",
 			"speed": 0.05,
 			"portrait": "mom",
 			"boxState": "normal",
@@ -49,7 +49,7 @@
 			"text": "Are you losin' focus from seeing me move so gracefully?"
 		},
 		{
-			"sound": "dialogue/dialogue/momText",
+			"sound": "dialogue/momText",
 			"speed": 0.05,
 			"portrait": "mom",
 			"boxState": "normal",
@@ -57,7 +57,7 @@
 			"text": "Bet you got so many nasty thoughts in yer head goin on..."
 		},
 		{
-			"sound": "dialogue/dialogue/momText",
+			"sound": "dialogue/momText",
 			"speed": 0.05,
 			"portrait": "mom",
 			"boxState": "normal",
@@ -121,7 +121,7 @@
 			"text": "...wuh??"
 		},
 		{
-			"sound": "dialogue/dialogue/momText",
+			"sound": "dialogue/momText",
 			"speed": 0.05,
 			"portrait": "mom",
 			"boxState": "angry",
@@ -346,7 +346,7 @@
 			"text": "I'm glad we can get this shit out of the way."
 		},
 		{
-			"sound": "dialogue/dialogue/momText",
+			"sound": "dialogue/momText",
 			"speed": 0.05,
 			"portrait": "mom",
 			"boxState": "normal",
@@ -362,7 +362,7 @@
 			"text": "HUH--"
 		},
 		{
-			"sound": "dialogue/dialogue/momText",
+			"sound": "dialogue/momText",
 			"speed": 0.05,
 			"portrait": "mom",
 			"boxState": "normal",
@@ -378,7 +378,7 @@
 			"text": "Momma??"
 		},
 		{
-			"sound": "dialogue/dialogue/momText",
+			"sound": "dialogue/momText",
 			"speed": 0.05,
 			"portrait": "mom",
 			"boxState": "normal",
@@ -386,7 +386,7 @@
 			"text": "But YOU, BF...you're a whole different breed."
 		},
 		{
-			"sound": "dialogue/dialogue/momText",
+			"sound": "dialogue/momText",
 			"speed": 0.05,
 			"portrait": "mom",
 			"boxState": "normal",
@@ -394,7 +394,7 @@
 			"text": "A man who knows how to put a bitch like me in her place..."
 		},
 		{
-			"sound": "dialogue/dialogue/momText",
+			"sound": "dialogue/momText",
 			"speed": 0.05,
 			"portrait": "mom",
 			"boxState": "normal",
@@ -402,7 +402,7 @@
 			"text": "AND shows love to his own girl after some tramp dissed her..."
 		},
 		{
-			"sound": "dialogue/dialogue/momText",
+			"sound": "dialogue/momText",
 			"speed": 0.05,
 			"portrait": "mom",
 			"boxState": "normal",
@@ -410,7 +410,7 @@
 			"text": "IT'S THE BARE MINIMUM DOLL, BUT...YOU'RE JUST TOO PERFECT!"
 		},
 		{
-			"sound": "dialogue/dialogue/momText",
+			"sound": "dialogue/momText",
 			"speed": 0.05,
 			"portrait": "mom",
 			"boxState": "normal",
@@ -418,7 +418,7 @@
 			"text": "I'll tell you this, BF...If you lose this, your soul is mine for all eternity."
 		},
 		{
-			"sound": "dialogue/dialogue/momText",
+			"sound": "dialogue/momText",
 			"speed": 0.05,
 			"portrait": "mom",
 			"boxState": "normal",
@@ -426,7 +426,7 @@
 			"text": "You'll never see GF ever again, I'll use you for whatever the hell I want."
 		},
 		{
-			"sound": "dialogue/dialogue/momText",
+			"sound": "dialogue/momText",
 			"speed": 0.05,
 			"portrait": "mom",
 			"boxState": "normal",
@@ -442,7 +442,7 @@
 			"text": "Wait, we were somethin' before bein' demon?"
 		},
 		{
-			"sound": "dialogue/dialogue/momText",
+			"sound": "dialogue/momText",
 			"speed": 0.05,
 			"portrait": "mom",
 			"boxState": "normal",
@@ -515,7 +515,7 @@
 			"text": "Let's just hope she won't use the Beautiful Evisceratin' Agony Machine..."
 		},
 		{
-			"sound": "dialogue/dialogue/momText",
+			"sound": "dialogue/momText",
 			"speed": 0.05,
 			"portrait": "mom",
 			"boxState": "normal",
@@ -523,7 +523,7 @@
 			"text": "By the way, baby, I don't want this to be too borin'..."
 		},
 		{
-			"sound": "dialogue/dialogue/momText",
+			"sound": "dialogue/momText",
 			"speed": 0.05,
 			"portrait": "mom",
 			"boxState": "normal",
@@ -531,7 +531,7 @@
 			"text": "However, I wanna be the one who takes you to your grave...I can't let wreckless drivin' do it!"
 		},
 		{
-			"sound": "dialogue/dialogue/momText",
+			"sound": "dialogue/momText",
 			"speed": 0.05,
 			"portrait": "mom",
 			"boxState": "normal",
@@ -539,7 +539,7 @@
 			"text": "So dance, dance for me baby!! Maintain your balance, just like my imps..."
 		},
 		{
-			"sound": "dialogue/dialogue/momText",
+			"sound": "dialogue/momText",
 			"speed": 0.05,
 			"portrait": "mom",
 			"boxState": "normal",

@@ -226,7 +226,7 @@
 			"text": "What the--?! Who's there?!"
 		},
 		{
-			"sound": "dialogue/dialogue/momText",
+			"sound": "dialogue/momText",
 			"speed": 0.05,
 			"portrait": "mom",
 			"boxState": "normal",
@@ -244,7 +244,7 @@
 			"text": "Momma??"
 		},
 		{
-			"sound": "dialogue/dialogue/momText",
+			"sound": "dialogue/momText",
 			"speed": 0.05,
 			"portrait": "mom",
 			"boxState": "normal",
@@ -271,7 +271,7 @@
 			"text": "YEAH?? DON'T GET ANY IDEAS--"
 		},
 		{
-			"sound": "dialogue/dialogue/momText",
+			"sound": "dialogue/momText",
 			"speed": 0.05,
 			"portrait": "mom",
 			"boxState": "angry",
@@ -280,7 +280,7 @@
 			"text": "SILENCE, GEAREST."
 		},
 		{
-			"sound": "dialogue/dialogue/momText",
+			"sound": "dialogue/momText",
 			"speed": 0.05,
 			"portrait": "mom",
 			"boxState": "angry",
@@ -298,7 +298,7 @@
 			"text": "Ma'am, yes ma'am!!"
 		},
 		{
-			"sound": "dialogue/dialogue/momText",
+			"sound": "dialogue/momText",
 			"speed": 0.05,
 			"portrait": "mom",
 			"boxState": "normal",
@@ -316,7 +316,7 @@
 			"text": "Aye!!"
 		},
 		{
-			"sound": "dialogue/dialogue/momText",
+			"sound": "dialogue/momText",
 			"speed": 0.05,
 			"portrait": "mom",
 			"boxState": "normal",
@@ -334,7 +334,7 @@
 			"text": "You said you were staying out of this, mother."
 		},
 		{
-			"sound": "dialogue/dialogue/momText",
+			"sound": "dialogue/momText",
 			"speed": 0.05,
 			"portrait": "mom",
 			"boxState": "normal",
@@ -343,7 +343,7 @@
 			"text": "I was. Then Gnomeo over here decided to embarrass my shnuckums in front of his fans..."
 		},
 		{
-			"sound": "dialogue/dialogue/momText",
+			"sound": "dialogue/momText",
 			"speed": 0.05,
 			"portrait": "mom",
 			"boxState": "normal",
@@ -352,7 +352,7 @@
 			"text": "You wouldn't believe how much he sobbed in my arms the night it happened."
 		},
 		{
-			"sound": "dialogue/dialogue/momText",
+			"sound": "dialogue/momText",
 			"speed": 0.05,
 			"portrait": "mom",
 			"boxState": "normal",
@@ -370,7 +370,7 @@
 			"text": "BF...My name's BF. Like, Boyfriend."
 		},
 		{
-			"sound": "dialogue/dialogue/momText",
+			"sound": "dialogue/momText",
 			"speed": 0.05,
 			"portrait": "mom",
 			"boxState": "normal",
@@ -379,7 +379,7 @@
 			"text": "KEKEKEKE!! That's the dumbest name I've ever heard of!"
 		},
 		{
-			"sound": "dialogue/dialogue/momText",
+			"sound": "dialogue/momText",
 			"speed": 0.05,
 			"portrait": "mom",
 			"boxState": "normal",
@@ -388,7 +388,7 @@
 			"text": "Anyway's, the name's Mommy Mearest."
 		},
 		{
-			"sound": "dialogue/dialogue/momText",
+			"sound": "dialogue/momText",
 			"speed": 0.05,
 			"portrait": "mom",
 			"boxState": "normal",

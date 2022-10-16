@@ -6313,54 +6313,9 @@ class PlayState extends MusicBeatState
 			}
 		}
 
-		if(ClientPrefs.impEvent == 'In Every Song') {
-			if(curSong == "Satin Panties") {
-				if (curStep == 190 && !endingSong && !killdancers) {
-					killDancers();
-				}
-				if (curStep == 574 && !endingSong && !killdancers) {
-					killDancers();
-				}
-			}
-
-			if(curSong == "High") {
-				if (curStep == 30 && !endingSong && !killdancers) {
-					killDancers();
-				}
-				if (curStep == 222 && !endingSong && !killdancers) {
-					killDancers();
-				}
-				if (curStep == 414 && !endingSong && !killdancers) {
-					killDancers();
-				}
-				if (curStep == 542 && !endingSong && !killdancers) {
-					killDancers();
-				}
-				if (curStep == 670 && !endingSong && !killdancers) {
-					killDancers();
-				}
-				if (curStep == 796 && !endingSong && !killdancers) {
-					killDancers();
-				}
-			}
-		}
-
 		if(curSong == "Milf") {
 			if(ClientPrefs.impEvent != 'In Every Song') {
 				if (curStep == 317 && !endingSong && !killdancers) {
-					killDancers();
-				}
-			} else {
-				if (curStep == 317 && !endingSong && !killdancers) {
-					killDancers();
-				}
-				if (curStep == 573 && !endingSong && !killdancers) {
-					killDancers();
-				}
-				if (curStep == 1213 && !endingSong && !killdancers) {
-					killDancers();
-				}
-				if (curStep == 1469 && !endingSong && !killdancers) {
 					killDancers();
 				}
 			}

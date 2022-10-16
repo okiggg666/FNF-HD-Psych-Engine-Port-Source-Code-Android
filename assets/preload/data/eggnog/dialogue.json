@@ -81,7 +81,7 @@
 			"text": "You either want him dead or want him working for you, huh?!"
 		},
 		{
-			"sound": "dialogue/dialogue/momText",
+			"sound": "dialogue/momText",
 			"speed": 0.05,
 			"portrait": "mom",
 			"boxState": "normal",
@@ -137,7 +137,7 @@
 			"text": "...I don't know if it's that deep."
 		},
 		{
-			"sound": "dialogue/dialogue/momText",
+			"sound": "dialogue/momText",
 			"speed": 0.05,
 			"portrait": "mom",
 			"boxState": "normal",
@@ -145,7 +145,7 @@
 			"text": "Whether you wanna believe it or not, you have, and will continue to, harm innocents."
 		},
 		{
-			"sound": "dialogue/dialogue/momText",
+			"sound": "dialogue/momText",
 			"speed": 0.05,
 			"portrait": "mom",
 			"boxState": "normal",
@@ -153,7 +153,7 @@
 			"text": "What's worse is that you'll never understand 'til it's too late."
 		},
 		{
-			"sound": "dialogue/dialogue/momText",
+			"sound": "dialogue/momText",
 			"speed": 0.05,
 			"portrait": "mom",
 			"boxState": "normal",
@@ -161,7 +161,7 @@
 			"text": "But hey, that's fine suga."
 		},
 		{
-			"sound": "dialogue/dialogue/momText",
+			"sound": "dialogue/momText",
 			"speed": 0.05,
 			"portrait": "mom",
 			"boxState": "normal",
@@ -169,7 +169,7 @@
 			"text": "Keep that blissful ignorance."
 		},
 		{
-			"sound": "dialogue/dialogue/momText",
+			"sound": "dialogue/momText",
 			"speed": 0.05,
 			"portrait": "mom",
 			"boxState": "normal",

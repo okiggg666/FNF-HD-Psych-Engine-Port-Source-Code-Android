@@ -82,7 +82,7 @@
 			"text": "Was I supposed to say that? No? I don't give a shit, dude."
 		},
 		{
-			"sound": "dialogue/dialogue/momText",
+			"sound": "dialogue/momText",
 			"speed": 0.05,
 			"portrait": "mom",
 			"boxState": "normal",
@@ -109,7 +109,7 @@
 			"text": "I see where those abs come from now..."
 		},
 		{
-			"sound": "dialogue/dialogue/momText",
+			"sound": "dialogue/momText",
 			"speed": 0.05,
 			"portrait": "mom",
 			"boxState": "normal",
@@ -199,7 +199,7 @@
 			"text": "And bringing your simps along!? You're the worst."
 		},
 		{
-			"sound": "dialogue/dialogue/momText",
+			"sound": "dialogue/momText",
 			"speed": 0.05,
 			"portrait": "mom",
 			"boxState": "normal",
@@ -217,7 +217,7 @@
 			"text": "..."
 		},
 		{
-			"sound": "dialogue/dialogue/momText",
+			"sound": "dialogue/momText",
 			"speed": 0.05,
 			"portrait": "mom",
 			"boxState": "normal",
@@ -226,7 +226,7 @@
 			"text": "Tell me, BF, what is it that you like the most about me?"
 		},
 		{
-			"sound": "dialogue/dialogue/momText",
+			"sound": "dialogue/momText",
 			"speed": 0.05,
 			"portrait": "mom",
 			"boxState": "normal",
@@ -235,7 +235,7 @@
 			"text": "Is it...my scent? The way? My beautiful, long, curly hair...?"
 		},
 		{
-			"sound": "dialogue/dialogue/momText",
+			"sound": "dialogue/momText",
 			"speed": 0.05,
 			"portrait": "mom",
 			"boxState": "normal",
@@ -280,7 +280,7 @@
 			"text": "(It can't end like this. BF's gotta remember what he's doing this for...)"
 		},
 		{
-			"sound": "dialogue/dialogue/momText",
+			"sound": "dialogue/momText",
 			"speed": 0.05,
 			"portrait": "mom",
 			"boxState": "normal",
@@ -289,7 +289,7 @@
 			"text": "Remember, BF. There's a huge difference between a woman, and a little girl."
 		},
 		{
-			"sound": "dialogue/dialogue/momText",
+			"sound": "dialogue/momText",
 			"speed": 0.05,
 			"portrait": "mom",
 			"boxState": "normal",

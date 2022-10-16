@@ -225,7 +225,7 @@
 			"text": "You know we can't do that, boh."
 		},
 		{
-			"sound": "dialogue/dialogue/momText",
+			"sound": "dialogue/momText",
 			"speed": 0.05,
 			"portrait": "mom",
 			"boxState": "normal",
@@ -233,7 +233,7 @@
 			"text": "Your initiation MIGHT be over..."
 		},
 		{
-			"sound": "dialogue/dialogue/momText",
+			"sound": "dialogue/momText",
 			"speed": 0.05,
 			"portrait": "mom",
 			"boxState": "normal",
@@ -273,7 +273,7 @@
 			"text": "I'm guessing you guys wanna rap battle BF for Santa's life?"
 		},
 		{
-			"sound": "dialogue/dialogue/momText",
+			"sound": "dialogue/momText",
 			"speed": 0.05,
 			"portrait": "mom",
 			"boxState": "normal",
@@ -281,7 +281,7 @@
 			"text": "RAP battle? Hon, did you forget what time 'a year it is?"
 		},
 		{
-			"sound": "dialogue/dialogue/momText",
+			"sound": "dialogue/momText",
 			"speed": 0.05,
 			"portrait": "mom",
 			"boxState": "normal",

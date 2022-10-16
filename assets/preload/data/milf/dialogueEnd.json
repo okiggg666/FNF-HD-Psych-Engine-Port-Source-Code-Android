@@ -4,12 +4,12 @@
 			"expression": "defaultSweat",
 			"text": "BF...that was amazing...I'm so...exhilarated.",
 			"boxState": "normal",
-			"sound": "dialogue/dialogue/momText",
+			"sound": "dialogue/momText",
 			"speed": 0.05,
 			"portrait": "mom"
 		},
 		{
-			"sound": "dialogue/dialogue/momText",
+			"sound": "dialogue/momText",
 			"speed": 0.05,
 			"portrait": "mom",
 			"boxState": "normal",
@@ -17,7 +17,7 @@
 			"text": "You sapped me of all of my juices. From my mic, that is, hehe..."
 		},
 		{
-			"sound": "dialogue/dialogue/momText",
+			"sound": "dialogue/momText",
 			"speed": 0.05,
 			"portrait": "mom",
 			"boxState": "normal",
@@ -49,7 +49,7 @@
 			"text": "I love the way SHE smells, how HER voice sounds, how HER hair flows in the wind..."
 		},
 		{
-			"sound": "dialogue/dialogue/momText",
+			"sound": "dialogue/momText",
 			"speed": 0.05,
 			"portrait": "mom",
 			"boxState": "angry",
@@ -81,7 +81,7 @@
 			"text": "ALSO, you just let those imps die. They had lives, too!"
 		},
 		{
-			"sound": "dialogue/dialogue/momText",
+			"sound": "dialogue/momText",
 			"speed": 0.05,
 			"portrait": "mom",
 			"boxState": "normal",
@@ -89,7 +89,7 @@
 			"text": "Tch, those imps couldn't take the heat, so they got kicked outta the kitchen."
 		},
 		{
-			"sound": "dialogue/dialogue/momText",
+			"sound": "dialogue/momText",
 			"speed": 0.05,
 			"portrait": "mom",
 			"boxState": "normal",
@@ -97,7 +97,7 @@
 			"text": "By that I mean their limbs are strewn along the road."
 		},
 		{
-			"sound": "dialogue/dialogue/momText",
+			"sound": "dialogue/momText",
 			"speed": 0.05,
 			"portrait": "mom",
 			"boxState": "normal",
@@ -129,7 +129,7 @@
 			"text": "You serious, ma?!"
 		},
 		{
-			"sound": "dialogue/dialogue/momText",
+			"sound": "dialogue/momText",
 			"speed": 0.05,
 			"portrait": "mom",
 			"boxState": "normal",
@@ -137,7 +137,7 @@
 			"text": "Yeah, you're kinda boring, actually. Welcome to the Dearest family, hon."
 		},
 		{
-			"sound": "dialogue/dialogue/momText",
+			"sound": "dialogue/momText",
 			"speed": 0.05,
 			"portrait": "mom",
 			"boxState": "normal",
