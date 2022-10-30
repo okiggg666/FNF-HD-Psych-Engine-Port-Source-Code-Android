@@ -20,8 +20,8 @@ class Gallery extends MusicBeatState
 	var weeks:Array<String> = ['week1', 'week2', 'week3', 'week4', 'week7', 'weekC'];
 	var weekImages:Array<Dynamic> = [
 		['bf', 'gf', 'dad'],
-		['skump','monster', 'void'],
-		['pico','darnell','nene'],
+		['skump', 'monster', 'void'],
+		['pico', 'darnell', 'nene'],
 		['void', 'mom', 'void'],
 		['void', 'sonic', 'void'],
 		['void', 'carol', 'void']
@@ -42,15 +42,15 @@ class Gallery extends MusicBeatState
 		#if debug
 		isDebug = true;
 		#end
-		
+
 		shit = new FlxObject(0, 0, 1, 1);
 
 		Conductor.changeBPM(95);
 		FlxG.sound.playMusic(Paths.music('gallery'), 1);
-		var bg:FlxSprite = new FlxSprite(0,0).makeGraphic(1280,720,FlxColor.fromRGB(69,108,207),false);
+		var bg:FlxSprite = new FlxSprite(0, 0).makeGraphic(1280, 720,FlxColor.fromRGB(69, 108, 207),false);
 		add(bg);
 
-		var checkers:FlxBackdrop = new FlxBackdrop(Paths.image('gallery/checkers'),0,0,true,true,0,0);
+		var checkers:FlxBackdrop = new FlxBackdrop(Paths.image('gallery/checkers'),0, 0, true, true,0, 0);
 		checkers.velocity.x = 20;
 		checkers.velocity.y = 20;
 		add(checkers);
@@ -122,7 +122,8 @@ class Gallery extends MusicBeatState
 		}
 
 		if (FlxG.sound.music != null)
-		Conductor.songPosition = FlxG.sound.music.time;
+			Conductor.songPosition = FlxG.sound.music.time;
+
 		super.update(elapsed);
 	}
 
@@ -145,14 +146,14 @@ class Gallery extends MusicBeatState
 				weekText.alpha = 1;
 			}
 		});
-		//for (shit in weekTexts.members) {
-			//if (curSelected == 1) {
-			//	shit.x = 0;
-			//}
-			//if (curSelected == 7) {
-			//	shit.x += 150;
-			//}
-		//}
+		/*for (shit in weekTexts.members) {
+			if (curSelected == 1) {
+				shit.x = 0;
+			}
+			if (curSelected == 7) {
+				shit.x += 150;
+			}
+		}*/
 		artSprites.members[0].loadGraphic(Paths.image('gallery/art/' + weekImages[curSelected][0]));
 		artSprites.members[1].loadGraphic(Paths.image('gallery/art/' + weekImages[curSelected][1]));
 		artSprites.members[2].loadGraphic(Paths.image('gallery/art/' + weekImages[curSelected][2]));

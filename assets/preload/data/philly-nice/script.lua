@@ -1,15 +1,13 @@
 function onStartCountdown()
-	if notmiddlescroll then
-		if PicoPlayer then
-			runTimer('noteTween1', 0.1)
-			runTimer('noteTween2', 0.1)
-			runTimer('noteTween3', 0.1)
-			runTimer('noteTween4', 0.1)
-			runTimer('noteTween5', 0.1)
-			runTimer('noteTween6', 0.1)
-			runTimer('noteTween7', 0.1)
-			runTimer('noteTween8', 0.1)
-		end
+	if PicoPlayer and not middlescroll then
+		runTimer('noteTween1', 0.1)
+		runTimer('noteTween2', 0.1)
+		runTimer('noteTween3', 0.1)
+		runTimer('noteTween4', 0.1)
+		runTimer('noteTween5', 0.1)
+		runTimer('noteTween6', 0.1)
+		runTimer('noteTween7', 0.1)
+		runTimer('noteTween8', 0.1)
 	end
 end
 

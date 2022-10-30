@@ -40,6 +40,11 @@
 				36363.6363636364,
 				[
 					[
+						"Camera Flash",
+						"white",
+						"1"
+					],
+					[
 						"Camera Follow Pos",
 						"690",
 						"380"
@@ -53,12 +58,7 @@
 						"Trigger Sonic Transformation",
 						"finish",
 						""
-					]
-				]
-			],
-			[
-				36363.6363636364,
-				[
+					],
 					[
 						"Change Character",
 						"dad",
@@ -85,6 +85,16 @@
 				112011.363636364,
 				[
 					[
+						"Camera Flash",
+						"white",
+						"1"
+					],
+					[
+						"Switch BF Run Body",
+						"super",
+						""
+					],
+					[
 						"Change Character",
 						"bf",
 						"bf-run-super"
@@ -92,11 +102,6 @@
 					[
 						"Spawn Aura",
 						"bf",
-						""
-					],
-					[
-						"Switch BF Run Body",
-						"super",
 						""
 					]
 				]

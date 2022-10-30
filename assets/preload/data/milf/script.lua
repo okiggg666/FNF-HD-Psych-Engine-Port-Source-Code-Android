@@ -71,8 +71,11 @@ function onTimerCompleted(tag, loops, loopsLeft)
 	if tag == 'removeSprites2' then
 		removeLuaSprite('blackBG')
 	end
-	if tag == 'dialogueEnd' then
-		startDialogue('dialogueEnd')
+	if tag == 'dialogueBadEnd' then
+		startDialogue('dialogueBadEnd')
+	end
+	if tag == 'dialogueGoodEnd' then
+		startDialogue('dialogueGoodEnd')
 	end
 	if tag == 'spriteAppear' then
 		doTweenAlpha('blackBGTween3', 'blackBG2', 1, 0.5, 'circout')
@@ -122,7 +125,7 @@ function onEndSong()
 		setProperty('inCutscene', true);
 		runTimer('spriteAppear', 0.1)
 		runTimer('spriteAppear2', 0.6)
-		runTimer('dialogueEnd', 0.6)
+		runTimer('dialogueGoodEnd', 0.6)
 		setSoundVolume('news11', 0)
 		setSoundVolume('news12', 0)
 		setSoundVolume('news11', 0)
@@ -142,10 +145,6 @@ function onEndSong()
 		runTimer('spriteAppear', 0.1)
 		runTimer('spriteAppear2', 0.6)
 		runTimer('dialogueEnd', 0.6)
-		setSoundVolume('news11', 0)
-		setSoundVolume('news12', 0)
-		setSoundVolume('news11', 0)
-		setSoundVolume(0)
 		allowEndShit = true;
 		return Function_Stop;
 	end

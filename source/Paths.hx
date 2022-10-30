@@ -37,6 +37,7 @@ class Paths
 		'custom_events',
 		'custom_notetypes',
 		'data',
+		'dialogue',
 		'songs',
 		'music',
 		'sounds',

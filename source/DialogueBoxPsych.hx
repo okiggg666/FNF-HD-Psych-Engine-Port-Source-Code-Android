@@ -5,24 +5,21 @@ import flixel.FlxSprite;
 import flixel.addons.text.FlxTypeText;
 import flixel.graphics.frames.FlxAtlasFrames;
 import flixel.group.FlxSpriteGroup;
-import flixel.tweens.FlxEase;
-import flixel.tweens.FlxTween;
 import flixel.input.FlxKeyManager;
 import flixel.text.FlxText;
 import flixel.util.FlxColor;
-import flixel.system.FlxSound;
 import flixel.util.FlxTimer;
+import flixel.tweens.FlxEase;
+import flixel.tweens.FlxTween;
 import flixel.FlxSubState;
-import openfl.media.Sound;
-import openfl.display.BitmapData;
 import haxe.Json;
 import haxe.format.JsonParser;
+import Alphabet;
 #if sys
 import sys.FileSystem;
 import sys.io.File;
 #end
 import openfl.utils.Assets;
-import Controls;
 
 using StringTools;
 
@@ -57,9 +54,6 @@ typedef DialogueLine = {
 	var boxState:Null<String>;
 	var speed:Null<Float>;
 	var sound:Null<String>;
-	/*var bg:Null<String>;
-	var music:Null<String>;
-	var playSound:Null<String>;*/
 }
 
 class DialogueCharacter extends FlxSprite
@@ -173,20 +167,15 @@ class DialogueCharacter extends FlxSprite
 // TO DO: Clean code? Maybe? idk
 class DialogueBoxPsych extends FlxSpriteGroup
 {
-	var dialogue:Alphabet;
+	var dialogue:TypedAlphabet;
 	var dialogueList:DialogueFile = null;
-	var effectQue:Array<String> = [""];
-	var effectParamQue:Array<String> = [""];
-	var curAnim:String = '';
 
 	public var finishThing:Void->Void;
 	public var nextDialogueThing:Void->Void = null;
 	public var skipDialogueThing:Void->Void = null;
-	var dialogueShit:DialogueLine = null;
 	var bgFade:FlxSprite = null;
 	var blackBG:FlxSprite = null;
 	var skipText:FlxText;
-	var cutsceneImage:FlxSprite;
 	var box:FlxSprite;
 	var textToType:String = '';
 
@@ -196,11 +185,9 @@ class DialogueBoxPsych extends FlxSpriteGroup
 	var offsetPos:Float = -600;
 
 	var textBoxTypes:Array<String> = ['normal', 'angry'];
-
-	var sound:FlxSound;
 	
 	var curCharacter:String = "";
-	//var charPositionList:Array<String> = ['left', 'center', 'right', 'invisible'];
+	//var charPositionList:Array<String> = ['left', 'center', 'right'];
 
 	public function new(dialogueList:DialogueFile, ?song:String = null)
 	{
@@ -210,35 +197,16 @@ class DialogueBoxPsych extends FlxSpriteGroup
 			FlxG.sound.playMusic(Paths.music(song), 0);
 			FlxG.sound.music.fadeIn(2, 0, 1);
 		}
-
-		/*if(dialogueShit.music != 'stop' && dialogueShit.music != null && dialogueShit.music != '') {
-			FlxG.sound.playMusic(Sound.fromFile("assets/dialogue/music/" + dialogueShit.music + #if !html5 ".ogg" #else ".mp3" #end));
-			FlxG.sound.music.fadeIn(2, 0, 1);
-		}
-
-		if (dialogueShit.playSound != null && dialogueShit.playSound != '') this.sound.stop();
-
-		if (dialogueShit.playSound != null && dialogueShit.playSound != '') {
-			sound = new FlxSound().loadEmbedded(Sound.fromFile("assets/dialogue/sounds/" + dialogueShit.playSound + #if !html5 ".ogg" #else ".mp3" #end));
-			sound.fadeIn(2, 0, 1);
-			sound.play();
-		}*/
-
+		
 		blackBG = new FlxSprite(-256, -256).makeGraphic(FlxG.width * 2, FlxG.height * 2, FlxColor.BLACK);
 		blackBG.visible = false;
 		add(blackBG);
-
+		
 		bgFade = new FlxSprite(-500, -500).makeGraphic(FlxG.width * 2, FlxG.height * 2, 0xFFB3DFd8);
 		bgFade.scrollFactor.set();
 		bgFade.visible = false;
 		bgFade.alpha = 0;
 		add(bgFade);
-
-		cutsceneImage = new FlxSprite(0, 0).makeGraphic(FlxG.width * 2, FlxG.height * 2, 0xFF9C0101);
-		//cutsceneImage.loadGraphic(Paths.image('dialogue/bg/' + dialogueShit.bg));
-		cutsceneImage.antialiasing = ClientPrefs.globalAntialiasing;
-		cutsceneImage.visible = false;
-		add(cutsceneImage);
 
 		this.dialogueList = dialogueList;
 		spawnCharacters();
@@ -260,6 +228,11 @@ class DialogueBoxPsych extends FlxSpriteGroup
 		box.setGraphicSize(Std.int(box.width * 0.9));
 		box.updateHitbox();
 		add(box);
+
+		daText = new TypedAlphabet(DEFAULT_TEXT_X, DEFAULT_TEXT_Y, '');
+		daText.scaleX = 0.7;
+		daText.scaleY = 0.7;
+		add(daText);
 
 		/*skipText = new FlxText(5, 695, 640, "Press SPACE to skip the dialogue.\n", 40);
 		skipText.scrollFactor.set(0, 0);
@@ -321,7 +294,6 @@ class DialogueBoxPsych extends FlxSpriteGroup
 					y = char.y;
 					char.y = FlxG.height + 50;
 					saveY = true;
-				
 			}
 			x += char.jsonFile.position[0];
 			y += char.jsonFile.position[1];
@@ -332,12 +304,15 @@ class DialogueBoxPsych extends FlxSpriteGroup
 		}
 	}
 
-
-	public static var DEFAULT_TEXT_X = 90;
-	public static var DEFAULT_TEXT_Y = 430;
-	var scrollSpeed = 4500;
-	var daText:Alphabet = null;
+	public static var DEFAULT_TEXT_X = 175;
+	public static var DEFAULT_TEXT_Y = 432;
+	public static var LONG_TEXT_ADD = 24;
+	var scrollSpeed = 4000;
+	var daText:TypedAlphabet = null;
 	var ignoreThisFrame:Bool = true; //First frame is reserved for loading dialogue images
+
+	public var closeSound:String = 'dialogueClose';
+	public var closeVolume:Float = 1;
 	override function update(elapsed:Float)
 	{
 		if(ignoreThisFrame) {
@@ -352,19 +327,11 @@ class DialogueBoxPsych extends FlxSpriteGroup
 
 			if(PlayerSettings.player1.controls.ACCEPT) {
 				if(!daText.finishedText) {
-					if(daText != null) {
-						daText.killTheTimer();
-						daText.kill();
-						remove(daText);
-						daText.destroy();
-					}
-					daText = new Alphabet(DEFAULT_TEXT_X, DEFAULT_TEXT_Y, textToType, false, true, 0.0, 0.7);
-					add(daText);
-					
+					daText.finishText();
 					if(skipDialogueThing != null) {
 						skipDialogueThing();
 					}
-				} else if(currentText >= dialogueList.dialogue.length /*|| FlxG.keys.justPressed.SPACE*/) {
+				} else if(currentText >= dialogueList.dialogue.length/*|| FlxG.keys.justPressed.SPACE*/) {
 					dialogueEnded = true;
 					for (i in 0...textBoxTypes.length) {
 						var checkArray:Array<String> = ['', 'center-'];
@@ -378,18 +345,18 @@ class DialogueBoxPsych extends FlxSpriteGroup
 
 					box.animation.curAnim.curFrame = box.animation.curAnim.frames.length - 1;
 					box.animation.curAnim.reverse();
-					daText.kill();
-					remove(daText);
-					daText.destroy();
-					daText = null;
+					if(daText != null)
+					{
+						daText.kill();
+						remove(daText);
+						daText.destroy();
+					}
 					updateBoxOffsets(box);
-					//if (dialogueShit.playSound != null) sound.fadeOut(1, 0);
-					//if (dialogueShit.music != null)
 					FlxG.sound.music.fadeOut(1, 0);
 				} else {
 					startNextDialog();
 				}
-				FlxG.sound.play(Paths.sound('dialogueClose'));
+				FlxG.sound.play(Paths.sound(closeSound), closeVolume);
 			} else if(daText.finishedText) {
 				var char:DialogueCharacter = arrayCharacters[lastCharacter];
 				if(char != null && char.animation.curAnim != null && char.animationIsLoop() && char.animation.finished) {
@@ -485,15 +452,15 @@ class DialogueBoxPsych extends FlxSpriteGroup
 				}
 			}
 
-			if(cutsceneImage != null) {
-				cutsceneImage.alpha -= 1 * elapsed;
-				if(cutsceneImage.alpha <= 0) {
-					cutsceneImage.kill();
-					remove(cutsceneImage);
-					cutsceneImage.destroy();
-					cutsceneImage = null;
+			/*if(skipText != null) {
+				skipText.alpha -= 1 * elapsed;
+				if(skipText.alpha <= 0) {
+					skipText.kill();
+					remove(skipText);
+					skipText.destroy();
+					skipText = null;
 				}
-			}
+			}*/
 
 			for (i in 0...arrayCharacters.length) {
 				var leChar:DialogueCharacter = arrayCharacters[i];
@@ -512,7 +479,7 @@ class DialogueBoxPsych extends FlxSpriteGroup
 				}
 			}
 
-			if(box == null && bgFade == null) {
+			if(box == null && blackBG == null && bgFade == null/*&& skipText == null*/) {
 				for (i in 0...arrayCharacters.length) {
 					var leChar:DialogueCharacter = arrayCharacters[0];
 					if(leChar != null) {
@@ -531,7 +498,6 @@ class DialogueBoxPsych extends FlxSpriteGroup
 
 	var lastCharacter:Int = -1;
 	var lastBoxType:String = '';
-
 	function startNextDialog():Void
 	{
 		var curDialogue:DialogueLine = null;
@@ -550,23 +516,6 @@ class DialogueBoxPsych extends FlxSpriteGroup
 				boxType = animName;
 			}
 		}
-
-		/*if(curDialogue.bg != null && curDialogue.bg != '') {
-			cutsceneImage.visible = true;
-		} else {
-			cutsceneImage.visible = false;
-		}
-		cutsceneImage.loadGraphic(Paths.image('dialogue/bg/' + dialogueShit.bg));*/
-
-		/*if (this.sound != null) this.sound.stop();
-			sound = new FlxSound().loadEmbedded(Sound.fromFile("assets/dialogue/sounds/" + curDialogue.playSound + #if !html5 ".ogg" #else ".mp3" #end));
-			sound.play();
-
-		if(curDialogue.music == 'stop') {
-			FlxG.sound.music.stop();
-		} else {
-			FlxG.sound.playMusic(Sound.fromFile("assets/dialogue/music/" + curDialogue.music + #if !html5 ".ogg" #else ".mp3" #end));
-		}*/
 
 		var character:Int = 0;
 		box.visible = true;
@@ -592,17 +541,12 @@ class DialogueBoxPsych extends FlxSpriteGroup
 		lastCharacter = character;
 		lastBoxType = boxType;
 
-		if(daText != null) {
-			daText.killTheTimer();
-			daText.kill();
-			remove(daText);
-			daText.destroy();
-		}
-
-		textToType = curDialogue.text;
-		Alphabet.setDialogueSound(curDialogue.sound);
-		daText = new Alphabet(DEFAULT_TEXT_X, DEFAULT_TEXT_Y, textToType, false, true, curDialogue.speed, 0.7);
-		add(daText);
+		daText.text = curDialogue.text;
+		daText.sound = curDialogue.sound;
+		if(daText.sound == null || daText.sound.trim() == '') daText.sound = 'dialogue';
+		
+		daText.y = DEFAULT_TEXT_Y;
+		if(daText.rows > 2) daText.y -= LONG_TEXT_ADD;
 
 		var char:DialogueCharacter = arrayCharacters[character];
 		if(char != null) {

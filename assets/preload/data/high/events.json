@@ -1,10 +1,5 @@
 {
 	"song": {
-		"speed": 2.5,
-		"stage": "limo",
-		"player1": "bf-car",
-		"player2": "mom-car",
-		"player3": null,
 		"events": [
 			[
 				3600,
@@ -17,7 +12,7 @@
 				]
 			],
 			[
-				4800,
+				4200,
 				[
 					[
 						"Start Pole",
@@ -116,14 +111,6 @@
 					]
 				]
 			]
-		],
-		"notes": [],
-		"splashSkin": null,
-		"validScore": false,
-		"gfVersion": "gf-car",
-		"bpm": 125,
-		"arrowSkin": null,
-		"needsVoices": true,
-		"song": "High"
+		]
 	}
 }

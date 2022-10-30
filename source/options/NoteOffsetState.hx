@@ -66,8 +66,9 @@ class NoteOffsetState extends MusicBeatState
 		FlxG.sound.pause();
 		// Stage
 		if(!ClientPrefs.OldHDbg) {
-			bg = new BGSprite('stageback', -627, -436, 0.9, 0.9);
-			bg.setGraphicSize(Std.int(bg.width * 1.0));
+			bg = new BGSprite('stageback', -626, -437, 0.9, 0.9);
+			bg.setGraphicSize(Std.int(bg.width * 0.5));
+			bg.updateHitbox();
 			add(bg);
 
 			stageFront = new BGSprite('stagefront', -657, 620, 0.98, 0.98);
@@ -192,7 +193,9 @@ class NoteOffsetState extends MusicBeatState
 
 		// Note delay stuff
 		
-		beatText = new Alphabet(0, 0, 'Beat Hit!', true, false, 0.05, 0.6);
+		beatText = new Alphabet(0, 0, 'Beat Hit!', true);
+		beatText.scaleX = 0.6;
+		beatText.scaleY = 0.6;
 		beatText.x += 260;
 		beatText.alpha = 0;
 		beatText.acceleration.y = 250;

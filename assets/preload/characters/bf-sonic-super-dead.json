@@ -1,12 +1,26 @@
 {
 	"animations": [
 		{
-			"loop": false,
 			"offsets": [
 				0,
 				-460
 			],
+			"loop": false,
+			"fps": 24,
 			"anim": "deathConfirm",
+			"indices": [
+				12,
+				13
+			],
+			"name": "BF SONIC DEAD"
+		},
+		{
+			"loop": true,
+			"offsets": [
+				0,
+				-460
+			],
+			"anim": "deathLoop",
 			"fps": 24,
 			"name": "BF SONIC DEAD",
 			"indices": [
@@ -17,26 +31,12 @@
 		{
 			"offsets": [
 				0,
-				-460
-			],
-			"loop": true,
-			"fps": 24,
-			"anim": "deathLoop",
-			"indices": [
-				12,
-				13
-			],
-			"name": "BF SONIC DEAD"
-		},
-		{
-			"offsets": [
-				0,
 				0
 			],
-			"loop": false,
-			"fps": 24,
-			"anim": "firstDeath",
 			"indices": [],
+			"fps": 20,
+			"anim": "firstDeath",
+			"loop": false,
 			"name": "BF SONIC DEAD"
 		}
 	],

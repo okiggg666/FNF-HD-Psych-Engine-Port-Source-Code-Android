@@ -30,7 +30,8 @@ class FreeplayState extends MusicBeatState
 	var beatArray:Array<Int> = [100,100,120,180,150,165,130,150,175,165,110,125,180];
 
 	var selector:FlxText;
-	private static var curSelected:Int = 0;
+	var curSelected:Int = 0;
+	var defaultCamZoom:Float = 1;
 	var curDifficulty:Int = -1;
 	private static var lastDifficultyName:String = '';
 
@@ -69,7 +70,6 @@ class FreeplayState extends MusicBeatState
 		Conductor.changeBPM(110);
 		PlayState.isStoryMode = false;
 		WeekData.reloadWeekFiles(false);
-		FlxG.camera.zoom = 1;
 
 		#if desktop
 		// Updating Discord Rich Presence
@@ -123,23 +123,17 @@ class FreeplayState extends MusicBeatState
 
 		for (i in 0...songs.length)
 		{
-			var songText:Alphabet = new Alphabet(0, (70 * i) + 30, songs[i].songName, true, false);
+			var songText:Alphabet = new Alphabet(90, 320, songs[i].songName, true);
 			songText.isMenuItem = true;
-			songText.targetY = i;
+			songText.targetY = i - curSelected;
 			grpSongs.add(songText);
 
-			if (songText.width > 980)
+			var maxWidth = 980;
+			if (songText.width > maxWidth)
 			{
-				var textScale:Float = 980 / songText.width;
-				songText.scale.x = textScale;
-				for (letter in songText.lettersArray)
-				{
-					letter.x *= textScale;
-					letter.offset.x *= textScale;
-				}
-				//songText.updateHitbox();
-				//trace(songs[i].songName + ' new scale: ' + textScale);
+				songText.scaleX = maxWidth / songText.width;
 			}
+			songText.snapToPosition();
 
 			Paths.currentModDirectory = songs[i].folder;
 			var icon:HealthIcon = new HealthIcon(songs[i].songCharacter);
@@ -216,10 +210,6 @@ class FreeplayState extends MusicBeatState
 		text.scrollFactor.set();
 		add(text);
 
-		#if android
-		addVirtualPad(LEFT_FULL, A_B_C);
-		#end
-
 		super.create();
 	}
 
@@ -265,6 +255,7 @@ class FreeplayState extends MusicBeatState
 			FlxG.sound.music.volume += 0.5 * FlxG.elapsed;
 		}
 
+		FlxG.camera.zoom = FlxMath.lerp(defaultCamZoom, FlxG.camera.zoom, 0.95);
 		lerpScore = Math.floor(FlxMath.lerp(lerpScore, intendedScore, CoolUtil.boundTo(elapsed * 24, 0, 1)));
 		lerpRating = FlxMath.lerp(lerpRating, intendedRating, CoolUtil.boundTo(elapsed * 12, 0, 1));
 
@@ -365,7 +356,7 @@ class FreeplayState extends MusicBeatState
 					vocals = new FlxSound();
 
 				FlxG.sound.list.add(vocals);
-				Conductor.changeBPM(beatArray[curSelected]);
+				Conductor.changeBPM(PlayState.SONG.bpm);
 				FlxG.sound.playMusic(Paths.inst(PlayState.SONG.song), 0.7);
 				vocals.play();
 				vocals.persist = true;
@@ -417,6 +408,7 @@ class FreeplayState extends MusicBeatState
 			openSubState(new ResetScoreSubState(songs[curSelected].songName, curDifficulty, songs[curSelected].songCharacter));
 			FlxG.sound.play(Paths.sound('scrollMenu'));
 		}
+
 		super.update(elapsed);
 	}
 
@@ -449,25 +441,34 @@ class FreeplayState extends MusicBeatState
 		positionHighscore();
 	}
 
+	var lastBeatHit:Int = -1;
+
 	override function beatHit()
 	{
 		super.beatHit();
-		trace(curBeat);
 
-		if (FlxG.camera.zoom < 1.35 && songs[curSelected].songName.toLowerCase() == 'milf' && curBeat >= 8)
+		if(lastBeatHit >= curBeat) {
+			// trace('BEAT HIT: ' + curBeat + ', LAST HIT: ' + lastBeatHit);
+			return;
+		}
+
+		if (FlxG.camera.zoom < 1.35 && songs[curSelected].songName == 'milf' && curBeat >= 8)
 		{
 			FlxG.camera.zoom += 0.030;
 		}
 		//Sum extra detail
-		if (FlxG.camera.zoom < 1.35 && songs[curSelected].songName.toLowerCase() == 'milf' && curBeat >= 168 && curBeat < 200)
+		if (FlxG.camera.zoom < 1.35 && songs[curSelected].songName == 'milf' && curBeat >= 168 && curBeat < 200)
 		{
 			FlxG.camera.zoom += 0.060;
 		}
+
+		lastBeatHit = curBeat;
 	}
 	
 	override function stepHit()
 	{
 		super.stepHit();
+
 		if (FlxG.camera.zoom < 1.35 && songs[curSelected].songName.toLowerCase() == 'blammed' && blammedSteps.contains(curStep))
 		{
 			FlxG.camera.zoom += 0.070;
@@ -522,7 +523,6 @@ class FreeplayState extends MusicBeatState
 		} else {
 			iconArray[curSelected].animation.curAnim.curFrame = 2;
 		}
-		FlxG.camera.zoom = FlxMath.lerp(FlxG.camera.zoom, FlxG.camera.zoom, 0.95);
 		iconArray[curSelected].alpha = 1;
 
 		for (item in grpSongs.members)
