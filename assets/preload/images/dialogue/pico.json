@@ -2,9 +2,9 @@
 	"dialogue_pos": "left",
 	"position": [
 		-430,
-		-310
+		-300
 	],
-	"scale": 0.6,
+	"scale": 0.55,
 	"animations": [
 		{
 			"idle_offsets": [

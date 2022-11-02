@@ -82,7 +82,7 @@ class CreditsState extends MusicBeatState
 
 		var pisspoop:Array<Array<String>> = [ //Name - Icon name - Description - Link - BG Color
 			["FNF' HD PE Port Team"],
-			['Nuno Filipe Studios',	'nuno',				'Main porter, coder',										'https://www.youtube.com/channel/UCq7G3p4msVN5SX2CpJ86tTw',	'878787'],
+			['Nuno Filipe Studios',	'nuno',				'Main porter, programmer',									'https://www.youtube.com/channel/UCq7G3p4msVN5SX2CpJ86tTw',	'878787'],
 			['Remy And Ava',		'ava',				'Mobile optimizer, gamejolt link',							'https://www.youtube.com/channel/UCxBKG1LFQM2Kte_BQ0isDww',	'F7F7F7'],
 			['DANIZIN',				'dan',				'Android Port',												'https://www.youtube.com/channel/UCvTYcAn6ciOojpfcHtUxJBQ',	'FFD166'],
 			['FNF BR',				'br',				'Android Port',												'https://www.youtube.com/channel/UCtEMWRthfza-LaNz7H2Z3oQ',	'FCBF49'],
@@ -124,6 +124,16 @@ class CreditsState extends MusicBeatState
 			['Used some code from'],
 			["Wednesday's Infidelity Team",			'mouse',			'Dodge keybinds text code',					'https://gamebanana.com/mods/343688',	'444444'],
 			['Arrow Funk Team',		'bidu',				'Used text font',											'https://gamebanana.com/mods/370234',	'F72585'],
+			['Trevent booh!',		'trevent',			'Used icon flip lua code',									'https://www.youtube.com/channel/UCMzim382hWHmR1un4nzEOLw',	'00FFBB'],
+			[''],
+			['Special Thanks'],
+			['JorgeX_YT',			'jorge',			'For replacing our current beta tester of the port and testing the port',	'https://www.youtube.com/channel/UCl-GHl189q4erRjnnVmqNUA',	'70E000'],
+			['mariodevintoons',		'devin',			'For making the new HD mall darnell',						'https://twitter.com/mariodevintoon2',	'C1121F'],
+			['Remy And Ava',		'ava',				'For supporting me',										'https://www.youtube.com/channel/UCxBKG1LFQM2Kte_BQ0isDww',	'F7F7F7'],
+			['Galax',				'galax',			'For almost testing the port and being my best friend',		'https://twitter.com/Galax40841813',	'3F37C9'],
+			['FNF BR',				'br',				'For making the Android Port',								'https://www.youtube.com/channel/UCtEMWRthfza-LaNz7H2Z3oQ',	'FCBF49'],
+			['DANIZIN',				'dan',				'For making the Android Port',								'https://www.youtube.com/channel/UCvTYcAn6ciOojpfcHtUxJBQ',	'FFD166'],
+			['DMMaster 636',		'dm',				'For making the stressed BF spooky dance anim',				'https://www.youtube.com/channel/UC65EwKYTjayqmXATNz2auzQ', '7E39EE'],
 			[''],
 			['Psych Engine Team'],
 			['Shadow Mario',		'shadowmario',		'Main Programmer of Psych Engine',								'https://twitter.com/Shadow_Mario_',	'444444'],
@@ -143,6 +153,11 @@ class CreditsState extends MusicBeatState
 			['Nebula the Zorua',	'nebula',			'LUA JIT Fork and some Lua reworks',							'https://twitter.com/Nebula_Zorua',		'7D40B2'],
 			['Smokey',				'smokey',			'Sprite Atlas Support',											'https://twitter.com/Smokey_5_',		'483D92'],
 			[''],
+			["Funkin' Crew"],
+			['ninjamuffin99',		'ninjamuffin99',	"Programmer of Friday Night Funkin'",						'https://twitter.com/ninja_muffin99',	'F73838'],
+			['PhantomArcade',		'phantomarcade',	"Animator of Friday Night Funkin'",							'https://twitter.com/PhantomArcade3K',	'FFBB1B'],
+			['evilsk8r',			'evilsk8r',			"Artist of Friday Night Funkin'",							'https://twitter.com/evilsk8r',			'53E52C'],
+			['kawaisprite',			'kawaisprite',		"Composer of Friday Night Funkin'",							'https://twitter.com/kawaisprite',		'6475F3']
 		];
 		
 		for(i in pisspoop){

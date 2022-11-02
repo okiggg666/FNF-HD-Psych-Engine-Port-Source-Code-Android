@@ -88,22 +88,20 @@ function onTimerCompleted(tag, loops, loopsLeft)
 end
 
 function onNextDialogue(count)
-	if not allowEndShit then
-		if count == 1 then
-			removeLuaSprite('cutsceneImage', true)
-			setProperty('cutsceneImage2.visible', true)
-			stopSound('news10')
-			playSound('dialogue/news/11', 1, 'news11')
-		elseif count == 2 then
-			setProperty('cutsceneImage2.visible', true)
-			stopSound('news11')
-			playSound('dialogue/news/12', 1, 'news12')
-		elseif count == 3 then
-			removeLuaSprite('cutsceneImage2', true)
-			setProperty('blackBG.visible', true)
-			stopSound('news12')
-			playMusic('dialogue/mommiTalki', 0.9, true)
-		end
+	if count == 1 then
+		removeLuaSprite('cutsceneImage', true)
+		setProperty('cutsceneImage2.visible', true)
+		stopSound('news10')
+		playSound('dialogue/news/11', 1, 'news11')
+	elseif count == 2 then
+		setProperty('cutsceneImage2.visible', true)
+		stopSound('news11')
+		playSound('dialogue/news/12', 1, 'news12')
+	elseif count == 3 then
+		removeLuaSprite('cutsceneImage2', true)
+		setProperty('blackBG.visible', true)
+		stopSound('news12')
+		playMusic('dialogue/mommiTalki', 0.9, true)
 	end
 end
 

@@ -44,7 +44,7 @@ class GraphicsSettingsSubState extends BaseOptionsMenu
 			false); //Default value
 		addOption(option);
 
-		#if android
+		#if mobile
 		var option:Option = new Option('Low Sprites',
 			'If checked, it activates optimized sprites,\ndecreases loading times and improves performance.',
 			'lowSprites',

@@ -102,15 +102,13 @@ function onTimerCompleted(tag, loops, loopsLeft)
 end
 
 function onNextDialogue(count)
-	if not allowEndShit then
-		if count == 7 then
-			setProperty('cutsceneImage.visible', false)
-			setProperty('cutsceneImage2.visible', true)
-			playMusic('')
-			playSound('dialogue/gunClick')
-		elseif count == 8 then
-			playMusic('dialogue/picoMusic1', 0.9, true)
-		end
+	if count == 7 then
+		setProperty('cutsceneImage.visible', false)
+		setProperty('cutsceneImage2.visible', true)
+		playMusic('')
+		playSound('dialogue/gunClick')
+	elseif count == 8 then
+		playMusic('dialogue/picoMusic1', 0.9, true)
 	end
 end
 
@@ -151,4 +149,19 @@ function onEndSong()
 	onTweenCompleted('blackBGTween')
 	runTimer('removeSprites2', 1.2)
 	return Function_Continue;
+end
+
+function onUpdatePost()
+	if PicoPlayer then
+		P1Mult = getProperty('healthBar.x') + ((getProperty('healthBar.width') * getProperty('healthBar.percent') * 0.01) + (150 * getProperty('iconP1.scale.x') - 150) / 2 - 26)
+		P2Mult = getProperty('healthBar.x') + ((getProperty('healthBar.width') * getProperty('healthBar.percent') * 0.01) - (150 * getProperty('iconP2.scale.x')) / 2 - 26 * 2)
+
+		setProperty('iconP1.x',P1Mult - 110)
+		setProperty('iconP2.x',P2Mult + 110)
+		setProperty('iconP1.origin.x',240)
+		setProperty('iconP2.origin.x',-100)
+		setProperty('iconP1.flipX',true)
+		setProperty('iconP2.flipX',true)
+		setProperty('healthBar.flipX',true)
+	end
 end

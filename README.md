@@ -1,10 +1,10 @@
-# Friday Night Funkin' - Psych Engine
-Engine originally used on [Mind Games Mod](https://gamebanana.com/mods/301107), intended to be a fix for the vanilla version's many issues while keeping the casual play aspect of it. Also aiming to be an easier alternative to newbie coders.
+# Friday Night Funkin' HD - Psych Engine Port
+Welcome to FNF HD psych engine port, this port was made for having a better experience playing FNF HD, in this port there's new options, new art and more! Remember i'm not the owner of FNF HD, FNF HD is made by Kolsan and the HD team, full credits to them and their hard work.
 
 ## Installation:
-You must have [the most up-to-date version of Haxe](https://haxe.org/download/), seriously, stop using 4.1.5, it misses some stuff.
+You must have Haxe 4.1.5 (https://haxe.org/download/version/4.1.5/).
 
-Follow a Friday Night Funkin' source code compilation tutorial, after this you will need to install LuaJIT.
+Follow a Friday Night Funkin' Psych Engine source code compilation tutorial, after this you will need to install LuaJIT.
 
 To install LuaJIT do this: `haxelib git linc_luajit https://github.com/nebulazorua/linc_luajit` on a Command prompt/PowerShell
 
@@ -14,20 +14,23 @@ To install LuaJIT do this: `haxelib git linc_luajit https://github.com/nebulazor
 If you get an error about StatePointer when using Lua, run `haxelib remove linc_luajit` into Command Prompt/PowerShell, then re-install linc_luajit.
 
 ## Credits:
-* Shadow Mario - Programmer
-* RiverOaken - Artist
-* Yoshubs - Assistant Programmer
+* Nuno Filipe Studios - Main porter, programmer
+* Remy And Ava - Mobile optimizer, gamejolt link
+* DANIZIN - Android Port
+* FNF BR - Android Port
+* DMMaster 636 - Stressed spooky BF anim
+* mariodevintoons - New HD Mall Darnell Artist
+* Galax - Dev Build Tester
+* JorgeX_YT - Dev Build Tester
 
 ### Special Thanks
-* bbpanzu - Ex-Programmer
-* shubs - New Input System
-* SqirraRNG - Crash Handler and Base code for Chart Editor's Waveform
-* KadeDev - Fixed some cool stuff on Chart Editor and other PRs
-* iFlicky - Composer of Psync and Tea Time, also made the Dialogue Sounds
-* PolybiusProxy - .MP4 Video Loader Library (hxCodec)
-* Keoiki - Note Splash Animations
-* Smokey - Sprite Atlas Support
-* Nebula the Zorua - LUA JIT Fork and some Lua reworks
+* JorgeX_YT - For replacing our current beta tester of the port and testing the port
+* mariodevintoons - For making the new HD mall darnell
+* Remy And Ava - For supporting me
+* Galax - For almost testing the port and being my best friend
+* FNF BR - For making an Android Port
+* DANIZIN - For making an Android Port
+* DMMaster 636 - For making the stressed BF spooky dance anim
 _____________________________________
 
 # Features

@@ -427,20 +427,6 @@ class PlayState extends MusicBeatState
 		PauseSubState.songName = null; //Reset to default
 		playbackRate = ClientPrefs.getGameplaySetting('songspeed', 1);
 
-		camGame = new FlxCamera();
-		camOverlay = new FlxCamera();
-		camOverlay.bgColor.alpha = 0;
-		camHUD = new FlxCamera();
-		camHUD.bgColor.alpha = 0;
-
-		FlxG.cameras.reset(camGame);
-		FlxG.cameras.add(camOverlay, false);
-		FlxG.cameras.add(camHUD, false);
-
-		FlxG.cameras.setDefaultDrawTarget(camGame, true);
-		persistentUpdate = true;
-		persistentDraw = true;
-
 		keysArray = [
 			ClientPrefs.copyKey(ClientPrefs.keyBinds.get('note_left')),
 			ClientPrefs.copyKey(ClientPrefs.keyBinds.get('note_down')),
