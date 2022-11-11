@@ -3977,22 +3977,22 @@ class PlayState extends MusicBeatState
 				{
 					if (limoLight.x > 169) {
 						michael.visible = false;
-						michaelDead.animation.play("michaelDead");
+						michaelDead.animation.play("michaelDEAD");
 						michaelDead.animation.finishCallback = removeBoppers;
 					}
 					if (limoLight.x > 439) {
 						alvin.visible = false;
-						alvinDead.animation.play("alvinDead");
+						alvinDead.animation.play("alvinDEAD");
 						alvinDead.animation.finishCallback = removeBoppers;
 					}
 					if (limoLight.x > 709) {
 						bojangles.visible = false;
-						bojanglesDead.animation.play("bojanglesDead");
+						bojanglesDead.animation.play("bojanglesDEAD");
 						bojanglesDead.animation.finishCallback = removeBoppers;
 					}
 					if (limoLight.x > 1009) {
 						bubbles.visible = false;
-						bubblesDead.animation.play("bubblesDead");
+						bubblesDead.animation.play("bubblesDEAD");
 						bubblesDead.animation.finishCallback = removeBoppers;
 					}
 				}
@@ -6757,13 +6757,13 @@ class PlayState extends MusicBeatState
 	{
 		switch (anim)
 		{
-			case 'michaelDead':
+			case 'michaelDEAD':
 				michaelDead.visible = false;
-			case 'alvinDead':
+			case 'alvinDEAD':
 				alvinDead.visible = false;
-			case 'bojanglesDead':
+			case 'bojanglesDEAD':
 				bojanglesDead.visible = false;
-			case 'bubblesDead':
+			case 'bubblesDEAD':
 				bubblesDead.visible = false;
 		}
 	}
@@ -7029,10 +7029,7 @@ class PlayState extends MusicBeatState
 				if (curSong == 'Blammed' && curBeat == 128)
 					blammedAnim = '-cracked';
 			}
-		}
-
-		if(!ClientPrefs.OldHDbg) {
-			if(boyfriend.curCharacter.startsWith('pico')) {
+			else if(boyfriend.curCharacter.startsWith('pico')) {
 				if (curSong == 'Blammed' && curBeat == 128)
 					blammedAnimPicoPlayer = '-cracked';
 			}
@@ -7074,34 +7071,28 @@ class PlayState extends MusicBeatState
 			}
 		}
 
-		if (curSong.toLowerCase() == 'blammed' && curBeat == 154)
+		if (curSong.toLowerCase() == 'blammed')
 		{
-			defaultCamZoom += 0.24;
+			if (curBeat == 154)
+				defaultCamZoom += 0.24;
+
+			if (curBeat == 160)
+				defaultCamZoom -= 0.24;
+
+			if (curBeat == 282)
+				defaultCamZoom += 0.24;
+
+			if (curBeat == 288)
+				defaultCamZoom -= 0.24;
 		}
 
-		if (curSong.toLowerCase() == 'blammed' && curBeat == 160)
+		if (curSong.toLowerCase() == 'boom')
 		{
-			defaultCamZoom -= 0.24;
-		}
+			if (curBeat == 234)
+				boomCamTween = FlxTween.tween(camHUD, {alpha: 0}, 0.3, {ease: FlxEase.quadOut});
 
-		if (curSong.toLowerCase() == 'blammed' && curBeat == 282)
-		{
-			defaultCamZoom += 0.24;
-		}
-
-		if (curSong.toLowerCase() == 'blammed' && curBeat == 288)
-		{
-			defaultCamZoom -= 0.24;
-		}
-
-		if (curSong.toLowerCase() == 'boom' && curBeat == 234)
-		{
-			boomCamTween = FlxTween.tween(camHUD, {alpha: 0}, 0.3, {ease: FlxEase.quadOut});
-		}
-
-		if (curSong.toLowerCase() == 'boom' && curBeat == 248)
-		{
-			boomCamTween = FlxTween.tween(camHUD, {alpha: 1}, 0.3, {ease: FlxEase.quadIn});
+			if (curBeat == 248)
+				boomCamTween = FlxTween.tween(camHUD, {alpha: 1}, 0.3, {ease: FlxEase.quadIn});
 		}
 
 		if (curBeat >= 100 && curSong.toLowerCase() == 'racing' && !supershit)
