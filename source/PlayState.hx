@@ -6753,21 +6753,6 @@ class PlayState extends MusicBeatState
 		bubblesDead.visible = true;
 	}
 
-	function removeBopper(who:String)
-	{
-		switch (who)
-		{
-			case 'michael':
-				michaelDead.visible = false;
-			case 'alvin':
-				alvinDead.visible = false;
-			case 'bojangles':
-				bojanglesDead.visible = false;
-			case 'bubbles':
-				bubblesDead.visible = false;
-		}
-	}
-
 	function StartBeam() {
 		if(dad.curCharacter == 'mom-car-horny' && curStage == 'limo') {
 			if(!ClientPrefs.OldHDbg) {
