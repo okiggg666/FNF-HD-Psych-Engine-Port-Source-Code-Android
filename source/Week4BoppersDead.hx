@@ -12,7 +12,7 @@ class Week4BoppersDead extends FlxSprite
 		super(x, y);
 
 		frames = Paths.getSparrowAtlas("gore/nooooooHD");
-		animation.addByPrefix('youseewhathemissin', who + 'DEAD', 24, false);
+		animation.addByPrefix(who + 'DEAD', who + 'DEAD', 24, false);
 		animation.addByIndices('eh', 'michaelDEAD', [21, 21], '', 24, true);
 		animation.play('eh');
 		antialiasing = ClientPrefs.globalAntialiasing;

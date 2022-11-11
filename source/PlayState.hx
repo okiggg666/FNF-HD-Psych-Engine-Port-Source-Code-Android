@@ -3977,23 +3977,23 @@ class PlayState extends MusicBeatState
 				{
 					if (limoLight.x > 169) {
 						michael.visible = false;
-						michaelDead.animation.play("youseewhathemissin");
-						michaelDead.animation.finishCallback = removeBopper;
+						michaelDead.animation.play("michaelDead");
+						michaelDead.animation.finishCallback = removeBoppers;
 					}
 					if (limoLight.x > 439) {
 						alvin.visible = false;
-						alvinDead.animation.play("youseewhathemissin");
-						alvinDead.animation.finishCallback = removeBopper;
+						alvinDead.animation.play("alvinDead");
+						alvinDead.animation.finishCallback = removeBoppers;
 					}
 					if (limoLight.x > 709) {
 						bojangles.visible = false;
-						bojanglesDead.animation.play("youseewhathemissin");
-						bojanglesDead.animation.finishCallback = removeBopper;
+						bojanglesDead.animation.play("bojanglesDead");
+						bojanglesDead.animation.finishCallback = removeBoppers;
 					}
 					if (limoLight.x > 1009) {
 						bubbles.visible = false;
-						bubblesDead.animation.play("youseewhathemissin");
-						bubblesDead.animation.finishCallback = removeBopper;
+						bubblesDead.animation.play("bubblesDead");
+						bubblesDead.animation.finishCallback = removeBoppers;
 					}
 				}
 		
@@ -6753,20 +6753,18 @@ class PlayState extends MusicBeatState
 		bubblesDead.visible = true;
 	}
 
-	function removeBopper(anim:String, who:String)
+	function removeBoppers(anim:String)
 	{
-		if (anim == 'youseewhathemissin') {
-			switch (who)
-			{
-				case 'michaelDead':
-					michaelDead.visible = false;
-				case 'alvinDead':
-					alvinDead.visible = false;
-				case 'bojanglesDead':
-					bojanglesDead.visible = false;
-				case 'bubblesDead':
-					bubblesDead.visible = false;
-			}
+		switch (anim)
+		{
+			case 'michaelDead':
+				michaelDead.visible = false;
+			case 'alvinDead':
+				alvinDead.visible = false;
+			case 'bojanglesDead':
+				bojanglesDead.visible = false;
+			case 'bubblesDead':
+				bubblesDead.visible = false;
 		}
 	}
 
