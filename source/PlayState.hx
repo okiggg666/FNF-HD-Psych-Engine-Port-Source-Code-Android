@@ -3978,22 +3978,22 @@ class PlayState extends MusicBeatState
 					if (limoLight.x > 169) {
 						michael.visible = false;
 						michaelDead.animation.play("youseewhathemissin");
-						michaelDead.animation.finishCallback = removeBopper('michael');
+						michaelDead.animation.finishCallback = function(){michaelDead.visible = false;}
 					}
 					if (limoLight.x > 439) {
 						alvin.visible = false;
 						alvinDead.animation.play("youseewhathemissin");
-						alvinDead.animation.finishCallback = removeBopper('alvin');
+						alvinDead.animation.finishCallback = function(){alvinDead.visible = false;}
 					}
 					if (limoLight.x > 709) {
 						bojangles.visible = false;
 						bojanglesDead.animation.play("youseewhathemissin");
-						bojanglesDead.animation.finishCallback = removeBopper('bojangles');
+						bojanglesDead.animation.finishCallback = function(){bojanglesDead.visible = false;}
 					}
 					if (limoLight.x > 1009) {
 						bubbles.visible = false;
 						bubblesDead.animation.play("youseewhathemissin");
-						bubblesDead.animation.finishCallback = removeBopper('bubbles');
+						bubblesDead.animation.finishCallback = function(){bubblesDead.visible = false;}
 					}
 				}
 		
