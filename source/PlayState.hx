@@ -6756,6 +6756,7 @@ class PlayState extends MusicBeatState
 	function removeBopper(who:String)
 	{
 		switch (who)
+		{
 			case 'michael':
 				michaelDead.visible = false;
 			case 'alvin':
@@ -6764,6 +6765,7 @@ class PlayState extends MusicBeatState
 				bojanglesDead.visible = false;
 			case 'bubbles':
 				bubblesDead.visible = false;
+		}
 	}
 
 	function StartBeam() {
