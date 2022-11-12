@@ -6794,7 +6794,7 @@ class PlayState extends MusicBeatState
 			killdancers = true;
 			limoLight.velocity.x = 4800;
 			limoMetalPole.velocity.x = 4800;
-			killDancersTimer = new FlxTimer().start(0.22, function(e:FlxTimer) {
+			killDancersTimer = new FlxTimer().start(0.21, function(e:FlxTimer) {
 				if(ClientPrefs.screenShake) {
 					FlxG.camera.shake(0.01, 0.2);
 				}
