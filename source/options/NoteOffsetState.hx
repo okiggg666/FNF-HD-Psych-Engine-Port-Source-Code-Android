@@ -30,6 +30,7 @@ class NoteOffsetState extends MusicBeatState
 
 	var coolText:FlxText;
 	var rating:FlxSprite;
+	var comboSpr:FlxSprite;
 	var comboNums:FlxSpriteGroup;
 	var dumbTexts:FlxTypedGroup<FlxText>;
 
@@ -159,8 +160,15 @@ class NoteOffsetState extends MusicBeatState
 		rating.setGraphicSize(Std.int(rating.width * 0.7));
 		rating.updateHitbox();
 		rating.antialiasing = ClientPrefs.globalAntialiasing;
-		
+
+		comboSpr = new FlxSprite().loadGraphic(Paths.image('combo'));
+		comboSpr.cameras = [camHUD];
+		comboSpr.setGraphicSize(Std.int(comboSpr.width * 0.6));
+		comboSpr.updateHitbox();
+		comboSpr.antialiasing = ClientPrefs.globalAntialiasing;
+
 		add(rating);
+		add(comboSpr);
 
 		comboNums = new FlxSpriteGroup();
 		comboNums.cameras = [camHUD];
@@ -462,9 +470,17 @@ class NoteOffsetState extends MusicBeatState
 
 	function repositionCombo()
 	{
+		var xThing:Float = 0;
+		xThing = comboNums.x;
+
 		rating.screenCenter();
 		rating.x = coolText.x - 40 + ClientPrefs.comboOffset[0];
 		rating.y -= 60 + ClientPrefs.comboOffset[1];
+
+		comboSpr.screenCenter();
+		comboSpr.x = coolText.x + ClientPrefs.comboOffset[0];
+		comboSpr.y += 65 - ClientPrefs.comboOffset[1];
+		comboSpr.x = xThing + 140;
 
 		comboNums.screenCenter();
 		comboNums.x = coolText.x - 90 + ClientPrefs.comboOffset[2];
@@ -513,6 +529,7 @@ class NoteOffsetState extends MusicBeatState
 	function updateMode()
 	{
 		rating.visible = onComboMenu;
+		comboSpr.visible = onComboMenu;
 		comboNums.visible = onComboMenu;
 		dumbTexts.visible = onComboMenu;
 		

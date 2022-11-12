@@ -69,7 +69,7 @@ class GameOverSubstate extends MusicBeatSubstate
 		} else if(PlayState.poleDeathCounter == 6) {
 			textCrap = 'PRESS ' + keysText + 'PLEASE';
 		} else if(PlayState.poleDeathCounter == 7) {
-			textCrap = keysText + keysText + keysText + keysText + keysText + keysText;
+			textCrap = keysText + keysText + keysText + keysText + keysText + keysText + keysText + keysText + keysText + keysText;
 		} else if(PlayState.poleDeathCounter == 8) {
 			textCrap = 'I give up...';
 		} else if(PlayState.poleDeathCounter > 8) {

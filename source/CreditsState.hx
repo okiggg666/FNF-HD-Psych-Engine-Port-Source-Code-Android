@@ -82,11 +82,11 @@ class CreditsState extends MusicBeatState
 
 		var pisspoop:Array<Array<String>> = [ //Name - Icon name - Description - Link - BG Color
 			["FNF' HD PE Port Team"],
-			['Nuno Filipe Studios',	'nuno',				'Main porter, programmer',									'https://www.youtube.com/channel/UCq7G3p4msVN5SX2CpJ86tTw',	'878787'],
+			['Nuno Filipe Studios',	'nuno',				'Main porter, programmer, animator',						'https://www.youtube.com/channel/UCq7G3p4msVN5SX2CpJ86tTw',	'878787'],
 			['Remy And Ava',		'ava',				'Mobile optimizer, gamejolt link',							'https://www.youtube.com/channel/UCxBKG1LFQM2Kte_BQ0isDww',	'F7F7F7'],
 			['DANIZIN',				'dan',				'Android Port',												'https://www.youtube.com/channel/UCvTYcAn6ciOojpfcHtUxJBQ',	'FFD166'],
 			['FNF BR',				'br',				'Android Port',												'https://www.youtube.com/channel/UCtEMWRthfza-LaNz7H2Z3oQ',	'FCBF49'],
-			['DMMaster 636',		'dm',				'Stressed spooky BF anim',									'https://www.youtube.com/channel/UC65EwKYTjayqmXATNz2auzQ', '7E39EE'],
+			['DMMaster 636',		'dm',				'Stressed spooky BF anim and HD notes',						'https://www.youtube.com/channel/UC65EwKYTjayqmXATNz2auzQ', '7E39EE'],
 			['mariodevintoons',		'devin',			'New HD Mall Darnell Artist',								'https://twitter.com/mariodevintoon2',	'C1121F'],
 			['Galax',				'galax',			'Dev Build Tester',											'https://twitter.com/Galax40841813',	'3F37C9'],
 			['JorgeX_YT',			'jorge',			'Dev Build Tester',											'https://www.youtube.com/channel/UCl-GHl189q4erRjnnVmqNUA',	'70E000'],

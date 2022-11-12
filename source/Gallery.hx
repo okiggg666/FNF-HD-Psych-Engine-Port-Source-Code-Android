@@ -26,12 +26,21 @@ class Gallery extends MusicBeatState
 		['void', 'sonic', 'void'],
 		['void', 'carol', 'void']
 	];
+	var weekImages2:Array<Dynamic> = [
+		['bf', 'gf', 'dad'],
+		['skump', 'monster'],
+		['pico', 'darnell', 'nene'],
+		['mom'],
+		['sonic'],
+		['carol']
+	];
 	var weekTexts:FlxTypedGroup<FlxSprite>;
 	var selectionBG:FlxTypedGroup<FlxSprite>;
 	var curSelected:Int = 0;
+	var checkers:FlxBackdrop;
 	var art:FlxSprite;
 	var logoBl:FlxSprite;
-	public static var artSprites:FlxTypedGroup<FlxSprite>;
+	var artSprites:FlxTypedGroup<FlxSprite>;
 	var stopspamming:Bool = false;
 	var canSelect:Bool = true;
 	var isDebug:Bool = false;
@@ -50,7 +59,7 @@ class Gallery extends MusicBeatState
 		var bg:FlxSprite = new FlxSprite(0, 0).makeGraphic(1280, 720,FlxColor.fromRGB(69, 108, 207),false);
 		add(bg);
 
-		var checkers:FlxBackdrop = new FlxBackdrop(Paths.image('gallery/checkers'),0, 0, true, true,0, 0);
+		checkers = new FlxBackdrop(Paths.image('gallery/checkers'), 0, 0, true, true, 0, 0);
 		checkers.velocity.x = 20;
 		checkers.velocity.y = 20;
 		add(checkers);
@@ -105,17 +114,27 @@ class Gallery extends MusicBeatState
 	override public function update(elapsed:Float) {
 	
 		if (controls.UI_RIGHT_P && canSelect)
-			changeWeek(1);
+			if(curSelected != 5) {
+				changeWeek(1);
+			} else {
+				changeWeek(5);
+			}
 		if (controls.UI_LEFT_P && canSelect)
-			changeWeek(-1);
-		if (controls.BACK){
+			if(curSelected != 0) {
+				changeWeek(-1);
+			} else {
+				changeWeek(-5);
+			}
+		if (controls.BACK) {
+			checkers.velocity.x = 0;
+			checkers.velocity.y = 0;
 			persistentUpdate = true;
 			persistentDraw = true;
 			FlxG.sound.music.stop();
 			MusicBeatState.switchState(new MainMenuState());
 			FlxG.sound.playMusic(Paths.music('freakyMenu'));
 		}
-		if (controls.ACCEPT && !stopspamming){
+		if (controls.ACCEPT && !stopspamming) {
 			selectWeek(curSelected);
 			stopspamming = true;
 			canSelect = false;
@@ -146,14 +165,48 @@ class Gallery extends MusicBeatState
 				weekText.alpha = 1;
 			}
 		});
-		/*for (shit in weekTexts.members) {
-			if (curSelected == 1) {
-				shit.x = 0;
+		for (shit in weekTexts.members){
+			if (change == 1) {
+				canSelect = false;
+				FlxTween.tween(shit,{x: shit.x - 150}, 0.5, {
+					ease: FlxEase.cubeOut,
+					onComplete: function(twn:FlxTween)
+					{
+						canSelect = true;
+					}
+				});
 			}
-			if (curSelected == 7) {
-				shit.x += 150;
+			if (change == -1) {
+				canSelect = false;
+				FlxTween.tween(shit,{x: shit.x + 150}, 0.5, {
+					ease: FlxEase.cubeOut,
+					onComplete: function(twn:FlxTween)
+					{
+						canSelect = true;
+					}
+				});
 			}
-		}*/
+			if (change == 5) {
+				canSelect = false;
+				FlxTween.tween(shit,{x: shit.x + 750}, 0.5, {
+					ease: FlxEase.cubeOut,
+					onComplete: function(twn:FlxTween)
+					{
+						canSelect = true;
+					}
+				});
+			}
+			if (change == -5) {
+				canSelect = false;
+				FlxTween.tween(shit,{x: shit.x - 750}, 0.5, {
+					ease: FlxEase.cubeOut,
+					onComplete: function(twn:FlxTween)
+					{
+						canSelect = true;
+					}
+				});
+			}
+		}
 		artSprites.members[0].loadGraphic(Paths.image('gallery/art/' + weekImages[curSelected][0]));
 		artSprites.members[1].loadGraphic(Paths.image('gallery/art/' + weekImages[curSelected][1]));
 		artSprites.members[2].loadGraphic(Paths.image('gallery/art/' + weekImages[curSelected][2]));
@@ -172,7 +225,7 @@ class Gallery extends MusicBeatState
 			persistentUpdate = false;
 			persistentDraw = false;
 			FlxFlicker.stopFlickering(weekTexts.members[curSelected]);
-			openSubState(new GallerySubState(weekImages[curSelected]));
+			openSubState(new GallerySubState(weekImages2[curSelected]));
 		});
 	}
 
@@ -182,6 +235,7 @@ class Gallery extends MusicBeatState
 		FlxG.camera.focusOn(shit.getPosition());
 		FlxG.camera.zoom = 1;
 		stopspamming = false;
+
 		super.closeSubState();
 	}
 }

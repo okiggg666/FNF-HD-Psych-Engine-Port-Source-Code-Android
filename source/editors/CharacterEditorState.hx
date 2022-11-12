@@ -443,7 +443,7 @@ class CharacterEditorState extends MusicBeatState
 		charDropDown = new FlxUIDropDownMenuCustom(10, 30, FlxUIDropDownMenuCustom.makeStrIdLabelArray([''], true), function(character:String)
 		{
 			daAnim = characterList[Std.parseInt(character)];
-			check_player.checked = daAnim.startsWith('bf');
+			check_player.checked = daAnim.startsWith('bf') || daAnim.endsWith('-player');
 			loadChar(!check_player.checked);
 			updatePresence();
 			reloadCharacterDropDown();
