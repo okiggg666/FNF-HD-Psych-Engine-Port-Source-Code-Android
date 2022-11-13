@@ -131,6 +131,14 @@ class VisualsUISubState extends BaseOptionsMenu
 			true);
 		addOption(option);
 
+		/*var option:Option = new Option('Full Screen',
+			"test",
+			'fullscreen',
+			'bool',
+			false);
+		addOption(option);
+		option.onChange = onFullscreen;*/
+	
 		super();
 	}
 
@@ -150,6 +158,13 @@ class VisualsUISubState extends BaseOptionsMenu
 		if(changedMusic) FlxG.sound.playMusic(Paths.music('freakyMenu'));
 		super.destroy();
 	}
+
+	#if desktop
+	function onFullscreen()
+	{
+		Main.startFullscreen = ClientPrefs.fullscreen;
+	}
+	#end
 
 	#if !mobile
 	function onChangeFPSCounter()

@@ -43,6 +43,7 @@ class ClientPrefs {
 	public static var pauseMusic:String = 'Tea Time';
 	public static var checkForUpdates:Bool = true;
 	public static var comboStacking = true;
+	public static var fullscreen = false;
 	//public static var showWarningScreen:Bool = true;
 	//public static var sweatShit:Bool = false;
 	public static var gameplaySettings:Map<String, Dynamic> = [
@@ -156,6 +157,7 @@ class ClientPrefs {
 		FlxG.save.data.pauseMusic = pauseMusic;
 		FlxG.save.data.checkForUpdates = checkForUpdates;
 		FlxG.save.data.comboStacking = comboStacking;
+		FlxG.save.data.fullscreen = fullscreen;
 	
 		FlxG.save.flush();
 
@@ -224,6 +226,14 @@ class ClientPrefs {
 		if(FlxG.save.data.sweatShit != null) {
 			sweatShit = FlxG.save.data.sweatShit;
 		}*/
+		if(FlxG.save.data.fullscreen != null) {
+			fullscreen = FlxG.save.data.fullscreen;
+			if(fullscreen) {
+				Main.startFullscreen = true;
+			} else {
+				Main.startFullscreen = false;
+			}
+		}
 		if(FlxG.save.data.framerate != null) {
 			framerate = FlxG.save.data.framerate;
 			if(framerate > FlxG.drawFramerate) {
@@ -276,7 +286,6 @@ class ClientPrefs {
 		if(FlxG.save.data.comboOffset != null) {
 			comboOffset = FlxG.save.data.comboOffset;
 		}
-		
 		if(FlxG.save.data.ratingOffset != null) {
 			ratingOffset = FlxG.save.data.ratingOffset;
 		}
