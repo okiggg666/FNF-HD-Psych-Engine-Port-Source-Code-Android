@@ -6425,7 +6425,7 @@ class PlayState extends MusicBeatState
 
 				if(note.noteType == 'Warning Note') {
 					if(boyfriend.animOffsets.exists('dodge')) {
-						boyfriend.playAnim('dodge', true);
+						boyfriend.playAnim('dodge' + isStressed, true);
 						boyfriend.specialAnim = true;
 						boyfriend.dodgetime = FlxG.updateFramerate/2;
 					}
@@ -6433,7 +6433,7 @@ class PlayState extends MusicBeatState
 
 				if(note.noteType == 'Laser Note') {
 					if(boyfriend.animOffsets.exists('dodge')) {
-						boyfriend.playAnim('dodge', true);
+						boyfriend.playAnim('dodge' + isStressed, true);
 						boyfriend.specialAnim = true;
 						boyfriend.dodgetime = FlxG.updateFramerate/2;
 					}
@@ -6441,7 +6441,7 @@ class PlayState extends MusicBeatState
 
 				if(note.noteType == 'Alert Note') {
 					if(boyfriend.animOffsets.exists('dodge')) {
-						boyfriend.playAnim('dodge', true);
+						boyfriend.playAnim('dodge' + isStressed, true);
 						boyfriend.specialAnim = true;
 						boyfriend.dodgetime = FlxG.updateFramerate/2;
 					}
