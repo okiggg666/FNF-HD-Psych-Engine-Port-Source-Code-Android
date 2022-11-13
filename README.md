@@ -18,7 +18,7 @@ If you get an error about StatePointer when using Lua, run `haxelib remove linc_
 * Remy And Ava - Mobile optimizer, gamejolt link
 * DANIZIN - Android Port
 * FNF BR - Android Port
-* DMMaster 636 - Stressed spooky BF anim
+* DMMaster 636 - Stressed spooky BF anim, HD notes
 * mariodevintoons - New HD Mall Darnell Artist
 * Galax - Dev Build Tester
 * JorgeX_YT - Dev Build Tester
@@ -30,4 +30,4 @@ If you get an error about StatePointer when using Lua, run `haxelib remove linc_
 * Galax - For almost testing the port and being my best friend
 * FNF BR - For making an Android Port
 * DANIZIN - For making an Android Port
-* DMMaster 636 - For making the stressed BF spooky dance anim
+* DMMaster 636 - For making the stressed BF spooky dance anim and making good art
