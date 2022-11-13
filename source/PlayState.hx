@@ -278,14 +278,14 @@ class PlayState extends MusicBeatState
 	var bgLimo:BGSprite;
 	var rails:BGSprite;
 	var road:BGSprite;
-	var michael:Michael;
-	var alvin:Alvin;
-	var bojangles:Bojangles;
-	var bubbles:Bubbles;
-	var michaelDead:MichaelDead;
-	var alvinDead:AlvinDead;
-	var bojanglesDead:BojanglesDead;
-	var bubblesDead:BubblesDead;
+	var michael:Week4Boppers;
+	var alvin:Week4Boppers;
+	var bojangles:Week4Boppers;
+	var bubbles:Week4Boppers;
+	var michaelDead:Week4BoppersDead;
+	var alvinDead:Week4BoppersDead;
+	var bojanglesDead:Week4BoppersDead;
+	var bubblesDead:Week4BoppersDead;
 	var fastCar:BGSprite;
 	var limoMetalPole:BGSprite;
 	var limoLight:BGSprite;
@@ -1130,37 +1130,37 @@ class PlayState extends MusicBeatState
 				if(!ClientPrefs.lowQuality) {
 					//Dancers sprites
 
-					michael = new Michael(175, bgLimo.y -385); //Dancer 1
+					michael = new Week4Boppers(175, bgLimo.y -385, 'michael'); //Dancer 1
 					michael.scrollFactor.set(0.4,0.4);
 					add(michael);
 
-					alvin = new Alvin(michael.x + 270, bgLimo.y -362); //Dancer 2
+					alvin = new Week4Boppers(michael.x + 270, bgLimo.y -362, 'alvin'); //Dancer 2
 					alvin.scrollFactor.set(0.4,0.4);
 					add(alvin);
 
-					bojangles = new Bojangles(alvin.x + 270, bgLimo.y -385); //Dancer 3
+					bojangles = new Week4Boppers(alvin.x + 270, bgLimo.y -385, 'bojangles'); //Dancer 3
 					bojangles.scrollFactor.set(0.4,0.4);
 					add(bojangles);
 
-					bubbles = new Bubbles(bojangles.x + 270, bgLimo.y -368); //Dancer 4
+					bubbles = new Week4Boppers(bojangles.x + 270, bgLimo.y -368, 'bubbles'); //Dancer 4
 					bubbles.scrollFactor.set(0.4,0.4);
 					add(bubbles);
 
 					//Dead Dancers Sprites
 
-					michaelDead = new MichaelDead(250, bgLimo.y -520);
+					michaelDead = new Week4BoppersDead(250, bgLimo.y -520, 'michael');
 					michaelDead.scrollFactor.set(0.4,0.4);
 					add(michaelDead);
 
-					alvinDead = new AlvinDead(520, bgLimo.y -535);
+					alvinDead = new Week4BoppersDead(520, bgLimo.y -535, 'alvin');
 					alvinDead.scrollFactor.set(0.4,0.4);
 					add(alvinDead);
 
-					bojanglesDead = new BojanglesDead(790, bgLimo.y -525);
+					bojanglesDead = new Week4BoppersDead(790, bgLimo.y -525, 'bojangles');
 					bojanglesDead.scrollFactor.set(0.4,0.4);
 					add(bojanglesDead);
 
-					bubblesDead = new BubblesDead(1070, bgLimo.y -525);
+					bubblesDead = new Week4BoppersDead(1070, bgLimo.y -525, 'bubbles');
 					bubblesDead.scrollFactor.set(0.4,0.4);
 					add(bubblesDead);
 
@@ -4002,23 +4002,23 @@ class PlayState extends MusicBeatState
 				{
 					if (limoLight.x > 169) {
 						michael.visible = false;
-						michaelDead.animation.play("youseewhathemissin");
-						michaelDead.animation.finishCallback = removeMichael;
+						michaelDead.animation.play("michaelDEAD");
+						michaelDead.animation.finishCallback = removeBoppers;
 					}
 					if (limoLight.x > 439) {
 						alvin.visible = false;
-						alvinDead.animation.play("youseewhathemissin");
-						alvinDead.animation.finishCallback = removeAlvin;
+						alvinDead.animation.play("alvinDEAD");
+						alvinDead.animation.finishCallback = removeBoppers;
 					}
 					if (limoLight.x > 709) {
 						bojangles.visible = false;
-						bojanglesDead.animation.play("youseewhathemissin");
-						bojanglesDead.animation.finishCallback = removeBojangles;
+						bojanglesDead.animation.play("bojanglesDEAD");
+						bojanglesDead.animation.finishCallback = removeBoppers;
 					}
 					if (limoLight.x > 1009) {
 						bubbles.visible = false;
-						bubblesDead.animation.play("youseewhathemissin");
-						bubblesDead.animation.finishCallback = removeBubbles;
+						bubblesDead.animation.play("bubblesDEAD");
+						bubblesDead.animation.finishCallback = removeBoppers;
 					}
 				}
 		
@@ -6417,7 +6417,7 @@ class PlayState extends MusicBeatState
 
 				if(note.noteType == 'Warning Note') {
 					if(boyfriend.animOffsets.exists('dodge')) {
-						boyfriend.playAnim('dodge', true);
+						boyfriend.playAnim('dodge' + isStressed, true);
 						boyfriend.specialAnim = true;
 						boyfriend.dodgetime = FlxG.updateFramerate/2;
 					}
@@ -6425,7 +6425,7 @@ class PlayState extends MusicBeatState
 
 				if(note.noteType == 'Laser Note') {
 					if(boyfriend.animOffsets.exists('dodge')) {
-						boyfriend.playAnim('dodge', true);
+						boyfriend.playAnim('dodge' + isStressed, true);
 						boyfriend.specialAnim = true;
 						boyfriend.dodgetime = FlxG.updateFramerate/2;
 					}
@@ -6433,7 +6433,7 @@ class PlayState extends MusicBeatState
 
 				if(note.noteType == 'Alert Note') {
 					if(boyfriend.animOffsets.exists('dodge')) {
-						boyfriend.playAnim('dodge', true);
+						boyfriend.playAnim('dodge' + isStressed, true);
 						boyfriend.specialAnim = true;
 						boyfriend.dodgetime = FlxG.updateFramerate/2;
 					}
@@ -6853,31 +6853,18 @@ class PlayState extends MusicBeatState
 		bubblesDead.visible = true;
 	}
 
-	function removeMichael(anim:String)
+	function removeBoppers(anim:String)
 	{
-		if (anim == 'youseewhathemissin') {
-			michaelDead.visible = false;
-		}
-	}
-
-	function removeAlvin(anim:String)
-	{
-		if (anim == 'youseewhathemissin') {
-			alvinDead.visible = false;
-		}
-	}
-
-	function removeBojangles(anim:String)
-	{
-		if (anim == 'youseewhathemissin') {
-			bojanglesDead.visible = false;
-		}
-	}
-
-	function removeBubbles(anim:String)
-	{
-		if (anim == 'youseewhathemissin') {
-			bubblesDead.visible = false;
+		switch (anim)
+		{
+			case 'michaelDEAD':
+				michaelDead.visible = false;
+			case 'alvinDEAD':
+				alvinDead.visible = false;
+			case 'bojanglesDEAD':
+				bojanglesDead.visible = false;
+			case 'bubblesDEAD':
+				bubblesDead.visible = false;
 		}
 	}
 
@@ -7130,10 +7117,7 @@ class PlayState extends MusicBeatState
 				if (curSong == 'Blammed' && curBeat == 128)
 					blammedAnim = '-cracked';
 			}
-		}
-
-		if(!ClientPrefs.OldHDbg) {
-			if(boyfriend.curCharacter.startsWith('pico')) {
+			else if(boyfriend.curCharacter.startsWith('pico')) {
 				if (curSong == 'Blammed' && curBeat == 128)
 					blammedAnimPicoPlayer = '-cracked';
 			}
@@ -7175,34 +7159,28 @@ class PlayState extends MusicBeatState
 			}
 		}
 
-		if (curSong.toLowerCase() == 'blammed' && curBeat == 154)
+		if (curSong.toLowerCase() == 'blammed')
 		{
-			defaultCamZoom += 0.24;
+			if (curBeat == 154)
+				defaultCamZoom += 0.24;
+
+			if (curBeat == 160)
+				defaultCamZoom -= 0.24;
+
+			if (curBeat == 282)
+				defaultCamZoom += 0.24;
+
+			if (curBeat == 288)
+				defaultCamZoom -= 0.24;
 		}
 
-		if (curSong.toLowerCase() == 'blammed' && curBeat == 160)
+		if (curSong.toLowerCase() == 'boom')
 		{
-			defaultCamZoom -= 0.24;
-		}
+			if (curBeat == 234)
+				boomCamTween = FlxTween.tween(camHUD, {alpha: 0}, 0.3, {ease: FlxEase.quadOut});
 
-		if (curSong.toLowerCase() == 'blammed' && curBeat == 282)
-		{
-			defaultCamZoom += 0.24;
-		}
-
-		if (curSong.toLowerCase() == 'blammed' && curBeat == 288)
-		{
-			defaultCamZoom -= 0.24;
-		}
-
-		if (curSong.toLowerCase() == 'boom' && curBeat == 234)
-		{
-			boomCamTween = FlxTween.tween(camHUD, {alpha: 0}, 0.3, {ease: FlxEase.quadOut});
-		}
-
-		if (curSong.toLowerCase() == 'boom' && curBeat == 248)
-		{
-			boomCamTween = FlxTween.tween(camHUD, {alpha: 1}, 0.3, {ease: FlxEase.quadIn});
+			if (curBeat == 248)
+				boomCamTween = FlxTween.tween(camHUD, {alpha: 1}, 0.3, {ease: FlxEase.quadIn});
 		}
 
 		if (curBeat >= 100 && curSong.toLowerCase() == 'racing' && !supershit)
