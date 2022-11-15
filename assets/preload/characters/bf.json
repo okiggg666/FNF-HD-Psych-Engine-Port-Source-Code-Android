@@ -341,6 +341,28 @@
 			]
 		},
 		{
+			"loop": false,
+			"offsets": [
+				10,
+				60
+			],
+			"anim": "dodge",
+			"fps": 24,
+			"name": "BF Pico Dodge",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				10,
+				60
+			],
+			"anim": "dodge-stressed",
+			"fps": 24,
+			"name": "Stressed Pico Dodge",
+			"indices": []
+		},
+		{
 			"offsets": [
 				-7,
 				-1
