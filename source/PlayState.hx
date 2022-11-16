@@ -5692,7 +5692,7 @@ class PlayState extends MusicBeatState
 
 		var daLoop:Int = 0;
 		var xThing:Float = 0;
-		if (showCombo)
+		if (showCombo && combo >= 10)
 		{
 			insert(members.indexOf(strumLineNotes), comboSpr);
 		}
