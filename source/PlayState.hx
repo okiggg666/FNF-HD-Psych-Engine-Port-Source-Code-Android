@@ -3939,10 +3939,15 @@ class PlayState extends MusicBeatState
 				}
 
 			case 'limo':
+				isStressed = '';
+				if(boyfriend.hasStressedAnimations) {
+					if(fuckCval) isStressed = '-stressed';
+				}
+
 				if(!cpuControlled)
 				{
 					if (controls.DODGE && boyfriend.dodgetime == 0 && dodgeEvent) {
-						boyfriend.playAnim('dodge');
+						boyfriend.playAnim('dodge' + isStressed);
 						boyfriend.dodgetime = FlxG.updateFramerate;
 					}
 				}
@@ -3994,7 +3999,7 @@ class PlayState extends MusicBeatState
 						isDead = true;
 					}
 				} else if (hitbox.overlapsPoint(boyfriend.getGraphicMidpoint()) && boyfriend.dodgetime == 0) {
-					boyfriend.playAnim('dodge');
+					boyfriend.playAnim('dodge' + isStressed);
 					boyfriend.dodgetime = FlxG.updateFramerate;
 				}
 
@@ -5687,7 +5692,7 @@ class PlayState extends MusicBeatState
 
 		var daLoop:Int = 0;
 		var xThing:Float = 0;
-		if (showCombo)
+		if (showCombo && combo >= 10)
 		{
 			insert(members.indexOf(strumLineNotes), comboSpr);
 		}
