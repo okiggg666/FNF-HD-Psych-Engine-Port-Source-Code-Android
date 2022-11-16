@@ -30,4 +30,4 @@ If you get an error about StatePointer when using Lua, run `haxelib remove linc_
 * Galax - For almost testing the port and being my best friend
 * FNF BR - For making an Android Port
 * DANIZIN - For making an Android Port
-* DMMaster 636 - For making the stressed BF spooky dance anim and making good art
+* DMMaster 636 - For making good HD art

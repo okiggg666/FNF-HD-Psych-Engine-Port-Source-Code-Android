@@ -41,7 +41,7 @@
 		{
 			"loop": false,
 			"offsets": [
-				78,
+				79,
 				44
 			],
 			"anim": "danceLeft-stressed",
@@ -79,7 +79,7 @@
 		{
 			"offsets": [
 				-30,
-				-5
+				-7
 			],
 			"loop": false,
 			"fps": 24,
@@ -154,7 +154,7 @@
 			"loop": false,
 			"offsets": [
 				-50,
-				32
+				33
 			],
 			"anim": "singUPmiss",
 			"fps": 24,
@@ -597,8 +597,8 @@
 		209
 	],
 	"camera_position": [
-		27,
-		-20
+		-43,
+		24
 	],
 	"sing_duration": 4,
 	"scale": 1

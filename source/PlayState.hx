@@ -278,14 +278,14 @@ class PlayState extends MusicBeatState
 	var bgLimo:BGSprite;
 	var rails:BGSprite;
 	var road:BGSprite;
-	var michael:Week4Boppers;
-	var alvin:Week4Boppers;
-	var bojangles:Week4Boppers;
-	var bubbles:Week4Boppers;
-	var michaelDead:Week4BoppersDead;
-	var alvinDead:Week4BoppersDead;
-	var bojanglesDead:Week4BoppersDead;
-	var bubblesDead:Week4BoppersDead;
+	var michael:HDBackgroundDancer;
+	var alvin:HDBackgroundDancer;
+	var bojangles:HDBackgroundDancer;
+	var bubbles:HDBackgroundDancer;
+	var michaelDead:HDBackgroundDancerDead;
+	var alvinDead:HDBackgroundDancerDead;
+	var bojanglesDead:HDBackgroundDancerDead;
+	var bubblesDead:HDBackgroundDancerDead;
 	var fastCar:BGSprite;
 	var limoMetalPole:BGSprite;
 	var limoLight:BGSprite;
@@ -1130,37 +1130,37 @@ class PlayState extends MusicBeatState
 				if(!ClientPrefs.lowQuality) {
 					//Dancers sprites
 
-					michael = new Week4Boppers(175, bgLimo.y -385, 'michael'); //Dancer 1
+					michael = new HDBackgroundDancer(175, bgLimo.y -385, 'michael'); //Dancer 1
 					michael.scrollFactor.set(0.4,0.4);
 					add(michael);
 
-					alvin = new Week4Boppers(michael.x + 270, bgLimo.y -362, 'alvin'); //Dancer 2
+					alvin = new HDBackgroundDancer(michael.x + 270, bgLimo.y -362, 'alvin'); //Dancer 2
 					alvin.scrollFactor.set(0.4,0.4);
 					add(alvin);
 
-					bojangles = new Week4Boppers(alvin.x + 270, bgLimo.y -385, 'bojangles'); //Dancer 3
+					bojangles = new HDBackgroundDancer(alvin.x + 270, bgLimo.y -385, 'bojangles'); //Dancer 3
 					bojangles.scrollFactor.set(0.4,0.4);
 					add(bojangles);
 
-					bubbles = new Week4Boppers(bojangles.x + 270, bgLimo.y -368, 'bubbles'); //Dancer 4
+					bubbles = new HDBackgroundDancer(bojangles.x + 270, bgLimo.y -368, 'bubbles'); //Dancer 4
 					bubbles.scrollFactor.set(0.4,0.4);
 					add(bubbles);
 
 					//Dead Dancers Sprites
 
-					michaelDead = new Week4BoppersDead(250, bgLimo.y -520, 'michael');
+					michaelDead = new HDBackgroundDancerDead(250, bgLimo.y -520, 'michael');
 					michaelDead.scrollFactor.set(0.4,0.4);
 					add(michaelDead);
 
-					alvinDead = new Week4BoppersDead(520, bgLimo.y -535, 'alvin');
+					alvinDead = new HDBackgroundDancerDead(520, bgLimo.y -535, 'alvin');
 					alvinDead.scrollFactor.set(0.4,0.4);
 					add(alvinDead);
 
-					bojanglesDead = new Week4BoppersDead(790, bgLimo.y -525, 'bojangles');
+					bojanglesDead = new HDBackgroundDancerDead(790, bgLimo.y -525, 'bojangles');
 					bojanglesDead.scrollFactor.set(0.4,0.4);
 					add(bojanglesDead);
 
-					bubblesDead = new Week4BoppersDead(1070, bgLimo.y -525, 'bubbles');
+					bubblesDead = new HDBackgroundDancerDead(1070, bgLimo.y -525, 'bubbles');
 					bubblesDead.scrollFactor.set(0.4,0.4);
 					add(bubblesDead);
 
@@ -1380,7 +1380,7 @@ class PlayState extends MusicBeatState
 					add(bg);
 				}
 
-			case 'tank': //Week 7 - Ugh, Guns, Stress
+			case 'tank': //Week 7
 				var sky:BGSprite = new BGSprite('tankSky', -400, -400, 0, 0);
 				add(sky);
 
@@ -2195,7 +2195,7 @@ class PlayState extends MusicBeatState
 		}
 		RecalculateRating();
 
-		//PRECACHING MISS SOUNDS BECAUSE I THINK THEY CAN LAG PEOPLE AND FUCK THEM UP IDK HOW HAXE WORKS
+		//PRECACHING MISS SOUNDS BECAUSE I THINK THEY CAN LAG AND PEOPLE FUCK THEM UP IDK HOW HAXE WORKS
 		if(ClientPrefs.hitsoundVolume > 0) precacheList.set('hitsound', 'sound');
 		precacheList.set('missnote1', 'sound');
 		precacheList.set('missnote2', 'sound');
@@ -2237,6 +2237,8 @@ class PlayState extends MusicBeatState
 					Paths.music(key);
 			}
 		}
+		Paths.clearUnusedMemory();
+
 		CustomFadeTransition.nextCamera = camOther;
 	}
 
@@ -4003,22 +4005,22 @@ class PlayState extends MusicBeatState
 					if (limoLight.x > 169) {
 						michael.visible = false;
 						michaelDead.animation.play("michaelDEAD");
-						michaelDead.animation.finishCallback = removeBoppers;
+						michaelDead.animation.finishCallback = removeDancers;
 					}
 					if (limoLight.x > 439) {
 						alvin.visible = false;
 						alvinDead.animation.play("alvinDEAD");
-						alvinDead.animation.finishCallback = removeBoppers;
+						alvinDead.animation.finishCallback = removeDancers;
 					}
 					if (limoLight.x > 709) {
 						bojangles.visible = false;
 						bojanglesDead.animation.play("bojanglesDEAD");
-						bojanglesDead.animation.finishCallback = removeBoppers;
+						bojanglesDead.animation.finishCallback = removeDancers;
 					}
 					if (limoLight.x > 1009) {
 						bubbles.visible = false;
 						bubblesDead.animation.play("bubblesDEAD");
-						bubblesDead.animation.finishCallback = removeBoppers;
+						bubblesDead.animation.finishCallback = removeDancers;
 					}
 				}
 		
@@ -6853,7 +6855,7 @@ class PlayState extends MusicBeatState
 		bubblesDead.visible = true;
 	}
 
-	function removeBoppers(anim:String)
+	function removeDancers(anim:String)
 	{
 		switch (anim)
 		{
