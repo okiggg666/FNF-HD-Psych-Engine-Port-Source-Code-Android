@@ -3996,7 +3996,7 @@ class PlayState extends MusicBeatState
 						openSubState(new GameOverSubstate(boyfriend.getScreenPosition().x - boyfriend.positionArray[0], boyfriend.getScreenPosition().y - boyfriend.positionArray[1], camFollowPos.x, camFollowPos.y));
 
 						#if desktop
-						DiscordClient.changePresence("Game Over - " + detailsText, SONG.song + " (" + storyDifficultyText + ")", iconP2.getCharacter());
+						DiscordClient.changePresence("Got Hit By The Pole - " + detailsText, SONG.song + " (" + storyDifficultyText + ")", iconP2.getCharacter());
 						#end
 						isDead = true;
 					}
@@ -4007,22 +4007,22 @@ class PlayState extends MusicBeatState
 
 				if(!ClientPrefs.lowQuality)
 				{
-					if (limoLight.x > 169) {
+					if (limoLight.x >= 170) {
 						michael.visible = false;
 						michaelDead.animation.play("michaelDEAD");
 						michaelDead.animation.finishCallback = removeDancers;
 					}
-					if (limoLight.x > 439) {
+					if (limoLight.x >= 440) {
 						alvin.visible = false;
 						alvinDead.animation.play("alvinDEAD");
 						alvinDead.animation.finishCallback = removeDancers;
 					}
-					if (limoLight.x > 709) {
+					if (limoLight.x >= 710) {
 						bojangles.visible = false;
 						bojanglesDead.animation.play("bojanglesDEAD");
 						bojanglesDead.animation.finishCallback = removeDancers;
 					}
-					if (limoLight.x > 1009) {
+					if (limoLight.x >= 1010) {
 						bubbles.visible = false;
 						bubblesDead.animation.play("bubblesDEAD");
 						bubblesDead.animation.finishCallback = removeDancers;
@@ -4030,16 +4030,16 @@ class PlayState extends MusicBeatState
 				}
 		
 				if (!endingSong) {
-					if (dodgelamp.x < -2400){
+					if (dodgelamp.x <= -2400){
 						ayoLookOut.visible = false;
 					}
-					if (dodgelamp.x > -2400){
+					if (dodgelamp.x >= -2400){
 						ayoLookOut.visible = true;
 
-						if(dodgelamp.x < -2000 && !ClientPrefs.disableDodgeSound)
+						if(dodgelamp.x <= -2000 && !ClientPrefs.disableDodgeSound)
 							FlxG.sound.play(Paths.sound('warning', 'week4'),0.65);
 					}
-					if (dodgelamp.x > 80){
+					if (dodgelamp.x >= 80){
 						ayoLookOut.visible = false;
 					}
 				}
@@ -4961,7 +4961,7 @@ class PlayState extends MusicBeatState
 				}
 
 			case 'Kill HD Henchmen':
-				if(ClientPrefs.impEvent == 'In Every Song')
+				if(ClientPrefs.impEvent == 'In Every Song' && !killdancers)
 					killDancers();
 
 			case 'Start Pole':
@@ -5998,12 +5998,12 @@ class PlayState extends MusicBeatState
 
 		if(boyfriend.curCharacter.startsWith('bf'))
 		{
-			if (combo > 5 && gf != null && gf.animOffsets.exists('sad'))
+			if (combo >= 10 && gf != null && gf.animOffsets.exists('sad'))
 			{
 				gf.playAnim('sad');
 				gf.specialAnim = true;
 			}
-			if (combo > 5 && dad.curCharacter.startsWith('gf') && dad.animOffsets.exists('sad')) // if gf is the opponent
+			if (combo >= 10 && dad.curCharacter.startsWith('gf') && dad.animOffsets.exists('sad')) // if gf is the opponent
 			{
 				dad.playAnim('sad');
 				dad.specialAnim = true;
@@ -6124,12 +6124,12 @@ class PlayState extends MusicBeatState
 
 			if(boyfriend.curCharacter.startsWith('bf'))
 			{
-				if (combo > 5 && gf != null && gf.animOffsets.exists('sad'))
+				if (combo >= 10 && gf != null && gf.animOffsets.exists('sad'))
 				{
 					gf.playAnim('sad');
 					gf.specialAnim = true;
 				}
-				if (combo > 5 && dad.curCharacter.startsWith('gf') && dad.animOffsets.exists('sad')) // if gf is the opponent
+				if (combo >= 10 && dad.curCharacter.startsWith('gf') && dad.animOffsets.exists('sad')) // if gf is the opponent
 				{
 					dad.playAnim('sad');
 					dad.specialAnim = true;
@@ -6825,7 +6825,7 @@ class PlayState extends MusicBeatState
 					if(ClientPrefs.impEvent == 'In Every Song') {
 						resetHDlimoKill();
 						bgLimoTimer2 = new FlxTimer().start(2.7, function(e:FlxTimer) {
-							bgLimoTween = FlxTween.tween(bgLimo, {x: -200}, 2, {ease:FlxEase.sineOut});
+							bgLimoTween = FlxTween.tween(bgLimo, {x: -200}, 2, {ease:FlxEase.sineOut, onComplete: function(twn:FlxTween){killdancers = false;}});
 							dancersTween = FlxTween.tween(michael, {x: 175}, 2, {ease:FlxEase.sineOut});
 							dancersTween2 = FlxTween.tween(alvin, {x: 445}, 2, {ease:FlxEase.sineOut});
 							dancersTween3 = FlxTween.tween(bojangles, {x: 715}, 2, {ease:FlxEase.sineOut});
@@ -6849,7 +6849,6 @@ class PlayState extends MusicBeatState
 		bojanglesDead.animation.play("eh", true);
 		bubblesDead.animation.play("eh", true);
 
-		killdancers = false;
 		michael.visible = true;
 		alvin.visible = true;
 		bojangles.visible = true;

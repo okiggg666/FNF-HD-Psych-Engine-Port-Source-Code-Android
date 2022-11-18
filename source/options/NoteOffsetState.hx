@@ -65,6 +65,7 @@ class NoteOffsetState extends MusicBeatState
 
 		persistentUpdate = true;
 		FlxG.sound.pause();
+
 		// Stage
 		if(!ClientPrefs.OldHDbg) {
 			bg = new BGSprite('stageback', -626, -437, 0.9, 0.9);
@@ -470,9 +471,6 @@ class NoteOffsetState extends MusicBeatState
 
 	function repositionCombo()
 	{
-		var xThing:Float = 0;
-		xThing = comboNums.x;
-
 		rating.screenCenter();
 		rating.x = coolText.x - 40 + ClientPrefs.comboOffset[0];
 		rating.y -= 60 + ClientPrefs.comboOffset[1];
@@ -480,7 +478,7 @@ class NoteOffsetState extends MusicBeatState
 		comboSpr.screenCenter();
 		comboSpr.x = coolText.x + ClientPrefs.comboOffset[0];
 		comboSpr.y += 65 - ClientPrefs.comboOffset[1];
-		comboSpr.x = xThing + 140;
+		comboSpr.x = comboNums.x + 140;
 
 		comboNums.screenCenter();
 		comboNums.x = coolText.x - 90 + ClientPrefs.comboOffset[2];
