@@ -4965,7 +4965,7 @@ class PlayState extends MusicBeatState
 					killDancers();
 
 			case 'Start Pole':
-				if(!ClientPrefs.poleSpawn)
+				if(!ClientPrefs.poleSpawn && lightpolecanDoShit)
 					startPole();
 
 			case 'Change Character':
@@ -7258,11 +7258,8 @@ class PlayState extends MusicBeatState
 			case 'limo':
 				if(!ClientPrefs.lowQuality) {
 					michael.dance();
-
 					alvin.dance();
-
 					bojangles.dance();
-
 					bubbles.dance();
 
 					if (FlxG.random.bool(10) && billboardShit)
