@@ -486,7 +486,7 @@ class FreeplayState extends MusicBeatState
 			return;
 		}
 
-		if (FlxG.camera.zoom < 1.35 && songs[curSelected].songName == 'milf')
+		if (FlxG.camera.zoom < 1.35 && songs[curSelected].songName == 'milf' && curPlaying)
 		{
 			if (curBeat >= 8)
 				FlxG.camera.zoom += 0.030;
@@ -502,7 +502,7 @@ class FreeplayState extends MusicBeatState
 	{
 		super.stepHit();
 
-		if (FlxG.camera.zoom < 1.35 && songs[curSelected].songName.toLowerCase() == 'blammed' && blammedSteps.contains(curStep))
+		if (FlxG.camera.zoom < 1.35 && songs[curSelected].songName.toLowerCase() == 'blammed' && blammedSteps.contains(curStep) && curPlaying)
 		{
 			FlxG.camera.zoom += 0.070;
 		}
