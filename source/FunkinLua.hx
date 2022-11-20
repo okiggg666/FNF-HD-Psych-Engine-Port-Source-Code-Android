@@ -803,7 +803,7 @@ class FunkinLua {
 			#if MODS_ALLOWED
 			if(FileSystem.exists(Paths.modFolders(cervix)))
 			{
-				cervix = Paths.modFolders(cervix);
+				cervix = SUtil.getPath() + Paths.modFolders(cervix);
 				doPush = true;
 			}
 			else if(FileSystem.exists(cervix))
@@ -848,7 +848,7 @@ class FunkinLua {
 			#if MODS_ALLOWED
 			if(FileSystem.exists(Paths.modFolders(cervix)))
 			{
-				cervix = Paths.modFolders(cervix);
+				cervix = SUtil.getPath() + Paths.modFolders(cervix);
 				doPush = true;
 			}
 			else if(FileSystem.exists(cervix))
@@ -2168,7 +2168,7 @@ class FunkinLua {
 			path = Paths.modsJson(Paths.formatToSongPath(PlayState.SONG.song) + '/' + dialogueFile);
 			if(!FileSystem.exists(path))
 			#end
-				path = Paths.json(Paths.formatToSongPath(PlayState.SONG.song) + '/' + dialogueFile);
+				path = SUtil.getPath() + Paths.json(Paths.formatToSongPath(PlayState.SONG.song) + '/' + dialogueFile);
 
 			luaTrace('startDialogue: Trying to load dialogue: ' + path);
 
