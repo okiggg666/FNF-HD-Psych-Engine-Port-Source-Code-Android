@@ -72,7 +72,7 @@ class Gallery extends MusicBeatState
 		logoBl = new FlxSprite(0, 0);
 		logoBl.screenCenter();
 		if(!ClientPrefs.OldHDbg) {
-			logoBl.x -= 260;
+			logoBl.x -= 250;
 			logoBl.y -= 150;
 			logoBl.frames = Paths.getSparrowAtlas('logoBumpin');
 		} else {
