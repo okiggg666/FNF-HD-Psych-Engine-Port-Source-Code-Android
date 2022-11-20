@@ -298,7 +298,7 @@
 		},
 		{
 			"offsets": [
-				10,
+				16,
 				-22
 			],
 			"loop": false,
@@ -309,7 +309,7 @@
 		},
 		{
 			"offsets": [
-				10,
+				16,
 				-22
 			],
 			"loop": false,
@@ -320,22 +320,22 @@
 		},
 		{
 			"offsets": [
-				10,
+				16,
 				-22
 			],
 			"loop": true,
 			"fps": 24,
 			"anim": "dodge-loop",
 			"indices": [
-				11,
 				12,
-				13
+				13,
+				14
 			],
 			"name": "boyfriend dodge"
 		},
 		{
 			"offsets": [
-				10,
+				16,
 				-22
 			],
 			"loop": true,
