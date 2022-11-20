@@ -85,9 +85,9 @@ class StageData {
 		var rawJson:String = null;
 		var path:String = null;
 		if(!ClientPrefs.OldHDbg) {
-			path = Paths.getPreloadPath('stages/' + stage + '.json');
+			path = SUtil.getPath() + Paths.getPreloadPath('stages/' + stage + '.json');
 		} else {
-			path = Paths.getPreloadPath('stages old/' + stage + '.json');
+			path = SUtil.getPath() + Paths.getPreloadPath('stages old/' + stage + '.json');
 		}
 
 		#if MODS_ALLOWED
