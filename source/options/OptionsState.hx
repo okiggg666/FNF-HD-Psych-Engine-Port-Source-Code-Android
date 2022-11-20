@@ -37,32 +37,32 @@ class OptionsState extends MusicBeatState
 	function openSelectedSubstate(label:String) {
 		switch(label) {
 			case 'Note Colors':
-		 		#if android
+		 		#if mobile
 				removeVirtualPad();
 				#end
 				openSubState(new options.NotesSubState());
 			case 'Controls':
-				#if android
+				#if mobile
 				removeVirtualPad();
 				#end
 				openSubState(new options.ControlsSubState());
 			case 'Graphics':
-				#if android
+				#if mobile
 				removeVirtualPad();
 				#end
 				openSubState(new options.GraphicsSettingsSubState());
 			case 'Visuals and UI':
-				#if android
+				#if mobile
 				removeVirtualPad();
 				#end
 				openSubState(new options.VisualsUISubState());
 			case 'Gameplay':
-				#if android
+				#if mobile
 				removeVirtualPad();
 				#end
 				openSubState(new options.GameplaySettingsSubState());
 			case 'FNF HD Settings':
-				#if android
+				#if mobile
 				removeVirtualPad();
 				#end
 				openSubState(new options.HDSettingsSubState());
@@ -113,7 +113,7 @@ class OptionsState extends MusicBeatState
 		changeSelection();
 		ClientPrefs.saveSettings();
 
-                #if android
+                #if mobile
 		addVirtualPad(UP_DOWN, A_B_C);
                 #end
  
@@ -149,8 +149,8 @@ class OptionsState extends MusicBeatState
 			openSelectedSubstate(options[curSelected]);
 		}
 		#if android
-		if (_virtualpad.buttonC.justPressed) {
-			MusicBeatState.switchState(new android.AndroidControlsMenu());
+		if (virtualPad.buttonC.justPressed) {
+			MusicBeatState.switchState(new mobile.MobileControlsMenu());
 		}
 		#end
 	}
