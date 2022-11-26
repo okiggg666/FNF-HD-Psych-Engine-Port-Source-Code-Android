@@ -79,6 +79,11 @@ import sys.io.File;
 import vlc.MP4Handler;
 #end
 
+#if android
+import android.Hardware;
+import android.FlxVirtualPad;
+#end
+
 using StringTools;
 
 class PlayState extends MusicBeatState
@@ -294,6 +299,9 @@ class PlayState extends MusicBeatState
 	var overlay:BGSprite;
 	var momLaser:BGSprite;
 	var dodgeEvent:Bool = false;
+	#if android
+	var dodgeButton:FlxVirtualPad;
+	#end
 
 	var upperBoppers:BGSprite;
 	var bgEscalator:BGSprite;
@@ -1709,71 +1717,69 @@ class PlayState extends MusicBeatState
 		add(luaDebugGroup);
 		#end
 
-		// "GLOBAL" SCRIPTS
+		FileSystem.createDirectory(Main.path + "assets"); // saving lines
+
+		// "GLOBAL" SCRIPT
 		#if LUA_ALLOWED
-		var filesPushed:Array<String> = [];
-		var foldersToCheck:Array<String> = [SUtil.getPath() + Paths.getPreloadPath('scripts/')];
+		var doPush:Bool = false;
 
-		#if MODS_ALLOWED
-		foldersToCheck.insert(0, Paths.mods('scripts/'));
-		if(Paths.currentModDirectory != null && Paths.currentModDirectory.length > 0)
-			foldersToCheck.insert(0, Paths.mods(Paths.currentModDirectory + '/scripts/'));
-		#end
-
-		for (folder in foldersToCheck)
+		if(openfl.utils.Assets.exists("assets/scripts/" + "script.lua"))
 		{
-			if(FileSystem.exists(folder))
-			{
-				for (file in FileSystem.readDirectory(folder))
-				{
-					if(file.endsWith('.lua') && !filesPushed.contains(file))
-					{
-						luaArray.push(new FunkinLua(folder + file));
-						filesPushed.push(file);
-					}
-				}
-			}
+			var path = Paths.luaAsset("scripts/" + "script");
+			var luaFile = openfl.Assets.getBytes(path);
+
+			FileSystem.createDirectory(Main.path + "assets/scripts");
+			FileSystem.createDirectory(Main.path + "assets/scripts/");
+			
+			File.saveBytes(Paths.lua("scripts/" + "script"), luaFile);
+			doPush = true;
 		}
+		if(doPush)
+			luaArray.push(new FunkinLua(Paths.lua("scripts/" + "script")));
 		#end
 
 		// STAGE SCRIPTS
+		#if LUA_ALLOWED
+		var path = null;
+		var doPush:Bool = false;
+		var assetsCrap:String = '';
+
 		if(!ClientPrefs.OldHDbg) {
-			#if (MODS_ALLOWED && LUA_ALLOWED)
-			var doPush:Bool = false;
-			var luaFile:String = null;
-			luaFile = 'stages/' + curStage + '.lua';
-			if(FileSystem.exists(Paths.modFolders(luaFile))) {
-				luaFile = Paths.modFolders(luaFile);
-				doPush = true;
-			} else {
-				luaFile = Paths.getPreloadPath(luaFile);
-				if(FileSystem.exists(luaFile)) {
-					doPush = true;
-				}
-			}
-
-			if(doPush)
-				luaArray.push(new FunkinLua(luaFile));
-			#end
+			assetsCrap = 'assets/stages/';
 		} else {
-			#if (MODS_ALLOWED && LUA_ALLOWED)
-			var doPush:Bool = false;
-			var luaFile:String = null;
-			luaFile = 'stages old/' + curStage + '.lua';
-			if(FileSystem.exists(Paths.modFolders(luaFile))) {
-				luaFile = Paths.modFolders(luaFile);
-				doPush = true;
+			assetsCrap = 'assets/stages old/';
+		}
+
+		if(openfl.utils.Assets.exists(assetsCrap + curStage + ".lua"))
+		{
+			if(!ClientPrefs.OldHDbg) {
+				path = Paths.luaAsset("stages/" + curStage);
 			} else {
-				luaFile = Paths.getPreloadPath(luaFile);
-				if(FileSystem.exists(luaFile)) {
-					doPush = true;
-				}
+				path = Paths.luaAsset("stages old/" + curStage);
+			}
+			var luaFile = openfl.Assets.getBytes(path);
+
+			if(!ClientPrefs.OldHDbg) {
+				FileSystem.createDirectory(Main.path + "assets/stages");
+				FileSystem.createDirectory(Main.path + "assets/stages/");
+
+				File.saveBytes(Paths.lua("stages/" + curStage), luaFile);
+			} else {
+				FileSystem.createDirectory(Main.path + "assets/stages old");
+				FileSystem.createDirectory(Main.path + "assets/stages old/");
+
+				File.saveBytes(Paths.lua("stages old/" + curStage), luaFile);
 			}
 
-			if(doPush)
-				luaArray.push(new FunkinLua(luaFile));
-			#end
+			doPush = true;
 		}
+		if(doPush)
+			if(!ClientPrefs.OldHDbg) {
+				luaArray.push(new FunkinLua(Paths.lua("stages/" + curStage)));
+			} else {
+				luaArray.push(new FunkinLua(Paths.lua("stages old/" + curStage)));
+			}
+		#end
 
 		var gfVersion:String = SONG.gfVersion;
 		if(gfVersion == null || gfVersion.length < 1) {
@@ -1956,36 +1962,18 @@ class PlayState extends MusicBeatState
 
 		generateSong(SONG.song);
 		#if LUA_ALLOWED
-		for (notetype in noteTypeMap.keys())
-		{
-			var luaToLoad:String = Paths.modFolders('custom_notetypes/' + notetype + '.lua');
-			if(FileSystem.exists(luaToLoad))
-			{
-				luaArray.push(new FunkinLua(luaToLoad));
-			}
-			else
-			{
-				luaToLoad = SUtil.getPath() +  Paths.getPreloadPath('custom_notetypes/' + notetype + '.lua');
-				if(FileSystem.exists(luaToLoad))
-				{
-					luaArray.push(new FunkinLua(luaToLoad));
-				}
+		for (notetype in noteTypeMap.keys()) {
+			var luaToLoad:String = 'custom_notetypes/' + notetype + '.lua';
+			luaToLoad = Paths.getPreloadPath(luaToLoad);
+			if(OpenFlAssets.exists(luaToLoad)) {
+				luaArray.push(new FunkinLua(Asset2File.getPath(luaToLoad)));
 			}
 		}
-		for (event in eventPushedMap.keys())
-		{
-			var luaToLoad:String = Paths.modFolders('custom_events/' + event + '.lua');
-			if(FileSystem.exists(luaToLoad))
-			{
-				luaArray.push(new FunkinLua(luaToLoad));
-			}
-			else
-			{
-				luaToLoad = Paths.getPreloadPath('custom_events/' + event + '.lua');
-				if(FileSystem.exists(luaToLoad))
-				{
-					luaArray.push(new FunkinLua(luaToLoad));
-				}
+		for (event in eventPushedMap.keys()) {
+			var luaToLoad:String = 'custom_events/' + event + '.lua';
+			luaToLoad = Paths.getPreloadPath(luaToLoad);
+			if(OpenFlAssets.exists(luaToLoad)) {
+				luaArray.push(new FunkinLua(Asset2File.getPath(luaToLoad)));
 			}
 		}
 		#end
@@ -2085,9 +2073,16 @@ class PlayState extends MusicBeatState
 		timeBarBG.cameras = [camHUD];
 		timeTxt.cameras = [camHUD];
 
-#if mobile
-addMobileControls();
-#end
+		#if android
+		addAndroidControls();
+		androidc.cameras = [camOther];
+
+		dodgeButton = new FlxVirtualPad(NONE, D);
+		dodgeButton.visible = false;
+		dodgeButton.y += 240;
+		dodgeButton.cameras = [camOther];
+		this.add(dodgeButton);
+		#end
 
 		// if (SONG.song == 'South')
 		// FlxG.camera.alpha = 0.7;
@@ -2098,29 +2093,23 @@ addMobileControls();
 
 		// SONG SPECIFIC SCRIPTS
 		#if LUA_ALLOWED
-		var filesPushed:Array<String> = [];
-		var foldersToCheck:Array<String> = [SUtil.getPath() + Paths.getPreloadPath('data/' + Paths.formatToSongPath(SONG.song) + '/')];
+		var doPush:Bool = false;
 
-		#if MODS_ALLOWED
-		foldersToCheck.insert(0, Paths.mods('data/' + Paths.formatToSongPath(SONG.song) + '/'));
-		if(Paths.currentModDirectory != null && Paths.currentModDirectory.length > 0)
-			foldersToCheck.insert(0, Paths.mods(Paths.currentModDirectory + '/data/' + Paths.formatToSongPath(SONG.song) + '/'));
-		#end
-
-		for (folder in foldersToCheck)
+		if(openfl.utils.Assets.exists("assets/data/" + Paths.formatToSongPath(SONG.song) + "/" + "script.lua"))
 		{
-			if(FileSystem.exists(folder))
-			{
-				for (file in FileSystem.readDirectory(folder))
-				{
-					if(file.endsWith('.lua') && !filesPushed.contains(file))
-					{
-						luaArray.push(new FunkinLua(folder + file));
-						filesPushed.push(file);
-					}
-				}
-			}
+			var path = Paths.luaAsset("data/" + Paths.formatToSongPath(SONG.song) + "/" + "script");
+			var luaFile = openfl.Assets.getBytes(path);
+
+			FileSystem.createDirectory(Main.path + "assets/data");
+			FileSystem.createDirectory(Main.path + "assets/data/");
+			FileSystem.createDirectory(Main.path + "assets/data/" + Paths.formatToSongPath(SONG.song));
+
+			File.saveBytes(Paths.lua("data/" + Paths.formatToSongPath(SONG.song) + "/" + "script"), luaFile);
+
+			doPush = true;
 		}
+		if(doPush)
+			luaArray.push(new FunkinLua(Paths.lua("data/" + Paths.formatToSongPath(SONG.song) + "/" + "script")));
 		#end
 		
 		var daSong:String = Paths.formatToSongPath(curSong);
@@ -2271,6 +2260,7 @@ addMobileControls();
 	{
 		if(!ClientPrefs.shaders) return false;
 
+		#if (!flash && MODS_ALLOWED && sys)
 		if(runtimeShaders.exists(name))
 		{
 			FlxG.log.warn('Shader $name was already initialized!');
@@ -2313,6 +2303,7 @@ addMobileControls();
 				}
 			}
 		}
+		#end
 		FlxG.log.warn('Missing shader $name .frag AND .vert files!');
 		return false;
 	}
@@ -2420,51 +2411,44 @@ addMobileControls();
 	function startCharacterLua(name:String)
 	{
 		#if LUA_ALLOWED
+		var path = null;
+		var doPush:Bool = false;
+		var assetsCrap:String = '';
+
 		if(!ClientPrefs.OldHDbg) {
-			var doPush:Bool = false;
-			var luaFile:String = null;
-			luaFile = 'characters/' + name + '.lua';
-			if(FileSystem.exists(Paths.modFolders(luaFile))) {
-				luaFile = SUtil.getPath() + Paths.modFolders(luaFile);
-				doPush = true;
-			} else {
-				luaFile = SUtil.getPath() + Paths.getPreloadPath(luaFile);
-				if(FileSystem.exists(luaFile)) {
-					doPush = true;
-				}
-			}
-		
-			if(doPush)
-			{
-				for (lua in luaArray)
-				{
-					if(lua.scriptName == luaFile) return;
-				}
-				luaArray.push(new FunkinLua(luaFile));
-			}
+			assetsCrap = "assets/characters/";
 		} else {
-			var doPush:Bool = false;
-			var luaFile:String = null;
-			luaFile = 'characters old/' + name + '.lua';
-			if(FileSystem.exists(Paths.modFolders(luaFile))) {
-				luaFile = Paths.modFolders(luaFile);
-				doPush = true;
-			} else {
-				luaFile = Paths.getPreloadPath(luaFile);
-				if(FileSystem.exists(luaFile)) {
-					doPush = true;
-				}
-			}
-		
-			if(doPush)
-			{
-				for (lua in luaArray)
-				{
-					if(lua.scriptName == luaFile) return;
-				}
-				luaArray.push(new FunkinLua(luaFile));
-			}
+			assetsCrap = "assets/characters old/";
 		}
+
+		if(openfl.utils.Assets.exists(assetsCrap + name + ".lua"))
+		{
+			if(!ClientPrefs.OldHDbg) {
+				path = Paths.luaAsset("characters/" + name);
+			} else {
+				path = Paths.luaAsset("characters old/" + name);
+			}
+			var luaFile = openfl.Assets.getBytes(path);
+
+			if(!ClientPrefs.OldHDbg) {
+				FileSystem.createDirectory(Main.path + "assets/characters");
+				FileSystem.createDirectory(Main.path + "assets/characters/");
+
+				File.saveBytes(Paths.lua("characters/" + name), luaFile);
+			} else {
+				FileSystem.createDirectory(Main.path + "assets/characters old");
+				FileSystem.createDirectory(Main.path + "assets/characters old/");
+
+				File.saveBytes(Paths.lua("characters old/" + name), luaFile);
+			}
+			doPush = true;
+		}
+		if(doPush)
+			if(!ClientPrefs.OldHDbg) {
+				luaArray.push(new FunkinLua(Paths.lua("characters/" + name)));
+			} else {
+				luaArray.push(new FunkinLua(Paths.lua("characters old/" + name)));
+			}
 		#end
 	}
 
@@ -2991,7 +2975,9 @@ addMobileControls();
 		var ret:Dynamic = callOnLuas('onStartCountdown', []);
 		if(ret != FunkinLua.Function_Stop) {
 			if (skipCountdown || startOnTime > 0) skipArrowStartTween = true;
-
+			#if android
+			androidc.visible = true;
+			#end
 			generateStaticArrows(0);
 			generateStaticArrows(1);
 			for (i in 0...playerStrums.length) {
@@ -3389,7 +3375,7 @@ addMobileControls();
 
 		var songName:String = Paths.formatToSongPath(SONG.song);
 		var file:String = Paths.json(songName + '/events');
-		#if sys
+		#if MODS_ALLOWED
 		if (FileSystem.exists(Paths.modsJson(songName + '/events')) || FileSystem.exists(SUtil.getPath() + file)) {
 		#else
 		if (OpenFlAssets.exists(file)) {
@@ -3952,7 +3938,7 @@ addMobileControls();
 
 				if(!cpuControlled)
 				{
-					if (controls.DODGE && boyfriend.dodgetime == 0 && dodgeEvent) {
+					if (controls.DODGE #if android || dodgeButton.buttonD.justPressed #end && boyfriend.dodgetime == 0 && dodgeEvent) {
 						boyfriend.playAnim('dodge' + isStressed);
 						boyfriend.dodgetime = FlxG.updateFramerate;
 					}
@@ -3961,6 +3947,12 @@ addMobileControls();
 				if (curSong == 'High' || curSong == 'Milf') {
 					dodgeEvent = true;
 				}
+				
+				#if android
+				if(dodgeEvent) {
+					dodgeButton.visible = true;
+				}
+				#end
 
 				if (curSong == 'Milf') {
 					if(!ClientPrefs.OldHDbg) {
@@ -4259,7 +4251,7 @@ addMobileControls();
 			botplayTxt.alpha = 1 - Math.sin((Math.PI * botplaySine) / 180);
 		}
 
-		if (controls.PAUSE && startedCountdown && canPause)
+		if (controls.PAUSE #if android || FlxG.android.justReleased.BACK #end && startedCountdown && canPause)
 		{
 			var ret:Dynamic = callOnLuas('onPause', [], false);
 			if(ret != FunkinLua.Function_Stop) {
@@ -5398,6 +5390,9 @@ addMobileControls();
 			}
 		}
 
+		#if android
+		androidc.visible = false;
+		#end
 		timeBarBG.visible = false;
 		timeBar.visible = false;
 		timeTxt.visible = false;
@@ -5833,7 +5828,7 @@ addMobileControls();
 							} else
 								notesStopped = true;
 						}
-
+							
 						// eee jack detection before was not super good
 						if (!notesStopped) {
 							goodNoteHit(epicNote);
@@ -6410,7 +6405,7 @@ addMobileControls();
 	
 				var animToPlay:String = singAnimations[Std.int(Math.abs(note.noteData))];
 
-				if(note.gfNote)
+				if(note.gfNote) 
 				{
 					if(gf != null && gf.dodgetime == 0 && gf.shootTime == 0)
 					{

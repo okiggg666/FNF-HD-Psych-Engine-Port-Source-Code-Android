@@ -44,14 +44,14 @@ class GraphicsSettingsSubState extends BaseOptionsMenu
 			false); //Default value
 		addOption(option);
 
-		#if mobile
+		/*#if android
 		var option:Option = new Option('Low Sprites',
 			'If checked, it activates optimized sprites,\ndecreases loading times and improves performance.',
 			'lowSprites',
 			'bool',
 			false);
 		addOption(option);
-		#end
+		#end*/
 
 		var option:Option = new Option('Anti-Aliasing',
 			'If unchecked, disables anti-aliasing, increases performance\nat the cost of sharper visuals.',

@@ -13,6 +13,9 @@ import flixel.FlxCamera;
 import flixel.FlxG;
 import flixel.ui.FlxBar;
 import flixel.math.FlxPoint;
+#if android
+import android.FlxVirtualPad;
+#end
 
 using StringTools;
 
@@ -167,7 +170,7 @@ class NoteOffsetState extends MusicBeatState
 		comboSpr.setGraphicSize(Std.int(comboSpr.width * 0.6));
 		comboSpr.updateHitbox();
 		comboSpr.antialiasing = ClientPrefs.globalAntialiasing;
-
+		
 		add(rating);
 		add(comboSpr);
 
@@ -258,6 +261,11 @@ class NoteOffsetState extends MusicBeatState
 		Conductor.changeBPM(128.0);
 		FlxG.sound.playMusic(Paths.music('offsetSong'), 1, true);
 
+		#if android
+		addVirtualPad(FULL, A_B_X_Y);
+		_virtualpad.cameras = [camHUD];
+		#end
+
 		super.create();
 	}
 
@@ -271,15 +279,15 @@ class NoteOffsetState extends MusicBeatState
 	override public function update(elapsed:Float)
 	{
 		var addNum:Int = 1;
-		if(FlxG.keys.pressed.SHIFT) addNum = 10;
+		if(FlxG.keys.pressed.SHIFT #if android || _virtualpad.buttonY.pressed #end) addNum = 10;
 
 		if(onComboMenu)
 		{
 			var controlArray:Array<Bool> = [
-				FlxG.keys.justPressed.LEFT,
-				FlxG.keys.justPressed.RIGHT,
-				FlxG.keys.justPressed.UP,
-				FlxG.keys.justPressed.DOWN,
+				FlxG.keys.justPressed.LEFT #if android || _virtualpad.buttonLeft.justPressed #end,
+				FlxG.keys.justPressed.RIGHT #if android || _virtualpad.buttonRight.justPressed #end,
+				FlxG.keys.justPressed.UP #if android || _virtualpad.buttonUp.justPressed #end,
+				FlxG.keys.justPressed.DOWN #if android || _virtualpad.buttonDown.justPressed #end,
 			
 				FlxG.keys.justPressed.A,
 				FlxG.keys.justPressed.D,
@@ -356,7 +364,7 @@ class NoteOffsetState extends MusicBeatState
 				}
 			}
 
-			if(controls.RESET)
+			if(controls.RESET #if android || _virtualpad.buttonX.justPressed #end)
 			{
 				for (i in 0...ClientPrefs.comboOffset.length)
 				{
@@ -394,7 +402,7 @@ class NoteOffsetState extends MusicBeatState
 				updateNoteDelay();
 			}
 
-			if(controls.RESET)
+			if(controls.RESET #if android || _virtualpad.buttonC.justPressed #end)
 			{
 				holdTime = 0;
 				barPercent = 0;
@@ -476,9 +484,8 @@ class NoteOffsetState extends MusicBeatState
 		rating.y -= 60 + ClientPrefs.comboOffset[1];
 
 		comboSpr.screenCenter();
-		comboSpr.x = coolText.x + ClientPrefs.comboOffset[0];
+		comboSpr.x = comboNums.x + 140 + coolText.x + ClientPrefs.comboOffset[0];
 		comboSpr.y += 65 - ClientPrefs.comboOffset[1];
-		comboSpr.x = comboNums.x + 140;
 
 		comboNums.screenCenter();
 		comboNums.x = coolText.x - 90 + ClientPrefs.comboOffset[2];

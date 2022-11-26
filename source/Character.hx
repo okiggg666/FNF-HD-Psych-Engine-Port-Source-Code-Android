@@ -136,7 +136,7 @@ class Character extends FlxSprite
 					if(!ClientPrefs.OldHDbg){
 						path = SUtil.getPath() + Paths.getPreloadPath('characters/' + DEFAULT_CHARACTER + isLow + '.json'); //If a character couldn't be found, change him to BF just to prevent a crash
 					} else {
-						path = Paths.getPreloadPath('characters old/' + DEFAULT_CHARACTER + isLow + '.json'); //If a character couldn't be found, change him to BF just to prevent a crash
+						path = SUtil.getPath() + Paths.getPreloadPath('characters old/' + DEFAULT_CHARACTER + isLow + '.json'); //If a character couldn't be found, change him to BF just to prevent a crash
 					}
 				}
 
@@ -174,7 +174,7 @@ class Character extends FlxSprite
 				//var modTextureToFind:String = Paths.modFolders("images/"+json.image);
 				//var textureToFind:String = Paths.getPath('images/' + json.image, new AssetType();
 				
-				if (FileSystem.exists(modAnimToFind) || FileSystem.exists(SUtil.getPath() + animToFind) || Assets.exists(animToFind))
+				if (FileSystem.exists(modAnimToFind) || FileSystem.exists(SUtil.getPath() + animToFind || Assets.exists(animToFind))
 				#else
 				if (Assets.exists(Paths.getPath('images/' + json.image + '/Animation.json', TEXT)))
 				#end

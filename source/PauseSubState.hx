@@ -14,13 +14,14 @@ import flixel.tweens.FlxTween;
 import flixel.util.FlxColor;
 import flixel.FlxCamera;
 import flixel.util.FlxStringUtil;
+import editors.ChartingState;
 
 class PauseSubState extends MusicBeatSubstate
 {
 	var grpMenuShit:FlxTypedGroup<Alphabet>;
 
 	var menuItems:Array<String> = [];
-	var menuItemsOG:Array<String> = ['Resume', 'Restart Song', 'Change Difficulty', 'Options', 'Exit to menu'];
+	var menuItemsOG:Array<String> = ['Resume', 'Restart Song', 'Change Difficulty' #if android , 'Chart Editor' #end, 'Options', 'Exit to menu'];
 	var difficultyChoices = [];
 	var curSelected:Int = 0;
 
@@ -29,6 +30,9 @@ class PauseSubState extends MusicBeatSubstate
 	var skipTimeText:FlxText;
 	var skipTimeTracker:Alphabet;
 	var curTime:Float = Math.max(0, Conductor.songPosition);
+	#if android
+	public var camControls:FlxCamera;
+	#end
 	//var botplayText:FlxText;
 
 	public static var songName:String = '';
@@ -36,6 +40,13 @@ class PauseSubState extends MusicBeatSubstate
 	public function new(x:Float, y:Float)
 	{
 		super();
+
+		#if android
+		camControls = new FlxCamera();
+		camControls.bgColor.alpha = 0;
+		FlxG.cameras.add(camControls, false);
+		#end
+
 		if(CoolUtil.difficulties.length < 2) menuItemsOG.remove('Change Difficulty'); //No need to change difficulty if there is only one!
 
 		if(PlayState.chartingMode)
@@ -133,6 +144,18 @@ class PauseSubState extends MusicBeatSubstate
 
 		regenMenu();
 		cameras = [FlxG.cameras.list[FlxG.cameras.list.length - 1]];
+
+		#if android
+		if (PlayState.chartingMode)
+		{
+			addVirtualPad(FULL, A);
+		}
+		else
+		{
+			addVirtualPad(UP_DOWN, A);
+		}
+		_virtualpad.cameras = [camControls];
+		#end
 	}
 
 	var holdTime:Float = 0;
@@ -257,6 +280,13 @@ class PauseSubState extends MusicBeatSubstate
 					PlayState.instance.botplayTxt.visible = PlayState.instance.cpuControlled;
 					PlayState.instance.botplayTxt.alpha = 1;
 					PlayState.instance.botplaySine = 0;
+				case 'Chart Editor':
+					persistentUpdate = false;
+					MusicBeatState.switchState(new editors.ChartingState());
+					PlayState.chartingMode = true;
+					#if desktop
+					DiscordClient.changePresence("Chart Editor", null, null, true);
+					#end
 				case "Exit to menu":
 					PlayState.deathCounter = 0;
 					PlayState.poleDeathCounter = 0;

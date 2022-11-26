@@ -1,10 +1,12 @@
 package;
 
 import flixel.FlxG;
+import flixel.FlxCamera;
 import flixel.FlxSprite;
 import flixel.util.FlxColor;
 import flixel.FlxObject;
 import flixel.group.FlxGroup.FlxTypedGroup;
+import flixel.addons.transition.FlxTransitionableState;
 import flixel.tweens.FlxEase;
 import flixel.tweens.FlxTween;
 class GallerySubState extends MusicBeatSubstate
@@ -12,6 +14,9 @@ class GallerySubState extends MusicBeatSubstate
     var images:Array<String>;
     var curSelected:Int = 0;
     public var camFollow:FlxObject;
+    #if android
+	public var camControls:FlxCamera;
+    #end
     var artSprites:FlxTypedGroup<FlxSprite>;
     var colorBG:FlxSprite;
     var canSelect:Bool = true;
@@ -23,6 +28,12 @@ class GallerySubState extends MusicBeatSubstate
 
         images = _images;
         trace(images);
+
+        #if android
+        camControls = new FlxCamera();
+		camControls.bgColor.alpha = 0;
+		FlxG.cameras.add(camControls, false);
+        #end
 
         colorBG = new FlxSprite(-2700,-1500).makeGraphic(FlxG.width * 6, FlxG.height * 6 );
         colorBG.scrollFactor.set(0,0);
@@ -44,13 +55,18 @@ class GallerySubState extends MusicBeatSubstate
         camFollow.x = artSprites.members[0].getMidpoint().x;
         camFollow.y = artSprites.members[0].getMidpoint().y;
         changeSelection();
+
+        #if android
+		addVirtualPad(LEFT_RIGHT, D);
+        _virtualpad.cameras = [camControls];
+		#end
     }
 
     override function update(elapsed:Float) {
         FlxG.camera.focusOn(camFollow.getPosition());
-        if (controls.BACK) {
+        if (controls.BACK #if android || _virtualpad.buttonD.justPressed #end) {
             FlxG.sound.play(Paths.sound('cancelMenu'));
-            close();
+			close();
         }
         if (controls.UI_LEFT_P && canSelect)
             changeSelection(-1);

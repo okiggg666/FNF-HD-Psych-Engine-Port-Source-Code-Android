@@ -1,6 +1,7 @@
 package;
 
 import flixel.FlxG;
+import flixel.FlxCamera;
 import flixel.FlxObject;
 import flixel.FlxSubState;
 import flixel.math.FlxMath;
@@ -11,10 +12,17 @@ import flixel.text.FlxText;
 import flixel.tweens.FlxEase;
 import flixel.tweens.FlxTween;
 import flixel.util.FlxAxes;
+#if android
+import android.Hardware;
+#end
 
 class GameOverSubstate extends MusicBeatSubstate
 {
 	public var boyfriend:Boyfriend;
+	public var camGame:FlxCamera;
+	#if android
+	public var camControls:FlxCamera;
+	#end
 	var lmao:FlxText;
 	var textCrap:String = '';
 	var camFollow:FlxPoint;
@@ -28,6 +36,7 @@ class GameOverSubstate extends MusicBeatSubstate
 	public static var deathSoundName:String = 'fnf_loss_sfx';
 	public static var loopSoundName:String = 'gameOver';
 	public static var endSoundName:String = 'gameOverEnd';
+	public static var vibrationTime:Int = 500;//milliseconds
 
 	public static var instance:GameOverSubstate;
 
@@ -36,6 +45,7 @@ class GameOverSubstate extends MusicBeatSubstate
 		deathSoundName = 'fnf_loss_sfx';
 		loopSoundName = 'gameOver';
 		endSoundName = 'gameOverEnd';
+		vibrationTime = 500;
 	}
 
 	override function create()
@@ -54,12 +64,19 @@ class GameOverSubstate extends MusicBeatSubstate
 
 		Conductor.songPosition = 0;
 
+		#if android
+		camControls = new FlxCamera();
+		camControls.bgColor.alpha = 0;
+		FlxG.cameras.add(camControls, false);
+		#end
+
 		var dodgeKeys = ClientPrefs.keyBinds.get('dodge');
 
 		var keysText = getKey(dodgeKeys[0]).toUpperCase() //yeah i used this code from wednesdays infidelity, yeah so credits to their awesome work
 			+ (!checkKey(getKey(dodgeKeys[0])) && !checkKey(getKey(dodgeKeys[1])) ? " " : "")
 			+ getKey(dodgeKeys[1]).toUpperCase();
 
+		#if !android
 		if(PlayState.poleDeathCounter < 4) {
 			textCrap = 'Try pressing ' + keysText + 'next time';
 		} else if(PlayState.poleDeathCounter == 4) {
@@ -75,6 +92,23 @@ class GameOverSubstate extends MusicBeatSubstate
 		} else if(PlayState.poleDeathCounter > 8) {
 			textCrap = '...';
 		}
+		#else
+		if(PlayState.poleDeathCounter < 4) {
+			textCrap = 'Try pressing D next time';
+		} else if(PlayState.poleDeathCounter == 4) {
+			textCrap = "Ok so just press D it's not that hard";
+		} else if(PlayState.poleDeathCounter == 5) {
+			textCrap = 'BRO! PRESS D GOD DAMN IT';
+		} else if(PlayState.poleDeathCounter == 6) {
+			textCrap = 'PRESS D PLEASE';
+		} else if(PlayState.poleDeathCounter == 7) {
+			textCrap = 'D D D D D D D D D D';
+		} else if(PlayState.poleDeathCounter == 8) {
+			textCrap = 'I give up...';
+		} else if(PlayState.poleDeathCounter > 8) {
+			textCrap = '...';
+		}
+		#end
 
 		boyfriend = new Boyfriend(x, y, characterName);
 		boyfriend.x += boyfriend.positionArray[0];
@@ -97,6 +131,14 @@ class GameOverSubstate extends MusicBeatSubstate
 		camFollow = new FlxPoint(boyfriend.getGraphicMidpoint().x, boyfriend.getGraphicMidpoint().y);
 
 		FlxG.sound.play(Paths.sound(deathSoundName));
+
+		#if android
+		if(ClientPrefs.vibration)
+		{
+			Hardware.vibrate(vibrationTime);
+		}
+		#end
+
 		PlayState.fuckCval = false;
 		Conductor.changeBPM(100);
 		// FlxG.camera.followLerp = 1;
@@ -111,6 +153,11 @@ class GameOverSubstate extends MusicBeatSubstate
 		camFollowPos = new FlxObject(0, 0, 1, 1);
 		camFollowPos.setPosition(FlxG.camera.scroll.x + (FlxG.camera.width / 2), FlxG.camera.scroll.y + (FlxG.camera.height / 2));
 		add(camFollowPos);
+
+		#if android
+		addVirtualPad(NONE, A_B);
+		_virtualpad.cameras = [camControls];
+		#end
 	}
 
 	var isFollowingAlready:Bool = false;

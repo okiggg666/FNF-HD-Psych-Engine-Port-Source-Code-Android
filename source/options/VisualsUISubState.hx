@@ -96,7 +96,7 @@ class VisualsUISubState extends BaseOptionsMenu
 		option.decimals = 1;
 		addOption(option);
 
-		#if !mobile
+		#if !android
 		var option:Option = new Option('FPS Counter',
 			'If unchecked, hides FPS Counter.',
 			'showFPS',
@@ -131,14 +131,6 @@ class VisualsUISubState extends BaseOptionsMenu
 			true);
 		addOption(option);
 
-		/*var option:Option = new Option('Full Screen',
-			"test",
-			'fullscreen',
-			'bool',
-			false);
-		addOption(option);
-		option.onChange = onFullscreen;*/
-	
 		super();
 	}
 
@@ -159,14 +151,7 @@ class VisualsUISubState extends BaseOptionsMenu
 		super.destroy();
 	}
 
-	#if desktop
-	function onFullscreen()
-	{
-		Main.startFullscreen = ClientPrefs.fullscreen;
-	}
-	#end
-
-	#if !mobile
+	#if !android
 	function onChangeFPSCounter()
 	{
 		if(Main.fpsVar != null)

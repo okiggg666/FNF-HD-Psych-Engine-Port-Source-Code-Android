@@ -252,7 +252,7 @@ class FlxInputText extends FlxText
 		fieldBorderSprite = FlxDestroyUtil.destroy(fieldBorderSprite);
 		callback = null;
 
-		#if sys
+		#if MODS_ALLOWED
 		if (_charBoundaries != null)
 		{
 			while (_charBoundaries.length > 0)

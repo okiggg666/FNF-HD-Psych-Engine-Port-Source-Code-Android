@@ -18,6 +18,9 @@ import flixel.util.FlxTimer;
 import flixel.system.FlxSound;
 import lime.net.curl.CURLCode;
 import flixel.graphics.FlxGraphic;
+#if android
+import android.FlxVirtualPad;
+#end
 import WeekData;
 
 using StringTools;
@@ -49,6 +52,9 @@ class StoryMenuState extends MusicBeatState
 	var sprDifficulty:FlxSprite;
 	var leftArrow:FlxSprite;
 	var rightArrow:FlxSprite;
+	#if android
+	var secretButton:FlxVirtualPad;
+	#end
 
 	var loadedWeeks:Array<WeekData> = [];
 
@@ -201,6 +207,16 @@ class StoryMenuState extends MusicBeatState
 		changeWeek();
 		changeDifficulty();
 
+		#if android
+		addVirtualPad(FULL, A_B_X_Y);
+
+		secretButton = new FlxVirtualPad(NONE, A);
+		secretButton.alpha = 0;
+		secretButton.x -= 690;
+		secretButton.y -= 460;
+		add(secretButton);
+		#end
+
 		super.create();
 	}
 
@@ -260,13 +276,19 @@ class StoryMenuState extends MusicBeatState
 			else if (upP || downP)
 				changeDifficulty();
 
-			if(FlxG.keys.justPressed.CONTROL)
+			if(FlxG.keys.justPressed.CONTROL #if android || _virtualpad.buttonX.justPressed #end)
 			{
+				#if android
+				removeVirtualPad();
+				#end
 				persistentUpdate = false;
 				openSubState(new GameplayChangersSubstate());
 			}
-			else if(controls.RESET)
+			else if(controls.RESET #if android || _virtualpad.buttonY.justPressed #end)
 			{
+				#if android
+				removeVirtualPad();
+				#end
 				persistentUpdate = false;
 				openSubState(new ResetScoreSubState('', curDifficulty, '', curWeek));
 				//FlxG.sound.play(Paths.sound('scrollMenu'));
@@ -275,7 +297,7 @@ class StoryMenuState extends MusicBeatState
 			{
 				selectWeek();
 			}
-			else if (FlxG.keys.justPressed.THREE && curWeek == 3)
+			else if (FlxG.keys.justPressed.THREE #if android || secretButton.buttonA.justPressed #end && curWeek == 3)
 			{
 				synth.stop();
 				drums.stop();

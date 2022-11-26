@@ -37,32 +37,32 @@ class OptionsState extends MusicBeatState
 	function openSelectedSubstate(label:String) {
 		switch(label) {
 			case 'Note Colors':
-		 		#if mobile
+				#if android
 				removeVirtualPad();
 				#end
 				openSubState(new options.NotesSubState());
 			case 'Controls':
-				#if mobile
+				#if android
 				removeVirtualPad();
 				#end
 				openSubState(new options.ControlsSubState());
 			case 'Graphics':
-				#if mobile
+				#if android
 				removeVirtualPad();
 				#end
 				openSubState(new options.GraphicsSettingsSubState());
 			case 'Visuals and UI':
-				#if mobile
+				#if android
 				removeVirtualPad();
 				#end
 				openSubState(new options.VisualsUISubState());
 			case 'Gameplay':
-				#if mobile
+				#if android
 				removeVirtualPad();
 				#end
 				openSubState(new options.GameplaySettingsSubState());
 			case 'FNF HD Settings':
-				#if mobile
+				#if android
 				removeVirtualPad();
 				#end
 				openSubState(new options.HDSettingsSubState());
@@ -78,6 +78,8 @@ class OptionsState extends MusicBeatState
 		#if desktop
 		DiscordClient.changePresence("Options Menu", null);
 		#end
+
+		OptionsStateInGame.InGame = false;
 
 		var bg:FlxSprite = new FlxSprite().loadGraphic(Paths.image('optionsHD'));
 		bg.updateHitbox();
@@ -102,7 +104,7 @@ class OptionsState extends MusicBeatState
 		selectorRight = new Alphabet(0, 0, '<', true);
 		add(selectorRight);
 
-		#if mobile
+		#if android
 		var tipText:FlxText = new FlxText(10, 12, 0, 'Press C to Go In Android Controls Menu', 16);
 		tipText.setFormat(Paths.font("vcr.ttf"), 16, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		tipText.borderSize = 2;
@@ -113,10 +115,10 @@ class OptionsState extends MusicBeatState
 		changeSelection();
 		ClientPrefs.saveSettings();
 
-                #if mobile
+		#if android
 		addVirtualPad(UP_DOWN, A_B_C);
-                #end
- 
+		#end
+
 		super.create();
 	}
 
@@ -148,9 +150,10 @@ class OptionsState extends MusicBeatState
 		if (controls.ACCEPT) {
 			openSelectedSubstate(options[curSelected]);
 		}
-		#if mobile
-		if (virtualPad.buttonC.justPressed) {
-			MusicBeatState.switchState(new mobile.MobileControlsSubState());
+
+		#if android
+		if (_virtualpad.buttonC.justPressed) {
+			MusicBeatState.switchState(new android.AndroidControlsMenu());
 		}
 		#end
 	}
