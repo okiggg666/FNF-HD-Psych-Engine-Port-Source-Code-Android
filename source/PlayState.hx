@@ -1719,67 +1719,71 @@ class PlayState extends MusicBeatState
 
 		FileSystem.createDirectory(Main.path + "assets"); // saving lines
 
-		// "GLOBAL" SCRIPT
+		// "GLOBAL" SCRIPTS
 		#if LUA_ALLOWED
-		var doPush:Bool = false;
+		var filesPushed:Array<String> = [];
+		var foldersToCheck:Array<String> = [SUtil.getPath() + Paths.getPreloadPath('scripts/')];
 
-		if(openfl.utils.Assets.exists("assets/scripts/" + "script.lua"))
+		#if MODS_ALLOWED
+		foldersToCheck.insert(0, Paths.mods('scripts/'));
+		if(Paths.currentModDirectory != null && Paths.currentModDirectory.length > 0)
+			foldersToCheck.insert(0, Paths.mods(Paths.currentModDirectory + '/scripts/'));
+		#end
+
+		for (folder in foldersToCheck)
 		{
-			var path = Paths.luaAsset("scripts/" + "script");
-			var luaFile = openfl.Assets.getBytes(path);
-
-			FileSystem.createDirectory(Main.path + "assets/scripts");
-			FileSystem.createDirectory(Main.path + "assets/scripts/");
-			
-			File.saveBytes(Paths.lua("scripts/" + "script"), luaFile);
-			doPush = true;
+			if(FileSystem.exists(folder))
+			{
+				for (file in FileSystem.readDirectory(folder))
+				{
+					if(file.endsWith('.lua') && !filesPushed.contains(file))
+					{
+						luaArray.push(new FunkinLua(folder + file));
+						filesPushed.push(file);
+					}
+				}
+			}
 		}
-		if(doPush)
-			luaArray.push(new FunkinLua(Paths.lua("scripts/" + "script")));
 		#end
 
 		// STAGE SCRIPTS
-		#if LUA_ALLOWED
-		var path = null;
-		var doPush:Bool = false;
-		var assetsCrap:String = '';
-
 		if(!ClientPrefs.OldHDbg) {
-			assetsCrap = 'assets/stages/';
+			#if (MODS_ALLOWED && LUA_ALLOWED)
+			var doPush:Bool = false;
+			var luaFile:String = null;
+			luaFile = 'stages/' + curStage + '.lua';
+			if(FileSystem.exists(Paths.modFolders(luaFile))) {
+				luaFile = Paths.modFolders(luaFile);
+				doPush = true;
+			} else {
+				luaFile = SUtil.getPath() + Paths.getPreloadPath(luaFile);
+				if(FileSystem.exists(luaFile)) {
+					doPush = true;
+				}
+			}
+
+			if(doPush)
+				luaArray.push(new FunkinLua(luaFile));
+			#end
 		} else {
-			assetsCrap = 'assets/stages old/';
+			#if (MODS_ALLOWED && LUA_ALLOWED)
+			var doPush:Bool = false;
+			var luaFile:String = null;
+			luaFile = 'stages old/' + curStage + '.lua';
+			if(FileSystem.exists(Paths.modFolders(luaFile))) {
+				luaFile = Paths.modFolders(luaFile);
+				doPush = true;
+			} else {
+				luaFile = Paths.getPreloadPath(luaFile);
+				if(FileSystem.exists(luaFile)) {
+					doPush = true;
+				}
+			}
+
+			if(doPush)
+				luaArray.push(new FunkinLua(luaFile));
+			#end
 		}
-
-		if(openfl.utils.Assets.exists(assetsCrap + curStage + ".lua"))
-		{
-			if(!ClientPrefs.OldHDbg) {
-				path = Paths.luaAsset("stages/" + curStage);
-			} else {
-				path = Paths.luaAsset("stages old/" + curStage);
-			}
-			var luaFile = openfl.Assets.getBytes(path);
-
-			if(!ClientPrefs.OldHDbg) {
-				FileSystem.createDirectory(Main.path + "assets/stages");
-				FileSystem.createDirectory(Main.path + "assets/stages/");
-
-				File.saveBytes(Paths.lua("stages/" + curStage), luaFile);
-			} else {
-				FileSystem.createDirectory(Main.path + "assets/stages old");
-				FileSystem.createDirectory(Main.path + "assets/stages old/");
-
-				File.saveBytes(Paths.lua("stages old/" + curStage), luaFile);
-			}
-
-			doPush = true;
-		}
-		if(doPush)
-			if(!ClientPrefs.OldHDbg) {
-				luaArray.push(new FunkinLua(Paths.lua("stages/" + curStage)));
-			} else {
-				luaArray.push(new FunkinLua(Paths.lua("stages old/" + curStage)));
-			}
-		#end
 
 		var gfVersion:String = SONG.gfVersion;
 		if(gfVersion == null || gfVersion.length < 1) {
@@ -1962,18 +1966,36 @@ class PlayState extends MusicBeatState
 
 		generateSong(SONG.song);
 		#if LUA_ALLOWED
-		for (notetype in noteTypeMap.keys()) {
-			var luaToLoad:String = 'custom_notetypes/' + notetype + '.lua';
-			luaToLoad = Paths.getPreloadPath(luaToLoad);
-			if(OpenFlAssets.exists(luaToLoad)) {
-				luaArray.push(new FunkinLua(Asset2File.getPath(luaToLoad)));
+		for (notetype in noteTypeMap.keys())
+		{
+			var luaToLoad:String = Paths.modFolders('custom_notetypes/' + notetype + '.lua');
+			if(FileSystem.exists(luaToLoad))
+			{
+				luaArray.push(new FunkinLua(luaToLoad));
+			}
+			else
+			{
+				luaToLoad = SUtil.getPath() + Paths.getPreloadPath('custom_notetypes/' + notetype + '.lua');
+				if(FileSystem.exists(luaToLoad))
+				{
+					luaArray.push(new FunkinLua(luaToLoad));
+				}
 			}
 		}
-		for (event in eventPushedMap.keys()) {
-			var luaToLoad:String = 'custom_events/' + event + '.lua';
-			luaToLoad = Paths.getPreloadPath(luaToLoad);
-			if(OpenFlAssets.exists(luaToLoad)) {
-				luaArray.push(new FunkinLua(Asset2File.getPath(luaToLoad)));
+		for (event in eventPushedMap.keys())
+		{
+			var luaToLoad:String = Paths.modFolders('custom_events/' + event + '.lua');
+			if(FileSystem.exists(luaToLoad))
+			{
+				luaArray.push(new FunkinLua(luaToLoad));
+			}
+			else
+			{
+				luaToLoad = SUtil.getPath() + Paths.getPreloadPath('custom_events/' + event + '.lua');
+				if(FileSystem.exists(luaToLoad))
+				{
+					luaArray.push(new FunkinLua(luaToLoad));
+				}
 			}
 		}
 		#end
@@ -2093,23 +2115,29 @@ class PlayState extends MusicBeatState
 
 		// SONG SPECIFIC SCRIPTS
 		#if LUA_ALLOWED
-		var doPush:Bool = false;
+		var filesPushed:Array<String> = [];
+		var foldersToCheck:Array<String> = [SUtil.getPath() + Paths.getPreloadPath('data/' + Paths.formatToSongPath(SONG.song) + '/')];
 
-		if(openfl.utils.Assets.exists("assets/data/" + Paths.formatToSongPath(SONG.song) + "/" + "script.lua"))
+		#if MODS_ALLOWED
+		foldersToCheck.insert(0, Paths.mods('data/' + Paths.formatToSongPath(SONG.song) + '/'));
+		if(Paths.currentModDirectory != null && Paths.currentModDirectory.length > 0)
+			foldersToCheck.insert(0, Paths.mods(Paths.currentModDirectory + '/data/' + Paths.formatToSongPath(SONG.song) + '/'));
+		#end
+
+		for (folder in foldersToCheck)
 		{
-			var path = Paths.luaAsset("data/" + Paths.formatToSongPath(SONG.song) + "/" + "script");
-			var luaFile = openfl.Assets.getBytes(path);
-
-			FileSystem.createDirectory(Main.path + "assets/data");
-			FileSystem.createDirectory(Main.path + "assets/data/");
-			FileSystem.createDirectory(Main.path + "assets/data/" + Paths.formatToSongPath(SONG.song));
-
-			File.saveBytes(Paths.lua("data/" + Paths.formatToSongPath(SONG.song) + "/" + "script"), luaFile);
-
-			doPush = true;
+			if(FileSystem.exists(folder))
+			{
+				for (file in FileSystem.readDirectory(folder))
+				{
+					if(file.endsWith('.lua') && !filesPushed.contains(file))
+					{
+						luaArray.push(new FunkinLua(folder + file));
+						filesPushed.push(file);
+					}
+				}
+			}
 		}
-		if(doPush)
-			luaArray.push(new FunkinLua(Paths.lua("data/" + Paths.formatToSongPath(SONG.song) + "/" + "script")));
 		#end
 		
 		var daSong:String = Paths.formatToSongPath(curSong);
@@ -2267,7 +2295,7 @@ class PlayState extends MusicBeatState
 			return true;
 		}
 
-		var foldersToCheck:Array<String> = [Paths.mods('shaders/')];
+		var foldersToCheck:Array<String> = [SUtil.getPath() + Paths.mods('shaders/')];
 		if(Paths.currentModDirectory != null && Paths.currentModDirectory.length > 0)
 			foldersToCheck.insert(0, Paths.mods(Paths.currentModDirectory + '/shaders/'));
 
@@ -2411,44 +2439,51 @@ class PlayState extends MusicBeatState
 	function startCharacterLua(name:String)
 	{
 		#if LUA_ALLOWED
-		var path = null;
-		var doPush:Bool = false;
-		var assetsCrap:String = '';
-
 		if(!ClientPrefs.OldHDbg) {
-			assetsCrap = "assets/characters/";
+			var doPush:Bool = false;
+			var luaFile:String = null;
+			luaFile = 'characters/' + name + '.lua';
+			if(FileSystem.exists(Paths.modFolders(luaFile))) {
+				luaFile = Paths.modFolders(luaFile);
+				doPush = true;
+			} else {
+				luaFile = SUtil.getPath() + Paths.getPreloadPath(luaFile);
+				if(FileSystem.exists(luaFile)) {
+					doPush = true;
+				}
+			}
+		
+			if(doPush)
+			{
+				for (lua in luaArray)
+				{
+					if(lua.scriptName == luaFile) return;
+				}
+				luaArray.push(new FunkinLua(luaFile));
+			}
 		} else {
-			assetsCrap = "assets/characters old/";
+			var doPush:Bool = false;
+			var luaFile:String = null;
+			luaFile = 'characters old/' + name + '.lua';
+			if(FileSystem.exists(Paths.modFolders(luaFile))) {
+				luaFile = Paths.modFolders(luaFile);
+				doPush = true;
+			} else {
+				luaFile = SUtil.getPath() + Paths.getPreloadPath(luaFile);
+				if(FileSystem.exists(luaFile)) {
+					doPush = true;
+				}
+			}
+		
+			if(doPush)
+			{
+				for (lua in luaArray)
+				{
+					if(lua.scriptName == luaFile) return;
+				}
+				luaArray.push(new FunkinLua(luaFile));
+			}
 		}
-
-		if(openfl.utils.Assets.exists(assetsCrap + name + ".lua"))
-		{
-			if(!ClientPrefs.OldHDbg) {
-				path = Paths.luaAsset("characters/" + name);
-			} else {
-				path = Paths.luaAsset("characters old/" + name);
-			}
-			var luaFile = openfl.Assets.getBytes(path);
-
-			if(!ClientPrefs.OldHDbg) {
-				FileSystem.createDirectory(Main.path + "assets/characters");
-				FileSystem.createDirectory(Main.path + "assets/characters/");
-
-				File.saveBytes(Paths.lua("characters/" + name), luaFile);
-			} else {
-				FileSystem.createDirectory(Main.path + "assets/characters old");
-				FileSystem.createDirectory(Main.path + "assets/characters old/");
-
-				File.saveBytes(Paths.lua("characters old/" + name), luaFile);
-			}
-			doPush = true;
-		}
-		if(doPush)
-			if(!ClientPrefs.OldHDbg) {
-				luaArray.push(new FunkinLua(Paths.lua("characters/" + name)));
-			} else {
-				luaArray.push(new FunkinLua(Paths.lua("characters old/" + name)));
-			}
 		#end
 	}
 
