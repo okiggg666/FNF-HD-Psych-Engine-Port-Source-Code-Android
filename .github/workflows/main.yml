@@ -1,8 +1,8 @@
 # This is a basic workflow to help you get started with Actions
 
-name: Build
+name: buildAndroid
 
-# Controls when the action will run.
+# Controls when the action will run. 
 on:
   # Triggers the workflow on push or pull request events but only for the master branch
   push:
@@ -16,7 +16,7 @@ on:
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
-  
+
   buildAndroid:
     name: buildAndroid
     runs-on: ubuntu-latest
@@ -55,11 +55,12 @@ jobs:
           haxelib install flixel-tools
           haxelib install flixel-ui
           haxelib install hscript
-          haxelib install hxCodec --quiet
+          haxelib install hxCodec --q
           haxelib install flixel-addons
-          haxelib git linc_luajit https://github.com/sirox228/linc_luajit.git
-          haxelib git extension-androidtools https://github.com/MaysLastPlay77/extension-androidtools.git
-          haxelib git extension-videoview https://github.com/MaysLastPlay77/extension-videoview.git
+          haxelib git newgrounds https://github.com/Geokureli/Newgrounds.git
+          haxelib git linc_luajit https://github.com/Sirox228/linc_luajit
+          haxelib git extension-webview https://github.com/Daninnocent/extension-webview --quiet
+          haxelib git extension-androidtools https://github.com/randomxdp/extension-androidtools
           haxelib list
 
       - name: Create Version Tag
@@ -71,8 +72,8 @@ jobs:
           haxelib run lime config ANDROID_SDK $ANDROID_HOME
           haxelib run lime config ANDROID_NDK_ROOT $ANDROID_NDK_HOME
           haxelib run lime config JAVA_HOME $JAVA_HOME
-          haxelib set lime 7.9.0
-          haxelib set openfl 9.1.0
+          haxelib set lime 7.9.0 
+          haxelib set openfl 9.1.0 
           haxelib run lime config ANDROID_SETUP true
         env:
           ANDROID_NDK_HOME: ${{ steps.setup-ndk.outputs.ndk-path }}
@@ -83,5 +84,5 @@ jobs:
       - name: Publish Artifact
         uses: actions/upload-artifact@main
         with:
-          name: androidBuild
+          name: buildAndroid
           path: export/release/android/bin/app/build/outputs/apk/debug
