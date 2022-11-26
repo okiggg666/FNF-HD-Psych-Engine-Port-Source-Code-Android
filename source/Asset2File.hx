@@ -2,7 +2,7 @@ package;
 
 import haxe.crypto.Md5;
 import openfl.utils.Assets;
-#if sys
+#if MODS_ALLOWED
 import sys.FileSystem;
 import sys.io.File;
 #end
@@ -21,12 +21,11 @@ class Asset2File
 		if (FileSystem.exists(path + md5 + ext))
 			return path + md5 + ext;
 
-
 		File.saveBytes(path + md5 + ext, file);
 
 		return path + md5 + ext;
 		#else
-		return #if sys Sys.getCwd() + #end id;
+		return #if MODS_ALLOWED Sys.getCwd() + #end id;
 		#end
 	}
 }
