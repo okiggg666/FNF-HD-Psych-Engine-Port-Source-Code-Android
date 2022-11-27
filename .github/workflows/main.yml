@@ -57,7 +57,6 @@ jobs:
           haxelib install hscript
           haxelib install hxCodec
           haxelib install flixel-addons
-          haxelib git newgrounds https://github.com/Geokureli/Newgrounds.git
           haxelib git linc_luajit https://github.com/Sirox228/linc_luajit
           haxelib git extension-videoview https://github.com/MaysLastPlay77/extension-videoview.git
           haxelib git extension-androidtools https://github.com/MaysLastPlay77/extension-androidtools
@@ -71,7 +70,6 @@ jobs:
           haxelib run lime config ANDROID_SDK $ANDROID_HOME
           haxelib run lime config ANDROID_NDK_ROOT $ANDROID_NDK_HOME
           haxelib run lime config JAVA_HOME $JAVA_HOME
-          haxelib set newgrounds 1.3.0
           haxelib set flixel 4.11.0
           haxelib set openfl 9.1.0
           haxelin set lime 7.9.0
