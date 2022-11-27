@@ -50,7 +50,7 @@ jobs:
           haxelib install hxcpp > /dev/null
           haxelib install lime 7.9.0
           haxelib install openfl 9.1.0
-          haxelib --never install flixel 4.11.0
+          haxelib install flixel
           haxelib run lime setup flixel
           haxelib install flixel-tools
           haxelib install flixel-ui
