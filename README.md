@@ -41,9 +41,9 @@ As in this picture (use jdk, not jre)
 
 To Install Them You Need To Open Command prompt/PowerShell And To Tipe
 ```cmd
-haxelib git extension-androidtools https://github.com/randomxdp/extension-androidtools.git
+haxelib git extension-androidtools https://github.com/MaysLastPlay77/extension-androidtools.git
 
-haxelib git extension-videoview https://github.com/Daninnocent/extension-webview.git
+haxelib git extension-videoview https://github.com/MaysLastPlay77/extension-videoview.git
 
 haxelib remove linc_luajit
 
