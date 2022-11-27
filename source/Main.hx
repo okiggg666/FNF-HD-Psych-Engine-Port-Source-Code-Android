@@ -86,7 +86,7 @@ class Main extends Sprite
 		}
 
 		SUtil.doTheCheck();
-	
+
 		ClientPrefs.loadDefaultKeys();
 
 		// here we set up the base game
