@@ -106,6 +106,7 @@ class CreditsState extends MusicBeatState
 			['DANIZIN',				'dan',				'For making the Android Port',								'https://www.youtube.com/channel/UCvTYcAn6ciOojpfcHtUxJBQ',	'FFD166'],
 			['MaysLastPlay',		'mays',				'For helping out with the Android Port',					'https://www.youtube.com/channel/UCx0LxtFR8ROd9sFAq-UxDfw',	'5DE7FF'],
 			['DMMaster 636',		'dm',				'For making good HD art and cool stuff for the port',		'https://www.youtube.com/channel/UC65EwKYTjayqmXATNz2auzQ', '7E39EE'],
+			['Filipianosol',		'flipi',			'For optimizing the port',									'https://github.com/Filipianosol', 							'4AEB00'],
 			[''],
 			['FNF HD Team'],
 			['Kolsan',				null,				'Artist, dialogue, Main writer, Billboard artist',			'https://gamebanana.com/members/1859052','444444'],
