@@ -56,14 +56,20 @@ And run command `lime build android -final`
 Apk will be generated in this path (path to source)\export\release\android\bin\app\build\outputs\apk\debug
 
 ## Credits:
-* Nuno Filipe Studios - Main porter, programmer, animator
+* Nuno Filipe Studios - Main porter, coder, animator, Android Port help
 * Remy And Ava - Mobile optimizer, gamejolt link
-* DANIZIN - Android Port
+* DANIZIN - Old Android Port
 * FNF BR - Android Port
-* DMMaster 636 - Stressed spooky BF anim, HD notes
+* MaysLastPlay - Android Port
+* DMMaster 636 - Artist, coder, animator
 * mariodevintoons - New HD Mall Darnell Artist
 * Galax - Dev Build Tester
 * JorgeX_YT - Dev Build Tester
+
+### Used some codes from
+* Wednesday's Infidelity Team - Dodge keybinds text code
+* Arrow Funk Team - Used text font
+* Trevent booh! - Used icon flip lua code
 
 ### Special Thanks
 * JorgeX_YT - For replacing our current beta tester of the port and testing the port
@@ -72,4 +78,5 @@ Apk will be generated in this path (path to source)\export\release\android\bin\a
 * Galax - For almost testing the port and being my best friend
 * FNF BR - For making an Android Port
 * DANIZIN - For making an Android Port
-* DMMaster 636 - For making good HD art
+* MaysLastPlay - For helping out with the Android Port
+* DMMaster 636 - For making good HD art and cool stuff for the port
