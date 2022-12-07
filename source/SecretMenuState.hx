@@ -7,7 +7,7 @@ import flixel.text.FlxText;
 import flixel.group.FlxGroup.FlxTypedGroup;
 import flixel.animation.FlxAnimation;
 import flixel.util.FlxColor;
-//import flixel.addons.display.FlxBackdrop;
+import flixel.addons.display.FlxBackdrop;
 import flixel.tweens.FlxEase;
 import flixel.tweens.FlxTween;
 import flixel.effects.FlxFlicker;
