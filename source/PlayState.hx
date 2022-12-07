@@ -2535,7 +2535,7 @@ class PlayState extends MusicBeatState
 		#end
 	}
 
- else if VIDEOS_ALLOWED && android
+    if (VIDEOS_ALLOWED && android)
 		var foundFile:Bool = false;
 		var fileName:String = #if MODS_ALLOWED Paths.modFolders('videos/' + name + '.' + Paths.VIDEO_EXT); #else ''; #end
 		#if sys
