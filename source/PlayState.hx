@@ -75,7 +75,7 @@ import sys.FileSystem;
 import sys.io.File;
 #end
 
-#if VIDEOS_ALLOWED
+#if (VIDEOS_ALLOWED && !android)
 import vlc.MP4Handler;
 #end
 
@@ -2506,7 +2506,7 @@ class PlayState extends MusicBeatState
 
 	public function startVideo(name:String)
 	{
-		#if VIDEOS_ALLOWED
+		#if (VIDEOS_ALLOWED && !android)
 		inCutscene = true;
 
 		var filepath:String = Paths.video(name);
@@ -2533,6 +2533,48 @@ class PlayState extends MusicBeatState
 		startAndEnd();
 		return;
 		#end
+	}
+
+ else if VIDEOS_ALLOWED && android
+		var foundFile:Bool = false;
+		var fileName:String = #if MODS_ALLOWED Paths.modFolders('videos/' + name + '.' + Paths.VIDEO_EXT); #else ''; #end
+		#if sys
+		if(FileSystem.exists(fileName)) {
+			foundFile = true;
+		}
+		#end
+
+		if(!foundFile) {
+			fileName = Paths.video(name);
+			#if sys
+			if(FileSystem.exists(fileName)) {
+			#else
+			if(OpenFlAssets.exists(fileName)) {
+			#end
+				foundFile = true;
+			}
+		}
+
+		if(foundFile) {
+			inCutscene = true;
+			var bg = new FlxSprite(-FlxG.width, -FlxG.height).makeGraphic(FlxG.width * 3, FlxG.height * 3, FlxColor.BLACK);
+			bg.scrollFactor.set();
+			bg.cameras = [camHUD];
+			add(bg);
+
+			(new FlxVideo(fileName)).finishCallback = function() {
+				remove(bg);
+				startAndEnd();
+			}
+			return;
+		}
+		else
+		{
+			FlxG.log.warn('Couldnt find video file: ' + fileName);
+			startAndEnd();
+		}
+		#end
+		startAndEnd();
 	}
 
 	function startAndEnd()
