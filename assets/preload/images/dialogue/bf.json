@@ -1,557 +1,557 @@
 {
+	"dialogue_pos": "right",
 	"position": [
 		-111,
-		-340
+		-120
 	],
-	"dialogue_pos": "right",
-	"scale": 0.65,
-	"image": "bf",
+	"scale": 1.3,
 	"animations": [
 		{
-			"loop_offsets": [
-				70,
-				40
+			"idle_offsets": [
+				65,
+				36
 			],
 			"anim": "default",
-			"idle_offsets": [
-				70,
-				40
+			"loop_offsets": [
+				65,
+				36
 			],
-			"loop_name": "Symbol 13",
-			"idle_name": "Symbol 13"
+			"idle_name": "Symbol 13",
+			"loop_name": "Symbol 13"
 		},
 		{
-			"loop_offsets": [
-				0,
-				3
+			"idle_offsets": [
+				-10,
+				-4
 			],
 			"anim": "bfGf",
-			"idle_offsets": [
-				0,
-				3
+			"loop_offsets": [
+				-10,
+				-4
 			],
-			"loop_name": "Symbol 61",
-			"idle_name": "Symbol 61"
+			"idle_name": "Symbol 61",
+			"loop_name": "Symbol 61"
 		},
 		{
-			"idle_offsets": [
-				-90,
-				-28
+			"loop_offsets": [
+				-170,
+				-61
 			],
 			"anim": "confused",
-			"loop_offsets": [
-				-90,
-				-28
+			"idle_offsets": [
+				-170,
+				-61
 			],
-			"idle_name": "Symbol 76",
-			"loop_name": "Symbol 76"
+			"loop_name": "Symbol 76",
+			"idle_name": "Symbol 76"
 		},
 		{
-			"idle_offsets": [
-				-11,
-				-87
+			"loop_offsets": [
+				-83,
+				-139
 			],
 			"anim": "dazed",
-			"loop_offsets": [
-				-11,
-				-87
+			"idle_offsets": [
+				-83,
+				-139
 			],
-			"idle_name": "Symbol 63",
-			"loop_name": "Symbol 63"
+			"loop_name": "Symbol 63",
+			"idle_name": "Symbol 63"
 		},
 		{
-			"idle_offsets": [
-				70,
-				-2
+			"loop_offsets": [
+				67,
+				24
 			],
 			"anim": "defaultSweat",
-			"loop_offsets": [
-				70,
-				-2
+			"idle_offsets": [
+				67,
+				24
 			],
-			"idle_name": "Symbol 12",
-			"loop_name": "Symbol 12"
+			"loop_name": "Symbol 12",
+			"idle_name": "Symbol 12"
 		},
 		{
-			"loop_offsets": [
-				-3,
-				-38
+			"idle_offsets": [
+				-63,
+				-91
 			],
 			"anim": "fistSweat",
-			"idle_offsets": [
-				-3,
-				-39
+			"loop_offsets": [
+				-63,
+				-90
 			],
-			"loop_name": "Symbol 16",
-			"idle_name": "Symbol 16"
+			"idle_name": "Symbol 16",
+			"loop_name": "Symbol 16"
 		},
 		{
-			"loop_offsets": [
-				0,
-				0
+			"idle_offsets": [
+				-76,
+				-88
 			],
 			"anim": "fist",
-			"idle_offsets": [
-				-3,
-				-38
+			"loop_offsets": [
+				-73,
+				-50
 			],
-			"loop_name": "Symbol 17",
-			"idle_name": "Symbol 17"
+			"idle_name": "Symbol 17",
+			"loop_name": "Symbol 17"
 		},
 		{
-			"loop_offsets": [
-				70,
-				-2
+			"idle_offsets": [
+				66,
+				28
 			],
 			"anim": "defaultBlush",
-			"idle_offsets": [
-				70,
-				-2
+			"loop_offsets": [
+				66,
+				28
 			],
-			"loop_name": "Symbol 11",
-			"idle_name": "Symbol 11"
+			"idle_name": "Symbol 11",
+			"loop_name": "Symbol 11"
 		},
 		{
-			"loop_offsets": [
-				-3,
-				-52
+			"idle_offsets": [
+				-72,
+				-95
 			],
 			"anim": "fistBlush",
-			"idle_offsets": [
-				-3,
-				-52
+			"loop_offsets": [
+				-72,
+				-95
 			],
-			"loop_name": "Symbol 15",
-			"idle_name": "Symbol 15"
+			"idle_name": "Symbol 15",
+			"loop_name": "Symbol 15"
 		},
 		{
-			"loop_offsets": [
-				-20,
-				-9
+			"idle_offsets": [
+				-87,
+				-39
 			],
 			"anim": "dreamy",
-			"idle_offsets": [
-				-20,
-				-9
+			"loop_offsets": [
+				-87,
+				-39
 			],
-			"loop_name": "Symbol 14",
-			"idle_name": "Symbol 14"
+			"idle_name": "Symbol 14",
+			"loop_name": "Symbol 14"
 		},
 		{
-			"loop_offsets": [
-				-64,
-				-54
+			"idle_offsets": [
+				-167,
+				-94
 			],
 			"anim": "blush",
-			"idle_offsets": [
-				-64,
-				-54
+			"loop_offsets": [
+				-167,
+				-94
 			],
-			"loop_name": "Symbol 85",
-			"idle_name": "Symbol 85"
+			"idle_name": "Symbol 85",
+			"loop_name": "Symbol 85"
 		},
 		{
-			"loop_offsets": [
-				-71,
-				-20
+			"idle_offsets": [
+				-144,
+				-56
 			],
 			"anim": "pant",
-			"idle_offsets": [
-				-71,
-				-20
+			"loop_offsets": [
+				-144,
+				-56
 			],
-			"loop_name": "Symbol 25",
-			"idle_name": "Symbol 25"
+			"idle_name": "Symbol 25",
+			"loop_name": "Symbol 25"
 		},
 		{
-			"loop_offsets": [
-				-70,
-				-38
+			"idle_offsets": [
+				-139,
+				-81
 			],
 			"anim": "happyCry",
-			"idle_offsets": [
-				-70,
-				-38
+			"loop_offsets": [
+				-139,
+				-81
 			],
-			"loop_name": "Symbol 95",
-			"idle_name": "Symbol 95"
+			"idle_name": "Symbol 95",
+			"loop_name": "Symbol 95"
 		},
 		{
-			"loop_offsets": [
-				-39,
-				-9
+			"idle_offsets": [
+				-86,
+				-48
 			],
 			"anim": "post-up",
-			"idle_offsets": [
-				-39,
-				-9
+			"loop_offsets": [
+				-86,
+				-48
 			],
-			"loop_name": "Symbol 26",
-			"idle_name": "Symbol 26"
+			"idle_name": "Symbol 26",
+			"loop_name": "Symbol 26"
 		},
 		{
-			"loop_offsets": [
-				-39,
-				-45
+			"idle_offsets": [
+				-86,
+				-92
 			],
 			"anim": "angry",
-			"idle_offsets": [
-				-39,
-				-45
+			"loop_offsets": [
+				-86,
+				-92
 			],
-			"loop_name": "Symbol 83",
-			"idle_name": "Symbol 83"
+			"idle_name": "Symbol 83",
+			"loop_name": "Symbol 83"
 		},
 		{
-			"loop_offsets": [
-				1,
-				-40
+			"idle_offsets": [
+				-29,
+				-82
 			],
 			"anim": "angry2",
-			"idle_offsets": [
-				1,
-				-40
+			"loop_offsets": [
+				-29,
+				-82
 			],
-			"loop_name": "Symbol 72",
-			"idle_name": "Symbol 72"
+			"idle_name": "Symbol 72",
+			"loop_name": "Symbol 72"
 		},
 		{
-			"loop_offsets": [
-				-90,
-				-28
+			"idle_offsets": [
+				-122,
+				-72
 			],
 			"anim": "cry",
-			"idle_offsets": [
-				-90,
-				-28
+			"loop_offsets": [
+				-122,
+				-72
 			],
-			"loop_name": "Symbol 58",
-			"idle_name": "Symbol 58"
+			"idle_name": "Symbol 58",
+			"loop_name": "Symbol 58"
 		},
 		{
-			"loop_offsets": [
-				-69,
-				-61
+			"idle_offsets": [
+				-109,
+				-114
 			],
 			"anim": "sad",
-			"idle_offsets": [
-				-69,
-				-61
+			"loop_offsets": [
+				-109,
+				-114
 			],
-			"loop_name": "Symbol 31",
-			"idle_name": "Symbol 31"
+			"idle_name": "Symbol 31",
+			"loop_name": "Symbol 31"
 		},
 		{
-			"loop_offsets": [
-				31,
-				-21
+			"idle_offsets": [
+				9,
+				-59
 			],
 			"anim": "flirt",
-			"idle_offsets": [
-				31,
-				-21
+			"loop_offsets": [
+				9,
+				-59
 			],
-			"loop_name": "Symbol 18",
-			"idle_name": "Symbol 18"
+			"idle_name": "Symbol 18",
+			"loop_name": "Symbol 18"
 		},
 		{
-			"loop_offsets": [
-				-72,
-				-31
+			"idle_offsets": [
+				-131,
+				-73
 			],
 			"anim": "kiss",
-			"idle_offsets": [
-				-72,
-				-31
-			],
-			"loop_name": "Symbol 21",
-			"idle_name": "Symbol 21"
-		},
-		{
 			"loop_offsets": [
-				-86,
-				-29
+				-131,
+				-73
+			],
+			"idle_name": "Symbol 21",
+			"loop_name": "Symbol 21"
+		},
+        {
+			"idle_offsets": [
+				-147,
+				-65
 			],
 			"anim": "nervous",
-			"idle_offsets": [
-				-86,
-				-29
+			"loop_offsets": [
+				-147,
+				-65
 			],
-			"loop_name": "Symbol 23",
-			"idle_name": "Symbol 23"
+			"idle_name": "Symbol 23",
+			"loop_name": "Symbol 23"
 		},
 		{
-			"loop_offsets": [
-				-86,
-				-29
+			"idle_offsets": [
+				-147,
+				-65
 			],
 			"anim": "nervous2",
-			"idle_offsets": [
-				-86,
-				-29
+			"loop_offsets": [
+				-147,
+				-65
 			],
-			"loop_name": "Symbol 22",
-			"idle_name": "Symbol 22"
+			"idle_name": "Symbol 22",
+			"loop_name": "Symbol 22"
 		},
 		{
-			"loop_offsets": [
-				-67,
-				-19
+			"idle_offsets": [
+				-123,
+				-56
 			],
 			"anim": "oof",
-			"idle_offsets": [
-				-67,
-				-19
+			"loop_offsets": [
+				-123,
+				-56
 			],
-			"loop_name": "Symbol 24",
-			"idle_name": "Symbol 24"
+			"idle_name": "Symbol 24",
+			"loop_name": "Symbol 24"
 		},
 		{
-			"loop_offsets": [
-				-90,
-				-28
+			"idle_offsets": [
+				-151,
+				-67
 			],
 			"anim": "questionMark",
-			"idle_offsets": [
-				-90,
-				-28
+			"loop_offsets": [
+				-151,
+				-67
 			],
-			"loop_name": "Symbol 27",
-			"idle_name": "Symbol 27"
+			"idle_name": "Symbol 27",
+			"loop_name": "Symbol 27"
 		},
 		{
-			"loop_offsets": [
-				-78,
-				-28
+			"idle_offsets": [
+				-142,
+				-67
 			],
 			"anim": "reassure",
-			"idle_offsets": [
-				-78,
-				-28
+			"loop_offsets": [
+				-142,
+				-67
 			],
-			"loop_name": "Symbol 28",
-			"idle_name": "Symbol 28"
+			"idle_name": "Symbol 28",
+			"loop_name": "Symbol 28"
 		},
 		{
-			"loop_offsets": [
-				61,
-				-24
+			"idle_offsets": [
+				21,
+				-51
 			],
 			"anim": "scoff",
-			"idle_offsets": [
-				61,
-				-24
+			"loop_offsets": [
+				21,
+				-51
 			],
-			"loop_name": "Symbol 33",
-			"idle_name": "Symbol 33"
+			"idle_name": "Symbol 33",
+			"loop_name": "Symbol 33"
 		},
 		{
-			"loop_offsets": [
-				-101,
-				-51
+			"idle_offsets": [
+				-164,
+				-105
 			],
 			"anim": "happy",
-			"idle_offsets": [
-				-101,
-				-51
+			"loop_offsets": [
+				-164,
+				-105
 			],
-			"loop_name": "Symbol 36",
-			"idle_name": "Symbol 36"
+			"idle_name": "Symbol 36",
+			"loop_name": "Symbol 36"
 		},
 		{
-			"loop_offsets": [
-				-101,
-				-51
+			"idle_offsets": [
+				-164,
+				-105
 			],
 			"anim": "smile",
-			"idle_offsets": [
-				-101,
-				-51
+			"loop_offsets": [
+				-164,
+				-105
 			],
-			"loop_name": "Symbol 36",
-			"idle_name": "Symbol 36"
+			"idle_name": "Symbol 36",
+			"loop_name": "Symbol 36"
 		},
 		{
-			"loop_offsets": [
-				-32,
-				-33
+			"idle_offsets": [
+				-109,
+				-90
 			],
 			"anim": "sulk",
-			"idle_offsets": [
-				-32,
-				-33
+			"loop_offsets": [
+				-109,
+				-90
 			],
-			"loop_name": "Symbol 38",
-			"idle_name": "Symbol 38"
+			"idle_name": "Symbol 38",
+			"loop_name": "Symbol 38"
 		},
 		{
-			"loop_offsets": [
-				49,
-				-27
+			"idle_offsets": [
+				-2,
+				-65
 			],
 			"anim": "clear",
-			"idle_offsets": [
-				49,
-				-27
+			"loop_offsets": [
+				-2,
+				-65
 			],
-			"loop_name": "Symbol 39",
-			"idle_name": "Symbol 39"
+			"idle_name": "Symbol 39",
+			"loop_name": "Symbol 39"
 		},
 		{
-			"loop_offsets": [
-				-40,
-				-39
+			"idle_offsets": [
+				-85,
+				-82
 			],
 			"anim": "cringe",
-			"idle_offsets": [
-				-40,
-				-39
+			"loop_offsets": [
+				-85,
+				-82
 			],
-			"loop_name": "Symbol 67",
-			"idle_name": "Symbol 67"
+			"idle_name": "Symbol 67",
+			"loop_name": "Symbol 67"
 		},
 		{
-			"loop_offsets": [
-				10,
-				-51
+			"idle_offsets": [
+				-32,
+				-98
 			],
 			"anim": "crying",
-			"idle_offsets": [
-				10,
-				-51
+			"loop_offsets": [
+				-32,
+				-98
 			],
-			"loop_name": "Symbol 49",
-			"idle_name": "Symbol 49"
+			"idle_name": "Symbol 49",
+			"loop_name": "Symbol 49"
 		},
 		{
-			"loop_offsets": [
-				-45,
-				35
+			"idle_offsets": [
+				-131,
+				8
 			],
 			"anim": "scared",
-			"idle_offsets": [
-				-45,
-				35
+			"loop_offsets": [
+				-131,
+				8
 			],
-			"loop_name": "Symbol 32",
-			"idle_name": "Symbol 32"
+			"idle_name": "Symbol 32",
+			"loop_name": "Symbol 32"
 		},
 		{
-			"loop_offsets": [
-				10,
-				-51
+			"idle_offsets": [
+				-32,
+				-98
 			],
 			"anim": "shocked",
-			"idle_offsets": [
-				10,
-				-51
+			"loop_offsets": [
+				-32,
+				-98
 			],
-			"loop_name": "Symbol 35",
-			"idle_name": "Symbol 35"
+			"idle_name": "Symbol 35",
+			"loop_name": "Symbol 35"
 		},
 		{
-			"loop_offsets": [
-				-11,
-				-87
+			"idle_offsets": [
+				-69,
+				-143
 			],
 			"anim": "snap",
-			"idle_offsets": [
-				-11,
-				-87
+			"loop_offsets": [
+				-69,
+				-143
 			],
-			"loop_name": "Symbol 37",
-			"idle_name": "Symbol 37"
+			"idle_name": "Symbol 37",
+			"loop_name": "Symbol 37"
 		},
 		{
-			"loop_offsets": [
-				10,
-				-51
+			"idle_offsets": [
+				-32,
+				-98
 			],
 			"anim": "wipe",
-			"idle_offsets": [
-				10,
-				-51
+			"loop_offsets": [
+				-32,
+				-98
 			],
-			"loop_name": "Symbol 41",
-			"idle_name": "Symbol 41"
+			"idle_name": "Symbol 41",
+			"loop_name": "Symbol 41"
 		},
 		{
-			"idle_offsets": [
-				60,
-				-30
+			"loop_offsets": [
+				13,
+				-101
 			],
 			"anim": "run",
-			"loop_offsets": [
-				60,
-				-30
+			"idle_offsets": [
+				13,
+				-101
 			],
-			"idle_name": "Symbol 29",
-			"loop_name": "Symbol 29"
+			"loop_name": "Symbol 29",
+			"idle_name": "Symbol 29"
 		},
 		{
-			"idle_offsets": [
-				60,
-				-30
+			"loop_offsets": [
+				13,
+				-101
 			],
 			"anim": "run-sad",
-			"loop_offsets": [
-				60,
-				-30
+			"idle_offsets": [
+				13,
+				-101
 			],
-			"idle_name": "Symbol 51",
-			"loop_name": "Symbol 51"
+			"loop_name": "Symbol 51",
+			"idle_name": "Symbol 51"
 		},
 		{
-			"idle_offsets": [
-				-10,
-				-30
+			"loop_offsets": [
+				-69,
+				-84
 			],
 			"anim": "giddy",
-			"loop_offsets": [
-				-10,
-				-30
+			"idle_offsets": [
+				-69,
+				-84
 			],
-			"idle_name": "Symbol 19",
-			"loop_name": "Symbol 19"
+			"loop_name": "Symbol 19",
+			"idle_name": "Symbol 19"
 		},
 		{
-			"idle_offsets": [
-				-90,
-				-28
+			"loop_offsets": [
+				-148,
+				-71
 			],
 			"anim": "wind",
-			"loop_offsets": [
-				-90,
-				-28
+			"idle_offsets": [
+				-148,
+				-71
 			],
-			"idle_name": "Symbol 74",
-			"loop_name": "Symbol 74"
+			"loop_name": "Symbol 74",
+			"idle_name": "Symbol 74"
 		},
 		{
-			"idle_offsets": [
-				0,
-				-30
+			"loop_offsets": [
+				-85,
+				-43
 			],
 			"anim": "scratch",
-			"loop_offsets": [
-				0,
-				-30
+			"idle_offsets": [
+				-85,
+				-93
 			],
-			"idle_name": "Symbol 34",
-			"loop_name": "Symbol 34"
+			"loop_name": "Symbol 34",
+			"idle_name": "Symbol 34"
 		},
 		{
-			"idle_offsets": [
-				-10,
-				-70
+			"loop_offsets": [
+				-88,
+				-100
 			],
 			"anim": "blush2",
-			"loop_offsets": [
-				-10,
-				-70
+			"idle_offsets": [
+				-88,
+				-100
 			],
-			"idle_name": "Symbol 94",
-			"loop_name": "Symbol 94"
+			"loop_name": "Symbol 94",
+			"idle_name": "Symbol 94"
 		}
-	]
+	],
+	"image": "bf"
 }
