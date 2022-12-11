@@ -284,9 +284,6 @@ class PauseSubState extends MusicBeatSubstate
 					persistentUpdate = false;
 					MusicBeatState.switchState(new editors.ChartingState());
 					PlayState.chartingMode = true;
-					#if desktop
-					DiscordClient.changePresence("Chart Editor", null, null, true);
-					#end
 				case "Exit to menu":
 					PlayState.deathCounter = 0;
 					PlayState.poleDeathCounter = 0;
