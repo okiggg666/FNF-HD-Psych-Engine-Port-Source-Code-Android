@@ -1,4 +1,4 @@
-# Friday Night Funkin' HD - Psych Engine Port
+# Friday Night Funkin' HD - Psych Engine Port Android
 Welcome to FNF HD psych engine port, this port was made for having a better experience playing FNF HD, in this port there's new options, new art and more! Remember i'm not the owner of FNF HD, FNF HD is made by Kolsan and the HD team, full credits to them and their hard work.
 
 ## Installation:

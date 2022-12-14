@@ -129,11 +129,7 @@ class AndroidControlsMenu extends MusicBeatState
 		if (FlxG.android.justReleased.BACK)
 		{
 			save();
-			if(!options.OptionsStateInGame.InGame) {
-				MusicBeatState.switchState(new options.OptionsState());
-			} else {
-				MusicBeatState.switchState(new options.OptionsStateInGame());
-			}
+			MusicBeatState.switchState(new options.OptionsState());
 		}
 		#end
 	}
