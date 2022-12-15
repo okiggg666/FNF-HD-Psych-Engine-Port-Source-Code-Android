@@ -47,7 +47,7 @@ class Cache extends MusicBeatState
 		bitmapData = new Map<String,FlxGraphic>();
 		bitmapData2 = new Map<String,FlxGraphic>();
 
-		var menuBG:FlxSprite = new FlxSprite().loadGraphic(Paths.image('funkay')
+		var menuBG:FlxSprite = new FlxSprite().loadGraphic(Paths.image('funkay'));
 		menuBG.screenCenter();
 		add(menuBG);
 
