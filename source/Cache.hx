@@ -47,9 +47,13 @@ class Cache extends MusicBeatState
 		bitmapData = new Map<String,FlxGraphic>();
 		bitmapData2 = new Map<String,FlxGraphic>();
 
-		var menuBG:FlxSprite = new FlxSprite().loadGraphic(Paths.image('funkay'));
-		menuBG.screenCenter();
+		var menuBG:FlxSprite = new FlxSprite(0, 0).loadGraphic(Paths.getPath('images/funkay.png', IMAGE));
+		menuBG.setGraphicSize(0, FlxG.height);
+		menuBG.updateHitbox();
+		menuBG.antialiasing = ClientPrefs.globalAntialiasing;
 		add(menuBG);
+		menuBG.scrollFactor.set();
+		menuBG.screenCenter();
 
 		#if cpp
 		for (i in HSys.readDirectory("assets/shared/images/characters"))
