@@ -29,6 +29,10 @@ class GallerySubState extends MusicBeatSubstate
         images = _images;
         trace(images);
 
+        /*for (v in 0...images.length) {
+            images.remove('void');
+        }*/
+
         #if android
         camControls = new FlxCamera();
 		camControls.bgColor.alpha = 0;
@@ -54,6 +58,7 @@ class GallerySubState extends MusicBeatSubstate
 
         camFollow.x = artSprites.members[0].getMidpoint().x;
         camFollow.y = artSprites.members[0].getMidpoint().y;
+
         changeSelection();
 
         #if android

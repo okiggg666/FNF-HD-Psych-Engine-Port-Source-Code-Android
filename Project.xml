@@ -189,7 +189,7 @@
 	<haxedef name="NAPE_RELEASE_BUILD" unless="debug" />
 
 	<!-- make's game use less ram -->
-	<haxedef name="HXCPP_GC_BIG_BLOCKS"/>
+	<!--haxedef name="HXCPP_GC_BIG_BLOCKS"/ -->
 	
 	<!-- Android stuff: thanks Yoshi Engine -->
 	<android permission="android.permission.ACCESS_NETWORK_STATE"/>
