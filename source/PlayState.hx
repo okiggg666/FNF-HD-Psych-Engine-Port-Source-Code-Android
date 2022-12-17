@@ -297,6 +297,7 @@ class PlayState extends MusicBeatState
 	var momLaser:BGSprite;
 	var dodgeEvent:Bool = false;
 	#if android
+	var dBCanBeVisible:Bool = false;
 	var dodgeButton:FlxVirtualPad;
 	#end
 
@@ -3026,6 +3027,9 @@ class PlayState extends MusicBeatState
 			if (skipCountdown || startOnTime > 0) skipArrowStartTween = true;
 			#if android
 			androidc.visible = true;
+			dBCanBeVisible = true;
+			if(dodgeEvent)
+				dodgeButton.visible = true;
 			#end
 			generateStaticArrows(0);
 			generateStaticArrows(1);
@@ -4010,7 +4014,7 @@ class PlayState extends MusicBeatState
 				}
 				
 				#if android
-				if(dodgeEvent) {
+				if(dodgeEvent && dBCanBeVisible) {
 					dodgeButton.visible = true;
 				}
 				#end
@@ -4093,8 +4097,11 @@ class PlayState extends MusicBeatState
 					if (dodgelamp.x >= -2400){
 						ayoLookOut.visible = true;
 
-						if(dodgelamp.x <= -2000 && !ClientPrefs.disableDodgeSound)
-							FlxG.sound.play(Paths.sound('warning', 'week4'),0.65);
+						if(dodgelamp.x <= -2000 && !ClientPrefs.disableDodgeSound) {
+							FlxG.sound.play(Paths.sound('warning', 'week4'), 0.65);
+							if(ClientPrefs.vibration)
+								Hardware.vibrate(450);
+						}
 					}
 					if (dodgelamp.x >= 80){
 						ayoLookOut.visible = false;

@@ -21,6 +21,10 @@ import sys.io.File;
 #end
 import openfl.utils.Assets;
 
+#if android
+import android.FlxVirtualPad;
+#end
+
 using StringTools;
 
 typedef DialogueCharacterFile = {
@@ -178,6 +182,9 @@ class DialogueBoxPsych extends FlxSpriteGroup
 	var skipText:FlxText;
 	var box:FlxSprite;
 	var textToType:String = '';
+	#if android
+	var skipButton:FlxVirtualPad;
+	#end
 
 	var arrayCharacters:Array<DialogueCharacter> = [];
 
@@ -234,15 +241,27 @@ class DialogueBoxPsych extends FlxSpriteGroup
 		daText.scaleY = 0.7;
 		add(daText);
 
+		#if !android
 		skipText = new FlxText(5, 695, 640, "Press SPACE to skip the dialogue.\n", 40);
+		#else
+		skipText = new FlxText(5, 695, 640, "Press A to skip the dialogue.\n", 40);
+		#end
 		skipText.scrollFactor.set(0, 0);
 		skipText.setFormat(Paths.font("vcr.ttf"), 20, FlxColor.WHITE, FlxTextAlign.LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		skipText.antialiasing = ClientPrefs.globalAntialiasing;
 		skipText.borderSize = 2;
 		skipText.borderQuality = 1;
+		#if android
+		skipText.visible = false;
+		#end
 		add(skipText);
 
 		startNextDialog();
+
+		/*#if android
+		skipButton = new FlxVirtualPad(NONE, A);
+		add(skipButton);
+		#end*/
 	}
 
 	var dialogueStarted:Bool = false;
@@ -343,7 +362,7 @@ class DialogueBoxPsych extends FlxSpriteGroup
 					if(skipDialogueThing != null) {
 						skipDialogueThing();
 					}
-				} else if(currentText >= dialogueList.dialogue.length || FlxG.keys.justPressed.SPACE #if android || justTouched #end) {
+				} else if(currentText >= dialogueList.dialogue.length #if !android || FlxG.keys.justPressed.SPACE #end) {
 					dialogueEnded = true;
 					for (i in 0...textBoxTypes.length) {
 						var checkArray:Array<String> = ['', 'center-'];
