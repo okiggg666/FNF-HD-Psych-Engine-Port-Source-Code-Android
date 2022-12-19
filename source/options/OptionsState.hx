@@ -29,7 +29,7 @@ using StringTools;
 
 class OptionsState extends MusicBeatState
 {
-	var options:Array<String> = ['Note Colors', 'Controls', 'Adjust Delay and Combo', 'Graphics', 'Visuals and UI', 'Gameplay', 'FNF HD Settings'];
+	var options:Array<String> = [];
 	private var grpOptions:FlxTypedGroup<Alphabet>;
 	private static var curSelected:Int = 0;
 	public static var menuBG:FlxSprite;
@@ -47,6 +47,8 @@ class OptionsState extends MusicBeatState
 				removeVirtualPad();
 				#end
 				openSubState(new options.ControlsSubState());
+			case 'Adjust Delay and Combo':
+				LoadingState.loadAndSwitchState(new options.NoteOffsetState());
 			case 'Graphics':
 				#if android
 				removeVirtualPad();
@@ -67,8 +69,6 @@ class OptionsState extends MusicBeatState
 				removeVirtualPad();
 				#end
 				openSubState(new options.HDSettingsSubState());
-			case 'Adjust Delay and Combo':
-				LoadingState.loadAndSwitchState(new options.NoteOffsetState());
 		}
 	}
 
@@ -80,7 +80,12 @@ class OptionsState extends MusicBeatState
 		DiscordClient.changePresence("Options Menu", null);
 		#end
 
-		trace('INGAME MODE : ' + inGame);
+		// trace('INGAME MODE : ' + inGame);
+
+		if(!inGame)
+			options = ['Note Colors', 'Controls', 'Adjust Delay and Combo', 'Graphics', 'Visuals and UI', 'Gameplay', 'FNF HD Settings'];
+		else
+			options = ['Note Colors', 'Controls', 'Graphics', 'Visuals and UI', 'Gameplay', 'FNF HD Settings'];
 
 		var bg:FlxSprite = new FlxSprite().loadGraphic(Paths.image('optionsHD'));
 		bg.updateHitbox();
@@ -148,7 +153,7 @@ class OptionsState extends MusicBeatState
 			if(!inGame)
 				MusicBeatState.switchState(new MainMenuState());
 			else
-				LoadingState.loadAndSwitchState(new PlayState());
+				MusicBeatState.switchState(new PlayState());
 		}
 
 		if (controls.ACCEPT) {
