@@ -800,11 +800,11 @@ class FunkinLua {
 		});
 
 
-		#if MODS_ALLOWED
 		Lua_helper.add_callback(lua, "addLuaScript", function(luaFile:String, ?ignoreAlreadyRunning:Bool = false) { //would be dope asf.
 			var cervix = luaFile + ".lua";
 			if(luaFile.endsWith(".lua"))cervix=luaFile;
 			var doPush = false;
+			#if MODS_ALLOWED
 			if(FileSystem.exists(Paths.modFolders(cervix)))
 			{
 				cervix = Paths.modFolders(cervix);
@@ -820,6 +820,12 @@ class FunkinLua {
 					doPush = true;
 				}
 			}
+			#else
+			cervix = Paths.getPreloadPath(cervix);
+			if(Assets.exists(cervix)) {
+				doPush = true;
+			}
+			#end
 
 			if(doPush)
 			{
@@ -843,6 +849,7 @@ class FunkinLua {
 			var cervix = luaFile + ".lua";
 			if(luaFile.endsWith(".lua"))cervix=luaFile;
 			var doPush = false;
+			#if MODS_ALLOWED
 			if(FileSystem.exists(Paths.modFolders(cervix)))
 			{
 				cervix = Paths.modFolders(cervix);
@@ -858,6 +865,12 @@ class FunkinLua {
 					doPush = true;
 				}
 			}
+			#else
+			cervix = Paths.getPreloadPath(cervix);
+			if(Assets.exists(cervix)) {
+				doPush = true;
+			}
+			#end
 
 			if(doPush)
 			{
@@ -878,7 +891,6 @@ class FunkinLua {
 			}
 			luaTrace("removeLuaScript: Script doesn't exist!", false, false, FlxColor.RED);
 		});
-		#end
 
 		Lua_helper.add_callback(lua, "runHaxeCode", function(codeToRun:String) {
 			var retVal:Dynamic = null;
@@ -2385,7 +2397,6 @@ class FunkinLua {
 			#end
 		});
 
-
 		// LUA TEXTS
 		Lua_helper.add_callback(lua, "makeLuaText", function(tag:String, text:String, width:Int, x:Float, y:Float) {
 			tag = tag.replace('.', '');
@@ -2620,11 +2631,9 @@ class FunkinLua {
 		Lua_helper.add_callback(lua, "saveFile", function(path:String, content:String, ?absolute:Bool = false)
 		{
 			try {
-				#if MODS_ALLOWED
 				if(!absolute)
 					File.saveContent(Paths.mods(path), content);
 				else
-				#end
 					File.saveContent(path, content);
 
 				return true;
@@ -2952,7 +2961,7 @@ class FunkinLua {
 	{
 		if(!ClientPrefs.shaders) return false;
 
-		#if (!flash && sys && MODS_ALLOWED)
+		#if (!flash && sys)
 		if(PlayState.instance.runtimeShaders.exists(name))
 		{
 			luaTrace('Shader $name was already initialized!');
