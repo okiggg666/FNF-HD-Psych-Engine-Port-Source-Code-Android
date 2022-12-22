@@ -4117,11 +4117,8 @@ class PlayState extends MusicBeatState
 				}
 
 			case 'spooky':
-				var stageData:StageFile = StageData.getStageFile(curStage);
-
-				if (curSong == 'Monster') {
-					stageData.hide_girlfriend = true;
-				}
+				if (curSong.toLowerCase() == 'monster')
+					gf.visible = false;
 
 			case 'tank':
 				moveTank(elapsed);
