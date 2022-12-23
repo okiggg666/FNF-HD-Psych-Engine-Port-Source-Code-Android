@@ -208,6 +208,7 @@ class FunkinLua {
 		set('scoreZoom', ClientPrefs.scoreZoom);
 		set('cameraZoomOnBeat', ClientPrefs.camZooms);
 		set('flashingLights', ClientPrefs.flashing);
+		set('screenShakes', ClientPrefs.screenShake);
 		set('noteOffset', ClientPrefs.noteOffset);
 		set('healthBarAlpha', ClientPrefs.healthBarAlpha);
 		set('noResetButton', ClientPrefs.noReset);
@@ -223,6 +224,7 @@ class FunkinLua {
 		// Easter eggs stuff
 		set('PicoPlayer', ClientPrefs.PicoPlayer);
 		set('BSIDESMODE', FlxMath.roundDecimal(FlxG.sound.music.length / 1000, 2) == 92.09);
+		set('badEnding', PlayState.badEnding);
 
 		#if windows
 		set('buildTarget', 'windows');
@@ -1619,10 +1621,15 @@ class FunkinLua {
 			else
 				MusicBeatState.switchState(new FreeplayState());
 
-			FlxG.sound.playMusic(Paths.music('freakyMenu'));
-			PlayState.changedDifficulty = false;
-			PlayState.chartingMode = false;
+			if(!PlayState.isStoryMode) {
+				FlxG.sound.playMusic(Paths.music('freakyMenu'));
+			}
 			PlayState.instance.transitioning = true;
+			PlayState.changedDifficulty = false;
+			PlayState.gofuckingdecked = false;
+			PlayState.chartingMode = false;
+			PlayState.badEnding = false;
+			PlayState.fuckCval = false;
 			WeekData.loadTheFirstEnabledMod();
 			return true;
 		});
@@ -2396,6 +2403,11 @@ class FunkinLua {
 			if(ClientPrefs.vibration)
 				Hardware.vibrate(milliseconds);
 			#end
+		});
+
+		Lua_helper.add_callback(lua, "startBeam", function() {
+			PlayState.instance.StartBeam();
+			return true;
 		});
 
 		// LUA TEXTS
@@ -3188,6 +3200,7 @@ class FunkinLua {
 			case 'camhud' | 'camHUD' | 'hud': return PlayState.instance.camHUD;
 			case 'camoverlay' | 'camOverlay' | 'overlay': return PlayState.instance.camOverlay;
 			case 'camdialogue' | 'camDialogue' | 'dialogue': return PlayState.instance.camDialogue;
+			case 'camgame' | 'camGame' | 'game': return PlayState.instance.camGame;
 			case 'camother' | 'camOther' | 'other': return PlayState.instance.camOther;
 		}
 		return PlayState.instance.camGame;

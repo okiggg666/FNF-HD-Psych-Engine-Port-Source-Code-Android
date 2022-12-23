@@ -293,9 +293,10 @@ class PlayState extends MusicBeatState
 	var limoLight:BGSprite;
 	var ayoLookOut:BGSprite;
 	//var overlayShit:BGSprite;
-	var overlay:BGSprite;
+	public var overlay:BGSprite;
 	var momLaser:BGSprite;
 	var dodgeEvent:Bool = false;
+	public static var badEnding:Bool = false;
 	#if android
 	var dBCanBeVisible:Bool = false;
 	var dodgeButton:FlxVirtualPad;
@@ -1091,7 +1092,7 @@ class PlayState extends MusicBeatState
 
 				if(!ClientPrefs.lowQuality) {
 					limoMetalPole = new BGSprite(null, -820, -85, 0.3, 0.3);
-					limoMetalPole.loadGraphic(Paths.image('limo/street_pole'));
+					limoMetalPole.loadGraphic(Paths.image('gore/metalPole'));
 					limoMetalPole.setGraphicSize(Std.int(limoMetalPole.width * 0.5));
 					limoMetalPole.updateHitbox();
 					limoMetalPole.flipX = true;
@@ -1099,7 +1100,7 @@ class PlayState extends MusicBeatState
 					add(limoMetalPole);
 
 					limoLight = new BGSprite(null, -830, -100, 0.3, 0.3);
-					limoLight.loadGraphic(Paths.image('limo/street_light'));
+					limoLight.loadGraphic(Paths.image('gore/coldHeartKiller'));
 					limoLight.setGraphicSize(Std.int(limoLight.width * 0.5));
 					limoLight.updateHitbox();
 					limoLight.flipX = true;
@@ -1202,11 +1203,11 @@ class PlayState extends MusicBeatState
 				}
 
 				dodgepole = new BGSprite(null, 400, -140);
-				dodgepole.loadGraphic(Paths.image('limo/street_pole'));
+				dodgepole.loadGraphic(Paths.image('gore/metalPole'));
 				dodgepole.active = true;
 
 				dodgelamp = new BGSprite(null, 250, -130);
-				dodgelamp.loadGraphic(Paths.image('limo/street_light'));
+				dodgelamp.loadGraphic(Paths.image('gore/coldHeartKiller'));
 				dodgelamp.width -= 300;
 				dodgelamp.height -= 200;
 				dodgelamp.active = true;
@@ -4011,7 +4012,7 @@ class PlayState extends MusicBeatState
 
 				if(!cpuControlled)
 				{
-					if (controls.DODGE #if android || dodgeButton.buttonD.justPressed #end && boyfriend.dodgetime == 0 && dodgeEvent) {
+					if (controls.DODGE #if android || dodgeButton.buttonD.justPressed #end && boyfriend.dodgetime == 0 && dodgeEvent && !endingSong) {
 						boyfriend.playAnim('dodge' + isStressed);
 						boyfriend.dodgetime = FlxG.updateFramerate;
 					}
@@ -4022,7 +4023,7 @@ class PlayState extends MusicBeatState
 				}
 				
 				#if android
-				if(dodgeEvent && dBCanBeVisible) {
+				if(dodgeEvent && dBCanBeVisible && !endingSong) {
 					dodgeButton.visible = true;
 				}
 				#end
@@ -4039,7 +4040,8 @@ class PlayState extends MusicBeatState
 
 				if(!cpuControlled)
 				{
-					if (hitbox.overlapsPoint(boyfriend.getGraphicMidpoint()) && boyfriend.dodgetime < 12 && !endingSong){
+					if (hitbox.overlapsPoint(boyfriend.getGraphicMidpoint()) && boyfriend.dodgetime < 12 && !endingSong)
+					{
 						if(boyfriend.curCharacter.startsWith('bf')) {
 							GameOverSubstate.characterName = 'bf-pole-dead';
 						}
@@ -4069,7 +4071,8 @@ class PlayState extends MusicBeatState
 						#end
 						isDead = true;
 					}
-				} else if (hitbox.overlapsPoint(boyfriend.getGraphicMidpoint()) && boyfriend.dodgetime == 0) {
+				} else if (hitbox.overlapsPoint(boyfriend.getGraphicMidpoint()) && boyfriend.dodgetime == 0)
+				{
 					boyfriend.playAnim('dodge' + isStressed);
 					boyfriend.dodgetime = FlxG.updateFramerate;
 				}
@@ -4386,6 +4389,14 @@ class PlayState extends MusicBeatState
 			fuckCval = true;
 		else
 			fuckCval = false;
+
+		if(curSong.toLowerCase() == 'Milf' && ClientPrefs.disablesDialogues == 'Story Mode' || ClientPrefs.disablesDialogues == 'Everywhere')
+		{
+			if(deathCounter >= 2)
+				badEnding = true;
+			else
+				badEnding = false;
+		}
 
 		if (FlxG.keys.anyJustPressed(debugKeysCharacter) && !endingSong && !inCutscene) {
 			persistentUpdate = false;
@@ -6971,7 +6982,7 @@ class PlayState extends MusicBeatState
 		}
 	}
 
-	function StartBeam() {
+	public function StartBeam() {
 		if(dad.curCharacter == 'mom-car-horny' || dad.curCharacter == 'mom-car') {
 			var momBeam = new FlxSprite(dad.x + 545, dad.y + 225);
 			momBeam.frames = Paths.getSparrowAtlas('limo/mom_beam', 'week4');
@@ -6984,7 +6995,7 @@ class PlayState extends MusicBeatState
 		}
 	}
 
-	function StartCarolBeam() {
+	public function StartCarolBeam() {
 		if(dad.curCharacter == 'hellchart-carol') {
 			var carolBeam = new FlxSprite(dad.x + 553, dad.y + 285);
 			carolBeam.frames = Paths.getSparrowAtlas('carol_beam');

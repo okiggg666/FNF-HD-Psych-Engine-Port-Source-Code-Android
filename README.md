@@ -56,7 +56,7 @@ And run command `lime build android -final`
 Apk will be generated in this path (path to source)\export\release\android\bin\app\build\outputs\apk\debug
 
 ## Credits:
-* Nuno Filipe Studios - Main porter, coder, animator, Android Port help
+* Nuno Filipe Studios - Main porter, coder, animator, Android Port help, Mac Port, Linux Port, 32bits version
 * Remy And Ava - Mobile optimizer, gamejolt link
 * DANIZIN - Old Android Port
 * FNF BR - Android Port
@@ -67,7 +67,7 @@ Apk will be generated in this path (path to source)\export\release\android\bin\a
 * JorgeX_YT - Dev Build Tester
 
 ### Used some codes from
-* Wednesday's Infidelity Team - Dodge keybinds text code
+* Wednesday's Infidelity Team - Used dodge keybinds text code
 * Arrow Funk Team - Used text font
 * Trevent booh! - Used icon flip lua code
 

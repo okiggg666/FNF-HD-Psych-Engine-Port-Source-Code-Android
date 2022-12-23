@@ -183,6 +183,8 @@ class GameOverSubstate extends MusicBeatSubstate
 			PlayState.poleDeathCounter = 0;
 			PlayState.seenCutscene = false;
 			PlayState.gofuckingdecked = false;
+			PlayState.badEnding = false;
+			PlayState.fuckCval = false;
 
 			if (PlayState.isStoryMode) {
 				MusicBeatState.switchState(new StoryMenuState());
