@@ -152,7 +152,7 @@ class Main extends Sprite
 			}
 		}
 
-		errMsg += "\nUncaught Error: " + e.error + "\nPlease report this error to the GitHub page: https://github.com/ShadowMario/FNF-PsychEngine\nor https://github.com/Nuno-Filipe-Studios/FNF-HD-Psych-Engine-Port-Source-Code\n\n> Crash Handler written by: sqirra-rng\nCrash Handler modified by: Nuno Filipe Studios";
+		errMsg += "\nUncaught Error: " + e.error + "\nPlease report this error to the GitHub page: https://github.com/ShadowMario/FNF-PsychEngine\nor https://github.com/Nuno-Filipe-Studios/FNF-HD-Psych-Engine-Port-Source-Code\n\n> Crash Handler written by: sqirra-rng\n> Crash Handler modified by: Nuno Filipe Studios";
 
 		if (!FileSystem.exists(SUtil.getPath() + "./crash/"))
 			FileSystem.createDirectory(SUtil.getPath() + "./crash/");
