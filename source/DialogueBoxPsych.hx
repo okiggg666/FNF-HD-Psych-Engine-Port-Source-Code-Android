@@ -250,9 +250,6 @@ class DialogueBoxPsych extends FlxSpriteGroup
 		skipText.antialiasing = ClientPrefs.globalAntialiasing;
 		skipText.borderSize = 2;
 		skipText.borderQuality = 1;
-		#if android
-		skipText.visible = false;
-		#end
 		add(skipText);
 
 		startNextDialog();
