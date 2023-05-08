@@ -48,6 +48,9 @@ class Gallery extends MusicBeatState
 	override function create()
 	{
 
+		Paths.clearStoredMemory();
+		Paths.clearUnusedMemory();
+
 		#if debug
 		isDebug = true;
 		#end
