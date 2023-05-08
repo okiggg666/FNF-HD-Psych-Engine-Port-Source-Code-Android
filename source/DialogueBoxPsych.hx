@@ -242,7 +242,7 @@ class DialogueBoxPsych extends FlxSpriteGroup
 		add(daText);
 
 		#if !android
-		skipText = new FlxText(5, 695, 640, "Press SPACE to skip the dialogue.\n", 40);
+		skipText = new FlxText(5, 695, 640, "Press SHIFT to skip the dialogue.\n", 40);
 		#else
 		skipText = new FlxText(5, 695, 640, "Press A to skip the dialogue.\n", 40);
 		#end
@@ -258,10 +258,10 @@ class DialogueBoxPsych extends FlxSpriteGroup
 
 		startNextDialog();
 
-		/*#if android
-		skipButton = new FlxVirtualPad(NONE, A);
+		#if android
+		skipButton = new FlxVirtualPad(NONE, A); // Ya'll asked for this so here it is
 		add(skipButton);
-		#end*/
+		#end
 	}
 
 	var dialogueStarted:Bool = false;
@@ -362,7 +362,7 @@ class DialogueBoxPsych extends FlxSpriteGroup
 					if(skipDialogueThing != null) {
 						skipDialogueThing();
 					}
-				} else if(currentText >= dialogueList.dialogue.length #if !android || FlxG.keys.justPressed.SPACE #end) {
+				} else if(currentText >= dialogueList.dialogue.length) {
 					dialogueEnded = true;
 					for (i in 0...textBoxTypes.length) {
 						var checkArray:Array<String> = ['', 'center-'];
@@ -388,6 +388,28 @@ class DialogueBoxPsych extends FlxSpriteGroup
 					startNextDialog();
 				}
 				FlxG.sound.play(Paths.sound(closeSound), closeVolume);
+			} else if (FlxG.keys.justPressed.SHIFT #if android || skipButton.buttonA.justPressed #end) {
+				dialogueEnded = true;
+				for (i in 0...textBoxTypes.length) {
+					var checkArray:Array<String> = ['', 'center-'];
+					var animName:String = box.animation.curAnim.name;
+					for (j in 0...checkArray.length) {
+						if(animName == checkArray[j] + textBoxTypes[i] || animName == checkArray[j] + textBoxTypes[i] + 'Open') {
+							box.animation.play(checkArray[j] + textBoxTypes[i] + 'Open', true);
+						}
+					}
+				}
+
+				box.animation.curAnim.curFrame = box.animation.curAnim.frames.length - 1;
+				box.animation.curAnim.reverse();
+				if(daText != null)
+				{
+					daText.kill();
+					remove(daText);
+					daText.destroy();
+				}
+				updateBoxOffsets(box);
+				FlxG.sound.music.fadeOut(1, 0);
 			} else if(daText.finishedText) {
 				var char:DialogueCharacter = arrayCharacters[lastCharacter];
 				if(char != null && char.animation.curAnim != null && char.animationIsLoop() && char.animation.finished) {
