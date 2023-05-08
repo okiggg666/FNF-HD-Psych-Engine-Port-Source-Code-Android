@@ -2098,6 +2098,7 @@ class PlayState extends MusicBeatState
 
 		#if android
 		addAndroidControls();
+		androidc.visible = false;
 		androidc.cameras = [camOther];
 
 		dodgeButton = new FlxVirtualPad(NONE, D);
