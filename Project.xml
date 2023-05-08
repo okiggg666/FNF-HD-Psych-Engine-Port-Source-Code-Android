@@ -145,7 +145,6 @@
 	<haxelib name="faxe" if='switch'/>
 	<!--<haxelib name="polymod"/> -->
 	<haxelib name="discord_rpc" if="desktop"/>
-	<haxelib name="extension-videoview" if="android"/>
 	<haxelib name="extension-androidtools" if="android"/>
 
 	<!-- Enables a terminal log prompt on debug builds -->
