@@ -2098,7 +2098,6 @@ class PlayState extends MusicBeatState
 
 		#if android
 		addAndroidControls();
-		androidc.visible = false;
 		androidc.cameras = [camOther];
 
 		dodgeButton = new FlxVirtualPad(NONE, D);
@@ -2294,7 +2293,7 @@ class PlayState extends MusicBeatState
 		#end
 	}
 
-	public function initLuaShader(name:String, ?glslVersion:Int = 120)
+	public function initLuaShader(name:String)
 	{
 		if(!ClientPrefs.shaders) return false;
 
