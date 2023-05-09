@@ -239,7 +239,7 @@ class DialogueBoxPsych extends FlxSpriteGroup
 		#if !android
 		skipText = new FlxText(5, 695, 640, "Press SHIFT to skip the dialogue.\n", 40);
 		#else
-		skipText = new FlxText(5, 695, 640, "Press A to skip the dialogue.\n", 40);
+		skipText = new FlxText(5, 695, 640, "Press SKIP to skip the dialogue.\n", 40);
 		#end
 		skipText.scrollFactor.set(0, 0);
 		skipText.setFormat(Paths.font("vcr.ttf"), 20, FlxColor.WHITE, FlxTextAlign.LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
