@@ -11,6 +11,7 @@ import flixel.util.FlxColor;
 import flixel.util.FlxTimer;
 import flixel.tweens.FlxEase;
 import flixel.tweens.FlxTween;
+import flixel.ui.FlxButton;
 import flixel.FlxSubState;
 import haxe.Json;
 import haxe.format.JsonParser;
@@ -20,9 +21,6 @@ import sys.FileSystem;
 import sys.io.File;
 #end
 import openfl.utils.Assets;
-#if android
-import android.FlxVirtualPad;
-#end
 
 using StringTools;
 
@@ -181,9 +179,7 @@ class DialogueBoxPsych extends FlxSpriteGroup
 	var skipText:FlxText;
 	var box:FlxSprite;
 	var textToType:String = '';
-	#if android
-	var skipButton:FlxVirtualPad;
-	#end
+	var skipButton:FlxButton;
 
 	var arrayCharacters:Array<DialogueCharacter> = [];
 
@@ -252,12 +248,25 @@ class DialogueBoxPsych extends FlxSpriteGroup
 		skipText.borderQuality = 1;
 		add(skipText);
 
-		startNextDialog();
-
-		#if android
-		skipButton = new FlxVirtualPad(NONE, A); // Ya'll asked for this so here it is
+		skipButton = new FlxButton(0, 0, function() {
+			skipButton.animation.play('pressed');
+			skipButton.animation.finishCallback = function(name:String)
+			{
+				skipButton.animation.play('idle', true);
+			};
+		});
+		skipButton.frames = Paths.getSparrowAtlas('dialogueSkipButton');
+		skipButton.scrollFactor.set();
+		skipButton.antialiasing = ClientPrefs.globalAntialiasing;
+		skipButton.animation.addByPrefix('idle', 'skip button idle', 24, true);
+		skipButton.animation.addByPrefix('pressed', 'skip button clicked', 24, false);
+		skipButton.animation.play('idle', true);
+		skipButton.scale.set(0.6, 0.6);
+		skipButton.x = FlxG.width - skipButton.width + 9;
+		skipButton.y -= 13;
 		add(skipButton);
-		#end
+
+		startNextDialog();
 	}
 
 	var dialogueStarted:Bool = false;
@@ -384,7 +393,7 @@ class DialogueBoxPsych extends FlxSpriteGroup
 					startNextDialog();
 				}
 				FlxG.sound.play(Paths.sound(closeSound), closeVolume);
-			} else if (FlxG.keys.justPressed.SHIFT #if android || skipButton.buttonA.justPressed #end) {
+			} else if (FlxG.keys.justPressed.SHIFT || skipButton.justPressed) {
 				dialogueEnded = true;
 				for (i in 0...textBoxTypes.length) {
 					var checkArray:Array<String> = ['', 'center-'];
@@ -511,6 +520,16 @@ class DialogueBoxPsych extends FlxSpriteGroup
 				}
 			}
 
+			if(skipButton != null) {
+				skipButton.alpha -= 1 * elapsed;
+				if(skipButton.alpha <= 0) {
+					skipButton.kill();
+					remove(skipButton);
+					skipButton.destroy();
+					skipButton = null;
+				}
+			}
+
 			for (i in 0...arrayCharacters.length) {
 				var leChar:DialogueCharacter = arrayCharacters[i];
 				if(leChar != null) {
@@ -528,7 +547,7 @@ class DialogueBoxPsych extends FlxSpriteGroup
 				}
 			}
 
-			if(box == null && blackBG == null && bgFade == null && skipText == null) {
+			if(box == null && blackBG == null && bgFade == null && skipText == null && skipButton == null) {
 				for (i in 0...arrayCharacters.length) {
 					var leChar:DialogueCharacter = arrayCharacters[0];
 					if(leChar != null) {
