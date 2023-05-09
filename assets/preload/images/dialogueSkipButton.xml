@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="dialogueSkipButton.png">
+	<!-- Created with Adobe Animate version 22.0.5.191 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="skip button clicked0000" x="0" y="0" width="270" height="119"/>
+	<SubTexture name="skip button clicked0001" x="0" y="0" width="270" height="119"/>
+	<SubTexture name="skip button clicked0002" x="0" y="119" width="252" height="114" frameX="-8" frameY="-3" frameWidth="270" frameHeight="119"/>
+	<SubTexture name="skip button clicked0003" x="0" y="119" width="252" height="114" frameX="-8" frameY="-3" frameWidth="270" frameHeight="119"/>
+	<SubTexture name="skip button idle0000" x="0" y="233" width="269" height="120" frameX="0" frameY="0" frameWidth="270" frameHeight="120"/>
+	<SubTexture name="skip button idle0001" x="0" y="233" width="269" height="120" frameX="0" frameY="0" frameWidth="270" frameHeight="120"/>
+	<SubTexture name="skip button idle0002" x="0" y="0" width="270" height="119"/>
+	<SubTexture name="skip button idle0003" x="0" y="0" width="270" height="119"/>
+</TextureAtlas>
